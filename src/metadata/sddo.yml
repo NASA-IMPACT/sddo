@@ -1,0 +1,27 @@
+# PURL configuration for http://purl.obolibrary.org/obo/sddo
+
+idspace: SDDO
+base_url: /obo/sddo
+
+products:
+- sddo.owl: https://raw.githubusercontent.com/aeleish/sddo/main/sddo.owl
+- sddo.obo: https://raw.githubusercontent.com/aeleish/sddo/main/sddo.obo
+
+term_browser: ontobee
+example_terms:
+- SDDO_0000000
+
+entries:
+
+- prefix: /releases/
+  replacement: https://raw.githubusercontent.com/aeleish/sddo/v
+
+- prefix: /tracker/
+  replacement: https://github.com/aeleish/sddo/issues
+
+- prefix: /about/
+  replacement: http://www.ontobee.org/ontology/SDDO?iri=http://purl.obolibrary.org/obo/
+
+## generic fall-through, serve direct from github by default
+- prefix: /
+  replacement: https://raw.githubusercontent.com/aeleish/sddo/main/
