@@ -13,7 +13,7 @@ contact:
   email: 
   label: 
   github: 
-description: Science Data Discovery Ontology is an ontology...
+description: The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA's Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science.  
 domain: stuff
 homepage: https://github.com/aeleish/sddo
 products:
@@ -38,6 +38,5 @@ license:
 activity_status: active
 ---
 
-Enter a detailed description of your ontology here. You can use arbitrary markdown and HTML.
-You can also embed images too.
+The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA's Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science.  
 
