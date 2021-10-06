@@ -42,12 +42,28 @@ Datatype: idrange:1
 Datatype: idrange:2
 
     Annotations: 
-        allocatedto: "ADDITIONAL EDITOR"
+        allocatedto: "Ruth Duerr"
     
     EquivalentTo: 
         xsd:integer[>= 1000000 , <= 1999999]
     
     
+Datatype: idrange:3
+
+    Annotations: 
+        allocatedto: "Ahmed Aleish"
+    
+    EquivalentTo: 
+        xsd:integer[>= 2000000 , <= 2999999]
+    
+Datatype: idrange:4
+
+    Annotations: 
+        allocatedto: "Dan Berrios"
+    
+    EquivalentTo: 
+        xsd:integer[>= 3000000 , <= 3999999]
+            
 Datatype: xsd:integer
 Datatype: rdf:PlainLiteral
 
