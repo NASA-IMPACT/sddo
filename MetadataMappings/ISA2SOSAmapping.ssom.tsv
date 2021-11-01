@@ -1,0 +1,3 @@
+subject_id predicate_id  object_id match_type  subject_label object_label
+isa:technology platform skos:closeMatch sosa:Sensor technology platform Sensor
+isa:technology platform skos:closeMatch sosa:Platform technology platform Platform
