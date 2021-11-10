@@ -9,15 +9,6 @@ bin/
 
 src/ontology/mirror
 src/ontology/mirror/*
-src/ontology/reports/*
-src/ontology/sddo.owl
-src/ontology/sddo.obo
-src/ontology/sddo.json
-src/ontology/sddo-base.*
-src/ontology/sddo-basic.*
-src/ontology/sddo-full.*
-src/ontology/sddo-simple.*
-src/ontology/sddo-simple-non-classified.*
 
 src/ontology/seed.txt
 src/ontology/dosdp-tools.log
