@@ -85,7 +85,7 @@ all_main: $(MAIN_FILES)
 ## By default this is the cross-product of IMPORT_MODULES x FORMATS
 
 
-IMPORTS = 
+IMPORTS = obi
 
 IMPORT_ROOTS = $(patsubst %, imports/%_import, $(IMPORTS))
 IMPORT_OWL_FILES = $(foreach n,$(IMPORT_ROOTS), $(n).owl)
@@ -209,7 +209,17 @@ imports/%_terms_combined.txt: $(IMPORTSEED) imports/%_terms.txt
 	if [ $(IMP) = true ]; then cat $^ | grep -v ^# | sort | uniq >  $@; fi
 
 
+imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/$*_terms_combined.txt --force true --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 .PRECIOUS: imports/%_import.owl
+.PRECIOUS: imports/%_import.owl
+
+imports/sosa_import.owl: mirror/sosa.owl imports/sosa_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/sosa_terms.txt --force true --method STAR \
+    query --update ../sparql/inject-subset-declaration.ru \
+    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -224,6 +234,16 @@ refresh-%:
 	make IMP=true IMP_LARGE=true MIR=true PAT=false imports/$*_import.owl -B
 
 
+# ----------------------------------------
+# Components
+# ----------------------------------------
+# Some ontologies contain external and internal components. A component is included in the ontology in its entirety.
+
+components/%: .FORCE
+	touch $@
+.PRECIOUS: components/%
+
+
 
 # ----------------------------------------
 # Mirroring upstream ontologies
@@ -234,6 +254,23 @@ IMP=true # Global parameter to bypass import generation
 MIR=true # Global parameter to bypass mirror generation
 IMP_LARGE=true # Global parameter to bypass handling of large imports
 
+## ONTOLOGY: obi
+## Copy of obi is re-downloaded whenever source changes
+mirror/obi.trigger: $(SRC)
+
+mirror/obi.owl: mirror/obi.trigger
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/obi.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
+## ONTOLOGY: sosa
+## Copy of sosa is re-downloaded whenever source changes
+mirror/sosa.trigger: $(SRC)
+
+mirror/sosa.owl: mirror/sosa.trigger
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://www.w3.org/ns/sosa/ -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
 
 
 # ----------------------------------------

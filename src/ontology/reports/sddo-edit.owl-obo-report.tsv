@@ -1,195 +1,122 @@
 Level	Rule Name	Subject	Property	Value
-WARN	missing_definition	Test	IAO:0000115	
-WARN	missing_definition	Assay	IAO:0000115	
-WARN	missing_definition	Event	IAO:0000115	
-WARN	missing_definition	DataDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	Parameter	IAO:0000115	
-WARN	missing_definition	Specimen	IAO:0000115	
-WARN	missing_definition	MetadataProduct	IAO:0000115	
-WARN	missing_definition	Study	IAO:0000115	
-WARN	missing_definition	OperationDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	Platform	IAO:0000115	
-WARN	missing_definition	InformationProductService	IAO:0000115	
-WARN	missing_definition	ExperimentDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	Increment	IAO:0000115	
-WARN	missing_definition	InstrumentDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	DataProduct	IAO:0000115	
-WARN	missing_definition	ModelDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	Instrument	IAO:0000115	
-WARN	missing_definition	Software	IAO:0000115	
-WARN	missing_definition	Person	IAO:0000115	
-WARN	missing_definition	Experiment	IAO:0000115	
-WARN	missing_definition	PlatformDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	InstrumentOperatingModeDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	LaboratoryProcedure	IAO:0000115	
-WARN	missing_definition	InstrumentOperatingMode	IAO:0000115	
-WARN	missing_definition	Measurement	IAO:0000115	
-WARN	missing_definition	AccessInterface	IAO:0000115	
-WARN	missing_definition	Feature	IAO:0000115	
-WARN	missing_definition	EngineeringPlatform	IAO:0000115	
-WARN	missing_definition	Organization	IAO:0000115	
-WARN	missing_definition	LivingSubject	IAO:0000115	
-WARN	missing_definition	Deployment	IAO:0000115	
-WARN	missing_definition	ProductService	IAO:0000115	
-WARN	missing_definition	DiscoveryInterface	IAO:0000115	
-WARN	missing_definition	Mission	IAO:0000115	
-WARN	missing_definition	Hurricane	IAO:0000115	
-WARN	missing_definition	Factor	IAO:0000115	
-WARN	missing_definition	SelectionParameter	IAO:0000115	
-WARN	missing_definition	InformationSelectionParameter	IAO:0000115	
-WARN	missing_definition	Program	IAO:0000115	
-WARN	missing_definition	DataProductService	IAO:0000115	
-WARN	missing_definition	Observation	IAO:0000115	
-WARN	missing_definition	HealthSafetyEquipment	IAO:0000115	
-WARN	missing_definition	Hardware	IAO:0000115	
-WARN	missing_definition	Sample	IAO:0000115	
-WARN	missing_definition	Campaign	IAO:0000115	
-WARN	missing_definition	ImageLandmark	IAO:0000115	
-WARN	missing_definition	InformationProduct	IAO:0000115	
-WARN	missing_definition	MissionDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	ResearchInvestigation	IAO:0000115	
-WARN	missing_definition	DataSelectionParameter	IAO:0000115	
-WARN	missing_definition	ApplicationDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	DataProductDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	Repository	IAO:0000115	
-WARN	missing_definition	Organism	IAO:0000115	
-WARN	missing_definition	IncidenceAngleRange	IAO:0000115	
-WARN	missing_definition	Provider	IAO:0000115	
-WARN	missing_definition	SpaceTimeBoundingDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	SciencePlatform	IAO:0000115	
-WARN	missing_definition	InformationDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	LocationDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	MutableNecessaryEvil	IAO:0000115	
-WARN	missing_definition	ResearchMission	IAO:0000115	
-WARN	missing_definition	SampleDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	Project	IAO:0000115	
-WARN	missing_definition	EngineeringMission	IAO:0000115	
-WARN	missing_definition	NASAMission	IAO:0000115	
-WARN	missing_definition	IncidenceAngle	IAO:0000115	
-WARN	missing_definition	Phenomenon	IAO:0000115	
-WARN	missing_definition	ResearchStudy	IAO:0000115	
-WARN	missing_definition	createdBy	IAO:0000115	
-WARN	missing_definition	quantifiedBy	IAO:0000115	
-WARN	missing_definition	leadTo	IAO:0000115	
-WARN	missing_definition	componentOf	IAO:0000115	
-WARN	missing_definition	conductedOn	IAO:0000115	
-WARN	missing_definition	resultsIn	IAO:0000115	
-WARN	missing_definition	aggregate	IAO:0000115	
-WARN	missing_definition	capableOfDetecting	IAO:0000115	
-WARN	missing_definition	includes	IAO:0000115	
-WARN	missing_definition	relatedTo	IAO:0000115	
-WARN	missing_definition	providesAccessTo	IAO:0000115	
-WARN	missing_definition	consistOf	IAO:0000115	
-WARN	missing_definition	hasBound	IAO:0000115	
-WARN	missing_definition	is	IAO:0000115	
-WARN	missing_definition	includeTypeof	IAO:0000115	
-WARN	missing_definition	includePropertyof	IAO:0000115	
-WARN	missing_definition	provideInformationOn	IAO:0000115	
-WARN	missing_definition	usedIn	IAO:0000115	
-WARN	missing_definition	hasRange	IAO:0000115	
-WARN	missing_definition	memberOf	IAO:0000115	
-WARN	missing_definition	capableOfIdentifying	IAO:0000115	
-WARN	missing_definition	characterizedBy	IAO:0000115	
-WARN	missing_definition	spatiallyOrganizedBy	IAO:0000115	
-WARN	missing_definition	partOf	IAO:0000115	
-WARN	missing_definition	present	IAO:0000115	
-WARN	missing_definition	uses	IAO:0000115	
-WARN	missing_definition	operatesOn	IAO:0000115	
-WARN	missing_definition	has	IAO:0000115	
-WARN	missing_definition	includePropertyOf	IAO:0000115	
-WARN	missing_definition	contain	IAO:0000115	
-WARN	missing_definition	conductedAt	IAO:0000115	
-WARN	missing_definition	provideAccessTo	IAO:0000115	
-WARN	missing_definition	are	IAO:0000115	
-WARN	missing_definition	sameAs	IAO:0000115	
-WARN	missing_definition	generates	IAO:0000115	
-WARN	missing_definition	includeTypeOf	IAO:0000115	
-WARN	missing_definition	hasRole	IAO:0000115	
-WARN	missing_definition	deployedOn	IAO:0000115	
-WARN	missing_definition	isA	IAO:0000115	
-WARN	missing_definition	ExperimentApparatus	IAO:0000115	
-WARN	missing_definition	DiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	ToolDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	Facility	IAO:0000115	
-WARN	missing_definition	Author	IAO:0000115	
-WARN	missing_definition	Investigator	IAO:0000115	
-WARN	missing_definition	PhotoGallery	IAO:0000115	
-WARN	missing_definition	Document	IAO:0000115	
-WARN	missing_definition	ObjectDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	Assay	textual definition	
+WARN	missing_definition	Event	textual definition	
+WARN	missing_definition	DataDiscoveryCriterion	textual definition	
+WARN	missing_definition	Parameter	textual definition	
+WARN	missing_definition	Specimen	textual definition	
+WARN	missing_definition	MetadataProduct	textual definition	
+WARN	missing_definition	Study	textual definition	
+WARN	missing_definition	OperationDiscoveryCriterion	textual definition	
+WARN	missing_definition	Platform	textual definition	
+WARN	missing_definition	InformationProductService	textual definition	
+WARN	missing_definition	ExperimentDiscoveryCriterion	textual definition	
+WARN	missing_definition	Increment	textual definition	
+WARN	missing_definition	InstrumentDiscoveryCriterion	textual definition	
+WARN	missing_definition	DataProduct	textual definition	
+WARN	missing_definition	ModelDiscoveryCriterion	textual definition	
+WARN	missing_definition	Instrument	textual definition	
+WARN	missing_definition	Software	textual definition	
+WARN	missing_definition	Person	textual definition	
+WARN	missing_definition	Experiment	textual definition	
+WARN	missing_definition	PlatformDiscoveryCriterion	textual definition	
+WARN	missing_definition	InstrumentOperatingModeDiscoveryCriterion	textual definition	
+WARN	missing_definition	LaboratoryProcedure	textual definition	
+WARN	missing_definition	InstrumentOperatingMode	textual definition	
+WARN	missing_definition	Measurement	textual definition	
+WARN	missing_definition	AccessInterface	textual definition	
+WARN	missing_definition	Feature	textual definition	
+WARN	missing_definition	EngineeringPlatform	textual definition	
+WARN	missing_definition	Organization	textual definition	
+WARN	missing_definition	LivingSubject	textual definition	
+WARN	missing_definition	Deployment	textual definition	
+WARN	missing_definition	ProductService	textual definition	
+WARN	missing_definition	DiscoveryInterface	textual definition	
+WARN	missing_definition	Mission	textual definition	
+WARN	missing_definition	Hurricane	textual definition	
+WARN	missing_definition	Factor	textual definition	
+WARN	missing_definition	SelectionParameter	textual definition	
+WARN	missing_definition	InformationSelectionParameter	textual definition	
+WARN	missing_definition	Program	textual definition	
+WARN	missing_definition	DataProductService	textual definition	
+WARN	missing_definition	Observation	textual definition	
+WARN	missing_definition	HealthSafetyEquipment	textual definition	
+WARN	missing_definition	Hardware	textual definition	
+WARN	missing_definition	Sample	textual definition	
+WARN	missing_definition	Campaign	textual definition	
+WARN	missing_definition	ImageLandmark	textual definition	
+WARN	missing_definition	InformationProduct	textual definition	
+WARN	missing_definition	MissionDiscoveryCriterion	textual definition	
+WARN	missing_definition	ResearchInvestigation	textual definition	
+WARN	missing_definition	DataSelectionParameter	textual definition	
+WARN	missing_definition	ApplicationDiscoveryCriterion	textual definition	
+WARN	missing_definition	DataProductDiscoveryCriterion	textual definition	
+WARN	missing_definition	Repository	textual definition	
+WARN	missing_definition	Organism	textual definition	
+WARN	missing_definition	IncidenceAngleRange	textual definition	
+WARN	missing_definition	Provider	textual definition	
+WARN	missing_definition	SpaceTimeBoundingDiscoveryCriterion	textual definition	
+WARN	missing_definition	SciencePlatform	textual definition	
+WARN	missing_definition	InformationDiscoveryCriterion	textual definition	
+WARN	missing_definition	LocationDiscoveryCriterion	textual definition	
+WARN	missing_definition	MutableNecessaryEvil	textual definition	
+WARN	missing_definition	ResearchMission	textual definition	
+WARN	missing_definition	SampleDiscoveryCriterion	textual definition	
+WARN	missing_definition	Project	textual definition	
+WARN	missing_definition	EngineeringMission	textual definition	
+WARN	missing_definition	NASAMission	textual definition	
+WARN	missing_definition	IncidenceAngle	textual definition	
+WARN	missing_definition	Phenomenon	textual definition	
+WARN	missing_definition	ResearchStudy	textual definition	
+WARN	missing_definition	ExperimentApparatus	textual definition	
+WARN	missing_definition	DiscoveryCriterion	textual definition	
+WARN	missing_definition	ToolDiscoveryCriterion	textual definition	
+WARN	missing_definition	Facility	textual definition	
+WARN	missing_definition	Author	textual definition	
+WARN	missing_definition	Investigator	textual definition	
+WARN	missing_definition	PhotoGallery	textual definition	
+WARN	missing_definition	Document	textual definition	
+WARN	missing_definition	ObjectDiscoveryCriterion	textual definition	
 INFO	missing_superclass	Assay	rdfs:subClassOf	
 INFO	missing_superclass	Event	rdfs:subClassOf	
-INFO	missing_superclass	DataDiscoveryCriterion	rdfs:subClassOf	
 INFO	missing_superclass	Parameter	rdfs:subClassOf	
-INFO	missing_superclass	Specimen	rdfs:subClassOf	
-INFO	missing_superclass	MetadataProduct	rdfs:subClassOf	
 INFO	missing_superclass	Study	rdfs:subClassOf	
-INFO	missing_superclass	OperationDiscoveryCriterion	rdfs:subClassOf	
 INFO	missing_superclass	Platform	rdfs:subClassOf	
-INFO	missing_superclass	InformationProductService	rdfs:subClassOf	
-INFO	missing_superclass	ExperimentDiscoveryCriterion	rdfs:subClassOf	
 INFO	missing_superclass	Increment	rdfs:subClassOf	
-INFO	missing_superclass	InstrumentDiscoveryCriterion	rdfs:subClassOf	
-INFO	missing_superclass	DataProduct	rdfs:subClassOf	
-INFO	missing_superclass	ModelDiscoveryCriterion	rdfs:subClassOf	
 INFO	missing_superclass	Instrument	rdfs:subClassOf	
 INFO	missing_superclass	Software	rdfs:subClassOf	
 INFO	missing_superclass	Person	rdfs:subClassOf	
 INFO	missing_superclass	Experiment	rdfs:subClassOf	
-INFO	missing_superclass	PlatformDiscoveryCriterion	rdfs:subClassOf	
-INFO	missing_superclass	InstrumentOperatingModeDiscoveryCriterion	rdfs:subClassOf	
 INFO	missing_superclass	LaboratoryProcedure	rdfs:subClassOf	
 INFO	missing_superclass	InstrumentOperatingMode	rdfs:subClassOf	
 INFO	missing_superclass	Measurement	rdfs:subClassOf	
 INFO	missing_superclass	AccessInterface	rdfs:subClassOf	
 INFO	missing_superclass	Feature	rdfs:subClassOf	
-INFO	missing_superclass	EngineeringPlatform	rdfs:subClassOf	
 INFO	missing_superclass	Organization	rdfs:subClassOf	
 INFO	missing_superclass	LivingSubject	rdfs:subClassOf	
 INFO	missing_superclass	Deployment	rdfs:subClassOf	
 INFO	missing_superclass	ProductService	rdfs:subClassOf	
 INFO	missing_superclass	DiscoveryInterface	rdfs:subClassOf	
 INFO	missing_superclass	Mission	rdfs:subClassOf	
-INFO	missing_superclass	Hurricane	rdfs:subClassOf	
 INFO	missing_superclass	Factor	rdfs:subClassOf	
 INFO	missing_superclass	SelectionParameter	rdfs:subClassOf	
-INFO	missing_superclass	InformationSelectionParameter	rdfs:subClassOf	
 INFO	missing_superclass	Program	rdfs:subClassOf	
-INFO	missing_superclass	DataProductService	rdfs:subClassOf	
 INFO	missing_superclass	Observation	rdfs:subClassOf	
 INFO	missing_superclass	HealthSafetyEquipment	rdfs:subClassOf	
 INFO	missing_superclass	Hardware	rdfs:subClassOf	
 INFO	missing_superclass	Sample	rdfs:subClassOf	
 INFO	missing_superclass	Campaign	rdfs:subClassOf	
-INFO	missing_superclass	ImageLandmark	rdfs:subClassOf	
-INFO	missing_superclass	InformationProduct	rdfs:subClassOf	
-INFO	missing_superclass	MissionDiscoveryCriterion	rdfs:subClassOf	
 INFO	missing_superclass	ResearchInvestigation	rdfs:subClassOf	
-INFO	missing_superclass	DataSelectionParameter	rdfs:subClassOf	
-INFO	missing_superclass	ApplicationDiscoveryCriterion	rdfs:subClassOf	
-INFO	missing_superclass	DataProductDiscoveryCriterion	rdfs:subClassOf	
 INFO	missing_superclass	Repository	rdfs:subClassOf	
-INFO	missing_superclass	Organism	rdfs:subClassOf	
 INFO	missing_superclass	IncidenceAngleRange	rdfs:subClassOf	
 INFO	missing_superclass	Provider	rdfs:subClassOf	
-INFO	missing_superclass	SpaceTimeBoundingDiscoveryCriterion	rdfs:subClassOf	
-INFO	missing_superclass	SciencePlatform	rdfs:subClassOf	
-INFO	missing_superclass	InformationDiscoveryCriterion	rdfs:subClassOf	
-INFO	missing_superclass	LocationDiscoveryCriterion	rdfs:subClassOf	
 INFO	missing_superclass	MutableNecessaryEvil	rdfs:subClassOf	
-INFO	missing_superclass	ResearchMission	rdfs:subClassOf	
-INFO	missing_superclass	SampleDiscoveryCriterion	rdfs:subClassOf	
 INFO	missing_superclass	Project	rdfs:subClassOf	
-INFO	missing_superclass	EngineeringMission	rdfs:subClassOf	
-INFO	missing_superclass	NASAMission	rdfs:subClassOf	
 INFO	missing_superclass	IncidenceAngle	rdfs:subClassOf	
 INFO	missing_superclass	Phenomenon	rdfs:subClassOf	
 INFO	missing_superclass	ResearchStudy	rdfs:subClassOf	
 INFO	missing_superclass	ExperimentApparatus	rdfs:subClassOf	
 INFO	missing_superclass	DiscoveryCriterion	rdfs:subClassOf	
-INFO	missing_superclass	ToolDiscoveryCriterion	rdfs:subClassOf	
 INFO	missing_superclass	Facility	rdfs:subClassOf	
 INFO	missing_superclass	Author	rdfs:subClassOf	
 INFO	missing_superclass	Investigator	rdfs:subClassOf	
-INFO	missing_superclass	PhotoGallery	rdfs:subClassOf	
 INFO	missing_superclass	Document	rdfs:subClassOf	
-INFO	missing_superclass	ObjectDiscoveryCriterion	rdfs:subClassOf	
