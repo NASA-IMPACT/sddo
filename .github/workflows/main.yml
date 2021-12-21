@@ -30,7 +30,7 @@ jobs:
         run: |
           cd src/ontology
           chmod +x ./run.sh
-          ./run.sh make prepare_release -B
+          ./run.sh make all
           
       - name: push changes to remote
         run: |
