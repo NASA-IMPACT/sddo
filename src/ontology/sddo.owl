@@ -13,11 +13,11 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/sddo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sddo/releases/2021-12-04/sddo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sddo/releases/2021-12-21/sddo.owl"/>
         <dc:description>None</dc:description>
         <dc:title>Science Data Discovery Ontology</dc:title>
         <terms:license rdf:resource="https://creativecommons.org/licenses/unspecified"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-04</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-21</owl:versionInfo>
     </owl:Ontology>
     
 
