@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: sddo/releases/2021-11-10/sddo-base.owl
+data-version: sddo/releases/2021-12-04/sddo-base.owl
 ontology: sddo/sddo-base
 property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Science Data Discovery Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
-property_value: owl:versionInfo "2021-11-10" xsd:string
+property_value: owl:versionInfo "2021-12-04" xsd:string
 
 [Term]
 id: SDDO:0000001
@@ -18,6 +18,7 @@ name: Event
 [Term]
 id: SDDO:0000004
 name: DataDiscoveryCriterion
+is_a: SDDO:0100001 ! DiscoveryCriterion
 
 [Term]
 id: SDDO:0000005
@@ -26,10 +27,12 @@ name: Parameter
 [Term]
 id: SDDO:0000006
 name: Specimen
+is_a: SDDO:0000041 ! Feature
 
 [Term]
 id: SDDO:0000007
 name: MetadataProduct
+is_a: SDDO:0000085 ! InformationProduct
 
 [Term]
 id: SDDO:0000009
@@ -38,6 +41,7 @@ name: Study
 [Term]
 id: SDDO:0000011
 name: OperationDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000012
@@ -46,10 +50,13 @@ name: Platform
 [Term]
 id: SDDO:0000013
 name: InformationProductService
+is_a: SDDO:0000059 ! ProductService
+property_value: definition "While agreed that the distinction between data and information is becoming increasingly fuzzy, for the purposes of this project information is defined to be any NASA science product or service that returns something other than science data." xsd:string
 
 [Term]
 id: SDDO:0000014
 name: ExperimentDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000015
@@ -58,14 +65,18 @@ name: Increment
 [Term]
 id: SDDO:0000016
 name: InstrumentDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000017
 name: DataProduct
+is_a: SDDO:0000072 ! DataProductService
 
 [Term]
 id: SDDO:0000019
 name: ModelDiscoveryCriterion
+is_a: SDDO:0100001 ! DiscoveryCriterion
+property_value: definition "For the purposes of the SMD project, anything that you can obtain or use from any of the SMD divisions is a product or service." xsd:string
 
 [Term]
 id: SDDO:0000020
@@ -86,10 +97,12 @@ name: Experiment
 [Term]
 id: SDDO:0000028
 name: PlatformDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000030
 name: InstrumentOperatingModeDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000032
@@ -114,6 +127,7 @@ name: Feature
 [Term]
 id: SDDO:0000044
 name: EngineeringPlatform
+is_a: SDDO:0000012 ! Platform
 
 [Term]
 id: SDDO:0000051
@@ -130,6 +144,9 @@ name: Deployment
 [Term]
 id: SDDO:0000059
 name: ProductService
+property_value: http://purl.org/dc/elements/1.1/date 2020-11-18T00:00:00 xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "For the purposes of the SMD project, anything that you can obtain or use from any of the SMD divisions is a product or service" xsd:string
+created_by: Peter Fox
 
 [Term]
 id: SDDO:0000061
@@ -142,6 +159,7 @@ name: Mission
 [Term]
 id: SDDO:0000065
 name: Hurricane
+is_a: SDDO:0000041 ! Feature
 
 [Term]
 id: SDDO:0000068
@@ -154,6 +172,7 @@ name: SelectionParameter
 [Term]
 id: SDDO:0000070
 name: InformationSelectionParameter
+is_a: SDDO:0000069 ! SelectionParameter
 
 [Term]
 id: SDDO:0000071
@@ -162,6 +181,7 @@ name: Program
 [Term]
 id: SDDO:0000072
 name: DataProductService
+is_a: SDDO:0000059 ! ProductService
 
 [Term]
 id: SDDO:0000074
@@ -186,14 +206,17 @@ name: Campaign
 [Term]
 id: SDDO:0000083
 name: ImageLandmark
+is_a: SDDO:0000041 ! Feature
 
 [Term]
 id: SDDO:0000085
 name: InformationProduct
+is_a: SDDO:0000013 ! InformationProductService
 
 [Term]
 id: SDDO:0000086
 name: MissionDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000088
@@ -202,14 +225,17 @@ name: ResearchInvestigation
 [Term]
 id: SDDO:0000089
 name: DataSelectionParameter
+is_a: SDDO:0000069 ! SelectionParameter
 
 [Term]
 id: SDDO:0000091
 name: ApplicationDiscoveryCriterion
+is_a: SDDO:0100001 ! DiscoveryCriterion
 
 [Term]
 id: SDDO:0000092
 name: DataProductDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000094
@@ -218,6 +244,7 @@ name: Repository
 [Term]
 id: SDDO:0000096
 name: Organism
+is_a: SDDO:0000041 ! Feature
 
 [Term]
 id: SDDO:0000101
@@ -230,18 +257,22 @@ name: Provider
 [Term]
 id: SDDO:0000105
 name: SpaceTimeBoundingDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000108
 name: SciencePlatform
+is_a: SDDO:0000012 ! Platform
 
 [Term]
 id: SDDO:0000109
 name: InformationDiscoveryCriterion
+is_a: SDDO:0100001 ! DiscoveryCriterion
 
 [Term]
 id: SDDO:0000111
 name: LocationDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000118
@@ -250,10 +281,12 @@ name: MutableNecessaryEvil
 [Term]
 id: SDDO:0000119
 name: ResearchMission
+is_a: SDDO:0000062 ! Mission
 
 [Term]
 id: SDDO:0000127
 name: SampleDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000129
@@ -262,10 +295,12 @@ name: Project
 [Term]
 id: SDDO:0000130
 name: EngineeringMission
+is_a: SDDO:0000062 ! Mission
 
 [Term]
 id: SDDO:0000134
 name: NASAMission
+is_a: SDDO:0000062 ! Mission
 
 [Term]
 id: SDDO:0000136
@@ -294,6 +329,7 @@ created_by: http://orcid.org/0000-0003-4808-4736
 [Term]
 id: SDDO:0100002
 name: ToolDiscoveryCriterion
+is_a: SDDO:0100001 ! DiscoveryCriterion
 property_value: http://purl.org/dc/elements/1.1/date 2021-10-26T23:33:53Z xsd:dateTime
 created_by: http://orcid.org/0000-0003-4808-4736
 
@@ -318,6 +354,7 @@ created_by: http://orcid.org/0000-0003-4808-4736
 [Term]
 id: SDDO:0100007
 name: PhotoGallery
+is_a: SDDO:0000085 ! InformationProduct
 property_value: http://purl.org/dc/elements/1.1/date 2021-10-26T23:39:19Z xsd:dateTime
 created_by: http://orcid.org/0000-0003-4808-4736
 
@@ -330,6 +367,7 @@ created_by: http://orcid.org/0000-0003-4808-4736
 [Term]
 id: SDDO:0100009
 name: ObjectDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 property_value: http://purl.org/dc/elements/1.1/date 2021-10-26T23:41:00Z xsd:dateTime
 created_by: http://orcid.org/0000-0003-4808-4736
 

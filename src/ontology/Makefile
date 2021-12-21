@@ -213,8 +213,13 @@ imports/%_import.owl: mirror/%.owl imports/%_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/$*_terms_combined.txt --force true --method BOT \
 		query --update ../sparql/inject-subset-declaration.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
+
 .PRECIOUS: imports/%_import.owl
-.PRECIOUS: imports/%_import.owl
+
+imports/sosa_import.owl: mirror/sosa.owl imports/sosa_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) extract -i $< -T imports/sosa_terms.txt --force true --method STAR \
+    query --update ../sparql/inject-subset-declaration.ru \
+    annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -255,6 +260,16 @@ mirror/obi.trigger: $(SRC)
 
 mirror/obi.owl: mirror/obi.trigger
 	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I $(URIBASE)/obi.owl -o $@.tmp.owl && mv $@.tmp.owl $@; fi
+
+.PRECIOUS: mirror/%.owl
+
+
+## ONTOLOGY: sosa
+## Copy of sosa is re-downloaded whenever source changes
+mirror/sosa.trigger: $(SRC)
+
+mirror/sosa.owl: mirror/sosa.trigger
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I https://www.w3.org/ns/sosa/ -o $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 .PRECIOUS: mirror/%.owl
 
