@@ -39,7 +39,7 @@ jobs:
 
           git add -A 
           git commit -m "Continuous build products check-in"
-          git push -u origin HEAD:master
+          git push -u origin master
           
 #  deploy_artifacts:
     # The type of runner that the job will run on
