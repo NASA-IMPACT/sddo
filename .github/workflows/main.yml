@@ -33,4 +33,5 @@ jobs:
       - name: Run a multi-line script
         run: |
           cd src/ontology
+          chmod +x ./run.sh
           ./run.sh make prepare_release -B
