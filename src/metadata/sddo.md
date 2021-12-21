@@ -30,7 +30,7 @@ products:
   - id: sddo/sddo-base.json
     name: "Science Data Discovery Ontology additional release in OBOJSon format"
 dependencies:
-
+  - id: obi
 tracker: https://github.com/NASA-IMPACT/sddo/issues
 license:
   url: http://creativecommons.org/licenses/by/3.0/
