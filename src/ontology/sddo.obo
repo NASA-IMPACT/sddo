@@ -1,0 +1,334 @@
+format-version: 1.2
+data-version: releases/2021-12-21
+ontology: sddo
+property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
+property_value: http://purl.org/dc/elements/1.1/title "Science Data Discovery Ontology" xsd:string
+property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+property_value: owl:versionInfo "2021-12-21" xsd:string
+
+[Term]
+id: SDDO:0000001
+name: Assay
+
+[Term]
+id: SDDO:0000002
+name: Event
+
+[Term]
+id: SDDO:0000004
+name: DataDiscoveryCriterion
+
+[Term]
+id: SDDO:0000005
+name: Parameter
+
+[Term]
+id: SDDO:0000006
+name: Specimen
+
+[Term]
+id: SDDO:0000007
+name: MetadataProduct
+
+[Term]
+id: SDDO:0000009
+name: Study
+
+[Term]
+id: SDDO:0000011
+name: OperationDiscoveryCriterion
+
+[Term]
+id: SDDO:0000012
+name: Platform
+
+[Term]
+id: SDDO:0000013
+name: InformationProductService
+
+[Term]
+id: SDDO:0000014
+name: ExperimentDiscoveryCriterion
+
+[Term]
+id: SDDO:0000015
+name: Increment
+
+[Term]
+id: SDDO:0000016
+name: InstrumentDiscoveryCriterion
+
+[Term]
+id: SDDO:0000017
+name: DataProduct
+
+[Term]
+id: SDDO:0000019
+name: ModelDiscoveryCriterion
+
+[Term]
+id: SDDO:0000020
+name: Instrument
+
+[Term]
+id: SDDO:0000023
+name: Software
+
+[Term]
+id: SDDO:0000025
+name: Person
+
+[Term]
+id: SDDO:0000027
+name: Experiment
+
+[Term]
+id: SDDO:0000028
+name: PlatformDiscoveryCriterion
+
+[Term]
+id: SDDO:0000030
+name: InstrumentOperatingModeDiscoveryCriterion
+
+[Term]
+id: SDDO:0000032
+name: LaboratoryProcedure
+
+[Term]
+id: SDDO:0000034
+name: InstrumentOperatingMode
+
+[Term]
+id: SDDO:0000035
+name: Measurement
+
+[Term]
+id: SDDO:0000038
+name: AccessInterface
+
+[Term]
+id: SDDO:0000041
+name: Feature
+
+[Term]
+id: SDDO:0000044
+name: EngineeringPlatform
+
+[Term]
+id: SDDO:0000051
+name: Organization
+
+[Term]
+id: SDDO:0000052
+name: LivingSubject
+
+[Term]
+id: SDDO:0000056
+name: Deployment
+
+[Term]
+id: SDDO:0000059
+name: ProductService
+
+[Term]
+id: SDDO:0000061
+name: DiscoveryInterface
+
+[Term]
+id: SDDO:0000062
+name: Mission
+
+[Term]
+id: SDDO:0000065
+name: Hurricane
+
+[Term]
+id: SDDO:0000068
+name: Factor
+
+[Term]
+id: SDDO:0000069
+name: SelectionParameter
+
+[Term]
+id: SDDO:0000070
+name: InformationSelectionParameter
+
+[Term]
+id: SDDO:0000071
+name: Program
+
+[Term]
+id: SDDO:0000072
+name: DataProductService
+
+[Term]
+id: SDDO:0000074
+name: Observation
+
+[Term]
+id: SDDO:0000075
+name: HealthSafetyEquipment
+
+[Term]
+id: SDDO:0000076
+name: Hardware
+
+[Term]
+id: SDDO:0000081
+name: Sample
+
+[Term]
+id: SDDO:0000082
+name: Campaign
+
+[Term]
+id: SDDO:0000083
+name: ImageLandmark
+
+[Term]
+id: SDDO:0000085
+name: InformationProduct
+
+[Term]
+id: SDDO:0000086
+name: MissionDiscoveryCriterion
+
+[Term]
+id: SDDO:0000088
+name: ResearchInvestigation
+
+[Term]
+id: SDDO:0000089
+name: DataSelectionParameter
+
+[Term]
+id: SDDO:0000091
+name: ApplicationDiscoveryCriterion
+
+[Term]
+id: SDDO:0000092
+name: DataProductDiscoveryCriterion
+
+[Term]
+id: SDDO:0000094
+name: Repository
+
+[Term]
+id: SDDO:0000096
+name: Organism
+
+[Term]
+id: SDDO:0000101
+name: IncidenceAngleRange
+
+[Term]
+id: SDDO:0000103
+name: Provider
+
+[Term]
+id: SDDO:0000105
+name: SpaceTimeBoundingDiscoveryCriterion
+
+[Term]
+id: SDDO:0000108
+name: SciencePlatform
+
+[Term]
+id: SDDO:0000109
+name: InformationDiscoveryCriterion
+
+[Term]
+id: SDDO:0000111
+name: LocationDiscoveryCriterion
+
+[Term]
+id: SDDO:0000118
+name: MutableNecessaryEvil
+
+[Term]
+id: SDDO:0000119
+name: ResearchMission
+
+[Term]
+id: SDDO:0000127
+name: SampleDiscoveryCriterion
+
+[Term]
+id: SDDO:0000129
+name: Project
+
+[Term]
+id: SDDO:0000130
+name: EngineeringMission
+
+[Term]
+id: SDDO:0000134
+name: NASAMission
+
+[Term]
+id: SDDO:0000136
+name: IncidenceAngle
+
+[Term]
+id: SDDO:0000142
+name: Phenomenon
+
+[Term]
+id: SDDO:0000147
+name: ResearchStudy
+
+[Term]
+id: SDDO:0100000
+name: ExperimentApparatus
+property_value: http://purl.org/dc/elements/1.1/date 2021-10-26T23:30:12Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: SDDO:0100001
+name: DiscoveryCriterion
+property_value: http://purl.org/dc/elements/1.1/date 2021-10-26T23:32:52Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: SDDO:0100002
+name: ToolDiscoveryCriterion
+property_value: http://purl.org/dc/elements/1.1/date 2021-10-26T23:33:53Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: SDDO:0100003
+name: Facility
+property_value: http://purl.org/dc/elements/1.1/date 2021-10-26T23:36:31Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: SDDO:0100005
+name: Author
+property_value: http://purl.org/dc/elements/1.1/date 2021-10-26T23:38:19Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: SDDO:0100006
+name: Investigator
+property_value: http://purl.org/dc/elements/1.1/date 2021-10-26T23:38:29Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: SDDO:0100007
+name: PhotoGallery
+property_value: http://purl.org/dc/elements/1.1/date 2021-10-26T23:39:19Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: SDDO:0100008
+name: Document
+property_value: http://purl.org/dc/elements/1.1/date 2021-10-26T23:39:33Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: SDDO:0100009
+name: ObjectDiscoveryCriterion
+property_value: http://purl.org/dc/elements/1.1/date 2021-10-26T23:41:00Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
