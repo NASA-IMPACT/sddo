@@ -4,6 +4,7 @@ ontology: sddo
 property_value: http://purl.org/dc/elements/1.1/description "None" xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Science Data Discovery Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license https://creativecommons.org/licenses/unspecified
+
 property_value: owl:versionInfo "2021-12-21" xsd:string
 
 [Term]
@@ -17,6 +18,7 @@ name: Event
 [Term]
 id: SDDO:0000004
 name: DataDiscoveryCriterion
+is_a: SDDO:0100001 ! DiscoveryCriterion
 
 [Term]
 id: SDDO:0000005
@@ -25,10 +27,12 @@ name: Parameter
 [Term]
 id: SDDO:0000006
 name: Specimen
+is_a: SDDO:0000041 ! Feature
 
 [Term]
 id: SDDO:0000007
 name: MetadataProduct
+is_a: SDDO:0000085 ! InformationProduct
 
 [Term]
 id: SDDO:0000009
@@ -37,6 +41,7 @@ name: Study
 [Term]
 id: SDDO:0000011
 name: OperationDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000012
@@ -45,10 +50,13 @@ name: Platform
 [Term]
 id: SDDO:0000013
 name: InformationProductService
+is_a: SDDO:0000059 ! ProductService
+property_value: definition "While agreed that the distinction between data and information is becoming increasingly fuzzy, for the purposes of this project information is defined to be any NASA science product or service that returns something other than science data." xsd:string
 
 [Term]
 id: SDDO:0000014
 name: ExperimentDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000015
@@ -57,14 +65,18 @@ name: Increment
 [Term]
 id: SDDO:0000016
 name: InstrumentDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000017
 name: DataProduct
+is_a: SDDO:0000072 ! DataProductService
 
 [Term]
 id: SDDO:0000019
 name: ModelDiscoveryCriterion
+is_a: SDDO:0100001 ! DiscoveryCriterion
+property_value: definition "For the purposes of the SMD project, anything that you can obtain or use from any of the SMD divisions is a product or service." xsd:string
 
 [Term]
 id: SDDO:0000020
@@ -85,10 +97,12 @@ name: Experiment
 [Term]
 id: SDDO:0000028
 name: PlatformDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000030
 name: InstrumentOperatingModeDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000032
@@ -113,6 +127,7 @@ name: Feature
 [Term]
 id: SDDO:0000044
 name: EngineeringPlatform
+is_a: SDDO:0000012 ! Platform
 
 [Term]
 id: SDDO:0000051
@@ -129,6 +144,9 @@ name: Deployment
 [Term]
 id: SDDO:0000059
 name: ProductService
+property_value: http://purl.org/dc/elements/1.1/date 2020-11-18T00:00:00 xsd:string
+property_value: http://purl.org/dc/elements/1.1/description "For the purposes of the SMD project, anything that you can obtain or use from any of the SMD divisions is a product or service" xsd:string
+created_by: Peter Fox
 
 [Term]
 id: SDDO:0000061
@@ -141,6 +159,7 @@ name: Mission
 [Term]
 id: SDDO:0000065
 name: Hurricane
+is_a: SDDO:0000041 ! Feature
 
 [Term]
 id: SDDO:0000068
@@ -153,6 +172,7 @@ name: SelectionParameter
 [Term]
 id: SDDO:0000070
 name: InformationSelectionParameter
+is_a: SDDO:0000069 ! SelectionParameter
 
 [Term]
 id: SDDO:0000071
@@ -161,6 +181,7 @@ name: Program
 [Term]
 id: SDDO:0000072
 name: DataProductService
+is_a: SDDO:0000059 ! ProductService
 
 [Term]
 id: SDDO:0000074
@@ -185,14 +206,17 @@ name: Campaign
 [Term]
 id: SDDO:0000083
 name: ImageLandmark
+is_a: SDDO:0000041 ! Feature
 
 [Term]
 id: SDDO:0000085
 name: InformationProduct
+is_a: SDDO:0000013 ! InformationProductService
 
 [Term]
 id: SDDO:0000086
 name: MissionDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000088
@@ -201,14 +225,17 @@ name: ResearchInvestigation
 [Term]
 id: SDDO:0000089
 name: DataSelectionParameter
+is_a: SDDO:0000069 ! SelectionParameter
 
 [Term]
 id: SDDO:0000091
 name: ApplicationDiscoveryCriterion
+is_a: SDDO:0100001 ! DiscoveryCriterion
 
 [Term]
 id: SDDO:0000092
 name: DataProductDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000094
@@ -217,6 +244,7 @@ name: Repository
 [Term]
 id: SDDO:0000096
 name: Organism
+is_a: SDDO:0000041 ! Feature
 
 [Term]
 id: SDDO:0000101
@@ -229,18 +257,22 @@ name: Provider
 [Term]
 id: SDDO:0000105
 name: SpaceTimeBoundingDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000108
 name: SciencePlatform
+is_a: SDDO:0000012 ! Platform
 
 [Term]
 id: SDDO:0000109
 name: InformationDiscoveryCriterion
+is_a: SDDO:0100001 ! DiscoveryCriterion
 
 [Term]
 id: SDDO:0000111
 name: LocationDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000118
@@ -249,10 +281,12 @@ name: MutableNecessaryEvil
 [Term]
 id: SDDO:0000119
 name: ResearchMission
+is_a: SDDO:0000062 ! Mission
 
 [Term]
 id: SDDO:0000127
 name: SampleDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 
 [Term]
 id: SDDO:0000129
@@ -261,10 +295,12 @@ name: Project
 [Term]
 id: SDDO:0000130
 name: EngineeringMission
+is_a: SDDO:0000062 ! Mission
 
 [Term]
 id: SDDO:0000134
 name: NASAMission
+is_a: SDDO:0000062 ! Mission
 
 [Term]
 id: SDDO:0000136
@@ -293,6 +329,7 @@ created_by: http://orcid.org/0000-0003-4808-4736
 [Term]
 id: SDDO:0100002
 name: ToolDiscoveryCriterion
+is_a: SDDO:0100001 ! DiscoveryCriterion
 property_value: http://purl.org/dc/elements/1.1/date 2021-10-26T23:33:53Z xsd:dateTime
 created_by: http://orcid.org/0000-0003-4808-4736
 
@@ -317,6 +354,7 @@ created_by: http://orcid.org/0000-0003-4808-4736
 [Term]
 id: SDDO:0100007
 name: PhotoGallery
+is_a: SDDO:0000085 ! InformationProduct
 property_value: http://purl.org/dc/elements/1.1/date 2021-10-26T23:39:19Z xsd:dateTime
 created_by: http://orcid.org/0000-0003-4808-4736
 
@@ -329,6 +367,446 @@ created_by: http://orcid.org/0000-0003-4808-4736
 [Term]
 id: SDDO:0100009
 name: ObjectDiscoveryCriterion
+is_a: SDDO:0000004 ! DataDiscoveryCriterion
 property_value: http://purl.org/dc/elements/1.1/date 2021-10-26T23:41:00Z xsd:dateTime
 created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: UO:0000001
+name: length unit
+def: "A unit which is a standard measure of the distance between two points." []
+is_a: IAO:0000003 ! measurement unit label
+property_value: IAO:0000111 "length unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000002
+name: mass unit
+def: "A unit which is a standard measure of the amount of matter/energy of a physical object." []
+is_a: IAO:0000003 ! measurement unit label
+property_value: IAO:0000111 "mass unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000003
+name: time unit
+def: "A unit which is a standard measure of the dimension in which events occur in sequence." []
+is_a: IAO:0000003 ! measurement unit label
+property_value: IAO:0000111 "time unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000005
+name: temperature unit
+is_a: IAO:0000003 ! measurement unit label
+property_value: IAO:0000111 "temperature unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000006
+name: substance unit
+is_a: IAO:0000003 ! measurement unit label
+property_value: IAO:0000111 "substance unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000051
+name: concentration unit
+is_a: IAO:0000003 ! measurement unit label
+property_value: IAO:0000111 "concentration unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000095
+name: volume unit
+is_a: IAO:0000003 ! measurement unit label
+property_value: IAO:0000111 "volume unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000105
+name: frequency unit
+is_a: IAO:0000003 ! measurement unit label
+property_value: IAO:0000111 "frequency unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000270
+name: volumetric flow rate unit
+is_a: IAO:0000003 ! measurement unit label
+property_value: IAO:0000111 "volumetric flow rate unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: UO:0000280
+name: rate unit
+is_a: IAO:0000003 ! measurement unit label
+property_value: IAO:0000111 "rate unit" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uo.owl
+
+[Term]
+id: http://www.w3.org/ns/sosa/Observation
+name: Observation
+comment: Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with.
+property_value: definition "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with." xsd:string
+property_value: example "The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake." xsd:string
+property_value: isDefinedBy http://www.w3.org/ns/sosa/
+
+[Typedef]
+id: BFO:0000050
+name: part of
+def: "a core relation that holds between a part and its whole" []
+property_value: IAO:0000111 "is part of" xsd:string
+property_value: IAO:0000112 "my brain is part of my body (continuant parthood, two material entities)" xsd:string
+property_value: IAO:0000112 "my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)" xsd:string
+property_value: IAO:0000112 "this day is part of this year (occurrent parthood)" xsd:string
+property_value: IAO:0000116 "Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other." xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
+property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.)\n\nA continuant cannot be part of an occurrent: use 'participates in'. An occurrent cannot be part of a continuant: use 'has participant'. A material entity cannot be part of an immaterial entity: use 'has location'. A specifically dependent continuant cannot be part of an independent continuant: use 'inheres in'. An independent continuant cannot be part of a specifically dependent continuant: use 'bearer of'." xsd:string
+property_value: IAO:0000118 "part_of" xsd:string
+property_value: RO:0001900 RO:0001901
+property_value: seeAlso http://www.obofoundry.org/ro/#OBO_REL:part_of xsd:string
+is_transitive: true
+inverse_of: BFO:0000051 ! has part
+
+[Typedef]
+id: BFO:0000051
+name: has part
+def: "a core relation that holds between a whole and its part" []
+property_value: IAO:0000111 "has part" xsd:string
+property_value: IAO:0000112 "my body has part my brain (continuant parthood, two material entities)" xsd:string
+property_value: IAO:0000112 "my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)" xsd:string
+property_value: IAO:0000112 "this year has part this day (occurrent parthood)" xsd:string
+property_value: IAO:0000116 "Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part." xsd:string
+property_value: IAO:0000116 "Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime" xsd:string
+property_value: IAO:0000116 "Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.)\n\nA continuant cannot have an occurrent as part: use 'participates in'. An occurrent cannot have a continuant as part: use 'has participant'. An immaterial entity cannot have a material entity as part: use 'location of'. An independent continuant cannot have a specifically dependent continuant as part: use 'bearer of'. A specifically dependent continuant cannot have an independent continuant as part: use 'inheres in'." xsd:string
+property_value: IAO:0000118 "has_part" xsd:string
+property_value: RO:0001900 RO:0001901
+is_transitive: true
+
+[Typedef]
+id: BFO:0000054
+name: realized in
+comment: Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+property_value: IAO:0000111 "realized in" xsd:string
+property_value: IAO:0000112 "this disease is realized in this disease course" xsd:string
+property_value: IAO:0000112 "this fragility is realized in this shattering" xsd:string
+property_value: IAO:0000112 "this investigator role is realized in this investigation" xsd:string
+property_value: IAO:0000118 "is realized by" xsd:string
+property_value: IAO:0000118 "realized_in" xsd:string
+property_value: IAO:0000600 "[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+domain: BFO:0000017 ! realizable entity
+range: BFO:0000015 ! process
+inverse_of: BFO:0000055 ! realizes
+
+[Typedef]
+id: BFO:0000055
+name: realizes
+comment: Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process
+property_value: IAO:0000111 "realizes" xsd:string
+property_value: IAO:0000112 "this disease course realizes this disease" xsd:string
+property_value: IAO:0000112 "this investigation realizes this investigator role" xsd:string
+property_value: IAO:0000112 "this shattering realizes this fragility" xsd:string
+property_value: IAO:0000600 "to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])" xsd:string
+property_value: isDefinedBy http://purl.obolibrary.org/obo/iao.owl
+domain: BFO:0000015 ! process
+range: BFO:0000017 ! realizable entity
+
+[Typedef]
+id: IAO:0000039
+name: has measurement unit label
+range: IAO:0000003 ! measurement unit label
+is_functional: true
+is_a: BFO:0000051 ! has part
+
+[Typedef]
+id: IAO:0000136
+name: is about
+def: "A (currently) primitive relation that relates an information artifact to an entity." []
+property_value: IAO:0000112 "This document is about information artifacts and their representations" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "7/6/2009 Alan Ruttenberg. Following discussion with Jonathan Rees, and introduction of \"mentions\" relation. Weaken the is_about relationship to be primitive. \n\nWe will try to build it back up by elaborating the various subproperties that are more precisely defined.\n\nSome currently missing phenomena that should be considered \"about\" are predications - \"The only person who knows the answer is sitting beside me\" , Allegory, Satire, and other literary forms that can be topical without explicitly mentioning the topic." xsd:string
+property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
+property_value: IAO:0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy" xsd:string
+domain: IAO:0000030 ! information content entity
+
+[Typedef]
+id: IAO:0000221
+name: is quality measurement of
+def: "m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q" []
+property_value: IAO:0000116 "8/6/2009 Alan Ruttenberg: The strategy is to be rather specific with this relationship. There are other kinds of measurements that are not of qualities, such as those that measure time. We will add these as separate properties for the moment and see about generalizing later" xsd:string
+property_value: IAO:0000116 "From the second IAO workshop [Alan Ruttenberg 8/6/2009: not completely current, though bringing in comparison is probably important]\n\nThis one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \"measuring\" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \"Magnitudes\" a proposal for which we are awaiting details.\n--\nFrom the second IAO workshop, various comments, [commented on by Alan Ruttenberg 8/6/2009]\n\nunit of measure is a quality, e.g. the length of a ruler.\n\n[We decided to hedge on what units of measure are, instead talking about measurement unit labels, which are the information content entities that are about whatever measurement units are. For IAO we need that information entity in any case. See the term measurement unit label]\n\n[Some struggling with the various subflavors of is_about. We subsequently removed the relation represents, and describes until and only when we have a better theory]\n\na represents b means either a denotes b or a describes\n\ndescribe:\na describes b means a is about b and a allows an inference of at least one quality of b\n\nWe have had a long discussion about denotes versus describes." xsd:string
+property_value: IAO:0000116 "From the second IAO workshop: An attempt at tieing the quality to the measurement datum more carefully.\n\na is a magnitude means a is a determinate quality particular inhering in some bearer b existing at a time t that can be represented/denoted by an information content entity e that has parts denoting a unit of measure, a number, and b. The unit of measure is an instance of the determinable quality." xsd:string
+property_value: IAO:0000116 "From the second meeting on IAO:\n\nAn attempt at defining assay using Barry's \"reliability\" wording\n\nassay:\nprocess and has_input some material entity\nand has_output some information content entity \nand which is such that instances of this process type reliably generate \noutputs that describes the input." xsd:string
+property_value: IAO:0000116 "This one is the one we are struggling with at the moment. The issue is what a measurement measures. On the one hand saying that it measures the quality would include it \"measuring\" the bearer = referring to the bearer in the measurement. However this makes comparisons of two different things not possible. On the other hand not having it inhere in the bearer, on the face of it, breaks the audit trail.\n\nWerner suggests a solution based on \"Magnitudes\" a proposal for which we are awaiting details." xsd:string
+property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
+domain: IAO:0000109 ! measurement datum
+range: BFO:0000019 ! quality
+is_a: IAO:0000136 ! is about
+inverse_of: IAO:0000417 ! is quality measured as
+
+[Typedef]
+id: IAO:0000417
+name: is quality measured as
+def: "inverse of the relation of is quality measurement of" []
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000116 "2009/10/19 Alan Ruttenberg. Named 'junk' relation useful in restrictions, but not a real instance relationship" xsd:string
+property_value: IAO:0000117 "Person:Alan Ruttenberg" xsd:string
+
+[Typedef]
+id: OBI:0000124
+name: is_supported_by_data
+def: "The relation between a data item and a conclusion where the conclusion is the output of a data interpreting process and the data item is used as an input to that process" []
+property_value: IAO:0000111 "is_supported_by_data" xsd:string
+property_value: IAO:0000112 "The relation between the conclusion \"Gene tpbA is involved in EPS production\" and the data items produced using two sets of organisms, one being a tpbA knockout, the other being tpbA wildtype tested in polysacharide production assays and analyzed using an ANOVA. " xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "OBI" xsd:string
+property_value: IAO:0000119 "OBI" xsd:string
+property_value: IAO:0000119 "Philly 2011 workshop" xsd:string
+domain: OBI:0001909 ! conclusion based on data
+range: IAO:0000027 ! data item
+
+[Typedef]
+id: OBI:0000293
+name: has_specified_input
+def: "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." []
+property_value: IAO:0000111 "has_specified_input" xsd:string
+property_value: IAO:0000111 "has_specified_input" xsd:string
+property_value: IAO:0000112 "see is_input_of example_of_usage" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "8/17/09: specified inputs of one process are not necessarily specified inputs of a larger process that it is part of. This is in contrast to how 'has participant' works." xsd:string
+property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
+property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
+property_value: IAO:0000117 "PERSON: Larry Hunter" xsd:string
+property_value: IAO:0000117 "PERSON: Melanie Coutot" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+domain: OBI:0000011 ! planned process
+is_a: RO:0000057 ! has participant
+inverse_of: OBI:0000295 ! is_specified_input_of
+
+[Typedef]
+id: OBI:0000295
+name: is_specified_input_of
+def: "A relation between a planned process and a continuant participating in that process that is not created during  the process. The presence of the continuant during the process is explicitly specified in the plan specification which the process realizes the concretization of." []
+property_value: IAO:0000111 "is_specified_input_of" xsd:string
+property_value: IAO:0000112 "some Autologous EBV(Epstein-Barr virus)-transformed B-LCL (B lymphocyte cell line) is_input_for instance of Chromum Release Assay described at https://wiki.cbil.upenn.edu/obiwiki/index.php/Chromium_Release_assay" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
+property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
+range: OBI:0000011 ! planned process
+is_a: RO:0000056 ! participates in
+
+[Typedef]
+id: OBI:0000299
+name: has_specified_output
+def: "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
+property_value: IAO:0000111 "has_specified_output" xsd:string
+property_value: IAO:0000111 "has_specified_output" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
+property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
+property_value: IAO:0000117 "PERSON: Larry Hunter" xsd:string
+property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+domain: OBI:0000011 ! planned process
+is_a: RO:0000057 ! has participant
+inverse_of: OBI:0000312 ! is_specified_output_of
+
+[Typedef]
+id: OBI:0000312
+name: is_specified_output_of
+def: "A relation between a planned process and a continuant participating in that process. The presence of the continuant at the end of the process is explicitly specified in the objective specification which the process realizes the concretization of." []
+property_value: IAO:0000111 "is_specified_output_of" xsd:string
+property_value: IAO:0000111 "is_specified_output_of" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
+property_value: IAO:0000117 "PERSON:Bjoern Peters" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+range: OBI:0000011 ! planned process
+is_a: RO:0000056 ! participates in
+
+[Typedef]
+id: OBI:0000417
+name: achieves_planned_objective
+def: "This relation obtains between a planned process and a objective specification when the criteria specified in the objective specification are met at the end of the planned process." []
+property_value: IAO:0000111 "achieves_planned_objective" xsd:string
+property_value: IAO:0000112 "A cell sorting process achieves the objective specification 'material separation objective'" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "BP, AR, PPPB branch" xsd:string
+property_value: IAO:0000119 "PPPB branch derived" xsd:string
+property_value: IAO:0000232 "modified according to email thread from 1/23/09 in accordince with DT and PPPB branch" xsd:string
+domain: OBI:0000011 ! planned process
+range: IAO:0000005 ! objective specification
+inverse_of: OBI:0000833 ! objective_achieved_by
+
+[Typedef]
+id: OBI:0000833
+name: objective_achieved_by
+def: "This relation obtains between an objective specification and a planned process when the criteria specified in the objective specification are met at the end of the planned process." []
+property_value: IAO:0000111 "objective_achieved_by" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "OBI" xsd:string
+property_value: IAO:0000119 "OBI" xsd:string
+domain: IAO:0000005 ! objective specification
+range: OBI:0000011 ! planned process
+
+[Typedef]
+id: OBI:0001938
+name: has value specification
+def: "A relation between an information content entity and a value specification that specifies its value." []
+property_value: IAO:0000111 "has value specification" xsd:string
+property_value: IAO:0000114 IAO:0000120
+property_value: IAO:0000117 "PERSON: James A. Overton" xsd:string
+property_value: IAO:0000119 "OBI" xsd:string
+domain: IAO:0000030 ! information content entity
+range: OBI:0001933 ! value specification
+is_a: BFO:0000051 ! has part
+
+[Typedef]
+id: RO:0000052
+name: inheres in
+def: "a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence" []
+property_value: IAO:0000111 "inheres in" xsd:string
+property_value: IAO:0000112 "this fragility inheres in this vase" xsd:string
+property_value: IAO:0000112 "this red color inheres in this apple" xsd:string
+property_value: IAO:0000116 "A dependent inheres in its bearer at all times for which the dependent exists." xsd:string
+property_value: IAO:0000118 "inheres_in" xsd:string
+property_value: RO:0001900 RO:0001901
+inverse_of: RO:0000053 ! bearer of
+
+[Typedef]
+id: RO:0000053
+name: bearer of
+def: "a relation between an independent continuant (the bearer) and a specifically dependent continuant (the dependent), in which the dependent specifically depends on the bearer for its existence" []
+property_value: IAO:0000111 "bearer of" xsd:string
+property_value: IAO:0000112 "this apple is bearer of this red color" xsd:string
+property_value: IAO:0000112 "this vase is bearer of this fragility" xsd:string
+property_value: IAO:0000116 "A bearer can have many dependents, and its dependents can exist for different periods of time, but none of its dependents can exist when the bearer does not exist." xsd:string
+property_value: IAO:0000118 "bearer_of" xsd:string
+property_value: IAO:0000118 "is bearer of" xsd:string
+property_value: RO:0001900 RO:0001901
+range: BFO:0000020 ! specifically dependent continuant
+
+[Typedef]
+id: RO:0000056
+name: participates in
+def: "a relation between a continuant and a process, in which the continuant is somehow involved in the process" []
+property_value: IAO:0000111 "participates in" xsd:string
+property_value: IAO:0000112 "this blood clot participates in this blood coagulation" xsd:string
+property_value: IAO:0000112 "this input material (or this output material) participates in this process" xsd:string
+property_value: IAO:0000112 "this investigator participates in this investigation" xsd:string
+property_value: IAO:0000118 "participates_in" xsd:string
+domain: BFO:0000002 ! continuant
+range: BFO:0000003 ! occurrent
+inverse_of: RO:0000057 ! has participant
+
+[Typedef]
+id: RO:0000057
+name: has participant
+def: "a relation between a process and a continuant, in which the continuant is somehow involved in the process" []
+property_value: http://purl.org/dc/elements/1.1/source http://www.obofoundry.org/ro/#OBO_REL:has_participant xsd:string
+property_value: IAO:0000111 "has participant" xsd:string
+property_value: IAO:0000112 "this blood coagulation has participant this blood clot" xsd:string
+property_value: IAO:0000112 "this investigation has participant this investigator" xsd:string
+property_value: IAO:0000112 "this process has participant this input material (or this output material)" xsd:string
+property_value: IAO:0000116 "Has_participant is a primitive instance-level relation between a process, a continuant, and a time at which the continuant participates in some way in the process. The relation obtains, for example, when this particular process of oxygen exchange across this particular alveolar membrane has_participant this particular sample of hemoglobin at this particular time." xsd:string
+property_value: IAO:0000118 "has_participant" xsd:string
+domain: BFO:0000003 ! occurrent
+range: BFO:0000002 ! continuant
+
+[Typedef]
+id: RO:0000058
+name: is concretized as
+def: "A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants." []
+property_value: IAO:0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)." xsd:string
+property_value: IAO:0000112 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)." xsd:string
+domain: BFO:0000031 ! generically dependent continuant
+range: BFO:0000020 ! specifically dependent continuant
+inverse_of: RO:0000059 ! concretizes
+
+[Typedef]
+id: RO:0000059
+name: concretizes
+def: "A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant." []
+property_value: IAO:0000112 "A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant)." xsd:string
+property_value: IAO:0000112 "An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process)." xsd:string
+domain: BFO:0000020 ! specifically dependent continuant
+range: BFO:0000031 ! generically dependent continuant
+
+[Typedef]
+id: RO:0000079
+name: function of
+def: "a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence" []
+property_value: IAO:0000112 "this catalysis function is a function of this enzyme" xsd:string
+property_value: IAO:0000116 "A function inheres in its bearer at all times for which the function exists, however the function need not be realized at all the times that the function exists." xsd:string
+property_value: IAO:0000118 "function_of" xsd:string
+property_value: IAO:0000118 "is function of" xsd:string
+domain: BFO:0000034 ! function
+is_a: RO:0000052 ! inheres in
+inverse_of: RO:0000085 ! has function
+
+[Typedef]
+id: RO:0000081
+name: role of
+def: "a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence" []
+property_value: IAO:0000112 "this investigator role is a role of this person" xsd:string
+property_value: IAO:0000116 "A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists." xsd:string
+property_value: IAO:0000118 "is role of" xsd:string
+property_value: IAO:0000118 "role_of" xsd:string
+is_a: RO:0000052 ! inheres in
+inverse_of: RO:0000087 ! has role
+
+[Typedef]
+id: RO:0000085
+name: has function
+def: "a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence" []
+property_value: IAO:0000112 "this enzyme has function this catalysis function (more colloquially: this enzyme has this catalysis function)" xsd:string
+property_value: IAO:0000116 "A bearer can have many functions, and its functions can exist for different periods of time, but none of its functions can exist when the bearer does not exist. A function need not be realized at all the times that the function exists." xsd:string
+property_value: IAO:0000118 "has_function" xsd:string
+domain: BFO:0000004 ! independent continuant
+range: BFO:0000034 ! function
+is_a: RO:0000053 ! bearer of
+
+[Typedef]
+id: RO:0000087
+name: has role
+def: "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence" []
+property_value: IAO:0000112 "this person has role this investigator role (more colloquially: this person has this role of investigator)" xsd:string
+property_value: IAO:0000116 "A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists." xsd:string
+property_value: IAO:0000118 "has_role" xsd:string
+domain: BFO:0000004 ! independent continuant
+range: BFO:0000023 ! role
+is_a: RO:0000053 ! bearer of
+
+[Typedef]
+id: RO:0002180
+name: has component
+def: "w 'has component' p if w 'has part' p and w is such that it can be directly disassembled into into n parts p, p2, p3, ..., pn, where these parts are of similar type." []
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "The definition of 'has component' is still under discussion. The challenge is in providing a definition that does not imply transitivity." xsd:string
+property_value: IAO:0000232 "For use in recording has_part with a cardinality constraint, because OWL does not permit cardinality constraints to be used in combination with transitive object properties. In situations where you would want to say something like 'has part exactly 5 digit, you would instead use has_component exactly 5 digit." xsd:string
+property_value: RO:0001900 RO:0001901
+property_value: seeAlso http://ontologydesignpatterns.org/wiki/Submissions:Componency
+is_a: BFO:0000051 ! has part
+
+[Typedef]
+id: RO:0002350
+name: member of
+def: "is member of is a mereological relation between a item and a collection." []
+property_value: IAO:0000112 "An organism that is a member of a population of organisms" xsd:string
+property_value: IAO:0000118 "is member of" xsd:string
+property_value: IAO:0000118 "member part of" xsd:string
+property_value: IAO:0000119 "SIO" xsd:string
+property_value: RO:0001900 RO:0001901
+is_a: BFO:0000050 ! part of
+inverse_of: RO:0002351 ! has member
+
+[Typedef]
+id: RO:0002351
+name: has member
+def: "has member is a mereological relation between a collection and an item." []
+property_value: IAO:0000119 "SIO" xsd:string
+property_value: RO:0001900 RO:0001901
+is_a: BFO:0000051 ! has part
 
