@@ -1,79 +1,45 @@
 ?cls	?def	?xrefs
-<http://purl.obolibrary.org/obo/SDDO_0100002>		
-<http://purl.obolibrary.org/obo/SDDO_0000083>		
-<http://purl.obolibrary.org/obo/SDDO_0000071>		
-<http://purl.obolibrary.org/obo/SDDO_0000091>		
-<http://purl.obolibrary.org/obo/SDDO_0000011>		
-<http://purl.obolibrary.org/obo/SDDO_0000075>		
-<http://purl.obolibrary.org/obo/SDDO_0000023>		
-<http://purl.obolibrary.org/obo/SDDO_0000035>		
-<http://purl.obolibrary.org/obo/SDDO_0000051>		
-<http://purl.obolibrary.org/obo/SDDO_0000105>		
-<http://purl.obolibrary.org/obo/SDDO_0000004>		
-<http://purl.obolibrary.org/obo/SDDO_0000109>		
-<http://purl.obolibrary.org/obo/SDDO_0000016>		
-<http://purl.obolibrary.org/obo/SDDO_0000028>		
-<http://purl.obolibrary.org/obo/SDDO_0000129>		
-<http://purl.obolibrary.org/obo/SDDO_0100007>		
-<http://purl.obolibrary.org/obo/SDDO_0100001>		
-<http://purl.obolibrary.org/obo/SDDO_0000072>		
-<http://purl.obolibrary.org/obo/SDDO_0000092>		
-<http://purl.obolibrary.org/obo/SDDO_0000076>		
-<http://purl.obolibrary.org/obo/SDDO_0000012>		
-<http://purl.obolibrary.org/obo/SDDO_0000052>		
-<http://purl.obolibrary.org/obo/SDDO_0000096>		
-<http://purl.obolibrary.org/obo/SDDO_0000101>		
-<http://purl.obolibrary.org/obo/SDDO_0000068>		
-<http://purl.obolibrary.org/obo/SDDO_0000056>		
-<http://purl.obolibrary.org/obo/SDDO_0000020>		
-<http://purl.obolibrary.org/obo/SDDO_0000088>		
-<http://purl.obolibrary.org/obo/SDDO_0000032>		
-<http://purl.obolibrary.org/obo/SDDO_0000044>		
-<http://purl.obolibrary.org/obo/SDDO_0000009>		
-<http://purl.obolibrary.org/obo/SDDO_0000005>		
-<http://purl.obolibrary.org/obo/SDDO_0000017>		
-<http://purl.obolibrary.org/obo/SDDO_0000118>		
-<http://purl.obolibrary.org/obo/SDDO_0100006>		
 <http://purl.obolibrary.org/obo/SDDO_0000061>		
+<http://purl.obolibrary.org/obo/SDDO_0000071>		
+<http://purl.obolibrary.org/obo/SDDO_0000062>	"A mission is a named activity for some purpose"@en	
 <http://purl.obolibrary.org/obo/SDDO_0100000>		
-<http://purl.obolibrary.org/obo/SDDO_0000081>		
+<http://purl.obolibrary.org/obo/SDDO_0000119>	"A mission that gather scientific data"	
 <http://purl.obolibrary.org/obo/SDDO_0000142>		
-<http://purl.obolibrary.org/obo/SDDO_0000065>		
 <http://purl.obolibrary.org/obo/SDDO_0000130>		
-<http://purl.obolibrary.org/obo/SDDO_0000001>		
 <http://purl.obolibrary.org/obo/SDDO_0000085>		
 <http://purl.obolibrary.org/obo/SDDO_0000041>		
 <http://purl.obolibrary.org/obo/SDDO_0000013>		
+<http://purl.obolibrary.org/obo/SDDO_0000051>		
 <http://purl.obolibrary.org/obo/SDDO_0000025>		
-<http://purl.obolibrary.org/obo/SDDO_0000069>		
-<http://purl.obolibrary.org/obo/SDDO_0000134>		
-<http://purl.obolibrary.org/obo/SDDO_0000089>		
-<http://purl.obolibrary.org/obo/SDDO_0000127>		
+<http://purl.obolibrary.org/obo/SDDO_0000020>	"An instrument is a physical object that can be used to collect data."	
+<http://purl.obolibrary.org/obo/SDDO_1000001>		
+<http://purl.obolibrary.org/obo/SDDO_1000005>	"A PDS 4 collection where the collection_type is \"Data\""	
 <http://purl.obolibrary.org/obo/SDDO_0000147>		
-<http://purl.obolibrary.org/obo/SDDO_0000103>		
+<http://purl.obolibrary.org/obo/SDDO_1000004>		
+<http://purl.obolibrary.org/obo/SDDO_0000005>	"A data parameter is any characteristic that can help in understanding data content. That is, a parameter is a data element that is useful, or critical, when identifying  or describing the content of a data object."@en	
 <http://purl.obolibrary.org/obo/SDDO_0000038>		
-<http://purl.obolibrary.org/obo/SDDO_0000119>		
-<http://purl.obolibrary.org/obo/SDDO_0000006>		
-<http://purl.obolibrary.org/obo/SDDO_0100009>		
+<http://purl.obolibrary.org/obo/SDDO_0000129>		
+<http://purl.obolibrary.org/obo/SDDO_10000004>	"A data product service in the GeneLab repository"	
+<http://purl.obolibrary.org/obo/SDDO_10000001>		
 <http://purl.obolibrary.org/obo/SDDO_0100005>		
+<http://purl.obolibrary.org/obo/SDDO_10000003>		
+<http://purl.obolibrary.org/obo/SDDO_0000012>	"A platform is a physical object to which an instrument is attached or in which it is contained."	
 <http://purl.obolibrary.org/obo/sddo.owl#Annotation>		
 <http://purl.obolibrary.org/obo/SDDO_0100003>		
-<http://purl.obolibrary.org/obo/SDDO_0000094>		
+<http://purl.obolibrary.org/obo/SDDO_0000072>		
 <http://purl.obolibrary.org/obo/SDDO_0000082>		
-<http://purl.obolibrary.org/obo/SDDO_0000070>		
-<http://purl.obolibrary.org/obo/SDDO_0000086>		
-<http://purl.obolibrary.org/obo/SDDO_0000034>		
+<http://purl.obolibrary.org/obo/SDDO_0000134>	"A NASA mission is a mission led or funded by NASA"@en	
+<http://purl.obolibrary.org/obo/SDDO_0000002>	"Something observable that happened at a given time and place"	
 <http://purl.obolibrary.org/obo/SDDO_0000074>		
-<http://purl.obolibrary.org/obo/SDDO_0000002>		
-<http://purl.obolibrary.org/obo/SDDO_0000062>		
-<http://purl.obolibrary.org/obo/SDDO_0000014>		
-<http://purl.obolibrary.org/obo/SDDO_0000030>		
-<http://purl.obolibrary.org/obo/SDDO_0000111>		
-<http://purl.obolibrary.org/obo/SDDO_0000019>		
-<http://purl.obolibrary.org/obo/SDDO_0000136>		
+<http://purl.obolibrary.org/obo/SDDO_0000027>	"A plan for a coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing."	
+<http://purl.obolibrary.org/obo/SDDO_1000002>		
+<http://purl.obolibrary.org/obo/SDDO_0000001>	"An assay is an investigative (analytic) procedure for qualitatively assessing or quantitatively measuring the presence, amount, or functional activity of a target entity."	
+<http://purl.obolibrary.org/obo/SDDO_0000056>		
+<http://purl.obolibrary.org/obo/SDDO_0000088>		
+<http://purl.obolibrary.org/obo/SDDO_0000032>	"Any procedure that involves testing or manipulating a sample or subject in a laboratory setting"	
+<http://purl.obolibrary.org/obo/SDDO_1000003>		
 <http://purl.obolibrary.org/obo/SDDO_0000059>		
-<http://purl.obolibrary.org/obo/SDDO_0000015>		
-<http://purl.obolibrary.org/obo/SDDO_0000027>		
-<http://purl.obolibrary.org/obo/SDDO_0000108>		
+<http://purl.obolibrary.org/obo/SDDO_0000017>		
 <http://purl.obolibrary.org/obo/SDDO_0000007>		
-<http://purl.obolibrary.org/obo/SDDO_0100008>		
+<http://purl.obolibrary.org/obo/SDDO_0000118>		
+<http://purl.obolibrary.org/obo/SDDO_10000002>		
