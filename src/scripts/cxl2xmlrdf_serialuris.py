@@ -18,12 +18,12 @@ def process_cxl(filename):
     for neighbor in root.iter('{http://cmap.ihmc.us/xml/cmap/}concept'):
     ## sometimes tags contain the namespace, if so use the next line instead of the previous
 #     for neighbor in root.iter('{http://cmap.ihmc.us/xml/cmap/}concept'):
-        print(neighbor,neighbor.attrib)
+#        print(neighbor,neighbor.attrib)
         classId = neighbor.attrib['id']
         classLabel = neighbor.attrib['label']
 
         classDict[classId] = classLabel
-        print("found a class")
+#        print("found a class")
         classDefs[classLabel] = []
 
     ## initalize data structures for properties
@@ -31,12 +31,14 @@ def process_cxl(filename):
     propDict = {}
     propDefs = []
 
-    for neighbor in root.iter('linking-phrase'):
+    for neighbor in root.iter('{http://cmap.ihmc.us/xml/cmap/}linking-phrase'):
     ## sometimes tags contain the namespace, if so use the next line instead of the previous
 #     for neighbor in root.iter('{http://cmap.ihmc.us/xml/cmap/}linking-phrase'):
 
         propId = neighbor.attrib['id']
         propLabel = neighbor.attrib['label']
+        if propLabel == 'is a' or propLabel == 'is-a' or propLabel == 'are':
+            propLabel = 'isA'
 
         propDict[propId] = propLabel
         props.add(propLabel)
@@ -45,7 +47,7 @@ def process_cxl(filename):
 
     triples = set()
   
-    for neighbor in root.iter('connection'):
+    for neighbor in root.iter('{http://cmap.ihmc.us/xml/cmap/}connection'):
     ## sometimes tags contain the namespace, if so use the next line instead of the previous
 #     for neighbor in root.iter('{http://cmap.ihmc.us/xml/cmap/}connection'):
 
@@ -58,7 +60,7 @@ def process_cxl(filename):
             propLabel = propDict[toId]
             toLabel = ""
 
-            for neighbor1 in root.iter('connection'):
+            for neighbor1 in root.iter('{http://cmap.ihmc.us/xml/cmap/}connection'):
             ## sometimes tags contain the namespace, if so use the next line instead of the previous
 #             for neighbor1 in root.iter('{http://cmap.ihmc.us/xml/cmap/}connection'):
 
@@ -82,7 +84,7 @@ def process_cxl(filename):
             propLabel = propDict[fromId]
             toLabel = classDict[toId]
 
-            for neighbor1 in root.iter('connection'):
+            for neighbor1 in root.iter('{http://cmap.ihmc.us/xml/cmap/}connection'):
             ## sometimes tags contain the namespace, if so use the next line instead of the previous
 #             for neighbor1 in root.iter('{http://cmap.ihmc.us/xml/cmap/}connection'):
 
@@ -135,13 +137,13 @@ if __name__ == '__main__':
     ## assign namespace
         if ':' in propLabel:
             cleanLabel = propLabel[propLabel.find(':')+1:]
-            if 'spase' in cleanLabel:
+            if 'spase' in propLabel:
                 entitynamespace = 'https://spase-group.org/data/model/'
                 entity_uri_prefix = "SPASE_"
-            elif 'genelab' in cleanLabel:
+            elif 'genelab' in propLabel:
                 entitynamespace = 'https://genelab.nasa.gov/schema/'
                 entity_uri_prefix = "GENELAB_"
-            elif 'lsda' in cleanLabel:
+            elif 'lsda' in propLabel:
                 entitynamespace = 'https://lsda.jsc.nasa.gov/schema/'
                 entity_uri_prefix = "LSDA_"
         uri = entitynamespace+"{:07}".format(uri_prefixes[entity_uri_prefix])
@@ -180,22 +182,40 @@ if __name__ == '__main__':
         ## assign namespace
         if ':' in cleanLabel:
             cleanLabel = cleanLabel[cleanLabel.find(':')+1:]
-            if 'spase' in cleanLabel:
+            if 'spase' in classLabel:
                 entitynamespace = 'https://spase-group.org/data/model/'
                 entity_uri_prefix = "SPASE_"
-            elif 'genelab' in cleanLabel:
+            elif 'genelab' in classLabel:
                 entitynamespace = 'https://genelab.nasa.gov/schema/'
                 entity_uri_prefix = "GENELAB_"
-            elif 'lsda' in cleanLabel:
+            elif 'lsda' in classLabel:
                 entitynamespace = 'https://lsda.jsc.nasa.gov/schema/'
                 entity_uri_prefix = "LSDA_"
                 
-        uri = entitynamespace+"{:07}".format(uri_prefixes[entity_uri_prefix])
+        uri = entitynamespace+entity_uri_prefix+"{:07}".format(uri_prefixes[entity_uri_prefix])
         uri_prefixes[entity_uri_prefix] += 1
 
         entities[classLabel] = uri
+        print(classLabel)
 
+    for classLabel in classes.keys():
+        
+                ## remove spaces, commas and periods from label
+        cleanLabel = classLabel.replace(' ','').replace(',','').replace('.','')
 
+        ### SPECIAL CHARS ###
+        if '&' in cleanLabel:
+            cleanLabel = cleanLabel.replace('&','&amp;')
+
+        cleanLabel = cleanLabel.replace("'",'')
+        cleanLabel = cleanLabel.replace('"','')
+        cleanLabel = cleanLabel.replace('/','')
+        cleanLabel = cleanLabel.replace('\\','')
+
+        if '????' in cleanLabel:
+            cleanLabel = cleanLabel.replace('????','unnamedConcept')
+            
+        cleanLabel = cleanLabel[cleanLabel.find(':')+1:]
         xml += '<owl:Class rdf:about="'+URIs[classLabel]+'">'
 #         xml += '<owl:Class rdf:about="'+namespace+classLabel+'">'
         xml += '<rdfs:label xml:lang="en">'+cleanLabel+'</rdfs:label>'
@@ -209,9 +229,9 @@ if __name__ == '__main__':
 
                 objectLabel = propRel[1]
                 if propLabel == 'isA':
-                    xml += '<rdfs:subClassOf rdf:resource="'+namespace+URIs[objectLabel]+'"/>'
+                    xml += '<rdfs:subClassOf rdf:resource="'+URIs[objectLabel]+'"/>'
                 else:
-                    xml += '<sddo:'+URIs[propLabel]+' rdf:resource="'+namespace+URIs[objectLabel]+'"/>'
+                    xml += '<sddo:'+propLabel+' rdf:resource="'+URIs[objectLabel]+'"/>'
 #                 xml += '<sddo:'+propLabel+' rdf:resource="'+namespace+objectLabel+'"/>'
 
     
@@ -221,18 +241,12 @@ if __name__ == '__main__':
 
     for prop in properties:
 
-        cleanProp = prop
-
-        ### NO SPACES IN PROP NAME ###
-        if cleanProp == 'is a' or cleanProp == 'is-a':
-            cleanProp = 'isA'
-
     #     xml += '<rdf:Description rdf:about="'+namespace+prop+'"><rdfs:label xml:lang="en-US">'+prop+'</rdfs:label>'
 
         ## owl-specific    
-        xml += '<owl:ObjectProperty rdf:about="'+namespace+URIs[prop]+'">'
+        xml += '<owl:ObjectProperty rdf:about="'+URIs[prop]+'">'
 #         xml += '<owl:AnnotationProperty rdf:about="'+namespace+prop+'">'
-        xml += '<rdfs:label xml:lang="en-US">'+cleanProp+'</rdfs:label>'
+        xml += '<rdfs:label xml:lang="en-US">'+prop+'</rdfs:label>'
 
         ## owl-specific
         xml += '</owl:ObjectProperty>'        
