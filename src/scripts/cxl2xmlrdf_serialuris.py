@@ -106,7 +106,8 @@ def process_cxl(filename):
 
 
 if __name__ == '__main__':
-    filename = "LSDA-20220110DCB.xml"
+#    filename = "LSDA-20220110DCB.xml"
+    filename = 'SMD_ConceptualIMVersion1-20211221_DCB.xml'
     classes, properties = process_cxl("./input/"+filename)
     
     ## Initialize serialized URIs
@@ -231,7 +232,7 @@ if __name__ == '__main__':
                 if propLabel == 'isA':
                     xml += '<rdfs:subClassOf rdf:resource="'+URIs[objectLabel]+'"/>'
                 else:
-                    xml += '<sddo:'+propLabel+' rdf:resource="'+URIs[objectLabel]+'"/>'
+                    xml += '<rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="' + URIs[propLabel] + '"/><owl:someValuesFrom rdf:resource="'+ URIs[objectLabel] + '"/></owl:Restriction></rdfs:subClassOf>'
 #                 xml += '<sddo:'+propLabel+' rdf:resource="'+namespace+objectLabel+'"/>'
 
     
@@ -246,7 +247,7 @@ if __name__ == '__main__':
         ## owl-specific    
         xml += '<owl:ObjectProperty rdf:about="'+URIs[prop]+'">'
 #         xml += '<owl:AnnotationProperty rdf:about="'+namespace+prop+'">'
-        xml += '<rdfs:label xml:lang="en-US">'+prop+'</rdfs:label>'
+        xml += '<rdfs:label xml:lang="en">'+prop+'</rdfs:label>'
 
         ## owl-specific
         xml += '</owl:ObjectProperty>'        
