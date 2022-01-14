@@ -1,44 +1,79 @@
 ?cls	?pred	?val	?synType
-<http://purl.obolibrary.org/obo/SDDO_0100000>	<http://www.w3.org/2000/01/rdf-schema#label>	"experiment apparatus"@en	
-<http://purl.obolibrary.org/obo/SDDO_0100005>	<http://www.w3.org/2000/01/rdf-schema#label>	"author"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000129>	<http://www.w3.org/2000/01/rdf-schema#label>	"project"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000071>	<http://www.w3.org/2000/01/rdf-schema#label>	"program"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000017>	<http://www.w3.org/2000/01/rdf-schema#label>	"data product"@en	
-<http://purl.obolibrary.org/obo/SDDO_10000003>	<http://www.w3.org/2000/01/rdf-schema#label>	"specimen"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000074>	<http://www.w3.org/2000/01/rdf-schema#label>	"observation"@en	
-<http://purl.obolibrary.org/obo/SDDO_1000002>	<http://www.w3.org/2000/01/rdf-schema#label>	"spase:Catalog"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000147>	<http://www.w3.org/2000/01/rdf-schema#label>	"research study"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000088>	<http://www.w3.org/2000/01/rdf-schema#label>	"research investigation"@en	
-<http://purl.obolibrary.org/obo/SDDO_10000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"study"@en	
-<http://purl.obolibrary.org/obo/SDDO_10000002>	<http://www.w3.org/2000/01/rdf-schema#label>	"organism"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000142>	<http://www.w3.org/2000/01/rdf-schema#label>	"phenomenon"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000062>	<http://www.w3.org/2000/01/rdf-schema#label>	"mission"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000051>	<http://www.w3.org/2000/01/rdf-schema#label>	"organization"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000032>	<http://www.w3.org/2000/01/rdf-schema#label>	"laboratory procedure"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000056>	<http://www.w3.org/2000/01/rdf-schema#label>	"deployment"@en	
-<http://purl.obolibrary.org/obo/SDDO_1000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"pds:Data_Set_PDS3"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000119>	<http://www.w3.org/2000/01/rdf-schema#label>	"research mission"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000061>	<http://www.w3.org/2000/01/rdf-schema#label>	"discovery interface"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000025>	<http://www.w3.org/2000/01/rdf-schema#label>	"person"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000130>	<http://www.w3.org/2000/01/rdf-schema#label>	"engineering mission"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000007>	<http://www.w3.org/2000/01/rdf-schema#label>	"metadata product"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000001>	<http://www.w3.org/2000/01/rdf-schema#label>	"assay"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000082>	<http://www.w3.org/2000/01/rdf-schema#label>	"campaign"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000085>	<http://www.w3.org/2000/01/rdf-schema#label>	"information product"@en	
-<http://purl.obolibrary.org/obo/SDDO_1000001>	<http://www.w3.org/2000/01/rdf-schema#label>	"spase:NumericalData"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000020>	<http://www.w3.org/2000/01/rdf-schema#label>	"instrument"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000072>	<http://www.w3.org/2000/01/rdf-schema#label>	"data product or service"@en	
-<http://purl.obolibrary.org/obo/SDDO_10000001>	<http://www.w3.org/2000/01/rdf-schema#label>	"investigator"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000005>	<http://www.w3.org/2000/01/rdf-schema#label>	"data parameter"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000012>	<http://www.w3.org/2000/01/rdf-schema#label>	"platform"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000002>	<http://www.w3.org/2000/01/rdf-schema#label>	"event"@en	
-<http://purl.obolibrary.org/obo/SDDO_1000005>	<http://www.w3.org/2000/01/rdf-schema#label>	"pds:Collection"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000027>	<http://www.w3.org/2000/01/rdf-schema#label>	"experiment"@en	
-<http://purl.obolibrary.org/obo/SDDO_0100003>	<http://www.w3.org/2000/01/rdf-schema#label>	"facility"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000134>	<http://www.w3.org/2000/01/rdf-schema#label>	"NASA mission"@en	
-<http://purl.obolibrary.org/obo/SDDO_1000003>	<http://www.w3.org/2000/01/rdf-schema#label>	"spase:DisplayData"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000041>	<http://www.w3.org/2000/01/rdf-schema#label>	"feature"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000059>	<http://www.w3.org/2000/01/rdf-schema#label>	"product service"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000118>	<http://www.w3.org/2000/01/rdf-schema#label>	"mutable necessary evil"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000013>	<http://www.w3.org/2000/01/rdf-schema#label>	"information product or service"@en	
-<http://purl.obolibrary.org/obo/SDDO_0000038>	<http://www.w3.org/2000/01/rdf-schema#label>	"access interface"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000056>	<http://www.w3.org/2000/01/rdf-schema#label>	"author"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000069>	<http://www.w3.org/2000/01/rdf-schema#label>	"study"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000045>	<http://www.w3.org/2000/01/rdf-schema#label>	"campaign"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000108>	<http://www.w3.org/2000/01/rdf-schema#label>	"locationDiscoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000115>	<http://www.w3.org/2000/01/rdf-schema#label>	"platformDiscoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000051>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataProduct"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000094>	<http://www.w3.org/2000/01/rdf-schema#label>	"experiment"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000099>	<http://www.w3.org/2000/01/rdf-schema#label>	"phenomenon"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000063>	<http://www.w3.org/2000/01/rdf-schema#label>	"researchStudy"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000070>	<http://www.w3.org/2000/01/rdf-schema#label>	"definedClasses"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000110>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataParameter"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000083>	<http://www.w3.org/2000/01/rdf-schema#label>	"engineeringMission"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000075>	<http://www.w3.org/2000/01/rdf-schema#label>	"accessInterface"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000059>	<http://www.w3.org/2000/01/rdf-schema#label>	"spaceAgency"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000088>	<http://www.w3.org/2000/01/rdf-schema#label>	"mission"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000102>	<http://www.w3.org/2000/01/rdf-schema#label>	"discoveryInterface"@en	
+<http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003>	<http://www.w3.org/2000/01/rdf-schema#label>	"spase:Catalog"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000067>	<http://www.w3.org/2000/01/rdf-schema#label>	"sciencePlatform"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000107>	<http://www.w3.org/2000/01/rdf-schema#label>	"program"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000114>	<http://www.w3.org/2000/01/rdf-schema#label>	"observableDiscoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000097>	<http://www.w3.org/2000/01/rdf-schema#label>	"spaceTimeBoundingDiscoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000079>	<http://www.w3.org/2000/01/rdf-schema#label>	"informationProduct"@en	
+<http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002>	<http://www.w3.org/2000/01/rdf-schema#label>	"spase:DisplayData"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000062>	<http://www.w3.org/2000/01/rdf-schema#label>	"discoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000092>	<http://www.w3.org/2000/01/rdf-schema#label>	"instrument"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000081>	<http://www.w3.org/2000/01/rdf-schema#label>	"deployment"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000086>	<http://www.w3.org/2000/01/rdf-schema#label>	"funder"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000060>	<http://www.w3.org/2000/01/rdf-schema#label>	"platform"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000100>	<http://www.w3.org/2000/01/rdf-schema#label>	"observation"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000047>	<http://www.w3.org/2000/01/rdf-schema#label>	"assay"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000076>	<http://www.w3.org/2000/01/rdf-schema#label>	"informationDiscoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000105>	<http://www.w3.org/2000/01/rdf-schema#label>	"investigator"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000112>	<http://www.w3.org/2000/01/rdf-schema#label>	"researchMission"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000055>	<http://www.w3.org/2000/01/rdf-schema#label>	"mutableNecessaryEvil"@en	
+<http://purl.obolibrary.org/obo/SDDO_/SDDO_1000000>	<http://www.w3.org/2000/01/rdf-schema#label>	"pds_Collection"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000044>	<http://www.w3.org/2000/01/rdf-schema#label>	"event"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000091>	<http://www.w3.org/2000/01/rdf-schema#label>	"NASAMission"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000080>	<http://www.w3.org/2000/01/rdf-schema#label>	"experimentApparatus"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000050>	<http://www.w3.org/2000/01/rdf-schema#label>	"selectionParameter"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000098>	<http://www.w3.org/2000/01/rdf-schema#label>	"facility"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000074>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataDiscoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000087>	<http://www.w3.org/2000/01/rdf-schema#label>	"instrumentOperatingMode"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000061>	<http://www.w3.org/2000/01/rdf-schema#label>	"applicationDiscoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000053>	<http://www.w3.org/2000/01/rdf-schema#label>	"legend"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000066>	<http://www.w3.org/2000/01/rdf-schema#label>	"productService"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000073>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataSelectionParameter"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000106>	<http://www.w3.org/2000/01/rdf-schema#label>	"OperationDiscoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000113>	<http://www.w3.org/2000/01/rdf-schema#label>	"firmware"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000096>	<http://www.w3.org/2000/01/rdf-schema#label>	"feature"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000078>	<http://www.w3.org/2000/01/rdf-schema#label>	"specimen"@en	
+<http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001>	<http://www.w3.org/2000/01/rdf-schema#label>	"pds_Data_Set_PDS3"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000085>	<http://www.w3.org/2000/01/rdf-schema#label>	"informationProductService"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000057>	<http://www.w3.org/2000/01/rdf-schema#label>	"instrumentDiscoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000046>	<http://www.w3.org/2000/01/rdf-schema#label>	"toolDiscoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000109>	<http://www.w3.org/2000/01/rdf-schema#label>	"document"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000095>	<http://www.w3.org/2000/01/rdf-schema#label>	"metadataProduct"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000064>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataProductDiscoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000071>	<http://www.w3.org/2000/01/rdf-schema#label>	"factor"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000111>	<http://www.w3.org/2000/01/rdf-schema#label>	"sampleDiscoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000104>	<http://www.w3.org/2000/01/rdf-schema#label>	"experimentDiscoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000084>	<http://www.w3.org/2000/01/rdf-schema#label>	"software"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000054>	<http://www.w3.org/2000/01/rdf-schema#label>	"hardware"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000089>	<http://www.w3.org/2000/01/rdf-schema#label>	"laboratoryProcedure"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000103>	<http://www.w3.org/2000/01/rdf-schema#label>	"organization"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000043>	<http://www.w3.org/2000/01/rdf-schema#label>	"project"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000090>	<http://www.w3.org/2000/01/rdf-schema#label>	"person"@en	
+<http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"spase:NumericalData"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000068>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataProperties"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000049>	<http://www.w3.org/2000/01/rdf-schema#label>	"needsDiscussion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000058>	<http://www.w3.org/2000/01/rdf-schema#label>	"instrumentOperatingModeDiscoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000093>	<http://www.w3.org/2000/01/rdf-schema#label>	"missionDiscoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000082>	<http://www.w3.org/2000/01/rdf-schema#label>	"informationSelectionParameter"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000052>	<http://www.w3.org/2000/01/rdf-schema#label>	"engineeringPlatform"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000065>	<http://www.w3.org/2000/01/rdf-schema#label>	"organism"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000072>	<http://www.w3.org/2000/01/rdf-schema#label>	"modelDiscoveryCriterion"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000101>	<http://www.w3.org/2000/01/rdf-schema#label>	"photoGallery"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000048>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataProductOrService"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000077>	<http://www.w3.org/2000/01/rdf-schema#label>	"researchInvestigation"@en	
