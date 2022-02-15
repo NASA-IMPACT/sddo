@@ -1,5 +1,8 @@
 import xml.etree.ElementTree as ET
-
+import owlready2
+from sys import argv
+from getopt import getopt,GetoptError
+from owlready2 import get_ontology
 ## parse cxl and extract classes and properties
 def process_cxl(filename):
     
@@ -104,10 +107,40 @@ def process_cxl(filename):
             
     return classDefs,propDefs
 
+def regNameSpaces(baseNamespace):
+    ET.register_namespace('', baseNamespace)
+    ET.register_namespace('owl', 'http://www.w3.org/2002/07/owl#')
+    ET.register_namespace('rdfs', 'http://www.w3.org/2000/01/rdf-schema#')
+    ET.register_namespace('rdf', 'http://www.w3.org/1999/02/22-rdf-syntax-ns#')
+    ET.register_namespace('obo', 'http://purl.obolibrary.org/obo/')
+    ET.register_namespace('xml', 'http://www.w3.org/XML/1998/namespace')
+    ET.register_namespace('xsd', 'http://www.w3.org/2001/XMLSchema#')
+    ET.register_namespace('oboInOwl', 'http://www.geneontology.org/formats/oboInOwl#')
+    ET.register_namespace('sddo', 'http://purl.obolibrary.org/obo/sddo.owl#')
+        
+def getOntologies():
+    sddoOnto = get_ontology('./sddo.owl').load()
 
-if __name__ == '__main__':
+
+def main(argv):
 #    filename = "LSDA-20220110DCB.xml"
-    filename = 'SMD_ConceptualIMVersion1-20211221_DCB.xml'
+    
+    try:
+        opts, args = getopt(argv,"hi:n:",["namespace=","input="])
+    except GetoptError:
+        print("cxl2xmlrdf_serialuris.py -n <namespace IRI> -i <inputCXL>")
+        exit(2)
+    for opt, arg in opts:
+        if opt == '-h':
+            print('cxl2xmlrdf_serialuris.py -n <namespace IRI>')
+            exit()
+        elif opt in ("-n", "--namespace"):
+            baseNamespace = arg
+        elif opt in ("-i", "--input"):
+            filename = arg
+                
+    regNameSpaces(baseNamespace)
+    getOntologies()
     classes, properties = process_cxl("./input/"+filename)
     
     ## Initialize serialized URIs
@@ -138,16 +171,22 @@ if __name__ == '__main__':
     ## assign namespace
         if ':' in propLabel:
             cleanLabel = propLabel[propLabel.find(':')+1:]
+            if propLabel.find(':') > -1:
+                propSpace = propLabel[0:propLabel.find(':')]
+#            else:
+#                propSpace = 
             if 'spase' in propLabel:
                 entitynamespace = 'https://spase-group.org/data/model/'
                 entity_uri_prefix = "SPASE_"
+ #           elif 'sddo:' in propLabel:
+                
             elif 'genelab' in propLabel:
                 entitynamespace = 'https://genelab.nasa.gov/schema/'
                 entity_uri_prefix = "GENELAB_"
             elif 'lsda' in propLabel:
                 entitynamespace = 'https://lsda.jsc.nasa.gov/schema/'
                 entity_uri_prefix = "LSDA_"
-        uri = entitynamespace+"{:07}".format(uri_prefixes[entity_uri_prefix])
+        uri = entitynamespace+entity_uri_prefix+"{:07}".format(uri_prefixes[entity_uri_prefix])
         uri_prefixes[entity_uri_prefix] += 1
 
         entities[propLabel] = uri
@@ -259,7 +298,10 @@ if __name__ == '__main__':
     newTree = ET.ElementTree(ET.fromstring(xml))
     ET.indent(newTree, "     ", 0)
    
-    newTree.write('./'+filename.split('.')[0]+'_XMLRDF.xml', "UTF-8", True, 'http://purl.obolibrary.org/obo/sddo.owl#')
+    newTree.write('./'+filename.split('.')[0]+'_XMLRDF_testing.xml', "UTF-8", True, 'http://purl.obolibrary.org/obo/sddo.owl#')
+    
+if __name__ == "__main__":
+    main(argv[1:]) 
     
     ## output extracted classes,triples to XMLRDF
 #    with open('./'+filename.split('.')[0]+'_XMLRDF.xml','w') as xmlfile:
