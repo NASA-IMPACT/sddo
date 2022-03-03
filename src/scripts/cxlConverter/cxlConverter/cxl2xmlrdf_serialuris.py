@@ -3,9 +3,10 @@ import owlready2
 from sys import argv
 from getopt import getopt,GetoptError
 from owlready2 import get_ontology
+from _datetime import datetime
 ## parse cxl and extract classes and properties
 def process_cxl(filename):
-    
+
     ## read and parse cxl (xml) file into a tree
     print("reading file: " + filename)
     tree = ET.parse(filename)
@@ -13,7 +14,7 @@ def process_cxl(filename):
     ## print concept nodes and their contents
     for concept in root:
         print(concept,concept.attrib)
-        
+
     ## initialize dicts for classes
     classDict = {}
     classDefs = {}
@@ -45,11 +46,11 @@ def process_cxl(filename):
 
         propDict[propId] = propLabel
         props.add(propLabel)
-        
+
         propDefs.append(propLabel)
 
     triples = set()
-  
+
     for neighbor in root.iter('{http://cmap.ihmc.us/xml/cmap/}connection'):
     ## sometimes tags contain the namespace, if so use the next line instead of the previous
 #     for neighbor in root.iter('{http://cmap.ihmc.us/xml/cmap/}connection'):
@@ -74,7 +75,7 @@ def process_cxl(filename):
                     toLabel = classDict[toId1]
 
             triples.add((fromLabel,propLabel,toLabel))
-            
+
             if fromLabel not in classDefs.keys():
                 classDefs[fromLabel] = [(propLabel,toLabel)]
             else:
@@ -98,13 +99,13 @@ def process_cxl(filename):
                     fromLabel = classDict[fromId1]
 
             triples.add((fromLabel,propLabel,toLabel))
-        
+
             if fromLabel not in classDefs.keys():
                 classDefs[fromLabel] = [(propLabel,toLabel)]
             else:
                 if (propLabel,toLabel) not in classDefs[fromLabel]:
                     classDefs[fromLabel].append((propLabel,toLabel))
-            
+
     return classDefs,propDefs
 
 def regNameSpaces(baseNamespace):
@@ -117,14 +118,14 @@ def regNameSpaces(baseNamespace):
     ET.register_namespace('xsd', 'http://www.w3.org/2001/XMLSchema#')
     ET.register_namespace('oboInOwl', 'http://www.geneontology.org/formats/oboInOwl#')
     ET.register_namespace('sddo', 'http://purl.obolibrary.org/obo/sddo.owl#')
-        
+
 def getOntologies():
     sddoOnto = get_ontology('./sddo.owl').load()
 
 
 def main(argv):
 #    filename = "LSDA-20220110DCB.xml"
-    
+
     try:
         opts, args = getopt(argv,"hi:n:",["namespace=","input="])
     except GetoptError:
@@ -138,11 +139,11 @@ def main(argv):
             baseNamespace = arg
         elif opt in ("-i", "--input"):
             filename = arg
-                
+
     regNameSpaces(baseNamespace)
     getOntologies()
     classes, properties = process_cxl("./input/"+filename)
-    
+
     ## Initialize serialized URIs
     ## predefine entity URIs
     uri_pref = "SDDO_"
@@ -165,7 +166,7 @@ def main(argv):
 
         entitynamespace = namespace
         entity_uri_prefix = uri_pref
-        
+
         if propLabel == 'is a' or propLabel == 'is-a' or propLabel == 'are':
             propLabel = 'isA'
     ## assign namespace
@@ -174,12 +175,12 @@ def main(argv):
             if propLabel.find(':') > -1:
                 propSpace = propLabel[0:propLabel.find(':')]
 #            else:
-#                propSpace = 
+#                propSpace =
             if 'spase' in propLabel:
                 entitynamespace = 'https://spase-group.org/data/model/'
                 entity_uri_prefix = "SPASE_"
  #           elif 'sddo:' in propLabel:
-                
+
             elif 'genelab' in propLabel:
                 entitynamespace = 'https://genelab.nasa.gov/schema/'
                 entity_uri_prefix = "GENELAB_"
@@ -203,7 +204,7 @@ def main(argv):
 
         entitynamespace = namespace
         entity_uri_prefix = uri_pref
-        
+
         ## remove spaces, commas and periods from label
         cleanLabel = classLabel.replace(' ','').replace(',','').replace('.','')
 
@@ -218,7 +219,7 @@ def main(argv):
 
         if '????' in cleanLabel:
             cleanLabel = cleanLabel.replace('????','unnamedConcept')
-        
+
         ## assign namespace
         if ':' in cleanLabel:
             cleanLabel = cleanLabel[cleanLabel.find(':')+1:]
@@ -231,7 +232,7 @@ def main(argv):
             elif 'lsda' in classLabel:
                 entitynamespace = 'https://lsda.jsc.nasa.gov/schema/'
                 entity_uri_prefix = "LSDA_"
-                
+
         uri = entitynamespace+entity_uri_prefix+"{:07}".format(uri_prefixes[entity_uri_prefix])
         uri_prefixes[entity_uri_prefix] += 1
 
@@ -239,7 +240,7 @@ def main(argv):
         print(classLabel)
 
     for classLabel in classes.keys():
-        
+
                 ## remove spaces, commas and periods from label
         cleanLabel = classLabel.replace(' ','').replace(',','').replace('.','')
 
@@ -254,7 +255,7 @@ def main(argv):
 
         if '????' in cleanLabel:
             cleanLabel = cleanLabel.replace('????','unnamedConcept')
-            
+
         cleanLabel = cleanLabel[cleanLabel.find(':')+1:]
         xml += '<owl:Class rdf:about="'+URIs[classLabel]+'">'
 #         xml += '<owl:Class rdf:about="'+namespace+classLabel+'">'
@@ -274,7 +275,7 @@ def main(argv):
                     xml += '<rdfs:subClassOf><owl:Restriction><owl:onProperty rdf:resource="' + URIs[propLabel] + '"/><owl:someValuesFrom rdf:resource="'+ URIs[objectLabel] + '"/></owl:Restriction></rdfs:subClassOf>'
 #                 xml += '<sddo:'+propLabel+' rdf:resource="'+namespace+objectLabel+'"/>'
 
-    
+
         ## owl-specific
         xml += '</owl:Class>'
 #         xml += '</rdf:Description>'
@@ -283,26 +284,26 @@ def main(argv):
 
     #     xml += '<rdf:Description rdf:about="'+namespace+prop+'"><rdfs:label xml:lang="en-US">'+prop+'</rdfs:label>'
 
-        ## owl-specific    
+        ## owl-specific
         xml += '<owl:ObjectProperty rdf:about="'+URIs[prop]+'">'
 #         xml += '<owl:AnnotationProperty rdf:about="'+namespace+prop+'">'
         xml += '<rdfs:label xml:lang="en">'+prop+'</rdfs:label>'
 
         ## owl-specific
-        xml += '</owl:ObjectProperty>'        
+        xml += '</owl:ObjectProperty>'
     #     xml += '</rdf:Description>'
 
-     
+
     xml += "</rdf:RDF>"
-    
+
     newTree = ET.ElementTree(ET.fromstring(xml))
     ET.indent(newTree, "     ", 0)
-   
-    newTree.write('./'+filename.split('.')[0]+'_XMLRDF_testing.xml', "UTF-8", True, 'http://purl.obolibrary.org/obo/sddo.owl#')
-    
+
+    newTree.write('./'+filename.split('.')[0]+'_XMLRDF' + datetime.now().strftime("%d_%m_%Y_%H_%M_%S") + '.xml', "UTF-8", True, 'http://purl.obolibrary.org/obo/sddo.owl#')
+
 if __name__ == "__main__":
-    main(argv[1:]) 
-    
+    main(argv[1:])
+
     ## output extracted classes,triples to XMLRDF
 #    with open('./'+filename.split('.')[0]+'_XMLRDF.xml','w') as xmlfile:
 #       xmlfile.write(xml)

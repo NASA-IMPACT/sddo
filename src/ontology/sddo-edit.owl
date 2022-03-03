@@ -476,6 +476,20 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000051 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000051">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000088"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000094"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:label xml:lang="en">dataProduct</rdfs:label>
     </owl:Class>
     
@@ -551,6 +565,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000060 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000054"/>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spacecraft, a person, a ship, a piece of laboratory equipment</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A platform is a physical object to which an instrument is attached or in which it is contained.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">platform</rdfs:label>
@@ -595,7 +610,9 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000065 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000065">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000099"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
+        <obo:IAO_0000112>&quot;mouse&quot;, &quot;Mus musculus&quot;, &quot;rodent&quot;, &quot;mammal&quot;, &quot;microorganism&quot;, &quot;fungi&quot;</obo:IAO_0000112>
+        <obo:IAO_0000115>The quality of a living subject that indicates the taxonomical grouping of the subject.  This grouping can be at any level in a hierachy of organism classification, or a collection of levels, and can be using scientific language or colloquial language.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rduerr</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-30T21:34:56.970241Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">organism</rdfs:label>
@@ -772,6 +789,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000080 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000080">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000054"/>
         <rdfs:label xml:lang="en">experimentApparatus</rdfs:label>
     </owl:Class>
     
@@ -938,7 +956,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000018"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000060"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mission is a named activity for some purpose</obo:IAO_0000115>
@@ -1000,6 +1018,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000092 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000092">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000054"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000039"/>
@@ -1026,6 +1045,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000094 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000094">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000008"/>
@@ -1085,14 +1105,34 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000096">
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000035"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000100"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000094"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000100"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000041"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000100"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000094"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000100"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:label xml:lang="en">feature</rdfs:label>

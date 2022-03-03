@@ -1,0 +1,45 @@
+ID	A obo:IAO_0000111	A obo:IAO_0000112	A obo:IAO_0000113	A obo:IAO_0000114	A obo:IAO_0000115	A obo:IAO_0000116	A obo:IAO_0000117	A obo:IAO_0000118	A obo:IAO_0000119	dc:creator	dc:date	dc:description	dc:source	dc:title	oboInOwl:created_by	oboInOwl:creation_date	skos:definition
+ID	A obo:IAO_0000111	A obo:IAO_0000112	A obo:IAO_0000113	A obo:IAO_0000114	A obo:IAO_0000115	A obo:IAO_0000116	A obo:IAO_0000117	A obo:IAO_0000118	A obo:IAO_0000119	A dc:creator	A dc:date	A dc:description	A dc:source	A dc:title	A oboInOwl:created_by	A oboInOwl:creation_date	A skos:definition
+obo:SDDO_3000047					"An assay is an investigative (analytic) procedure for qualitatively assessing or quantitatively measuring the presence, amount, or functional activity of a target entity."												
+obo:SDDO_3000044					Something observable that happened at a given time and place				Adapted from http://purl.obolibrary.org/obo/NCIT_C25499								
+obo:SDDO_3000110		"The meaning of a column within a spreadsheet (e.g., identifier or height); the meaning of each pixel in an image (e.g., surface temperature)|another test example"			"A data parameter is any characteristic that can help in understanding data content. That is, a parameter is a data element that is useful, or critical, when identifying  or describing the content of a data object."												
+obo:SDDO_3000095						"While agreed that metadata is just data about data and so is really an unneeded term, we recognize that the term metadata is often applied to information about data no matter its form.  In many cases, a metadata product is available for access, even if the data is not.  Thus a Metadata Product Service is any information product or service that returns metadata about science data."											
+obo:SDDO_3000060		"A spacecraft, a person, a ship, a piece of laboratory equipment"			A platform is a physical object to which an instrument is attached or in which it is contained.												
+obo:SDDO_3000085																	
+obo:SDDO_3000051																	
+obo:SDDO_3000092		"A camera, MODIS, a survey instrument (e.g., google form)"			An instrument is a physical object that can be used to collect data.				Adapted from pds:Instrument								
+obo:SDDO_3000090																	
+obo:SDDO_3000094					"A plan for a coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing."	"Added the phrase ""plan for a"" to the front of the definition per Dan's request"			adapted from http://purl.obolibrary.org/obo/NCIT_C42790								
+obo:SDDO_3000089					Any procedure that involves testing or manipulating a sample or subject in a laboratory setting				A broadened version of http://purl.obolibrary.org/obo/NCIT_C25294								
+obo:SDDO_3000075																	
+obo:SDDO_3000096																	
+obo:SDDO_3000103																	
+obo:SDDO_3000081																	
+obo:SDDO_3000066															Peter Fox		
+obo:SDDO_3000102																	
+obo:SDDO_3000088					A mission is a named activity for some purpose				Discussion by SDDO project team								
+obo:SDDO_3000107																	
+obo:SDDO_3000048						"It is generally agreed that data is in the eye of the beholder; but, for the purposes of this project the terms data and data product are limited to traditional mostly numeric science data products that NASA holds and actually calls data, data sets or data products. Thus a DataProductService is any product or service that returns bulk science data."											
+obo:SDDO_3000100																	
+obo:SDDO_3000045																	
+obo:SDDO_3000079																	
+obo:SDDO_3000077																	
+obo:SDDO_3000055																	
+obo:SDDO_3000112					A mission that gather scientific data												
+obo:SDDO_3000043																	
+obo:SDDO_3000083																	
+obo:SDDO_3000091					A NASA mission is a mission led or funded by NASA	"Per the NASA SMD glossary at https://science.nasa.gov/glossary/ a mission is a ""NASA Science-funded activity with the purpose of meeting goals laid out by presidential directive, and detailed in Science Mission Directorate's strategic plan.""  This would mean the ontology would need to include the concepts of a presidential directive and a strategic plan - wait for a use case before implementing this change."			SDDO team								
+obo:SDDO_3000099																	
+obo:SDDO_3000063																	
+obo:SDDO_3000080																	
+obo:SDDO_3000098																	
+obo:SDDO_3000056																	
+obo:SDDO_3000105															Rduerr	2021-11-30T19:43:39.350414Z	
+obo:SDDO_3000065															Rduerr	2021-11-30T21:34:56.970241Z	
+obo:SDDO_3000078															Rduerr	2021-11-30T21:35:20.533927Z	
+obo:SDDO_3000069					A data product service in the GeneLab repository										Rduerr	2021-12-01T20:52:05.98268Z	
+obo:SDDO_3000097															Rduerr	2021-12-02T22:57:22.551595Z	
+obo:SDDO_3000097															Rduerr	2021-12-02T22:58:11.536811Z	
+obo:SDDO_3000097															Rduerr	2021-12-02T22:58:56.536404Z	
+obo:SDDO_3000103															Rduerr	2021-12-10T20:53:48.676522Z	
+obo:SDDO_3000103					"A PDS 4 collection where the collection_type is ""Data"""										Rduerr	2021-12-10T20:55:07.211503Z	

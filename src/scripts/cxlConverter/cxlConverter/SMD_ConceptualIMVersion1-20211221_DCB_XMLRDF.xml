@@ -1,0 +1,751 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/sddo.owl#" xmlns:ns2="http://www.w3.org/2002/07/owl#" xmlns:ns3="http://www.w3.org/2000/01/rdf-schema#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     <ns2:Ontology rdf:about="http://purl.obolibrary.org/obo/sddo.owl" />
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000043">
+          <ns3:label xml:lang="en">Project</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000009" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000060" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000020" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000066" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000044">
+          <ns3:label xml:lang="en">Event</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000035" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000100" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000041" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000100" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000045">
+          <ns3:label xml:lang="en">Campaign</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000020" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000066" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000009" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000060" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000046">
+          <ns3:label xml:lang="en">ToolDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000062" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000047">
+          <ns3:label xml:lang="en">Assay</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000026" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000044" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000017" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000089" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000024" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000096" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000048">
+          <ns3:label xml:lang="en">DataProductOrService</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000025" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000027" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000110" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000066" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000049">
+          <ns3:label xml:lang="en">NeedsDiscussion</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000050">
+          <ns3:label xml:lang="en">SelectionParameter</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000051">
+          <ns3:label xml:lang="en">DataProduct</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000052">
+          <ns3:label xml:lang="en">EngineeringPlatform</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000060" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000053">
+          <ns3:label xml:lang="en">Legend</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000054">
+          <ns3:label xml:lang="en">Hardware</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000055">
+          <ns3:label xml:lang="en">MutableNecessaryEvil</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000056">
+          <ns3:label xml:lang="en">Author</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000057">
+          <ns3:label xml:lang="en">InstrumentDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000058">
+          <ns3:label xml:lang="en">InstrumentOperatingModeDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000059">
+          <ns3:label xml:lang="en">SpaceAgency</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000060">
+          <ns3:label xml:lang="en">Platform</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000061">
+          <ns3:label xml:lang="en">ApplicationDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000062" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000062">
+          <ns3:label xml:lang="en">DiscoveryCriterion</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000063">
+          <ns3:label xml:lang="en">ResearchStudy</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000064">
+          <ns3:label xml:lang="en">DataProductDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000065">
+          <ns3:label xml:lang="en">Organism</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000066">
+          <ns3:label xml:lang="en">ProductService</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000004" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000048" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000004" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000079" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000067">
+          <ns3:label xml:lang="en">SciencePlatform</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000060" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000068">
+          <ns3:label xml:lang="en">DataProperties</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000069">
+          <ns3:label xml:lang="en">Study</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000070">
+          <ns3:label xml:lang="en">DefinedClasses</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000071">
+          <ns3:label xml:lang="en">Factor</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000007" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000100" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000072">
+          <ns3:label xml:lang="en">ModelDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000062" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000073">
+          <ns3:label xml:lang="en">DataSelectionParameter</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000050" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000074">
+          <ns3:label xml:lang="en">DataDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000062" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000075">
+          <ns3:label xml:lang="en">AccessInterface</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000029" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000066" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000029" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000050" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000076">
+          <ns3:label xml:lang="en">InformationDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000062" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000077">
+          <ns3:label xml:lang="en">ResearchInvestigation</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000030" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000063" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000078">
+          <ns3:label xml:lang="en">Specimen</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000021" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000047" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000079">
+          <ns3:label xml:lang="en">InformationProduct</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000080">
+          <ns3:label xml:lang="en">ExperimentApparatus</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000081">
+          <ns3:label xml:lang="en">Deployment</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000042" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000082">
+          <ns3:label xml:lang="en">InformationSelectionParameter</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000050" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000083">
+          <ns3:label xml:lang="en">EngineeringMission</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000084">
+          <ns3:label xml:lang="en">Software</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000085">
+          <ns3:label xml:lang="en">InformationProductService</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000001" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000078" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000001" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000094" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000001" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000069" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000001" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000065" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000001" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000101" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000001" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000084" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000066" />
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000001" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000001" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000054" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000001" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000090" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000001" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000113" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000001" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000001" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000109" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000086">
+          <ns3:label xml:lang="en">Funder</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000087">
+          <ns3:label xml:lang="en">InstrumentOperatingMode</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000026" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000044" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000024" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000096" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000088">
+          <ns3:label xml:lang="en">Mission</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000018" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000060" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000015" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000059" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000089">
+          <ns3:label xml:lang="en">LaboratoryProcedure</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000023" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000098" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000090">
+          <ns3:label xml:lang="en">Person</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000034" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000065" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000055" />
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000034" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000056" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000091">
+          <ns3:label xml:lang="en">NASAMission</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000092">
+          <ns3:label xml:lang="en">Instrument</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000039" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000060" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000093">
+          <ns3:label xml:lang="en">MissionDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000094">
+          <ns3:label xml:lang="en">Experiment</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000008" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000078" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000009" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000080" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000023" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000098" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000036" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000065" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000013" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000077" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000042" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000095">
+          <ns3:label xml:lang="en">MetadataProduct</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000079" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000096">
+          <ns3:label xml:lang="en">Feature</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000041" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000100" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000035" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000100" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000097">
+          <ns3:label xml:lang="en">SpaceTimeBoundingDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000098">
+          <ns3:label xml:lang="en">Facility</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000099">
+          <ns3:label xml:lang="en">Phenomenon</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000006" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000044" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000006" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000096" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000100">
+          <ns3:label xml:lang="en">Observation</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000101">
+          <ns3:label xml:lang="en">PhotoGallery</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000102">
+          <ns3:label xml:lang="en">DiscoveryInterface</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000033" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000061" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000033" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000072" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000033" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000033" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000046" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000029" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000062" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000019" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000075" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000033" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000076" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000103">
+          <ns3:label xml:lang="en">Organization</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000034" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000105" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000034" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000059" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000034" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000086" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000034" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000056" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000104">
+          <ns3:label xml:lang="en">ExperimentDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000105">
+          <ns3:label xml:lang="en">Investigator</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000106">
+          <ns3:label xml:lang="en">OperationDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000107">
+          <ns3:label xml:lang="en">Program</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000014" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000091" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000108">
+          <ns3:label xml:lang="en">LocationDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000109">
+          <ns3:label xml:lang="en">Document</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000110">
+          <ns3:label xml:lang="en">DataParameter</ns3:label>
+          <ns3:subClassOf>
+               <ns2:Restriction>
+                    <ns2:onProperty rdf:resource="http://purl.obolibrary.org/obo/3000031" />
+                    <ns2:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000100" />
+               </ns2:Restriction>
+          </ns3:subClassOf>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000111">
+          <ns3:label xml:lang="en">SampleDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000112">
+          <ns3:label xml:lang="en">ResearchMission</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000113">
+          <ns3:label xml:lang="en">Firmware</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000114">
+          <ns3:label xml:lang="en">ObservableDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000115">
+          <ns3:label xml:lang="en">PlatformDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074" />
+     </ns2:Class>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000040">
+          <ns3:label xml:lang="en">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000001">
+          <ns3:label xml:lang="en">provideInformationOn</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000029">
+          <ns3:label xml:lang="en">present</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000009">
+          <ns3:label xml:lang="en">uses</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000004">
+          <ns3:label xml:lang="en">providesAccessTo</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000009">
+          <ns3:label xml:lang="en">uses</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000006">
+          <ns3:label xml:lang="en">consistOf</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000007">
+          <ns3:label xml:lang="en">experimentalContextFor</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000008">
+          <ns3:label xml:lang="en">generates</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000009">
+          <ns3:label xml:lang="en">uses</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000040">
+          <ns3:label xml:lang="en">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000040">
+          <ns3:label xml:lang="en">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000023">
+          <ns3:label xml:lang="en">conductedAt</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000013">
+          <ns3:label xml:lang="en">componentOf</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000014">
+          <ns3:label xml:lang="en">relatedTo</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000015">
+          <ns3:label xml:lang="en">organizedBy</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000034">
+          <ns3:label xml:lang="en">hasRole</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000017">
+          <ns3:label xml:lang="en">createdBy</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000018">
+          <ns3:label xml:lang="en">deployedOn</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000019">
+          <ns3:label xml:lang="en">leadTo</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000020">
+          <ns3:label xml:lang="en">resultsIn</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000021">
+          <ns3:label xml:lang="en">usedIn</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000040">
+          <ns3:label xml:lang="en">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000023">
+          <ns3:label xml:lang="en">conductedAt</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000024">
+          <ns3:label xml:lang="en">capableOfIdentifying</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000025">
+          <ns3:label xml:lang="en">provideAccessTo</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000026">
+          <ns3:label xml:lang="en">capableOfDetecting</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000027">
+          <ns3:label xml:lang="en">contain</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000034">
+          <ns3:label xml:lang="en">hasRole</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000029">
+          <ns3:label xml:lang="en">present</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000030">
+          <ns3:label xml:lang="en">sameAs</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000031">
+          <ns3:label xml:lang="en">isResultOf</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000040">
+          <ns3:label xml:lang="en">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000033">
+          <ns3:label xml:lang="en">aggregate</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000034">
+          <ns3:label xml:lang="en">hasRole</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000035">
+          <ns3:label xml:lang="en">characterizedBy</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000036">
+          <ns3:label xml:lang="en">conductedOn</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000040">
+          <ns3:label xml:lang="en">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000040">
+          <ns3:label xml:lang="en">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000039">
+          <ns3:label xml:lang="en">operatesOn</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000040">
+          <ns3:label xml:lang="en">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000041">
+          <ns3:label xml:lang="en">quantifiedBy</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000042">
+          <ns3:label xml:lang="en">partOf</ns3:label>
+     </ns2:ObjectProperty>
+</rdf:RDF>
