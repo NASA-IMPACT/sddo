@@ -1831,8 +1831,8 @@ creation_date: 2021-11-30T21:34:56.970241Z
 [Term]
 id: SDDO:3000066
 name: productService
-relationship: SDDO:3000004 SDDO:3000048 ! ExperimentDiscoveryCriterion dataProductOrService
-relationship: SDDO:3000004 SDDO:3000079 ! ExperimentDiscoveryCriterion informationProduct
+relationship: SDDO:3000004 SDDO:3000048 ! providesAccessTo dataProductOrService
+relationship: SDDO:3000004 SDDO:3000079 ! providesAccessTo informationProduct
 created_by: Peter Fox
 
 [Term]
@@ -1931,18 +1931,18 @@ name: software
 id: SDDO:3000085
 name: informationProductService
 is_a: SDDO:3000066 ! productService
-relationship: SDDO:3000001 SDDO:3000051 ! Criterion dataProduct
-relationship: SDDO:3000001 SDDO:3000054 ! Criterion hardware
-relationship: SDDO:3000001 SDDO:3000065 ! Criterion organism
-relationship: SDDO:3000001 SDDO:3000069 ! Criterion study
-relationship: SDDO:3000001 SDDO:3000078 ! Criterion specimen
-relationship: SDDO:3000001 SDDO:3000084 ! Criterion software
-relationship: SDDO:3000001 SDDO:3000088 ! Criterion mission
-relationship: SDDO:3000001 SDDO:3000090 ! Criterion person
-relationship: SDDO:3000001 SDDO:3000094 ! Criterion experiment
-relationship: SDDO:3000001 SDDO:3000101 ! Criterion photoGallery
-relationship: SDDO:3000001 SDDO:3000109 ! Criterion document
-relationship: SDDO:3000001 SDDO:3000113 ! Criterion firmware
+relationship: SDDO:3000001 SDDO:3000051 ! provideInformationOn dataProduct
+relationship: SDDO:3000001 SDDO:3000054 ! provideInformationOn hardware
+relationship: SDDO:3000001 SDDO:3000065 ! provideInformationOn organism
+relationship: SDDO:3000001 SDDO:3000069 ! provideInformationOn study
+relationship: SDDO:3000001 SDDO:3000078 ! provideInformationOn specimen
+relationship: SDDO:3000001 SDDO:3000084 ! provideInformationOn software
+relationship: SDDO:3000001 SDDO:3000088 ! provideInformationOn mission
+relationship: SDDO:3000001 SDDO:3000090 ! provideInformationOn person
+relationship: SDDO:3000001 SDDO:3000094 ! provideInformationOn experiment
+relationship: SDDO:3000001 SDDO:3000101 ! provideInformationOn photoGallery
+relationship: SDDO:3000001 SDDO:3000109 ! provideInformationOn document
+relationship: SDDO:3000001 SDDO:3000113 ! provideInformationOn firmware
 
 [Term]
 id: SDDO:3000086
@@ -2487,34 +2487,11 @@ is_a: BFO:0000051 ! has part
 
 [Typedef]
 id: SDDO:3000001
-name: Criterion
 name: provideInformationOn
-domain: Property
-
-[Typedef]
-id: SDDO:3000002
-name: DiscoveryCriterion
-domain: Property
-is_a: SDDO:3000001 ! Criterion
-
-[Typedef]
-id: SDDO:3000003
-name: DataDiscoveryCriterion
-domain: Property
-is_a: SDDO:3000002 ! DiscoveryCriterion
 
 [Typedef]
 id: SDDO:3000004
-name: ExperimentDiscoveryCriterion
 name: providesAccessTo
-domain: Property
-is_a: SDDO:3000003 ! DataDiscoveryCriterion
-
-[Typedef]
-id: SDDO:3000005
-name: ExperimentID
-domain: SDDO:0000027
-is_a: SDDO:3000004 ! ExperimentDiscoveryCriterion
 
 [Typedef]
 id: SDDO:3000006
