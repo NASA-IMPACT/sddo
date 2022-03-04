@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: sddo/releases/2022-01-14/sddo-base.owl
+data-version: sddo/releases/2022-03-04/sddo-base.owl
 ontology: sddo/sddo-base
 property_value: http://purl.org/dc/elements/1.1/description "The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA's Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Science Data Discovery Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
-property_value: owl:versionInfo "2022-01-14" xsd:string
+property_value: owl:versionInfo "2022-03-04" xsd:string
 
 [Term]
 id: SDDO:1000000
@@ -84,6 +84,7 @@ name: selectionParameter
 [Term]
 id: SDDO:3000051
 name: dataProduct
+is_a: IAO:0000030
 
 [Term]
 id: SDDO:3000052
@@ -97,10 +98,6 @@ name: legend
 [Term]
 id: SDDO:3000054
 name: hardware
-
-[Term]
-id: SDDO:3000055
-name: mutableNecessaryEvil
 
 [Term]
 id: SDDO:3000056
@@ -124,6 +121,7 @@ name: spaceAgency
 id: SDDO:3000060
 name: platform
 def: "A platform is a physical object to which an instrument is attached or in which it is contained." []
+is_a: SDDO:3000054 ! hardware
 property_value: IAO:0000112 "A spacecraft, a person, a ship, a piece of laboratory equipment" xsd:string
 
 [Term]
@@ -147,15 +145,17 @@ is_a: SDDO:3000074 ! dataDiscoveryCriterion
 [Term]
 id: SDDO:3000065
 name: organism
-is_a: SDDO:3000099 ! phenomenon
+def: "The quality of a living subject that indicates the taxonomical grouping of the subject.  This grouping can be at any level in a hierachy of organism classification, or a collection of levels, and can be using scientific language or colloquial language." []
+is_a: OBI:0100026
+property_value: IAO:0000112 "\"mouse\", \"Mus musculus\", \"rodent\", \"mammal\", \"microorganism\", \"fungi\"" xsd:string
 created_by: Rduerr
 creation_date: 2021-11-30T21:34:56.970241Z
 
 [Term]
 id: SDDO:3000066
 name: productService
-relationship: SDDO:3000004 SDDO:3000048 ! providesAccessTo dataProductOrService
-relationship: SDDO:3000004 SDDO:3000079 ! providesAccessTo informationProduct
+relationship: SDDO:3000004 SDDO:3000048 ! ExperimentDiscoveryCriterion dataProductOrService
+relationship: SDDO:3000004 SDDO:3000079 ! ExperimentDiscoveryCriterion informationProduct
 created_by: Peter Fox
 
 [Term]
@@ -229,6 +229,7 @@ name: informationProduct
 [Term]
 id: SDDO:3000080
 name: experimentApparatus
+is_a: SDDO:3000054 ! hardware
 
 [Term]
 id: SDDO:3000081
@@ -253,18 +254,18 @@ name: software
 id: SDDO:3000085
 name: informationProductService
 is_a: SDDO:3000066 ! productService
-relationship: SDDO:3000001 SDDO:3000051 ! provideInformationOn dataProduct
-relationship: SDDO:3000001 SDDO:3000054 ! provideInformationOn hardware
-relationship: SDDO:3000001 SDDO:3000065 ! provideInformationOn organism
-relationship: SDDO:3000001 SDDO:3000069 ! provideInformationOn study
-relationship: SDDO:3000001 SDDO:3000078 ! provideInformationOn specimen
-relationship: SDDO:3000001 SDDO:3000084 ! provideInformationOn software
-relationship: SDDO:3000001 SDDO:3000088 ! provideInformationOn mission
-relationship: SDDO:3000001 SDDO:3000090 ! provideInformationOn person
-relationship: SDDO:3000001 SDDO:3000094 ! provideInformationOn experiment
-relationship: SDDO:3000001 SDDO:3000101 ! provideInformationOn photoGallery
-relationship: SDDO:3000001 SDDO:3000109 ! provideInformationOn document
-relationship: SDDO:3000001 SDDO:3000113 ! provideInformationOn firmware
+relationship: SDDO:3000001 SDDO:3000051 ! Criterion dataProduct
+relationship: SDDO:3000001 SDDO:3000054 ! Criterion hardware
+relationship: SDDO:3000001 SDDO:3000065 ! Criterion organism
+relationship: SDDO:3000001 SDDO:3000069 ! Criterion study
+relationship: SDDO:3000001 SDDO:3000078 ! Criterion specimen
+relationship: SDDO:3000001 SDDO:3000084 ! Criterion software
+relationship: SDDO:3000001 SDDO:3000088 ! Criterion mission
+relationship: SDDO:3000001 SDDO:3000090 ! Criterion person
+relationship: SDDO:3000001 SDDO:3000094 ! Criterion experiment
+relationship: SDDO:3000001 SDDO:3000101 ! Criterion photoGallery
+relationship: SDDO:3000001 SDDO:3000109 ! Criterion document
+relationship: SDDO:3000001 SDDO:3000113 ! Criterion firmware
 
 [Term]
 id: SDDO:3000086
@@ -281,7 +282,7 @@ id: SDDO:3000088
 name: mission
 def: "A mission is a named activity for some purpose" []
 relationship: SDDO:3000015 SDDO:3000059 ! organizedBy spaceAgency
-relationship: SDDO:3000018 SDDO:3000060 ! deployedOn platform
+relationship: SDDO:3000018 SDDO:3000054 ! deployedOn hardware
 property_value: IAO:0000119 "Discussion by SDDO project team" xsd:string
 
 [Term]
@@ -294,7 +295,6 @@ property_value: IAO:0000119 "A broadened version of http://purl.obolibrary.org/o
 [Term]
 id: SDDO:3000090
 name: person
-is_a: SDDO:3000055 ! mutableNecessaryEvil
 relationship: SDDO:3000034 SDDO:3000056 ! hasRole author
 relationship: SDDO:3000034 SDDO:3000065 ! hasRole organism
 
@@ -310,6 +310,7 @@ property_value: IAO:0000119 "SDDO team" xsd:string
 id: SDDO:3000092
 name: instrument
 def: "An instrument is a physical object that can be used to collect data." []
+is_a: SDDO:3000054 ! hardware
 relationship: SDDO:3000039 SDDO:3000060 ! operatesOn platform
 property_value: IAO:0000112 "A camera, MODIS, a survey instrument (e.g., google form)" xsd:string
 property_value: IAO:0000119 "Adapted from pds:Instrument" xsd:string
@@ -323,6 +324,7 @@ is_a: SDDO:3000074 ! dataDiscoveryCriterion
 id: SDDO:3000094
 name: experiment
 def: "A plan for a coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing." []
+is_a: OBI:0000011
 relationship: SDDO:3000008 SDDO:3000078 ! generates specimen
 relationship: SDDO:3000009 SDDO:3000080 ! uses experimentApparatus
 relationship: SDDO:3000013 SDDO:3000077 ! componentOf researchInvestigation
@@ -341,8 +343,7 @@ property_value: IAO:0000116 "While agreed that metadata is just data about data 
 [Term]
 id: SDDO:3000096
 name: feature
-relationship: SDDO:3000035 SDDO:3000100 ! characterizedBy observation
-relationship: SDDO:3000041 SDDO:3000100 ! quantifiedBy observation
+relationship: RO:0000052 OBI:0100051
 
 [Term]
 id: SDDO:3000097
@@ -459,11 +460,31 @@ is_a: SDDO:3000074 ! dataDiscoveryCriterion
 
 [Typedef]
 id: SDDO:3000001
+name: Criterion
 name: provideInformationOn
+domain: Property
+
+[Typedef]
+id: SDDO:3000002
+domain: Property
+is_a: SDDO:3000001 ! Criterion
+
+[Typedef]
+id: SDDO:3000003
+domain: Property
+is_a: SDDO:3000002
 
 [Typedef]
 id: SDDO:3000004
+name: ExperimentDiscoveryCriterion
 name: providesAccessTo
+domain: Property
+is_a: SDDO:3000003
+
+[Typedef]
+id: SDDO:3000005
+domain: SDDO:0000027
+is_a: SDDO:3000004 ! ExperimentDiscoveryCriterion
 
 [Typedef]
 id: SDDO:3000006
@@ -564,10 +585,6 @@ name: conductedOn
 [Typedef]
 id: SDDO:3000039
 name: operatesOn
-
-[Typedef]
-id: SDDO:3000040
-name: isA
 
 [Typedef]
 id: SDDO:3000041
