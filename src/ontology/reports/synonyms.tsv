@@ -32,7 +32,6 @@
 <http://purl.obolibrary.org/obo/SDDO_3000076>	<http://www.w3.org/2000/01/rdf-schema#label>	"informationDiscoveryCriterion"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000105>	<http://www.w3.org/2000/01/rdf-schema#label>	"investigator"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000112>	<http://www.w3.org/2000/01/rdf-schema#label>	"researchMission"@en	
-<http://purl.obolibrary.org/obo/SDDO_3000055>	<http://www.w3.org/2000/01/rdf-schema#label>	"mutableNecessaryEvil"@en	
 <http://purl.obolibrary.org/obo/SDDO_/SDDO_1000000>	<http://www.w3.org/2000/01/rdf-schema#label>	"pds_Collection"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000044>	<http://www.w3.org/2000/01/rdf-schema#label>	"event"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000091>	<http://www.w3.org/2000/01/rdf-schema#label>	"NASAMission"@en	
