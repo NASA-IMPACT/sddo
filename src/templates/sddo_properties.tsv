@@ -4,4 +4,4 @@ obo:SDDO_5000001	Criterion	owl:DataProperty	rdf:Property	xsd:boolean
 obo:SDDO_5000002	DiscoveryCriterion	owl:DataProperty	rdf:Property	xsd:boolean	Criterion		
 obo:SDDO_5000003	DataDiscoveryCriterion	owl:DataProperty	rdf:Property	xsd:boolean	DiscoveryCriterion		
 obo:SDDO_5000004	ExperimentDiscoveryCriterion	owl:DataProperty	rdf:Property	xsd:boolean	DataDiscoveryCriterion		
-obo:SDDO_5000005	ExperimentID	owl:DataProperty	obo:SDDO_0000027	xsd:string	ExperimentDiscoveryCriterion		
+obo:SDDO_5000005	ExperimentID	owl:DataProperty	rdf:Property	xsd:string	ExperimentDiscoveryCriterion		
