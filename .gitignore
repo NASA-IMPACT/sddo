@@ -29,3 +29,8 @@ src/patterns/data/**/*.txt
 src/patterns/pattern_owl_seed.txt
 src/patterns/all_pattern_terms.txt
 src/ontology/ro.owl
+src/ontology/sddo-annotations-020322.tsv
+src/ontology/sddo-annotations-020322.tsv
+src/scripts/cxlConverter/cxlConverter/sddo-addl-annotations.owl
+src/scripts/cxlConverter/cxlConverter/sddo-addl-annotations.owl
+src/scripts/cxlConverter/cxlConverter/sddo-edit.owl
