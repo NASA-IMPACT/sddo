@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: releases/2022-03-08
+data-version: releases/2022-03-11
 ontology: sddo
 property_value: http://purl.org/dc/elements/1.1/description "The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA's Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Science Data Discovery Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
-property_value: owl:versionInfo "2022-03-08" xsd:string
+property_value: owl:versionInfo "2022-03-11" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -131,6 +131,24 @@ property_value: IAO:0000602 "(iff (Process a) (and (Occurrent a) (exists (b) (pr
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
+id: BFO:0000016
+name: disposition
+is_a: BFO:0000017 ! realizable entity
+disjoint_from: BFO:0000023 ! role
+property_value: BFO:0000179 "disposition" xsd:string
+property_value: BFO:0000180 "Disposition" xsd:string
+property_value: IAO:0000112 "an atom of element X has the disposition to decay to an atom of element Y" xsd:string
+property_value: IAO:0000112 "certain people have a predisposition to colon cancer" xsd:string
+property_value: IAO:0000112 "children are innately disposed to categorize objects in certain ways." xsd:string
+property_value: IAO:0000112 "the cell wall is disposed to filter chemicals in endocytosis and exocytosis" xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: Dispositions exist along a strength continuum. Weaker forms of disposition are realized in only a fraction of triggering cases. These forms occur in a significant number of cases of a similar type." xsd:string
+property_value: IAO:0000600 "b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/062-002"}
+property_value: IAO:0000601 "If b is a realizable entity then for all t at which b exists, b s-depends_on some material entity at t. (axiom label in BFO2 Reference: [063-002])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/063-002"}
+property_value: IAO:0000602 "(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/063-002"}
+property_value: IAO:0000602 "(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/062-002"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
 id: BFO:0000017
 name: realizable entity
 def: "A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances." []
@@ -207,6 +225,20 @@ property_value: IAO:0000112 "The entries in your database are patterns instantia
 property_value: IAO:0000112 "the pdf file on your laptop, the pdf file that is a copy thereof on my laptop" xsd:string
 property_value: IAO:0000112 "the sequence of this protein molecule; the sequence that is a copy thereof in that protein molecule." xsd:string
 property_value: IAO:0000602 "(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/074-001"}
+property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
+
+[Term]
+id: BFO:0000034
+name: function
+is_a: BFO:0000016 ! disposition
+property_value: BFO:0000179 "function" xsd:string
+property_value: BFO:0000180 "Function" xsd:string
+property_value: IAO:0000112 "the function of a hammer to drive in nails" xsd:string
+property_value: IAO:0000112 "the function of a heart pacemaker to regulate the beating of a heart through electricity" xsd:string
+property_value: IAO:0000112 "the function of amylase in saliva to break down starch into sugar" xsd:string
+property_value: IAO:0000116 "BFO 2 Reference: In the past, we have distinguished two varieties of function, artifactual function and biological function. These are not asserted subtypes of BFO:function however, since the same function – for example: to pump, to transport – can exist both in artifacts and in biological entities. The asserted subtypes of function that would be needed in order to yield a separate monoheirarchy are not artifactual function, biological function, etc., but rather transporting function, pumping function, etc." xsd:string
+property_value: IAO:0000600 "A function is a disposition that exists in virtue of the bearer’s physical make-up and this physical make-up is something the bearer possesses because it came into being, either through evolution (in the case of natural biological entities) or through intentional design (in the case of artifacts), in order to realize processes of a certain sort. (axiom label in BFO2 Reference: [064-001])" xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/064-001"}
+property_value: IAO:0000602 "(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] " xsd:string {http://purl.obolibrary.org/obo/IAO_0010000="http://purl.obolibrary.org/obo/bfo/axiom/064-001"}
 property_value: isDefinedBy http://purl.obolibrary.org/obo/bfo.owl
 
 [Term]
@@ -600,6 +632,19 @@ property_value: IAO:0000117 "Alan Ruttenberg" xsd:string
 property_value: IAO:0000119 "Barry Smith, Werner Ceusters" xsd:string
 
 [Term]
+id: IAO:0000572
+name: documenting
+def: "A planned process in which a document is created or added to by including the specified input in it." []
+is_a: OBI:0000011 ! planned process
+relationship: OBI:0000293 IAO:0000030 ! has_specified_input information content entity
+relationship: OBI:0000299 IAO:0000310 ! has_specified_output document
+property_value: IAO:0000112 "Recording the current temperature in a laboratory notebook. Writing a journal article. Updating a patient record in a database." xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "6/11/9: Edited at OBI workshop. We need to be able identify a child form of information artifact which corresponds to something enduring (not brain like). This used to be restricted to physical document or digital entity as the output, but that excludes e.g. an audio cassette tape" xsd:string
+property_value: IAO:0000117 "Bjoern Peters" xsd:string
+property_value: IAO:0000119 "wikipedia http://en.wikipedia.org/wiki/Documenting" xsd:string
+
+[Term]
 id: NCBITaxon:10239
 name: Viruses
 is_a: OBI:0100026 ! organism
@@ -782,6 +827,24 @@ property_value: IAO:0000114 IAO:0000122
 property_value: IAO:0000117 "PERSON: Alan Ruttenberg" xsd:string
 
 [Term]
+id: OBI:0000066
+name: investigation
+def: "a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s)." []
+is_a: OBI:0000011 ! planned process
+relationship: BFO:0000051 IAO:0000572 ! has part documenting
+relationship: BFO:0000051 OBI:0000338 ! has part drawing a conclusion based on data
+relationship: BFO:0000051 OBI:0000471 ! has part study design execution
+property_value: IAO:0000111 "investigation" xsd:string
+property_value: IAO:0000112 "Lung cancer investigation using expression profiling, a stem cell transplant investigation, biobanking is not an investigation, though it may be part of an investigation" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "Bjoern Peters" xsd:string
+property_value: IAO:0000119 "OBI branch derived" xsd:string
+property_value: IAO:0000232 "Could add specific objective specification" xsd:string
+property_value: IAO:0000232 "Following OBI call November 2012,26th: it was decided there was no need for adding \"achieves objective of drawing conclusion\" as existing relations were providing equivalent ability. this note closes the issue and validates the class definition to be part of the OBI core\neditor = PRS" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+property_value: OBI:0001847 "study" xsd:string
+
+[Term]
 id: OBI:0000094
 name: material processing
 def: "A planned process which results in physical changes in a specified input material" []
@@ -816,6 +879,24 @@ property_value: IAO:0000117 "GROUP:  Role Branch" xsd:string
 property_value: IAO:0000119 "OBI" xsd:string
 
 [Term]
+id: OBI:0000202
+name: investigation agent role
+def: "A role borne by an entity and that is realized in a process that is part of an investigation in which an objective is achieved. These processes include, among others: planning, overseeing, funding, reviewing." []
+comment: Philly2013: Historically, this role would have been borne only by humans or organizations. However, we now also want to enable investigations run by robot scientists such as ADAM (King et al, Science, 2009)
+is_a: BFO:0000023 ! role
+relationship: BFO:0000054 OBI:0000066 ! realized in investigation
+property_value: IAO:0000111 "investigation agent role" xsd:string
+property_value: IAO:0000112 "The person perform microarray experiments and submit microarray results (including raw data, processed data) with experiment description to ArrayExpress." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "Implementing a study means carrying out or performing the study and providing reagents or other materials used in the study and other tasks without which the study would not happen." xsd:string
+property_value: IAO:0000116 "Philly2013: Historically, this role would have been borne only by humans or organizations. However, we now also want to enable representing investigations run by robot scientists such as ADAM (King et al, Science, 2009)" xsd:string
+property_value: IAO:0000117 "GROUP:  Role Branch" xsd:string
+property_value: IAO:0000118 "investigator" xsd:string
+property_value: IAO:0000119 "OBI" xsd:string
+property_value: IAO:0000232 "Feb 10, 2009.  changes after discussion at OBI Consortium Workshop Feb 2-6, 2009.  accepted as core term." xsd:string
+property_value: OBI:0001847 "study person role" xsd:string
+
+[Term]
 id: OBI:0000245
 name: organization
 def: "An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members." []
@@ -829,6 +910,44 @@ property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
 property_value: IAO:0000117 "PERSON: Philippe Rocca-Serra" xsd:string
 property_value: IAO:0000117 "PERSON: Susanna Sansone" xsd:string
 property_value: IAO:0000119 "GROUP: OBI" xsd:string
+
+[Term]
+id: OBI:0000272
+name: protocol
+def: "A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process." []
+is_a: IAO:0000104 ! plan specification
+property_value: IAO:0000111 "protocol" xsd:string
+property_value: IAO:0000112 "PCR protocol, has objective specification, amplify DNA fragment of interest, and has action specification describes the amounts of experimental reagents used (e..g. buffers, dNTPS, enzyme), and the temperature and cycle time settings for running the PCR." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PlanAndPlannedProcess Branch" xsd:string
+property_value: IAO:0000119 "OBI branch derived + wikipedia (http://en.wikipedia.org/wiki/Protocol_%28natural_sciences%29)" xsd:string
+property_value: OBI:0001847 "study protocol" xsd:string
+
+[Term]
+id: OBI:0000338
+name: drawing a conclusion based on data
+def: "A planned process in which data gathered in an investigation is evaluated in the context of existing knowledge with the objective to generate more general conclusions or to conclude that the data does not allow one to draw general conclusion" []
+is_a: OBI:0000011 ! planned process
+relationship: OBI:0000293 IAO:0000027 ! has_specified_input data item
+relationship: OBI:0000299 OBI:0001909 ! has_specified_output conclusion based on data
+property_value: IAO:0000111 "interpreting data" xsd:string
+property_value: IAO:0000112 "Concluding that a gene is upregulated in a tissue sample based on the band intensity in a western blot.  Concluding that a patient has a infection based on measurement of an elevated body temperature and reported headache. Concluding that there were problems in an investigation because data from PCR and microarray are conflicting. Concluding that 'defects in gene XYZ cause cancer due to improper DNA repair' based on data from experiments in that study that gene XYZ is involved in DNA repair, and the conclusion of a previous study that cancer patients have an increased number of mutations in this gene. " xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON: Bjoern Peters" xsd:string
+property_value: IAO:0000117 "PERSON: Jennifer Fostel" xsd:string
+property_value: IAO:0000119 "Bjoern Peters" xsd:string
+
+[Term]
+id: OBI:0000339
+name: planning
+def: "a process of creating or modifying a plan specification" []
+property_value: IAO:0000111 "planning" xsd:string
+property_value: IAO:0000112 "The process of a scientist thinking about and deciding what reagents to use as part of a protocol for an experiment. Note that the scientist could be human or a \"robot scientist\" executing software." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "7/18/2011 BP: planning used to itself be a planned process. Barry Smith pointed out that this would lead to an infinite regression, as there would have to be a plan to conduct a planning process, which in itself would be the result of planning etc. Therefore, the restrictions on 'planning' were loosened to allow for informal processes that result in an 'ad hoc plan '. This required changing from 'has_specified_output some plan specifiction' to 'has_participant some plan specification'. " xsd:string
+property_value: IAO:0000117 "Bjoern Peters" xsd:string
+property_value: IAO:0000119 "Bjoern Peters" xsd:string
+property_value: IAO:0000119 "Plans and Planned Processes Branch" xsd:string
 
 [Term]
 id: OBI:0000450
@@ -891,6 +1010,19 @@ property_value: IAO:0000117 "PERSON: Jennifer Fostel" xsd:string
 property_value: IAO:0000117 "PERSON: Melanie Courtot" xsd:string
 property_value: IAO:0000117 "PERSON: Philippe Rocca-Serra" xsd:string
 property_value: IAO:0000119 "GROUP: OBI PlanAndPlannedProcess Branch" xsd:string
+
+[Term]
+id: OBI:0000471
+name: study design execution
+def: "a planned process that carries out a study design" []
+is_a: OBI:0000011 ! planned process
+property_value: IAO:0000111 "study design execution" xsd:string
+property_value: IAO:0000112 "injecting a mouse with PBS solution, weighing it, and recording the weight according to a study design." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "removed axiom has_part some (assay or 'data transformation') per discussion on protocol application mailing list to improve reasoner performance. The axiom is still desired." xsd:string
+property_value: IAO:0000119 "branch derived" xsd:string
+property_value: IAO:0000232 "6/11/9: edited at workshop. Used to be: study design execution is a process with the objective to generate data according to a concretized study design. The execution of a study design is part of an investigation, and minimally consists of an assay or data transformation." xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
 
 [Term]
 id: OBI:0000571
@@ -1102,6 +1234,21 @@ property_value: IAO:0000117 "Bjoern Peters" xsd:string
 property_value: IAO:0000119 "Bjoern Peters" xsd:string
 
 [Term]
+id: OBI:0000968
+name: device
+def: "A material entity that is designed to perform a function in a scientific investigation, but is not a reagent." []
+is_a: OBI:0000047 ! processed material
+relationship: RO:0000085 BFO:0000034 ! has function function
+property_value: IAO:0000111 "device" xsd:string
+property_value: IAO:0000112 "A voltmeter is a measurement device which is intended to perform some measure function." xsd:string
+property_value: IAO:0000112 "An autoclave is a device that sterlizes instruments or contaminated waste by applying high temperature and pressure." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "2012-12-17 JAO: In common lab usage, there is a distinction made between devices and reagents that is difficult to model. Therefore we have chosen to specifically exclude reagents from the definition of \"device\", and are enumerating the types of roles that a reagent can perform.\n\n2013-6-5 MHB: The following clarifications are outcomes of the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions.  Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear.  For example:\n\n(1) An HPLC machine is considered a device, but has a column that holds a stationary phase resin as an operational component.  This resin qualifies as a device if it participates purely in size exclusion, but bears a reagent role that is realized in the running of a column if it interacts electrostatically or chemically with the evaluant. The container the resin is in (“the column”) considered alone is a device. So the entire column as well as the entire HPLC machine are devices that have a reagent as an operating part.\n\n(2) A pH meter is a device, but its electrode component bears a reagent role in virtue of its interacting directly with the evaluant in execution of an assay.\n\n(3) A gel running  box  is a device that has a metallic lead as a component that participates in a chemical reaction with the running buffer when a charge is passed through it.  This metallic lead is considered to have a reagent role as a component of this device realized in the running of a gel.\n\nIn the examples above, a reagent is an operational component of a device, but the device itself does not realize a reagent role (as bearing a reagent role is not transitive across the part_of relation).  In this way, the asserted disjointness between a reagent and device holds, as both roles are never realized in the same bearer during execution of an assay.  " xsd:string
+property_value: IAO:0000117 "PERSON: Helen Parkinson" xsd:string
+property_value: IAO:0000118 "instrument" xsd:string
+property_value: IAO:0000119 "OBI development call 2012-12-17." xsd:string
+
+[Term]
 id: OBI:0001000
 name: questionnaire
 def: "A document with a set of printed or written questions with a choice of answers, devised for the purposes of a survey or statistical study." []
@@ -1112,6 +1259,31 @@ property_value: IAO:0000116 "JT: It plays a role in collecting data that could b
 property_value: IAO:0000116 "Need to clarify if this is a document or a directive information entity (or what their connection is))" xsd:string
 property_value: IAO:0000117 "PERSON: Jessica Turner" xsd:string
 property_value: IAO:0000119 "Merriam-Webster" xsd:string
+
+[Term]
+id: OBI:0001479
+name: specimen from organism
+def: "A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm)." []
+is_a: OBI:0100051 ! specimen
+property_value: IAO:0000111 "specimen from organism" xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "PERSON: Chris Stoeckert, Jie Zheng" xsd:string
+property_value: IAO:0000118 "tissue specimen" xsd:string
+property_value: IAO:0000119 "MO_954 organism_part" xsd:string
+
+[Term]
+id: OBI:0001909
+name: conclusion based on data
+def: "An information content entity that is inferred from data." []
+is_a: IAO:0000030 ! information content entity
+relationship: OBI:0000124 IAO:0000027 ! is_supported_by_data data item
+relationship: OBI:0000312 OBI:0000338 ! is_specified_output_of drawing a conclusion based on data
+property_value: IAO:0000111 "conclusion based on data" xsd:string
+property_value: IAO:0000112 "The conclusion that a gene is upregulated in a tissue sample based on the band intensity in a western blot. The conclusion that a patient has a infection based on measurement of an elevated body temperature and reported headache. The conclusion that there were problems in an investigation because data from PCR and microarray are conflicting.\nThe following are NOT conclusions based on data: data themselves; results from pure mathematics, e.g. \"13 is prime\"." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "In the Philly 2013 workshop, we recognized the limitations of \"conclusion textual entity\", and we introduced this as more general. The need for the 'textual entity' term going forward is up for future debate. " xsd:string
+property_value: IAO:0000117 "Group:2013 Philly Workshop group" xsd:string
+property_value: IAO:0000119 "Group:2013 Philly Workshop group" xsd:string
 
 [Term]
 id: OBI:0001930
@@ -1685,6 +1857,21 @@ property_value: IAO:0000114 IAO:0000123
 property_value: IAO:0000117 "James Malone" xsd:string
 
 [Term]
+id: OBI:0500000
+name: study design
+def: "A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution." []
+is_a: IAO:0000104 ! plan specification
+relationship: BFO:0000051 OBI:0000272 ! has part protocol
+property_value: IAO:0000111 "study design" xsd:string
+property_value: IAO:0000112 "a matched pairs study design describes criteria by which subjects are identified as pairs which then undergo the same protocols, and the data generated is analyzed by comparing the differences between the paired subjects, which constitute the results of the executed study design." xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000116 "Editor note: there is at least an implicit restriction on the kind of data transformations that can be done based on the measured data available." xsd:string
+property_value: IAO:0000117 "PERSON: Chris Stoeckert" xsd:string
+property_value: IAO:0000118 "experimental design" xsd:string
+property_value: IAO:0000232 "rediscussed at length (MC/JF/BP). 12/9/08). The definition was clarified to differentiate it from protocol." xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/obi.owl
+
+[Term]
 id: SDDO:1000000
 name: pds_Collection
 is_a: SDDO:3000048 ! dataProductOrService
@@ -2136,6 +2323,22 @@ name: platformDiscoveryCriterion
 is_a: SDDO:3000074 ! dataDiscoveryCriterion
 
 [Term]
+id: UBERON:0000465
+name: material anatomical entity
+def: "Anatomical entity that has mass." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000111 "material anatomical entity" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
+id: UBERON:0000477
+name: anatomical cluster
+def: "Anatomical group that has its parts adjacent to one another." []
+is_a: BFO:0000040 ! material entity
+property_value: IAO:0000111 "anatomical cluster" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/uberon.owl
+
+[Term]
 id: UO:0000001
 name: length unit
 def: "A unit which is a standard measure of the distance between two points." []
@@ -2287,6 +2490,19 @@ property_value: IAO:0000116 "7/6/2009 Alan Ruttenberg. Following discussion with
 property_value: IAO:0000117 "person:Alan Ruttenberg" xsd:string
 property_value: IAO:0000119 "Smith, Ceusters, Ruttenberg, 2000 years of philosophy" xsd:string
 domain: IAO:0000030 ! information content entity
+
+[Typedef]
+id: OBI:0000124
+name: is_supported_by_data
+def: "The relation between a data item and a conclusion where the conclusion is the output of a data interpreting process and the data item is used as an input to that process" []
+property_value: IAO:0000111 "is_supported_by_data" xsd:string
+property_value: IAO:0000112 "The relation between the conclusion \"Gene tpbA is involved in EPS production\" and the data items produced using two sets of organisms, one being a tpbA knockout, the other being tpbA wildtype tested in polysacharide production assays and analyzed using an ANOVA. " xsd:string
+property_value: IAO:0000114 IAO:0000122
+property_value: IAO:0000117 "OBI" xsd:string
+property_value: IAO:0000119 "OBI" xsd:string
+property_value: IAO:0000119 "Philly 2011 workshop" xsd:string
+domain: OBI:0001909 ! conclusion based on data
+range: IAO:0000027 ! data item
 
 [Typedef]
 id: OBI:0000293
@@ -2444,6 +2660,18 @@ domain: BFO:0000020 ! specifically dependent continuant
 range: BFO:0000031 ! generically dependent continuant
 
 [Typedef]
+id: RO:0000079
+name: function of
+def: "a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence" []
+property_value: IAO:0000112 "this catalysis function is a function of this enzyme" xsd:string
+property_value: IAO:0000116 "A function inheres in its bearer at all times for which the function exists, however the function need not be realized at all the times that the function exists." xsd:string
+property_value: IAO:0000118 "function_of" xsd:string
+property_value: IAO:0000118 "is function of" xsd:string
+domain: BFO:0000034 ! function
+is_a: RO:0000052 ! inheres in
+inverse_of: RO:0000085 ! has function
+
+[Typedef]
 id: RO:0000081
 name: role of
 def: "a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence" []
@@ -2455,6 +2683,17 @@ is_a: RO:0000052 ! inheres in
 inverse_of: RO:0000087 ! has role
 
 [Typedef]
+id: RO:0000085
+name: has function
+def: "a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence" []
+property_value: IAO:0000112 "this enzyme has function this catalysis function (more colloquially: this enzyme has this catalysis function)" xsd:string
+property_value: IAO:0000116 "A bearer can have many functions, and its functions can exist for different periods of time, but none of its functions can exist when the bearer does not exist. A function need not be realized at all the times that the function exists." xsd:string
+property_value: IAO:0000118 "has_function" xsd:string
+domain: BFO:0000004 ! independent continuant
+range: BFO:0000034 ! function
+is_a: RO:0000053 ! bearer of
+
+[Typedef]
 id: RO:0000087
 name: has role
 def: "a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence" []
@@ -2464,6 +2703,31 @@ property_value: IAO:0000118 "has_role" xsd:string
 domain: BFO:0000004 ! independent continuant
 range: BFO:0000023 ! role
 is_a: RO:0000053 ! bearer of
+
+[Typedef]
+id: RO:0001000
+name: derives from
+def: "a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity" []
+property_value: IAO:0000111 "derives from" xsd:string
+property_value: IAO:0000112 "this cell derives from this parent cell (cell division)" xsd:string
+property_value: IAO:0000112 "this nucleus derives from this parent nucleus (nuclear division)" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "This is a very general relation. More specific relations are preferred when applicable, such as 'directly develops from'." xsd:string
+property_value: IAO:0000118 "derives_from" xsd:string
+property_value: IAO:0000412 http://purl.obolibrary.org/obo/ro.owl
+domain: BFO:0000004 ! independent continuant
+range: BFO:0000004 ! independent continuant
+inverse_of: RO:0001001 ! derives into
+
+[Typedef]
+id: RO:0001001
+name: derives into
+def: "a relation between two distinct material entities, the old entity and the new entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity" []
+property_value: IAO:0000112 "this parent cell derives into this cell (cell division)" xsd:string
+property_value: IAO:0000112 "this parent nucleus derives into this nucleus (nuclear division)" xsd:string
+property_value: IAO:0000114 IAO:0000125
+property_value: IAO:0000116 "This is a very general relation. More specific relations are preferred when applicable, such as 'directly develops into'. To avoid making statements about a future that may not come to pass, it is often better to use the backward-looking 'derives from' rather than the forward-looking 'derives into'." xsd:string
+property_value: IAO:0000118 "derives_into" xsd:string
 
 [Typedef]
 id: RO:0002350
