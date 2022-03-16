@@ -1,0 +1,9 @@
+propLabel,inversePropLabel
+lsda:depicts,lsda:depictedIn
+lsda:fundedBy,lsda:funded
+lsda:hasGeneticType,lsda:isGeneticTypeOf
+lsda:implements,lsda:implementedBy
+lsda:investigates,lsda:investigatedBy
+lsda:managedAt,lsda:managed
+lsda:operates,lsda:operatedBy
+lsda:ownedBy,lsda:owns
