@@ -1,7 +1,9 @@
 import xml.etree.ElementTree as ET
 import owlready2
+import rdflib
 from sys import argv
 from getopt import getopt,GetoptError
+from csv import DictReader
 from owlready2 import *
 from _datetime import datetime
 
@@ -11,6 +13,7 @@ nsPref = {}
 sddoDict = {}
 ontoClasses = {}
 ontoProperties = {}
+inverseProps = {}
 
 ## parse cxl and extract classes and properties
 def process_cxl(filename):
@@ -149,18 +152,32 @@ def getOntologies():
     roOnto = get_ontology('ro-base.owl').load()
     instr = sddoOnto.search_one(label = "instrument")
     for cls in sddoOnto.classes():
-        sddoDict["sddo:" + cls.name] = cls.iri
-        ontoClasses["sddo:" + str(cls.label.first())] = cls
+        if (not cls.iri.startswith("http://purl.obolibrary.org/obo/SDDO_")):
+            ontoClasses["iri:" + cls.iri] = cls
+        else:
+            ontoClasses["sddo:" + str(cls.label.first())] = cls
+#        sddoDict["sddo:" + cls.name] = cls.iri
+
 #        print("Adding class to SDDO: " + "sddo:" + str(cls.label.first()))
 #        print("SDDO Class: " + cls.iri)
     for prop in sddoOnto.object_properties():
-        sddoDict["sddo:" + prop.name] = prop.iri
+#        sddoDict["sddo:" + prop.name] = prop.iri
         ontoProperties["sddo:" + str(prop.label.first())] = prop
     for prop in roOnto.object_properties():
 #        print("RO Property: " + prop.iri + " " + prop.label.first())
         ontoProperties["ro:" + str(prop.label.first())] = prop
 
     return sddoOnto, roOnto
+
+def getInvProperties(filename):
+    with open("./input/" + filename, newline="") as csvfile:
+        csvreader = DictReader(csvfile, dialect='excel',fieldnames=["propLabel","inversePropLabel"])
+        for row in csvreader:
+            for rowDict in csvreader:
+                inverseProps[rowDict["propLabel"]]=rowDict["inversePropLabel"]
+
+    print(inverseProps)
+
 
 def dataProp(classes,someClass):
 
@@ -180,18 +197,20 @@ def main(argv):
     targetnamespace = ""
 
     try:
-        opts, args = getopt(argv,"hi:n:o:p:",["input=","namespace=","outputFile=","prefix="])
+        opts, args = getopt(argv,"hi:n:o:p:r:",["input=","namespace=","outputFile=","prefix=","inverseProperties="])
     except GetoptError:
-        print("cxl2xmlrdf_serialuris.py -n <namespace IRI> -i <inputCXL> -p <prefix>")
+        print("cxl2xmlrdf_serialuris.py -n <namespace IRI> -i <inputCXL> -p <prefix> -r <inverseProperties>")
         exit(2)
     for opt, arg in opts:
         if opt == '-h':
-            print('cxl2xmlrdf_serialuris.py -n <namespace IRI> -n <namespace> -i <inputFile> -o <outputFile> -p <prefix>')
+            print('cxl2xmlrdf_serialuris.py -n <namespace IRI> -n <namespace> -i <inputFile> -o <outputFile> -p <prefix> -r <inverseProperties>')
             exit()
         elif opt in ("-n", "--namespace"):
             targetnamespace = arg
         elif opt in ("-p", "--prefix"):
             targetprefix = arg
+        elif opt in ("-r", "--inverseProperties"):
+            getInvProperties(arg)
         elif opt in ("-i", "--input"):
             filename = arg
         elif opt in ("-o", "--output"):
@@ -249,9 +268,23 @@ def main(argv):
 
                             cls.namespace = nsDict["obo"]
                             cls.iri = targetnamespace + nsPref[propSpace] + "{:07}".format(uri_prefixes[nsPref[propSpace]])
-        #                    cls.ID = nsPref[propSpace] + format(uri_prefixes[nsPref[propSpace]])
                             uri_prefixes[nsPref[propSpace]] += 1
                             propertyEntities[propLabel] = cls
+
+                            if (propLabel != 'has'):
+                                #declare inverse property
+                                print("propLabel: " + propLabel )
+                                print(inverseProps)
+                                inverseLabel = inverseProps[propLabel]
+                                inverseLabel = inverseLabel[inverseLabel.find(':')+1:]
+                                invCls = types.new_class(inverseLabel, (ObjectProperty,),)
+                                invCls.namespace = nsDict["obo"]
+                                invCls.label.append(inverseLabel)
+                                invCls.iri = targetnamespace + nsPref[propSpace] + "{:07}".format(uri_prefixes[nsPref[propSpace]])
+                                uri_prefixes[nsPref[propSpace]] += 1
+                                propertyEntities[targetnamespace + ":" + propLabel] = invCls
+                                cls.inverse_property = invCls
+
 
     #merge in ext ontology props
     propertyEntities =  ontoProperties | propertyEntities
@@ -262,14 +295,16 @@ def main(argv):
             classSpace = classLabel[0:classLabel.find(':')]
             cleanLabel = classLabel[classLabel.find(':')+1:]
         if (dataProp(classes,classLabel) == ""):
-            childOf = ["Thing"]
-            for propRel in classes[classLabel]:
-                propLabel = propRel[0]
-                objectLabel = propRel[1]
-                if propLabel == 'isA':
-                    if (childOf[0] == "Thing"):
-                        childOf =[]
-                    childOf.append(objectLabel)
+            #===================================================================
+            # childOf = ["Thing"]
+            # for propRel in classes[classLabel]:
+            #     propLabel = propRel[0]
+            #     objectLabel = propRel[1]
+            #     if propLabel == 'isA':
+            #         if (childOf[0] == "Thing"):
+            #             childOf =[]
+            #         childOf.append(objectLabel)
+            #===================================================================
 
             with nsDict["obo"]:
                 with convertedOnto:
@@ -307,31 +342,47 @@ def main(argv):
             if classLabel.find(':') > -1:
                 classSpace = classLabel[0:classLabel.find(':')]
                 cleanLabel = classLabel[classLabel.find(':')+1:]
-                ontoClass = ontoClasses[classLabel]
+                if (classLabel in ontoClasses.keys()):
+                    ontoClass = ontoClasses[classLabel]
 
-                with convertedOnto:
-                    for propRel in classes[classLabel]:
-                        propLabel = propRel[0]
-                        propSpace = propLabel[0:propLabel.find(':')]
-                        objectLabel = propRel[1]
-                        print ("FROM: " + classLabel + " PROP: " + propLabel + " TO: " + objectLabel)
-                        if (propLabel != 'isA' and propLabel != 'has'):
-                            if (propSpace == 'ro'):
-                                print(ontoClass.name + " prop: " + propLabel + " " + ontoClasses[objectLabel].name)
-                                print("PE entry: " + propertyEntities[propLabel].iri)
-#                                if (ontoClass.is_a.first().name == "Thing"):
- #                                   ontoClass.is_a.clear()
-                            ontoClass.is_a.append(propertyEntities[propLabel].some(ontoClasses[objectLabel]))
-                        elif propLabel == 'isA':
-                            print(classLabel + " is a " + objectLabel)
-#                            if (ontoClass.is_a.first().name == "Thing"):
-#                                subclsList = ontoClass.is_a
-#                                ontoClass.is_a.clear()
-                            ontoClass.is_a[0] = ontoClasses[objectLabel]
- #                           ontoClass.is_a.append(ontoClasses[objectLabel])
- #
- #                       cls.is_a.append(propLabel.some(objectLabel))
+                    with convertedOnto:
+                        for propRel in classes[classLabel]:
+                            propLabel = propRel[0]
+                            propSpace = propLabel[0:propLabel.find(':')]
+                            objectLabel = propRel[1]
+                            if (objectLabel in ontoClasses.keys()):
+                                print("FROM: " + classLabel + " PROP: " + propLabel + " TO: " + objectLabel)
+                                if (propLabel != 'isA' and propLabel != 'has'):
+                                    if (propSpace == 'ro'):
+                                        print(ontoClass.name + " prop: " + propLabel + " " + ontoClasses[objectLabel].name)
+                                        print("PE entry: " + propertyEntities[propLabel].iri)
+        #                                if (ontoClass.is_a.first().name == "Thing"):
+         #                                   ontoClass.is_a.clear()
+                                    ontoClass.is_a.append(propertyEntities[propLabel].some(ontoClasses[objectLabel]))
+                                elif propLabel == 'isA':
+                                    print(classLabel + " is a " + ontoClasses[objectLabel].iri)
+        #                            if (ontoClass.is_a.first().name == "Thing"):
+        #                                subclsList = ontoClass.is_a
+        #                                ontoClass.is_a.clear()
+                                    #===========================================
+                                    # if (ontoClass.is_a[0].name == "Thing" and len(ontoClass.is_a) == 1):
+                                    #     print("Clearing is_a for " + ontoClass.name)
+                                    #     ontoClass.is_a.pop(0)
+                                    # else:
+                                    #===========================================
+                                    ontoClass.is_a.append(ontoClasses[objectLabel])
+         #                           ontoClass.is_a.append(ontoClasses[objectLabel])
+         #
+         #                       cls.is_a.append(propLabel.some(objectLabel))
 
+    # Remove superclass Thing where appropriate
+
+    for classLabel in ontoClasses.keys():
+        uriRef = rdflib.URIRef(ontoClasses[classLabel].iri)
+        g = default_world.as_rdflib_graph()
+        g.remove((uriRef,
+                  rdflib.RDFS.subClassOf,
+                  rdflib.OWL.Thing))
     #Add imports
     convertedOnto.imported_ontologies.append(sddoOnto)
     convertedOnto.imported_ontologies.append(roOnto)
