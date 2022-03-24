@@ -1,122 +1,115 @@
 Level	Rule Name	Subject	Property	Value
-WARN	missing_definition	Assay	textual definition	
-WARN	missing_definition	Event	textual definition	
-WARN	missing_definition	DataDiscoveryCriterion	textual definition	
-WARN	missing_definition	Parameter	textual definition	
-WARN	missing_definition	Specimen	textual definition	
-WARN	missing_definition	MetadataProduct	textual definition	
-WARN	missing_definition	Study	textual definition	
+WARN	missing_definition	pds_Collection	textual definition	
+WARN	missing_definition	pds_Data_Set_PDS3	textual definition	
+WARN	missing_definition	spase:DisplayData	textual definition	
+WARN	missing_definition	spase:Catalog	textual definition	
+WARN	missing_definition	spase:NumericalData	textual definition	
+WARN	missing_definition	provideInformationOn	textual definition	
+WARN	missing_definition	providesAccessTo	textual definition	
+WARN	missing_definition	consistOf	textual definition	
+WARN	missing_definition	experimentalContextFor	textual definition	
+WARN	missing_definition	generates	textual definition	
+WARN	missing_definition	uses	textual definition	
+WARN	missing_definition	componentOf	textual definition	
+WARN	missing_definition	relatedTo	textual definition	
+WARN	missing_definition	organizedBy	textual definition	
+WARN	missing_definition	createdBy	textual definition	
+WARN	missing_definition	deployedOn	textual definition	
+WARN	missing_definition	leadTo	textual definition	
+WARN	missing_definition	resultsIn	textual definition	
+WARN	missing_definition	usedIn	textual definition	
+WARN	missing_definition	conductedAt	textual definition	
+WARN	missing_definition	capableOfIdentifying	textual definition	
+WARN	missing_definition	provideAccessTo	textual definition	
+WARN	missing_definition	capableOfDetecting	textual definition	
+WARN	missing_definition	contain	textual definition	
+WARN	missing_definition	present	textual definition	
+WARN	missing_definition	sameAs	textual definition	
+WARN	missing_definition	isResultOf	textual definition	
+WARN	missing_definition	aggregate	textual definition	
+WARN	missing_definition	hasRole	textual definition	
+WARN	missing_definition	characterizedBy	textual definition	
+WARN	missing_definition	conductedOn	textual definition	
+WARN	missing_definition	operatesOn	textual definition	
+WARN	missing_definition	isA	textual definition	
+WARN	missing_definition	quantifiedBy	textual definition	
+WARN	missing_definition	partOf	textual definition	
+WARN	missing_definition	project	textual definition	
+WARN	missing_definition	campaign	textual definition	
+WARN	missing_definition	toolDiscoveryCriterion	textual definition	
+WARN	missing_definition	dataProductOrService	textual definition	
+WARN	missing_definition	needsDiscussion	textual definition	
+WARN	missing_definition	selectionParameter	textual definition	
+WARN	missing_definition	dataProduct	textual definition	
+WARN	missing_definition	engineeringPlatform	textual definition	
+WARN	missing_definition	legend	textual definition	
+WARN	missing_definition	hardware	textual definition	
+WARN	missing_definition	mutableNecessaryEvil	textual definition	
+WARN	missing_definition	author	textual definition	
+WARN	missing_definition	instrumentDiscoveryCriterion	textual definition	
+WARN	missing_definition	instrumentOperatingModeDiscoveryCriterion	textual definition	
+WARN	missing_definition	spaceAgency	textual definition	
+WARN	missing_definition	applicationDiscoveryCriterion	textual definition	
+WARN	missing_definition	discoveryCriterion	textual definition	
+WARN	missing_definition	researchStudy	textual definition	
+WARN	missing_definition	dataProductDiscoveryCriterion	textual definition	
+WARN	missing_definition	productService	textual definition	
+WARN	missing_definition	sciencePlatform	textual definition	
+WARN	missing_definition	dataProperties	textual definition	
+WARN	missing_definition	definedClasses	textual definition	
+WARN	missing_definition	factor	textual definition	
+WARN	missing_definition	modelDiscoveryCriterion	textual definition	
+WARN	missing_definition	dataSelectionParameter	textual definition	
+WARN	missing_definition	dataDiscoveryCriterion	textual definition	
+WARN	missing_definition	accessInterface	textual definition	
+WARN	missing_definition	informationDiscoveryCriterion	textual definition	
+WARN	missing_definition	researchInvestigation	textual definition	
+WARN	missing_definition	specimen	textual definition	
+WARN	missing_definition	informationProduct	textual definition	
+WARN	missing_definition	experimentApparatus	textual definition	
+WARN	missing_definition	deployment	textual definition	
+WARN	missing_definition	informationSelectionParameter	textual definition	
+WARN	missing_definition	engineeringMission	textual definition	
+WARN	missing_definition	software	textual definition	
+WARN	missing_definition	informationProductService	textual definition	
+WARN	missing_definition	funder	textual definition	
+WARN	missing_definition	instrumentOperatingMode	textual definition	
+WARN	missing_definition	person	textual definition	
+WARN	missing_definition	missionDiscoveryCriterion	textual definition	
+WARN	missing_definition	metadataProduct	textual definition	
+WARN	missing_definition	feature	textual definition	
+WARN	missing_definition	spaceTimeBoundingDiscoveryCriterion	textual definition	
+WARN	missing_definition	facility	textual definition	
+WARN	missing_definition	phenomenon	textual definition	
+WARN	missing_definition	observation	textual definition	
+WARN	missing_definition	photoGallery	textual definition	
+WARN	missing_definition	discoveryInterface	textual definition	
+WARN	missing_definition	experimentDiscoveryCriterion	textual definition	
+WARN	missing_definition	investigator	textual definition	
 WARN	missing_definition	OperationDiscoveryCriterion	textual definition	
-WARN	missing_definition	Platform	textual definition	
-WARN	missing_definition	InformationProductService	textual definition	
-WARN	missing_definition	ExperimentDiscoveryCriterion	textual definition	
-WARN	missing_definition	Increment	textual definition	
-WARN	missing_definition	InstrumentDiscoveryCriterion	textual definition	
-WARN	missing_definition	DataProduct	textual definition	
-WARN	missing_definition	ModelDiscoveryCriterion	textual definition	
-WARN	missing_definition	Instrument	textual definition	
-WARN	missing_definition	Software	textual definition	
-WARN	missing_definition	Person	textual definition	
-WARN	missing_definition	Experiment	textual definition	
-WARN	missing_definition	PlatformDiscoveryCriterion	textual definition	
-WARN	missing_definition	InstrumentOperatingModeDiscoveryCriterion	textual definition	
-WARN	missing_definition	LaboratoryProcedure	textual definition	
-WARN	missing_definition	InstrumentOperatingMode	textual definition	
-WARN	missing_definition	Measurement	textual definition	
-WARN	missing_definition	AccessInterface	textual definition	
-WARN	missing_definition	Feature	textual definition	
-WARN	missing_definition	EngineeringPlatform	textual definition	
-WARN	missing_definition	Organization	textual definition	
-WARN	missing_definition	LivingSubject	textual definition	
-WARN	missing_definition	Deployment	textual definition	
-WARN	missing_definition	ProductService	textual definition	
-WARN	missing_definition	DiscoveryInterface	textual definition	
-WARN	missing_definition	Mission	textual definition	
-WARN	missing_definition	Hurricane	textual definition	
-WARN	missing_definition	Factor	textual definition	
-WARN	missing_definition	SelectionParameter	textual definition	
-WARN	missing_definition	InformationSelectionParameter	textual definition	
-WARN	missing_definition	Program	textual definition	
-WARN	missing_definition	DataProductService	textual definition	
-WARN	missing_definition	Observation	textual definition	
-WARN	missing_definition	HealthSafetyEquipment	textual definition	
-WARN	missing_definition	Hardware	textual definition	
-WARN	missing_definition	Sample	textual definition	
-WARN	missing_definition	Campaign	textual definition	
-WARN	missing_definition	ImageLandmark	textual definition	
-WARN	missing_definition	InformationProduct	textual definition	
-WARN	missing_definition	MissionDiscoveryCriterion	textual definition	
-WARN	missing_definition	ResearchInvestigation	textual definition	
-WARN	missing_definition	DataSelectionParameter	textual definition	
-WARN	missing_definition	ApplicationDiscoveryCriterion	textual definition	
-WARN	missing_definition	DataProductDiscoveryCriterion	textual definition	
-WARN	missing_definition	Repository	textual definition	
-WARN	missing_definition	Organism	textual definition	
-WARN	missing_definition	IncidenceAngleRange	textual definition	
-WARN	missing_definition	Provider	textual definition	
-WARN	missing_definition	SpaceTimeBoundingDiscoveryCriterion	textual definition	
-WARN	missing_definition	SciencePlatform	textual definition	
-WARN	missing_definition	InformationDiscoveryCriterion	textual definition	
-WARN	missing_definition	LocationDiscoveryCriterion	textual definition	
-WARN	missing_definition	MutableNecessaryEvil	textual definition	
-WARN	missing_definition	ResearchMission	textual definition	
-WARN	missing_definition	SampleDiscoveryCriterion	textual definition	
-WARN	missing_definition	Project	textual definition	
-WARN	missing_definition	EngineeringMission	textual definition	
-WARN	missing_definition	NASAMission	textual definition	
-WARN	missing_definition	IncidenceAngle	textual definition	
-WARN	missing_definition	Phenomenon	textual definition	
-WARN	missing_definition	ResearchStudy	textual definition	
-WARN	missing_definition	ExperimentApparatus	textual definition	
-WARN	missing_definition	DiscoveryCriterion	textual definition	
-WARN	missing_definition	ToolDiscoveryCriterion	textual definition	
-WARN	missing_definition	Facility	textual definition	
-WARN	missing_definition	Author	textual definition	
-WARN	missing_definition	Investigator	textual definition	
-WARN	missing_definition	PhotoGallery	textual definition	
-WARN	missing_definition	Document	textual definition	
-WARN	missing_definition	ObjectDiscoveryCriterion	textual definition	
-INFO	missing_superclass	Assay	rdfs:subClassOf	
-INFO	missing_superclass	Event	rdfs:subClassOf	
-INFO	missing_superclass	Parameter	rdfs:subClassOf	
-INFO	missing_superclass	Study	rdfs:subClassOf	
-INFO	missing_superclass	Platform	rdfs:subClassOf	
-INFO	missing_superclass	Increment	rdfs:subClassOf	
-INFO	missing_superclass	Instrument	rdfs:subClassOf	
-INFO	missing_superclass	Software	rdfs:subClassOf	
-INFO	missing_superclass	Person	rdfs:subClassOf	
-INFO	missing_superclass	Experiment	rdfs:subClassOf	
-INFO	missing_superclass	LaboratoryProcedure	rdfs:subClassOf	
-INFO	missing_superclass	InstrumentOperatingMode	rdfs:subClassOf	
-INFO	missing_superclass	Measurement	rdfs:subClassOf	
-INFO	missing_superclass	AccessInterface	rdfs:subClassOf	
-INFO	missing_superclass	Feature	rdfs:subClassOf	
-INFO	missing_superclass	Organization	rdfs:subClassOf	
-INFO	missing_superclass	LivingSubject	rdfs:subClassOf	
-INFO	missing_superclass	Deployment	rdfs:subClassOf	
-INFO	missing_superclass	ProductService	rdfs:subClassOf	
-INFO	missing_superclass	DiscoveryInterface	rdfs:subClassOf	
-INFO	missing_superclass	Mission	rdfs:subClassOf	
-INFO	missing_superclass	Factor	rdfs:subClassOf	
-INFO	missing_superclass	SelectionParameter	rdfs:subClassOf	
-INFO	missing_superclass	Program	rdfs:subClassOf	
-INFO	missing_superclass	Observation	rdfs:subClassOf	
-INFO	missing_superclass	HealthSafetyEquipment	rdfs:subClassOf	
-INFO	missing_superclass	Hardware	rdfs:subClassOf	
-INFO	missing_superclass	Sample	rdfs:subClassOf	
-INFO	missing_superclass	Campaign	rdfs:subClassOf	
-INFO	missing_superclass	ResearchInvestigation	rdfs:subClassOf	
-INFO	missing_superclass	Repository	rdfs:subClassOf	
-INFO	missing_superclass	IncidenceAngleRange	rdfs:subClassOf	
-INFO	missing_superclass	Provider	rdfs:subClassOf	
-INFO	missing_superclass	MutableNecessaryEvil	rdfs:subClassOf	
-INFO	missing_superclass	Project	rdfs:subClassOf	
-INFO	missing_superclass	IncidenceAngle	rdfs:subClassOf	
-INFO	missing_superclass	Phenomenon	rdfs:subClassOf	
-INFO	missing_superclass	ResearchStudy	rdfs:subClassOf	
-INFO	missing_superclass	ExperimentApparatus	rdfs:subClassOf	
-INFO	missing_superclass	DiscoveryCriterion	rdfs:subClassOf	
-INFO	missing_superclass	Facility	rdfs:subClassOf	
-INFO	missing_superclass	Author	rdfs:subClassOf	
-INFO	missing_superclass	Investigator	rdfs:subClassOf	
-INFO	missing_superclass	Document	rdfs:subClassOf	
+WARN	missing_definition	program	textual definition	
+WARN	missing_definition	locationDiscoveryCriterion	textual definition	
+WARN	missing_definition	document	textual definition	
+WARN	missing_definition	sampleDiscoveryCriterion	textual definition	
+WARN	missing_definition	firmware	textual definition	
+WARN	missing_definition	observableDiscoveryCriterion	textual definition	
+WARN	missing_definition	platformDiscoveryCriterion	textual definition	
+INFO	missing_superclass	needsDiscussion	rdfs:subClassOf	
+INFO	missing_superclass	selectionParameter	rdfs:subClassOf	
+INFO	missing_superclass	legend	rdfs:subClassOf	
+INFO	missing_superclass	hardware	rdfs:subClassOf	
+INFO	missing_superclass	mutableNecessaryEvil	rdfs:subClassOf	
+INFO	missing_superclass	author	rdfs:subClassOf	
+INFO	missing_superclass	spaceAgency	rdfs:subClassOf	
+INFO	missing_superclass	discoveryCriterion	rdfs:subClassOf	
+INFO	missing_superclass	researchStudy	rdfs:subClassOf	
+INFO	missing_superclass	dataProperties	rdfs:subClassOf	
+INFO	missing_superclass	definedClasses	rdfs:subClassOf	
+INFO	missing_superclass	informationProduct	rdfs:subClassOf	
+INFO	missing_superclass	software	rdfs:subClassOf	
+INFO	missing_superclass	funder	rdfs:subClassOf	
+INFO	missing_superclass	facility	rdfs:subClassOf	
+INFO	missing_superclass	observation	rdfs:subClassOf	
+INFO	missing_superclass	photoGallery	rdfs:subClassOf	
+INFO	missing_superclass	document	rdfs:subClassOf	
+INFO	missing_superclass	firmware	rdfs:subClassOf	

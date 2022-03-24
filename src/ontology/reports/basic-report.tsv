@@ -8,7 +8,6 @@
 <http://purl.obolibrary.org/obo/SDDO_3000097>		
 <http://purl.obolibrary.org/obo/SDDO_3000053>		
 <http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002>		
-<http://purl.obolibrary.org/obo/SDDO_3000065>		
 <http://purl.obolibrary.org/obo/SDDO_3000077>		
 <http://purl.obolibrary.org/obo/SDDO_3000078>		
 <http://purl.obolibrary.org/obo/SDDO_3000111>		
@@ -34,6 +33,7 @@
 <http://purl.obolibrary.org/obo/SDDO_3000102>		
 <http://purl.obolibrary.org/obo/SDDO_3000114>		
 <http://purl.obolibrary.org/obo/SDDO_3000049>		
+<http://purl.obolibrary.org/obo/SDDO_3000065>	"The quality of a living subject that indicates the taxonomical grouping of the subject.  This grouping can be at any level in a hierachy of organism classification, or a collection of levels, and can be using scientific language or colloquial language."	
 <http://purl.obolibrary.org/obo/SDDO_3000106>		
 <http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004>		
 <http://purl.obolibrary.org/obo/SDDO_3000071>		
