@@ -3,6 +3,7 @@
 <http://purl.obolibrary.org/obo/SDDO_3000081>		
 <http://purl.obolibrary.org/obo/SDDO_3000093>		
 <http://purl.obolibrary.org/obo/SDDO_3000061>		
+<http://purl.obolibrary.org/obo/SDDO_3000113>	"Software that provides the low-level control for a device's specific hardware."	
 <http://purl.obolibrary.org/obo/SDDO_3000073>		
 <http://purl.obolibrary.org/obo/SDDO_3000085>		
 <http://purl.obolibrary.org/obo/SDDO_3000097>		
@@ -16,15 +17,17 @@
 <http://purl.obolibrary.org/obo/SDDO_3000115>		
 <http://purl.obolibrary.org/obo/SDDO_3000107>		
 <http://purl.obolibrary.org/obo/SDDO_3000069>	"A data product service in the GeneLab repository"	
+<http://purl.obolibrary.org/obo/SDDO_3000086>	"A role in which the bearer delivers financial support to enable some activity."	
 <http://purl.obolibrary.org/obo/SDDO_3000112>	"A mission that gather scientific data"	
+<http://purl.obolibrary.org/obo/SDDO_3000096>	"A material entity that is the subject of some investigation through observation or experiment."	
 <http://purl.obolibrary.org/obo/SDDO_3000060>	"A platform is a physical object to which an instrument is attached or in which it is contained."	
 <http://purl.obolibrary.org/obo/SDDO_3000080>		
 <http://purl.obolibrary.org/obo/SDDO_3000072>		
 <http://purl.obolibrary.org/obo/SDDO_3000084>		
-<http://purl.obolibrary.org/obo/SDDO_3000096>		
 <http://purl.obolibrary.org/obo/SDDO_3000052>		
 <http://purl.obolibrary.org/obo/SDDO_3000064>		
 <http://purl.obolibrary.org/obo/SDDO_3000076>		
+<http://purl.obolibrary.org/obo/SDDO_3000071>	"The role played by an entity as part of a scientific investigation such that levels of the measurement or observation of the entity are thought to bear upon the hypotheses being investigated."	
 <http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001>		
 <http://purl.obolibrary.org/obo/SDDO_3000089>	"Any procedure that involves testing or manipulating a sample or subject in a laboratory setting"	
 <http://purl.obolibrary.org/obo/SDDO_3000045>		
@@ -36,7 +39,6 @@
 <http://purl.obolibrary.org/obo/SDDO_3000065>	"The quality of a living subject that indicates the taxonomical grouping of the subject.  This grouping can be at any level in a hierachy of organism classification, or a collection of levels, and can be using scientific language or colloquial language."	
 <http://purl.obolibrary.org/obo/SDDO_3000106>		
 <http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004>		
-<http://purl.obolibrary.org/obo/SDDO_3000071>		
 <http://purl.obolibrary.org/obo/SDDO_3000083>		
 <http://purl.obolibrary.org/obo/SDDO_3000051>		
 <http://purl.obolibrary.org/obo/SDDO_3000095>		
@@ -50,7 +52,6 @@
 <http://purl.obolibrary.org/obo/SDDO_3000056>		
 <http://purl.obolibrary.org/obo/SDDO_3000068>		
 <http://purl.obolibrary.org/obo/SDDO_3000101>		
-<http://purl.obolibrary.org/obo/SDDO_3000113>		
 <http://purl.obolibrary.org/obo/SDDO_3000048>		
 <http://purl.obolibrary.org/obo/SDDO_3000105>		
 <http://purl.obolibrary.org/obo/SDDO_3000047>	"An assay is an investigative (analytic) procedure for qualitatively assessing or quantitatively measuring the presence, amount, or functional activity of a target entity."	
@@ -65,7 +66,6 @@
 <http://purl.obolibrary.org/obo/SDDO_3000062>		
 <http://purl.obolibrary.org/obo/SDDO_3000044>	"Something observable that happened at a given time and place"	
 <http://purl.obolibrary.org/obo/SDDO_3000074>		
-<http://purl.obolibrary.org/obo/SDDO_3000086>		
 <http://purl.obolibrary.org/obo/SDDO_3000098>		
 <http://purl.obolibrary.org/obo/SDDO_3000054>		
 <http://purl.obolibrary.org/obo/SDDO_3000091>	"A NASA mission is a mission led or funded by NASA"	

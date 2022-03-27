@@ -9,7 +9,7 @@
 <http://purl.obolibrary.org/obo/SDDO_3000099>	<http://www.w3.org/2000/01/rdf-schema#label>	"phenomenon"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000063>	<http://www.w3.org/2000/01/rdf-schema#label>	"researchStudy"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000070>	<http://www.w3.org/2000/01/rdf-schema#label>	"definedClasses"@en	
-<http://purl.obolibrary.org/obo/SDDO_3000110>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataParameter"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000110>	<http://www.w3.org/2000/01/rdf-schema#label>	"data element"	
 <http://purl.obolibrary.org/obo/SDDO_3000083>	<http://www.w3.org/2000/01/rdf-schema#label>	"engineeringMission"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000075>	<http://www.w3.org/2000/01/rdf-schema#label>	"accessInterface"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000059>	<http://www.w3.org/2000/01/rdf-schema#label>	"spaceAgency"@en	
@@ -49,7 +49,7 @@
 <http://purl.obolibrary.org/obo/SDDO_3000096>	<http://www.w3.org/2000/01/rdf-schema#label>	"feature"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000078>	<http://www.w3.org/2000/01/rdf-schema#label>	"specimen"@en	
 <http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001>	<http://www.w3.org/2000/01/rdf-schema#label>	"pds_Data_Set_PDS3"@en	
-<http://purl.obolibrary.org/obo/SDDO_3000085>	<http://www.w3.org/2000/01/rdf-schema#label>	"informationProductService"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000085>	<http://www.w3.org/2000/01/rdf-schema#label>	"informationProductOrService"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000057>	<http://www.w3.org/2000/01/rdf-schema#label>	"instrumentDiscoveryCriterion"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000046>	<http://www.w3.org/2000/01/rdf-schema#label>	"toolDiscoveryCriterion"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000109>	<http://www.w3.org/2000/01/rdf-schema#label>	"document"@en	
