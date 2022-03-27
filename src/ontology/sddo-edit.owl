@@ -352,6 +352,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000044 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000044">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000035"/>
@@ -507,6 +508,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000054 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:label xml:lang="en">hardware</rdfs:label>
     </owl:Class>
     
@@ -607,18 +609,6 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000066 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000066">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000004"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000048"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000004"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000079"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter Fox</oboInOwl:created_by>
         <rdfs:label xml:lang="en">productService</rdfs:label>
     </owl:Class>
@@ -665,12 +655,24 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000007"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000112>Gender is known to be a factor in the study of high blood pressure.</obo:IAO_0000112>
+        <obo:IAO_0000115>The role played by an entity as part of a scientific investigation such that levels of the measurement or observation of the entity are thought to bear upon the hypotheses being investigated.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/ 0000-0003-4312-9552"/>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+        <obo:IAO_0000119>0000-0003-4312-9552</obo:IAO_0000119>
         <rdfs:label xml:lang="en">factor</rdfs:label>
     </owl:Class>
     
@@ -765,6 +767,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000079 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000079">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000085"/>
         <rdfs:label xml:lang="en">informationProduct</rdfs:label>
     </owl:Class>
     
@@ -895,7 +898,7 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000113"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">informationProductService</rdfs:label>
+        <rdfs:label xml:lang="en">informationProductOrService</rdfs:label>
     </owl:Class>
     
 
@@ -903,6 +906,14 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000086 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000086">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000103"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A role in which the bearer delivers financial support to enable some activity.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">funder</rdfs:label>
     </owl:Class>
     
@@ -931,6 +942,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000088">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000015"/>
@@ -1086,6 +1098,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000096 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000096">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
@@ -1118,6 +1131,7 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A material entity that is the subject of some investigation through observation or experiment.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">feature</rdfs:label>
     </owl:Class>
     
@@ -1139,6 +1153,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000098 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000098">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
         <rdfs:label xml:lang="en">facility</rdfs:label>
     </owl:Class>
     
@@ -1167,6 +1182,8 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000100 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000100">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
         <rdfs:label xml:lang="en">observation</rdfs:label>
     </owl:Class>
     
@@ -1335,9 +1352,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:BFO_0000179 xml:lang="en">data element</obo:BFO_0000179>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The meaning of a column within a spreadsheet (e.g., identifier or height); the meaning of each pixel in an image (e.g., surface temperature)|another test example</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data parameter is any characteristic that can help in understanding data content. That is, a parameter is a data element that is useful, or critical, when identifying  or describing the content of a data object.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">dataParameter</rdfs:label>
+        <rdfs:label>data element</rdfs:label>
     </owl:Class>
     
 
@@ -1364,6 +1382,16 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000113 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000113">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000054"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>Software that provides the low-level control for a device&apos;s specific hardware.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+        <obo:IAO_0000119 rdf:resource="https://en.wikipedia.org/wiki/Firmware"/>
         <rdfs:label xml:lang="en">firmware</rdfs:label>
     </owl:Class>
     

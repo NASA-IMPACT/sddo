@@ -34,3 +34,9 @@ src/ontology/sddo-annotations-020322.tsv
 src/scripts/cxlConverter/cxlConverter/sddo-addl-annotations.owl
 src/scripts/cxlConverter/cxlConverter/sddo-addl-annotations.owl
 src/scripts/cxlConverter/cxlConverter/sddo-edit.owl
+src/ontology/imports/obi_terms.txt.bak
+src/scripts/cxlConverter/cxlConverter/sddo.owl.bak
+src/scripts/cxlConverter/cxlConverter/input/LSDA2SMDmapping_20220303_dcb_Propositions.txt
+src/scripts/cxlConverter/cxlConverter/input/LSDA2SMDmapping_20220303_dcb_Propositions.csv.bak
+src/scripts/cxlConverter/cxlConverter/catalog-v001.xml
+src/scripts/cxlConverter/cxlConverter/catalog-v001.xml
