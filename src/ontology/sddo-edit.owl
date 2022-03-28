@@ -710,6 +710,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000075 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000075">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000050"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000029"/>
@@ -1197,6 +1198,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000102 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000102">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000050"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000019"/>
@@ -1239,7 +1241,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000076"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">discoveryInterface</rdfs:label>
+        <obo:IAO_0000115>A software interface that 2) presents users with discovery criteria which 2) restricts the the access interfaces to those matching the discovery criteria choices the user makes.</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">discovery interface</rdfs:label>
     </owl:Class>
     
 
