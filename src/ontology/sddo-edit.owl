@@ -672,7 +672,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000112>Gender is known to be a factor in the study of high blood pressure.</obo:IAO_0000112>
         <obo:IAO_0000115>The role played by an entity as part of a scientific investigation such that levels of the measurement or observation of the entity are thought to bear upon the hypotheses being investigated.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:resource="https://orcid.org/%200000-0003-4312-9552"/>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-4312-9552"/>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
         <obo:IAO_0000119>0000-0003-4312-9552</obo:IAO_0000119>
         <rdfs:label xml:lang="en">factor</rdfs:label>
