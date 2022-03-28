@@ -31,7 +31,6 @@ WARN	missing_definition	hasRole	textual definition
 WARN	missing_definition	characterizedBy	textual definition	
 WARN	missing_definition	conductedOn	textual definition	
 WARN	missing_definition	operatesOn	textual definition	
-WARN	missing_definition	isA	textual definition	
 WARN	missing_definition	quantifiedBy	textual definition	
 WARN	missing_definition	partOf	textual definition	
 WARN	missing_definition	project	textual definition	
@@ -44,7 +43,6 @@ WARN	missing_definition	dataProduct	textual definition
 WARN	missing_definition	engineeringPlatform	textual definition	
 WARN	missing_definition	legend	textual definition	
 WARN	missing_definition	hardware	textual definition	
-WARN	missing_definition	mutableNecessaryEvil	textual definition	
 WARN	missing_definition	author	textual definition	
 WARN	missing_definition	instrumentDiscoveryCriterion	textual definition	
 WARN	missing_definition	instrumentOperatingModeDiscoveryCriterion	textual definition	
@@ -98,7 +96,6 @@ INFO	missing_superclass	needsDiscussion	rdfs:subClassOf
 INFO	missing_superclass	selectionParameter	rdfs:subClassOf	
 INFO	missing_superclass	legend	rdfs:subClassOf	
 INFO	missing_superclass	hardware	rdfs:subClassOf	
-INFO	missing_superclass	mutableNecessaryEvil	rdfs:subClassOf	
 INFO	missing_superclass	author	rdfs:subClassOf	
 INFO	missing_superclass	spaceAgency	rdfs:subClassOf	
 INFO	missing_superclass	discoveryCriterion	rdfs:subClassOf	
