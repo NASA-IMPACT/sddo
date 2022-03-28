@@ -686,7 +686,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000112>Gender is known to be a factor in the study of high blood pressure.</obo:IAO_0000112>
         <obo:IAO_0000115>The role played by an entity as part of a scientific investigation such that levels of the measurement or observation of the entity are thought to bear upon the hypotheses being investigated.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:resource="https://orcid.org/ 0000-0003-4312-9552"/>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/%200000-0003-4312-9552"/>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
         <obo:IAO_0000119>0000-0003-4312-9552</obo:IAO_0000119>
         <rdfs:label xml:lang="en">factor</rdfs:label>
@@ -767,6 +767,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000078 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000096"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000021"/>
@@ -1116,12 +1117,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000096">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000035"/>
