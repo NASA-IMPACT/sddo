@@ -13,12 +13,12 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/sddo/sddo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sddo/releases/2022-03-27/sddo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sddo/releases/2022-03-28/sddo-base.owl"/>
         <dc:description>The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA&apos;s Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science.</dc:description>
         <dc:title>Science Data Discovery Ontology</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-03-27</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-03-28</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -144,12 +144,6 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000052"/>
     
 
 
@@ -509,12 +503,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0100051 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100051"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SDDO_3000043 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000043">
@@ -856,7 +844,7 @@
         </rdfs:subClassOf>
         <obo:IAO_0000112>Gender is known to be a factor in the study of high blood pressure.</obo:IAO_0000112>
         <obo:IAO_0000115>The role played by an entity as part of a scientific investigation such that levels of the measurement or observation of the entity are thought to bear upon the hypotheses being investigated.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:resource="https://orcid.org/%200000-0003-4312-9552"/>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-4312-9552"/>
         <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
         <obo:IAO_0000119>0000-0003-4312-9552</obo:IAO_0000119>
         <rdfs:label xml:lang="en">factor</rdfs:label>
@@ -937,6 +925,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000078 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000096"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000021"/>
@@ -1285,12 +1274,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000096">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000052"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000035"/>

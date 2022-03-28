@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: sddo/releases/2022-03-27/sddo-base.owl
+data-version: sddo/releases/2022-03-28/sddo-base.owl
 ontology: sddo/sddo-base
 property_value: http://purl.org/dc/elements/1.1/description "The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA's Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Science Data Discovery Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
-property_value: owl:versionInfo "2022-03-27" xsd:string
+property_value: owl:versionInfo "2022-03-28" xsd:string
 
 [Term]
 id: SDDO:1000000
@@ -186,7 +186,7 @@ def: "The role played by an entity as part of a scientific investigation such th
 is_a: BFO:0000023
 relationship: SDDO:3000007 SDDO:3000100 ! experimentalContextFor observation
 property_value: IAO:0000112 "Gender is known to be a factor in the study of high blood pressure." xsd:string
-property_value: IAO:0000117 https://orcid.org/%200000-0003-4312-9552
+property_value: IAO:0000117 https://orcid.org/0000-0003-4312-9552
 property_value: IAO:0000117 https://orcid.org/0000-0003-4808-4736
 property_value: IAO:0000119 "0000-0003-4312-9552" xsd:string
 
@@ -224,6 +224,7 @@ relationship: SDDO:3000030 SDDO:3000063 ! sameAs researchStudy
 [Term]
 id: SDDO:3000078
 name: specimen
+is_a: SDDO:3000096 ! feature
 relationship: SDDO:3000021 SDDO:3000047 ! usedIn assay
 created_by: Rduerr
 creation_date: 2021-11-30T21:35:20.533927Z
@@ -356,7 +357,6 @@ id: SDDO:3000096
 name: feature
 def: "A material entity that is the subject of some investigation through observation or experiment." []
 is_a: BFO:0000040
-relationship: RO:0000052 OBI:0100051
 
 [Term]
 id: SDDO:3000097
