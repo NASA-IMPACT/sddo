@@ -831,6 +831,19 @@ for now.</obo:IAO_0000116>
     
 
 
+    <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000052 -->
+
+    <owl:Class rdf:about="http://www.ebi.ac.uk/swo/interface/SWO_9000052">
+        <rdfs:subClassOf rdf:resource="http://www.ebi.ac.uk/swo/SWO_9000050"/>
+        <obo:IAO_0000115>A Graphical user interface is a type of software interface that allows users to interact with electronic devices using images rather than text commands. A GUI represents the information and actions available to a user through graphical icons and visual indicators such as secondary notation, as opposed to text-based interfaces, typed command labels or text navigation.</obo:IAO_0000115>
+        <obo:IAO_0000115>https://en.wikipedia.org/wiki/Graphical_user_interface, accessed 6 June 2013.</obo:IAO_0000115>
+        <obo:IAO_0000118>GUI</obo:IAO_0000118>
+        <dc:creator>Allyson Lister</dc:creator>
+        <rdfs:label>graphical user interface</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://www.ebi.ac.uk/swo/interface/SWO_9000054 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/interface/SWO_9000054">
