@@ -55,11 +55,10 @@ WARN	missing_definition	productService	textual definition
 WARN	missing_definition	sciencePlatform	textual definition	
 WARN	missing_definition	dataProperties	textual definition	
 WARN	missing_definition	definedClasses	textual definition	
-WARN	missing_definition	factor	textual definition	
 WARN	missing_definition	modelDiscoveryCriterion	textual definition	
 WARN	missing_definition	dataSelectionParameter	textual definition	
 WARN	missing_definition	dataDiscoveryCriterion	textual definition	
-WARN	missing_definition	accessInterface	textual definition	
+WARN	missing_definition	access interface	textual definition	
 WARN	missing_definition	informationDiscoveryCriterion	textual definition	
 WARN	missing_definition	researchInvestigation	textual definition	
 WARN	missing_definition	specimen	textual definition	
@@ -69,13 +68,11 @@ WARN	missing_definition	deployment	textual definition
 WARN	missing_definition	informationSelectionParameter	textual definition	
 WARN	missing_definition	engineeringMission	textual definition	
 WARN	missing_definition	software	textual definition	
-WARN	missing_definition	informationProductService	textual definition	
-WARN	missing_definition	funder	textual definition	
+WARN	missing_definition	informationProductOrService	textual definition	
 WARN	missing_definition	instrumentOperatingMode	textual definition	
 WARN	missing_definition	person	textual definition	
 WARN	missing_definition	missionDiscoveryCriterion	textual definition	
 WARN	missing_definition	metadataProduct	textual definition	
-WARN	missing_definition	feature	textual definition	
 WARN	missing_definition	spaceTimeBoundingDiscoveryCriterion	textual definition	
 WARN	missing_definition	facility	textual definition	
 WARN	missing_definition	phenomenon	textual definition	
@@ -89,24 +86,18 @@ WARN	missing_definition	program	textual definition
 WARN	missing_definition	locationDiscoveryCriterion	textual definition	
 WARN	missing_definition	document	textual definition	
 WARN	missing_definition	sampleDiscoveryCriterion	textual definition	
-WARN	missing_definition	firmware	textual definition	
 WARN	missing_definition	observableDiscoveryCriterion	textual definition	
 WARN	missing_definition	platformDiscoveryCriterion	textual definition	
 INFO	missing_superclass	needsDiscussion	rdfs:subClassOf	
 INFO	missing_superclass	selectionParameter	rdfs:subClassOf	
 INFO	missing_superclass	legend	rdfs:subClassOf	
-INFO	missing_superclass	hardware	rdfs:subClassOf	
 INFO	missing_superclass	author	rdfs:subClassOf	
 INFO	missing_superclass	spaceAgency	rdfs:subClassOf	
 INFO	missing_superclass	discoveryCriterion	rdfs:subClassOf	
 INFO	missing_superclass	researchStudy	rdfs:subClassOf	
+INFO	missing_superclass	productService	rdfs:subClassOf	
 INFO	missing_superclass	dataProperties	rdfs:subClassOf	
 INFO	missing_superclass	definedClasses	rdfs:subClassOf	
-INFO	missing_superclass	informationProduct	rdfs:subClassOf	
 INFO	missing_superclass	software	rdfs:subClassOf	
-INFO	missing_superclass	funder	rdfs:subClassOf	
-INFO	missing_superclass	facility	rdfs:subClassOf	
-INFO	missing_superclass	observation	rdfs:subClassOf	
 INFO	missing_superclass	photoGallery	rdfs:subClassOf	
 INFO	missing_superclass	document	rdfs:subClassOf	
-INFO	missing_superclass	firmware	rdfs:subClassOf	

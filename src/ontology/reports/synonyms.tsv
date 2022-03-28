@@ -11,7 +11,7 @@
 <http://purl.obolibrary.org/obo/SDDO_3000070>	<http://www.w3.org/2000/01/rdf-schema#label>	"definedClasses"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000110>	<http://www.w3.org/2000/01/rdf-schema#label>	"data element"	
 <http://purl.obolibrary.org/obo/SDDO_3000083>	<http://www.w3.org/2000/01/rdf-schema#label>	"engineeringMission"@en	
-<http://purl.obolibrary.org/obo/SDDO_3000075>	<http://www.w3.org/2000/01/rdf-schema#label>	"accessInterface"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000075>	<http://www.w3.org/2000/01/rdf-schema#label>	"access interface"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000059>	<http://www.w3.org/2000/01/rdf-schema#label>	"spaceAgency"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000088>	<http://www.w3.org/2000/01/rdf-schema#label>	"mission"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000102>	<http://www.w3.org/2000/01/rdf-schema#label>	"discoveryInterface"@en	
