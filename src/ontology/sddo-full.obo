@@ -1914,8 +1914,11 @@ property_value: IAO:0000119 "Adapted from http://purl.obolibrary.org/obo/NCIT_C2
 [Term]
 id: SDDO:3000045
 name: campaign
+def: "A systematic set of activities undertaken to meet a particular science objective." []
 relationship: SDDO:3000009 SDDO:3000060 ! uses platform
 relationship: SDDO:3000020 SDDO:3000066 ! resultsIn productService
+property_value: IAO:0000118 "science campaign" xsd:string
+property_value: IAO:0000119 "Morris, Robert, Jennifer Dungan, Lina Khatib, A. Bachman, John Gasch, Paul Hempel, Jenny Williams, Terri Wood, and Christopher Bruno. \"Coordinated science campaign planning for earth observing missions.\" In Proc. of ESTC’04. 2004." xsd:string
 
 [Term]
 id: SDDO:3000046

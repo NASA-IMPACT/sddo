@@ -64,6 +64,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
@@ -561,6 +567,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A systematic set of activities undertaken to meet a particular science objective.</obo:IAO_0000115>
+        <obo:IAO_0000118>science campaign</obo:IAO_0000118>
+        <obo:IAO_0000119>Morris, Robert, Jennifer Dungan, Lina Khatib, A. Bachman, John Gasch, Paul Hempel, Jenny Williams, Terri Wood, and Christopher Bruno. &quot;Coordinated science campaign planning for earth observing missions.&quot; In Proc. of ESTC’04. 2004.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">campaign</rdfs:label>
     </owl:Class>
     

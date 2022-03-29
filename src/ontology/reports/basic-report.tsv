@@ -22,6 +22,7 @@
 <http://purl.obolibrary.org/obo/SDDO_3000096>	"A material entity that is the subject of some investigation through observation or experiment."	
 <http://purl.obolibrary.org/obo/SDDO_3000060>	"A platform is a physical object to which an instrument is attached or in which it is contained."	
 <http://purl.obolibrary.org/obo/SDDO_3000080>		
+<http://purl.obolibrary.org/obo/SDDO_3000045>	"A systematic set of activities undertaken to meet a particular science objective."	
 <http://purl.obolibrary.org/obo/SDDO_3000072>		
 <http://purl.obolibrary.org/obo/SDDO_3000084>		
 <http://purl.obolibrary.org/obo/SDDO_3000052>		
@@ -30,7 +31,6 @@
 <http://purl.obolibrary.org/obo/SDDO_3000071>	"The role played by an entity as part of a scientific investigation such that levels of the measurement or observation of the entity are thought to bear upon the hypotheses being investigated."	
 <http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001>		
 <http://purl.obolibrary.org/obo/SDDO_3000089>	"Any procedure that involves testing or manipulating a sample or subject in a laboratory setting"	
-<http://purl.obolibrary.org/obo/SDDO_3000045>		
 <http://purl.obolibrary.org/obo/SDDO_3000057>		
 <http://purl.obolibrary.org/obo/SDDO_3000103>	"A PDS 4 collection where the collection_type is \"Data\""	
 <http://purl.obolibrary.org/obo/SDDO_3000102>		
