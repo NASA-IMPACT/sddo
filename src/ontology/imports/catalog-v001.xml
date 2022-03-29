@@ -3,6 +3,6 @@
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
         <uri id="Automatically generated entry, Timestamp=1648515003151" name="http://purl.obolibrary.org/obo/sddo/imports/obi_import.owl" uri="obi_import.owl"/>
         <uri id="Automatically generated entry, Timestamp=1648515003151" name="http://purl.obolibrary.org/obo/sddo/imports/sosa_import.owl" uri="sosa_import.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1648515003151" name="http://www.ebi.ac.uk/swo/swo.owl" uri="swo_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1648515003151" name="http://purl.obolibrary.org/obo/sddo/imports/swo_import.owl" uri="swo_import.owl"/>
     </group>
 </catalog>
