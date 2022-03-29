@@ -1,5 +1,6 @@
 ?cls	?def	?xrefs
 <http://purl.obolibrary.org/obo/SDDO_3000088>	"A mission is a named activity for some purpose"	
+<http://purl.obolibrary.org/obo/SDDO_3000102>	"A software interface that 2) presents users with discovery criteria which 2) restricts the the access interfaces to those matching the discovery criteria choices the user makes."	
 <http://purl.obolibrary.org/obo/SDDO_3000081>		
 <http://purl.obolibrary.org/obo/SDDO_3000093>		
 <http://purl.obolibrary.org/obo/SDDO_3000061>		
@@ -33,7 +34,6 @@
 <http://purl.obolibrary.org/obo/SDDO_3000045>		
 <http://purl.obolibrary.org/obo/SDDO_3000057>		
 <http://purl.obolibrary.org/obo/SDDO_3000103>	"A PDS 4 collection where the collection_type is \"Data\""	
-<http://purl.obolibrary.org/obo/SDDO_3000102>		
 <http://purl.obolibrary.org/obo/SDDO_3000114>		
 <http://purl.obolibrary.org/obo/SDDO_3000049>		
 <http://purl.obolibrary.org/obo/SDDO_3000065>	"The quality of a living subject that indicates the taxonomical grouping of the subject.  This grouping can be at any level in a hierachy of organism classification, or a collection of levels, and can be using scientific language or colloquial language."	

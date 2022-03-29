@@ -78,7 +78,6 @@ WARN	missing_definition	facility	textual definition
 WARN	missing_definition	phenomenon	textual definition	
 WARN	missing_definition	observation	textual definition	
 WARN	missing_definition	photoGallery	textual definition	
-WARN	missing_definition	discoveryInterface	textual definition	
 WARN	missing_definition	experimentDiscoveryCriterion	textual definition	
 WARN	missing_definition	investigator	textual definition	
 WARN	missing_definition	OperationDiscoveryCriterion	textual definition	

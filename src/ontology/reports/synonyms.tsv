@@ -14,7 +14,7 @@
 <http://purl.obolibrary.org/obo/SDDO_3000075>	<http://www.w3.org/2000/01/rdf-schema#label>	"access interface"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000059>	<http://www.w3.org/2000/01/rdf-schema#label>	"spaceAgency"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000088>	<http://www.w3.org/2000/01/rdf-schema#label>	"mission"@en	
-<http://purl.obolibrary.org/obo/SDDO_3000102>	<http://www.w3.org/2000/01/rdf-schema#label>	"discoveryInterface"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000102>	<http://www.w3.org/2000/01/rdf-schema#label>	"discovery interface"@en	
 <http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003>	<http://www.w3.org/2000/01/rdf-schema#label>	"spase:Catalog"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000067>	<http://www.w3.org/2000/01/rdf-schema#label>	"sciencePlatform"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000107>	<http://www.w3.org/2000/01/rdf-schema#label>	"program"@en	
@@ -54,9 +54,9 @@
 <http://purl.obolibrary.org/obo/SDDO_3000046>	<http://www.w3.org/2000/01/rdf-schema#label>	"toolDiscoveryCriterion"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000109>	<http://www.w3.org/2000/01/rdf-schema#label>	"document"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000095>	<http://www.w3.org/2000/01/rdf-schema#label>	"metadataProduct"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000111>	<http://www.w3.org/2000/01/rdf-schema#label>	"sampleDiscoveryCriterion"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000064>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataProductDiscoveryCriterion"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000071>	<http://www.w3.org/2000/01/rdf-schema#label>	"factor"@en	
-<http://purl.obolibrary.org/obo/SDDO_3000111>	<http://www.w3.org/2000/01/rdf-schema#label>	"sampleDiscoveryCriterion"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000104>	<http://www.w3.org/2000/01/rdf-schema#label>	"experimentDiscoveryCriterion"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000084>	<http://www.w3.org/2000/01/rdf-schema#label>	"software"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000054>	<http://www.w3.org/2000/01/rdf-schema#label>	"hardware"@en	
