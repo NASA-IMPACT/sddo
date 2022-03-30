@@ -8,7 +8,6 @@
 <http://purl.obolibrary.org/obo/SDDO_3000094>	<http://www.w3.org/2000/01/rdf-schema#label>	"experiment"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000099>	<http://www.w3.org/2000/01/rdf-schema#label>	"phenomenon"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000063>	<http://www.w3.org/2000/01/rdf-schema#label>	"researchStudy"@en	
-<http://purl.obolibrary.org/obo/SDDO_3000070>	<http://www.w3.org/2000/01/rdf-schema#label>	"definedClasses"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000110>	<http://www.w3.org/2000/01/rdf-schema#label>	"data element"	
 <http://purl.obolibrary.org/obo/SDDO_3000083>	<http://www.w3.org/2000/01/rdf-schema#label>	"engineeringMission"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000075>	<http://www.w3.org/2000/01/rdf-schema#label>	"accessInterface"@en	
@@ -65,7 +64,6 @@
 <http://purl.obolibrary.org/obo/SDDO_3000043>	<http://www.w3.org/2000/01/rdf-schema#label>	"project"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000090>	<http://www.w3.org/2000/01/rdf-schema#label>	"person"@en	
 <http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004>	<http://www.w3.org/2000/01/rdf-schema#label>	"spase:NumericalData"@en	
-<http://purl.obolibrary.org/obo/SDDO_3000068>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataProperties"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000049>	<http://www.w3.org/2000/01/rdf-schema#label>	"needsDiscussion"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000058>	<http://www.w3.org/2000/01/rdf-schema#label>	"instrumentOperatingModeDiscoveryCriterion"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000093>	<http://www.w3.org/2000/01/rdf-schema#label>	"missionDiscoveryCriterion"@en	

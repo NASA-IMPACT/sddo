@@ -1,6 +1,5 @@
 ?cls	?def	?xrefs
 <http://purl.obolibrary.org/obo/SDDO_3000088>	"A mission is a named activity for some purpose"	
-<http://purl.obolibrary.org/obo/SDDO_3000081>		
 <http://purl.obolibrary.org/obo/SDDO_3000093>		
 <http://purl.obolibrary.org/obo/SDDO_3000061>		
 <http://purl.obolibrary.org/obo/SDDO_3000113>	"Software that provides the low-level control for a device's specific hardware."	
@@ -10,6 +9,7 @@
 <http://purl.obolibrary.org/obo/SDDO_3000053>		
 <http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002>		
 <http://purl.obolibrary.org/obo/SDDO_3000077>		
+<http://purl.obolibrary.org/obo/SDDO_3000075>	"A software interface that 1) presents users with selection criteria and 2) presents products or services that meet the criteria the user then selects."	
 <http://purl.obolibrary.org/obo/SDDO_3000078>		
 <http://purl.obolibrary.org/obo/SDDO_3000111>		
 <http://purl.obolibrary.org/obo/SDDO_3000046>		
@@ -38,19 +38,19 @@
 <http://purl.obolibrary.org/obo/SDDO_3000049>		
 <http://purl.obolibrary.org/obo/SDDO_3000065>	"The quality of a living subject that indicates the taxonomical grouping of the subject.  This grouping can be at any level in a hierachy of organism classification, or a collection of levels, and can be using scientific language or colloquial language."	
 <http://purl.obolibrary.org/obo/SDDO_3000106>		
+<http://purl.obolibrary.org/obo/SDDO_3000081>	"The realisation of an application, or execution of a plan, idea, model, design, specification, standard, algorithm, or policy."	
+<http://purl.obolibrary.org/obo/SDDO_3000110>	"A data element is any characteristic that can help in understanding data content. That is, a data element is any parameter or variable that is useful, or critical, when identifying  or describing the content of a data object."	
+<http://purl.obolibrary.org/obo/SDDO_3000056>	"An originator or creator of a work"	
 <http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004>		
 <http://purl.obolibrary.org/obo/SDDO_3000083>		
 <http://purl.obolibrary.org/obo/SDDO_3000051>		
 <http://purl.obolibrary.org/obo/SDDO_3000095>		
 <http://purl.obolibrary.org/obo/SDDO_3000063>		
 <http://purl.obolibrary.org/obo/SDDO_/SDDO_1000000>		
-<http://purl.obolibrary.org/obo/SDDO_3000075>		
 <http://purl.obolibrary.org/obo/SDDO_3000092>	"An instrument is a physical object that can be used to collect data."	
 <http://purl.obolibrary.org/obo/SDDO_3000087>		
 <http://purl.obolibrary.org/obo/SDDO_3000043>		
 <http://purl.obolibrary.org/obo/SDDO_3000099>		
-<http://purl.obolibrary.org/obo/SDDO_3000056>		
-<http://purl.obolibrary.org/obo/SDDO_3000068>		
 <http://purl.obolibrary.org/obo/SDDO_3000101>		
 <http://purl.obolibrary.org/obo/SDDO_3000048>		
 <http://purl.obolibrary.org/obo/SDDO_3000105>		
@@ -58,8 +58,6 @@
 <http://purl.obolibrary.org/obo/SDDO_3000109>		
 <http://purl.obolibrary.org/obo/sddo.owl#Annotation>		
 <http://purl.obolibrary.org/obo/SDDO_3000090>		
-<http://purl.obolibrary.org/obo/SDDO_3000070>		
-<http://purl.obolibrary.org/obo/SDDO_3000110>	"A data parameter is any characteristic that can help in understanding data content. That is, a parameter is a data element that is useful, or critical, when identifying  or describing the content of a data object."	
 <http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003>		
 <http://purl.obolibrary.org/obo/SDDO_3000082>		
 <http://purl.obolibrary.org/obo/SDDO_3000050>		

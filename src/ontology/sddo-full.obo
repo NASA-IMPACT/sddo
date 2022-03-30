@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: sddo/releases/2022-03-29/sddo-full.owl
+data-version: sddo/releases/2022-03-30/sddo-full.owl
 ontology: sddo/sddo-full
 property_value: http://purl.org/dc/elements/1.1/description "The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA's Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Science Data Discovery Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
-property_value: owl:versionInfo "2022-03-29" xsd:string
+property_value: owl:versionInfo "2022-03-30" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -1917,6 +1917,9 @@ name: campaign
 def: "A systematic set of activities undertaken to meet a particular science objective." []
 relationship: SDDO:3000009 SDDO:3000060 ! uses platform
 relationship: SDDO:3000020 SDDO:3000066 ! resultsIn productService
+property_value: IAO:0000112 "A single science campaign may require all or part of several missions." xsd:string
+property_value: IAO:0000112 "There may be several science campaigns occurring over the course of a single mission." xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0003-4808-4736
 property_value: IAO:0000118 "science campaign" xsd:string
 property_value: IAO:0000119 "Morris, Robert, Jennifer Dungan, Lina Khatib, A. Bachman, John Gasch, Paul Hempel, Jenny Williams, Terri Wood, and Christopher Bruno. \"Coordinated science campaign planning for earth observing missions.\" In Proc. of ESTC’04. 2004." xsd:string
 
@@ -1971,6 +1974,8 @@ is_a: BFO:0000040 ! material entity
 [Term]
 id: SDDO:3000056
 name: author
+def: "An originator or creator of a work" []
+property_value: IAO:0000117 https://orcid.org/0000-0003-4808-4736
 
 [Term]
 id: SDDO:3000057
@@ -2031,20 +2036,12 @@ name: sciencePlatform
 is_a: SDDO:3000060 ! platform
 
 [Term]
-id: SDDO:3000068
-name: dataProperties
-
-[Term]
 id: SDDO:3000069
 name: study
 def: "A data product service in the GeneLab repository" []
 is_a: SDDO:3000048 ! dataProductOrService
 created_by: Rduerr
 creation_date: 2021-12-01T20:52:05.98268Z
-
-[Term]
-id: SDDO:3000070
-name: definedClasses
 
 [Term]
 id: SDDO:3000071
@@ -2075,8 +2072,11 @@ is_a: SDDO:3000062 ! discoveryCriterion
 [Term]
 id: SDDO:3000075
 name: accessInterface
+def: "A software interface that 1) presents users with selection criteria and 2) presents products or services that meet the criteria the user then selects." []
 relationship: SDDO:3000029 SDDO:3000050 ! present selectionParameter
 relationship: SDDO:3000029 SDDO:3000066 ! present productService
+property_value: IAO:0000117 https://orcid.org/0000-0003-4808-4736
+property_value: IAO:0000119 SMD:ConceptualIMVersion1-20220324.cmap
 
 [Term]
 id: SDDO:3000076
@@ -2109,7 +2109,9 @@ is_a: SDDO:3000054 ! hardware
 [Term]
 id: SDDO:3000081
 name: deployment
+def: "The realisation of an application, or execution of a plan, idea, model, design, specification, standard, algorithm, or policy." []
 relationship: SDDO:3000042 SDDO:3000088 ! partOf mission
+property_value: IAO:0000119 Deployment:management
 
 [Term]
 id: SDDO:3000082
@@ -2312,7 +2314,7 @@ name: document
 [Term]
 id: SDDO:3000110
 name: data element
-def: "A data parameter is any characteristic that can help in understanding data content. That is, a parameter is a data element that is useful, or critical, when identifying  or describing the content of a data object." []
+def: "A data element is any characteristic that can help in understanding data content. That is, a data element is any parameter or variable that is useful, or critical, when identifying  or describing the content of a data object." []
 relationship: SDDO:3000031 SDDO:3000100 ! isResultOf observation
 property_value: BFO:0000179 "data element" xsd:string
 property_value: IAO:0000112 "The meaning of a column within a spreadsheet (e.g., identifier or height); the meaning of each pixel in an image (e.g., surface temperature)|another test example" xsd:string
