@@ -387,7 +387,10 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000112>A single science campaign may require all or part of several missions.</obo:IAO_0000112>
+        <obo:IAO_0000112>There may be several science campaigns occurring over the course of a single mission.</obo:IAO_0000112>
         <obo:IAO_0000115>A systematic set of activities undertaken to meet a particular science objective.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
         <obo:IAO_0000118>science campaign</obo:IAO_0000118>
         <obo:IAO_0000119>Morris, Robert, Jennifer Dungan, Lina Khatib, A. Bachman, John Gasch, Paul Hempel, Jenny Williams, Terri Wood, and Christopher Bruno. &quot;Coordinated science campaign planning for earth observing missions.&quot; In Proc. of ESTC’04. 2004.</obo:IAO_0000119>
         <rdfs:label xml:lang="en">campaign</rdfs:label>
@@ -520,6 +523,8 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000056 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000056">
+        <obo:IAO_0000115>An originator or creator of a work</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
         <rdfs:label xml:lang="en">author</rdfs:label>
     </owl:Class>
     
@@ -627,14 +632,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000068 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000068">
-        <rdfs:label xml:lang="en">dataProperties</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SDDO_3000069 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000069">
@@ -643,14 +640,6 @@
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rduerr</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-01T20:52:05.98268Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">study</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000070 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000070">
-        <rdfs:label xml:lang="en">definedClasses</rdfs:label>
     </owl:Class>
     
 
@@ -723,6 +712,9 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000066"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A software interface that 1) presents users with selection criteria and 2) presents products or services that meet the criteria the user then selects.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
+        <obo:IAO_0000119 rdf:resource="https://cmapscloud.ihmc.us:443/rid=1XX21YCGT-24LYD72-V8Y/SMD_ConceptualIMVersion1-20220324.cmap"/>
         <rdfs:label xml:lang="en">accessInterface</rdfs:label>
     </owl:Class>
     
@@ -795,6 +787,8 @@
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>The realisation of an application, or execution of a plan, idea, model, design, specification, standard, algorithm, or policy.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://en.wikipedia.org/wiki/Deployment_management"/>
         <rdfs:label xml:lang="en">deployment</rdfs:label>
     </owl:Class>
     
@@ -1352,7 +1346,7 @@
         </rdfs:subClassOf>
         <obo:BFO_0000179 xml:lang="en">data element</obo:BFO_0000179>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The meaning of a column within a spreadsheet (e.g., identifier or height); the meaning of each pixel in an image (e.g., surface temperature)|another test example</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data parameter is any characteristic that can help in understanding data content. That is, a parameter is a data element that is useful, or critical, when identifying  or describing the content of a data object.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data element is any characteristic that can help in understanding data content. That is, a data element is any parameter or variable that is useful, or critical, when identifying  or describing the content of a data object.</obo:IAO_0000115>
         <rdfs:label>data element</rdfs:label>
     </owl:Class>
     
