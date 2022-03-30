@@ -13,11 +13,11 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/sddo.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sddo/releases/2022-03-11/sddo.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sddo/releases/2022-03-24/sddo.owl"/>
         <dc:description>The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA&apos;s Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science.</dc:description>
         <dc:title>Science Data Discovery Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-03-11</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-03-24</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -309,23 +309,6 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.w3.org/2004/02/skos/core#example -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#string -->
-
-    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#string"/>
     
 
 
@@ -802,7 +785,25 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://purl.obolibrary.org/obo/SDDO_3000001 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000001">
-        <rdfs:label xml:lang="en">provideInformationOn</rdfs:label>
+        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDDO_3000002 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000002">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDDO_3000003 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000003">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000002"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
     </owl:ObjectProperty>
     
 
@@ -810,7 +811,17 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <!-- http://purl.obolibrary.org/obo/SDDO_3000004 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000004">
-        <rdfs:label xml:lang="en">providesAccessTo</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000003"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDDO_3000005 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000005">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000004"/>
+        <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/SDDO_0000027"/>
     </owl:ObjectProperty>
     
 
@@ -1015,6 +1026,14 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SDDO_3000040 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000040">
+        <rdfs:label xml:lang="en">isA</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SDDO_3000041 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000041">
@@ -1042,56 +1061,42 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SDDO_5000001 -->
+    <!-- http://purl.obolibrary.org/obo/SDDO_3000001 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_5000001">
-        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000001">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Criterion</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SDDO_5000002 -->
+    <!-- http://purl.obolibrary.org/obo/SDDO_3000002 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_5000002">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_5000001"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000002">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DiscoveryCriterion</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SDDO_5000003 -->
+    <!-- http://purl.obolibrary.org/obo/SDDO_3000003 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_5000003">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_5000002"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000003">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataDiscoveryCriterion</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SDDO_5000004 -->
+    <!-- http://purl.obolibrary.org/obo/SDDO_3000004 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_5000004">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_5000003"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000004">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ExperimentDiscoveryCriterion</rdfs:label>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SDDO_5000005 -->
+    <!-- http://purl.obolibrary.org/obo/SDDO_3000005 -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_5000005">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_5000004"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
+    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000005">
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ExperimentID</rdfs:label>
     </owl:DatatypeProperty>
     
 
@@ -4740,6 +4745,12 @@ class labels for these objects. The resulting predictor can be used to attach cl
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SDDO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_0000027"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SDDO_3000043 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000043">
@@ -4919,6 +4930,14 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000054">
         <rdfs:label xml:lang="en">hardware</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDDO_3000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000055">
+        <rdfs:label xml:lang="en">mutableNecessaryEvil</rdfs:label>
     </owl:Class>
     
 
@@ -5380,6 +5399,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/SDDO_3000090 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000090">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000055"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000034"/>
@@ -10023,6 +10043,34 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/sddo.owl#Annotation"/>
         <AnnotationProperty></AnnotationProperty>
         <IRI>https://creativecommons.org/licenses/unspecified</IRI>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000001">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Criterion</rdfs:label>
+        <rdfs:label xml:lang="en">provideInformationOn</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000002">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DiscoveryCriterion</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000003">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataDiscoveryCriterion</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000004">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ExperimentDiscoveryCriterion</rdfs:label>
+        <rdfs:label xml:lang="en">providesAccessTo</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000005">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ExperimentID</rdfs:label>
     </rdf:Description>
     
 
