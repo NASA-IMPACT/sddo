@@ -43,8 +43,8 @@
 <http://purl.obolibrary.org/obo/SDDO_3000053>	<http://www.w3.org/2000/01/rdf-schema#label>	"legend"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000066>	<http://www.w3.org/2000/01/rdf-schema#label>	"productService"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000073>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataSelectionParameter"@en	
-<http://purl.obolibrary.org/obo/SDDO_3000106>	<http://www.w3.org/2000/01/rdf-schema#label>	"OperationDiscoveryCriterion"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000113>	<http://www.w3.org/2000/01/rdf-schema#label>	"firmware"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000106>	<http://www.w3.org/2000/01/rdf-schema#label>	"OperationDiscoveryCriterion"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000096>	<http://www.w3.org/2000/01/rdf-schema#label>	"feature"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000078>	<http://www.w3.org/2000/01/rdf-schema#label>	"specimen"@en	
 <http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001>	<http://www.w3.org/2000/01/rdf-schema#label>	"pds_Data_Set_PDS3"@en	
