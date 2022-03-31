@@ -337,6 +337,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     
 
 
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonym"/>
+    
+
+
     <!-- http://www.w3.org/2004/02/skos/core#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
@@ -4989,6 +4995,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000112>A coronal mass ejection, supernova, earthquake, spacecraft launch, etc.</obo:IAO_0000112>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Something observable that happened at a given time and place</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adapted from http://purl.obolibrary.org/obo/NCIT_C25499</obo:IAO_0000119>
         <rdfs:label xml:lang="en">event</rdfs:label>
@@ -5074,8 +5081,10 @@ class labels for these objects. The resulting predictor can be used to attach cl
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000110"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A data product or data service that returns bulk science data.</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is generally agreed that data is in the eye of the beholder; but, for the purposes of this project the terms data and data product are limited to traditional mostly numeric science data products that NASA holds and actually calls data, data sets or data products. Thus a DataProductService is any product or service that returns bulk science data.</obo:IAO_0000116>
-        <rdfs:label xml:lang="en">dataProductOrService</rdfs:label>
+        <oboInOwl:hasSynonym xml:lang="en">dataProductOrService</oboInOwl:hasSynonym>
+        <rdfs:label>data product or service</rdfs:label>
     </owl:Class>
     
 
@@ -5113,7 +5122,9 @@ class labels for these objects. The resulting predictor can be used to attach cl
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">dataProduct</rdfs:label>
+        <obo:IAO_0000115></obo:IAO_0000115>
+        <oboInOwl:hasSynonym>dataProduct</oboInOwl:hasSynonym>
+        <rdfs:label xml:lang="en">data Product</rdfs:label>
     </owl:Class>
     
 
@@ -5139,6 +5150,9 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000054">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>The mechanical, magnetic, electronic, and electrical equipment necessary for conducting an activity.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:resource="https://www.dictionary.com/browse/hardware"/>
+        <rdfs:comment>Hardware is usually distinguished from the theory and design that make the activity possible.</rdfs:comment>
         <rdfs:label xml:lang="en">hardware</rdfs:label>
     </owl:Class>
     
@@ -5377,10 +5391,20 @@ class labels for these objects. The resulting predictor can be used to attach cl
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000047"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A part of a feature, taken to demonstrate or to determine the character of the whole.</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rduerr</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-30T21:35:20.533927Z</oboInOwl:creation_date>
+        <oboInOwl:hasSynonym>sample</oboInOwl:hasSynonym>
+        <rdfs:comment>A substance, or portion of material obtained for use in testing, examination, or study.</rdfs:comment>
         <rdfs:label xml:lang="en">specimen</rdfs:label>
+        <skos:example>A preparation of tissue or bodily fluid taken for examination or diagnosis.</skos:example>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000078"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A part of a feature, taken to demonstrate or to determine the character of the whole.</owl:annotatedTarget>
+        <obo:IAO_0000119>Adapted from http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -5397,7 +5421,9 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000054"/>
-        <rdfs:label xml:lang="en">experimentApparatus</rdfs:label>
+        <obo:IAO_0000115>Hardware used in conducting an experiment.</obo:IAO_0000115>
+        <oboInOwl:hasSynonym>experimentApparatus</oboInOwl:hasSynonym>
+        <rdfs:label xml:lang="en">experiment Apparatus</rdfs:label>
     </owl:Class>
     
 
@@ -5431,6 +5457,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000083">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
+        <obo:IAO_0000115>A mission that has a primary purpose to test or validate engineering designs or implementations.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">engineeringMission</rdfs:label>
     </owl:Class>
     
@@ -5624,7 +5651,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000091">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A NASA mission is a mission led or funded by NASA</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A  mission led or funded by NASA</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Per the NASA SMD glossary at https://science.nasa.gov/glossary/ a mission is a &quot;NASA Science-funded activity with the purpose of meeting goals laid out by presidential directive, and detailed in Science Mission Directorate&apos;s strategic plan.&quot;  This would mean the ontology would need to include the concepts of a presidential directive and a strategic plan - wait for a use case before implementing this change.</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDDO team</obo:IAO_0000119>
         <rdfs:label xml:lang="en">NASAMission</rdfs:label>
@@ -5747,8 +5774,9 @@ class labels for these objects. The resulting predictor can be used to attach cl
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A material entity that is the subject of some investigation through observation or experiment.</obo:IAO_0000115>
+        <obo:IAO_0000115>A material entity that has characteristics that can be characterized or quantified through observation or experiment.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">feature</rdfs:label>
+        <skos:example>Mars, a hurricane, the aurora, a molecular cloud, a sunspot, a mouse&apos;s liver, etc.</skos:example>
     </owl:Class>
     
 
@@ -5989,7 +6017,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000112">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mission that gather scientific data</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mission that has a primary purpose to gather scientific data</obo:IAO_0000115>
         <rdfs:label xml:lang="en">researchMission</rdfs:label>
     </owl:Class>
     

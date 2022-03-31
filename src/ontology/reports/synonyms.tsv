@@ -4,7 +4,7 @@
 <http://purl.obolibrary.org/obo/SDDO_3000045>	<http://www.w3.org/2000/01/rdf-schema#label>	"campaign"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000108>	<http://www.w3.org/2000/01/rdf-schema#label>	"locationDiscoveryCriterion"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000115>	<http://www.w3.org/2000/01/rdf-schema#label>	"platformDiscoveryCriterion"@en	
-<http://purl.obolibrary.org/obo/SDDO_3000051>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataProduct"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000051>	<http://www.w3.org/2000/01/rdf-schema#label>	"data Product"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000094>	<http://www.w3.org/2000/01/rdf-schema#label>	"experiment"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000099>	<http://www.w3.org/2000/01/rdf-schema#label>	"phenomenon"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000063>	<http://www.w3.org/2000/01/rdf-schema#label>	"researchStudy"@en	
@@ -34,7 +34,7 @@
 <http://purl.obolibrary.org/obo/SDDO_/SDDO_1000000>	<http://www.w3.org/2000/01/rdf-schema#label>	"pds_Collection"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000044>	<http://www.w3.org/2000/01/rdf-schema#label>	"event"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000091>	<http://www.w3.org/2000/01/rdf-schema#label>	"NASAMission"@en	
-<http://purl.obolibrary.org/obo/SDDO_3000080>	<http://www.w3.org/2000/01/rdf-schema#label>	"experimentApparatus"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000080>	<http://www.w3.org/2000/01/rdf-schema#label>	"experiment Apparatus"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000050>	<http://www.w3.org/2000/01/rdf-schema#label>	"selectionParameter"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000098>	<http://www.w3.org/2000/01/rdf-schema#label>	"facility"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000074>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataDiscoveryCriterion"@en	
@@ -72,5 +72,5 @@
 <http://purl.obolibrary.org/obo/SDDO_3000065>	<http://www.w3.org/2000/01/rdf-schema#label>	"organism"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000072>	<http://www.w3.org/2000/01/rdf-schema#label>	"modelDiscoveryCriterion"@en	
 <http://purl.obolibrary.org/obo/SDDO_3000101>	<http://www.w3.org/2000/01/rdf-schema#label>	"photoGallery"@en	
-<http://purl.obolibrary.org/obo/SDDO_3000048>	<http://www.w3.org/2000/01/rdf-schema#label>	"dataProductOrService"@en	
+<http://purl.obolibrary.org/obo/SDDO_3000048>	<http://www.w3.org/2000/01/rdf-schema#label>	"data product or service"	
 <http://purl.obolibrary.org/obo/SDDO_3000077>	<http://www.w3.org/2000/01/rdf-schema#label>	"researchInvestigation"@en	
