@@ -14,7 +14,6 @@ import_group:
       mirror_from: https://www.w3.org/ns/sosa/
     - id: obi
     - id: swo
-      module_type: mirror
 robot_java_args: '-Xmx6G'
 create_obo_metadata: FALSE
 components:
