@@ -1,7 +1,0 @@
-Ontology ID	Label	Logical Type	Domain	Range	Superproperty	db xref	deprecated
-ID	LABEL	TYPE	DOMAIN	RANGE	SP %  SPLIT=|	A http://www.geneontology.org/formats/oboInOwl#hasDbXref	A owl:deprecated
-obo:SDDO_5000001	Criterion	owl:DataProperty	rdf:Property	xsd:boolean			
-obo:SDDO_5000002	DiscoveryCriterion	owl:DataProperty	rdf:Property	xsd:boolean	Criterion		
-obo:SDDO_5000003	DataDiscoveryCriterion	owl:DataProperty	rdf:Property	xsd:boolean	DiscoveryCriterion		
-obo:SDDO_5000004	ExperimentDiscoveryCriterion	owl:DataProperty	rdf:Property	xsd:boolean	DataDiscoveryCriterion		
-obo:SDDO_5000005	ExperimentID	owl:DataProperty	rdf:Property	xsd:string	ExperimentDiscoveryCriterion		
