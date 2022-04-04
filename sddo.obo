@@ -1,10 +1,10 @@
 format-version: 1.2
-data-version: releases/2022-03-24
+data-version: releases/2022-03-29
 ontology: sddo
 property_value: http://purl.org/dc/elements/1.1/description "The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA's Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Science Data Discovery Ontology" xsd:string
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
-property_value: owl:versionInfo "2022-03-24" xsd:string
+property_value: owl:versionInfo "2022-03-29" xsd:string
 
 [Term]
 id: APOLLO_SV:00000008
@@ -1906,6 +1906,7 @@ relationship: SDDO:3000020 SDDO:3000066 ! resultsIn productService
 id: SDDO:3000044
 name: event
 def: "Something observable that happened at a given time and place" []
+is_a: BFO:0000015 ! process
 relationship: SDDO:3000035 SDDO:3000100 ! characterizedBy observation
 relationship: SDDO:3000041 SDDO:3000100 ! quantifiedBy observation
 property_value: IAO:0000119 "Adapted from http://purl.obolibrary.org/obo/NCIT_C25499" xsd:string
@@ -1934,7 +1935,7 @@ id: SDDO:3000048
 name: dataProductOrService
 is_a: SDDO:3000066 ! productService
 relationship: SDDO:3000025 SDDO:3000051 ! provideAccessTo dataProduct
-relationship: SDDO:3000027 SDDO:3000110 ! contain dataParameter
+relationship: SDDO:3000027 SDDO:3000110 ! contain data element
 property_value: IAO:0000116 "It is generally agreed that data is in the eye of the beholder; but, for the purposes of this project the terms data and data product are limited to traditional mostly numeric science data products that NASA holds and actually calls data, data sets or data products. Thus a DataProductService is any product or service that returns bulk science data." xsd:string
 
 [Term]
@@ -1962,10 +1963,7 @@ name: legend
 [Term]
 id: SDDO:3000054
 name: hardware
-
-[Term]
-id: SDDO:3000055
-name: mutableNecessaryEvil
+is_a: BFO:0000040 ! material entity
 
 [Term]
 id: SDDO:3000056
@@ -2022,8 +2020,6 @@ creation_date: 2021-11-30T21:34:56.970241Z
 [Term]
 id: SDDO:3000066
 name: productService
-relationship: SDDO:3000004 SDDO:3000048 ! ExperimentDiscoveryCriterion dataProductOrService
-relationship: SDDO:3000004 SDDO:3000079 ! ExperimentDiscoveryCriterion informationProduct
 created_by: Peter Fox
 
 [Term]
@@ -2050,7 +2046,13 @@ name: definedClasses
 [Term]
 id: SDDO:3000071
 name: factor
+def: "The role played by an entity as part of a scientific investigation such that levels of the measurement or observation of the entity are thought to bear upon the hypotheses being investigated." []
+is_a: BFO:0000023 ! role
 relationship: SDDO:3000007 SDDO:3000100 ! experimentalContextFor observation
+property_value: IAO:0000112 "Gender is known to be a factor in the study of high blood pressure." xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0003-4312-9552
+property_value: IAO:0000117 https://orcid.org/0000-0003-4808-4736
+property_value: IAO:0000119 "0000-0003-4312-9552" xsd:string
 
 [Term]
 id: SDDO:3000072
@@ -2086,6 +2088,7 @@ relationship: SDDO:3000030 SDDO:3000063 ! sameAs researchStudy
 [Term]
 id: SDDO:3000078
 name: specimen
+is_a: SDDO:3000096 ! feature
 relationship: SDDO:3000021 SDDO:3000047 ! usedIn assay
 created_by: Rduerr
 creation_date: 2021-11-30T21:35:20.533927Z
@@ -2093,6 +2096,7 @@ creation_date: 2021-11-30T21:35:20.533927Z
 [Term]
 id: SDDO:3000079
 name: informationProduct
+is_a: SDDO:3000085 ! informationProductOrService
 
 [Term]
 id: SDDO:3000080
@@ -2120,24 +2124,27 @@ name: software
 
 [Term]
 id: SDDO:3000085
-name: informationProductService
+name: informationProductOrService
 is_a: SDDO:3000066 ! productService
-relationship: SDDO:3000001 SDDO:3000051 ! Criterion dataProduct
-relationship: SDDO:3000001 SDDO:3000054 ! Criterion hardware
-relationship: SDDO:3000001 SDDO:3000065 ! Criterion organism
-relationship: SDDO:3000001 SDDO:3000069 ! Criterion study
-relationship: SDDO:3000001 SDDO:3000078 ! Criterion specimen
-relationship: SDDO:3000001 SDDO:3000084 ! Criterion software
-relationship: SDDO:3000001 SDDO:3000088 ! Criterion mission
-relationship: SDDO:3000001 SDDO:3000090 ! Criterion person
-relationship: SDDO:3000001 SDDO:3000094 ! Criterion experiment
-relationship: SDDO:3000001 SDDO:3000101 ! Criterion photoGallery
-relationship: SDDO:3000001 SDDO:3000109 ! Criterion document
-relationship: SDDO:3000001 SDDO:3000113 ! Criterion firmware
+relationship: SDDO:3000001 SDDO:3000051 ! provideInformationOn dataProduct
+relationship: SDDO:3000001 SDDO:3000054 ! provideInformationOn hardware
+relationship: SDDO:3000001 SDDO:3000065 ! provideInformationOn organism
+relationship: SDDO:3000001 SDDO:3000069 ! provideInformationOn study
+relationship: SDDO:3000001 SDDO:3000078 ! provideInformationOn specimen
+relationship: SDDO:3000001 SDDO:3000084 ! provideInformationOn software
+relationship: SDDO:3000001 SDDO:3000088 ! provideInformationOn mission
+relationship: SDDO:3000001 SDDO:3000090 ! provideInformationOn person
+relationship: SDDO:3000001 SDDO:3000094 ! provideInformationOn experiment
+relationship: SDDO:3000001 SDDO:3000101 ! provideInformationOn photoGallery
+relationship: SDDO:3000001 SDDO:3000109 ! provideInformationOn document
+relationship: SDDO:3000001 SDDO:3000113 ! provideInformationOn firmware
 
 [Term]
 id: SDDO:3000086
 name: funder
+def: "A role in which the bearer delivers financial support to enable some activity." []
+is_a: BFO:0000023 ! role
+relationship: RO:0000081 SDDO:3000103 ! role of organization
 
 [Term]
 id: SDDO:3000087
@@ -2149,6 +2156,7 @@ relationship: SDDO:3000026 SDDO:3000044 ! capableOfDetecting event
 id: SDDO:3000088
 name: mission
 def: "A mission is a named activity for some purpose" []
+is_a: OBI:0000011 ! planned process
 relationship: SDDO:3000015 SDDO:3000059 ! organizedBy spaceAgency
 relationship: SDDO:3000018 SDDO:3000054 ! deployedOn hardware
 property_value: IAO:0000119 "Discussion by SDDO project team" xsd:string
@@ -2163,7 +2171,6 @@ property_value: IAO:0000119 "A broadened version of http://purl.obolibrary.org/o
 [Term]
 id: SDDO:3000090
 name: person
-is_a: SDDO:3000055 ! mutableNecessaryEvil
 relationship: SDDO:3000034 SDDO:3000056 ! hasRole author
 relationship: SDDO:3000034 SDDO:3000065 ! hasRole organism
 
@@ -2212,7 +2219,8 @@ property_value: IAO:0000116 "While agreed that metadata is just data about data 
 [Term]
 id: SDDO:3000096
 name: feature
-relationship: RO:0000052 OBI:0100051 ! inheres in specimen
+def: "A material entity that is the subject of some investigation through observation or experiment." []
+is_a: BFO:0000040 ! material entity
 
 [Term]
 id: SDDO:3000097
@@ -2226,6 +2234,7 @@ creation_date: 2021-12-02T22:58:56.536404Z
 [Term]
 id: SDDO:3000098
 name: facility
+is_a: BFO:0000040 ! material entity
 
 [Term]
 id: SDDO:3000099
@@ -2236,6 +2245,8 @@ relationship: SDDO:3000006 SDDO:3000096 ! consistOf feature
 [Term]
 id: SDDO:3000100
 name: observation
+is_a: http://www.w3.org/ns/sosa/Observation ! Observation
+is_a: OBI:0000011 ! planned process
 
 [Term]
 id: SDDO:3000101
@@ -2272,7 +2283,7 @@ is_a: SDDO:3000074 ! dataDiscoveryCriterion
 [Term]
 id: SDDO:3000105
 name: investigator
-is_a: SDDO:3000110 ! dataParameter
+is_a: SDDO:3000110 ! data element
 created_by: Rduerr
 creation_date: 2021-11-30T19:43:39.350414Z
 
@@ -2297,9 +2308,10 @@ name: document
 
 [Term]
 id: SDDO:3000110
-name: dataParameter
+name: data element
 def: "A data parameter is any characteristic that can help in understanding data content. That is, a parameter is a data element that is useful, or critical, when identifying  or describing the content of a data object." []
 relationship: SDDO:3000031 SDDO:3000100 ! isResultOf observation
+property_value: BFO:0000179 "data element" xsd:string
 property_value: IAO:0000112 "The meaning of a column within a spreadsheet (e.g., identifier or height); the meaning of each pixel in an image (e.g., surface temperature)|another test example" xsd:string
 
 [Term]
@@ -2316,6 +2328,11 @@ is_a: SDDO:3000088 ! mission
 [Term]
 id: SDDO:3000113
 name: firmware
+def: "Software that provides the low-level control for a device's specific hardware." []
+is_a: IAO:0000010 ! software
+relationship: BFO:0000050 SDDO:3000054 ! part of hardware
+property_value: IAO:0000117 https://orcid.org/0000-0003-4808-4736
+property_value: IAO:0000119 https://en.wikipedia.org/wiki/Firmware
 
 [Term]
 id: SDDO:3000114
@@ -2756,34 +2773,11 @@ is_a: BFO:0000051 ! has part
 
 [Typedef]
 id: SDDO:3000001
-name: Criterion
 name: provideInformationOn
-domain: Property
-
-[Typedef]
-id: SDDO:3000002
-name: DiscoveryCriterion
-domain: Property
-is_a: SDDO:3000001 ! Criterion
-
-[Typedef]
-id: SDDO:3000003
-name: DataDiscoveryCriterion
-domain: Property
-is_a: SDDO:3000002 ! DiscoveryCriterion
 
 [Typedef]
 id: SDDO:3000004
-name: ExperimentDiscoveryCriterion
 name: providesAccessTo
-domain: Property
-is_a: SDDO:3000003 ! DataDiscoveryCriterion
-
-[Typedef]
-id: SDDO:3000005
-name: ExperimentID
-domain: SDDO:0000027
-is_a: SDDO:3000004 ! ExperimentDiscoveryCriterion
 
 [Typedef]
 id: SDDO:3000006
@@ -2884,10 +2878,6 @@ name: conductedOn
 [Typedef]
 id: SDDO:3000039
 name: operatesOn
-
-[Typedef]
-id: SDDO:3000040
-name: isA
 
 [Typedef]
 id: SDDO:3000041

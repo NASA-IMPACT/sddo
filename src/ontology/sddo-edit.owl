@@ -16,7 +16,6 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/sddo/components/all_templates.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/sddo/imports/obi_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/sddo/imports/sosa_import.owl"/>
-        <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/swo.owl"/>
         <dc:description>The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA&apos;s Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science.</dc:description>
         <dc:title>Science Data Discovery Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
@@ -68,6 +67,12 @@
     <!-- http://purl.org/dc/terms/license -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
     
 
 
@@ -337,6 +342,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SDDO_1000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_1000007">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-04T23:21:32Z</dc:date>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <rdfs:label xml:lang="en">PDS data Product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SDDO_1000008 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_1000008">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_1000007"/>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-04T23:25:25Z</dc:date>
+        <oboInOwl:created_by rdf:resource="http://orcid.org/0000-0003-4808-4736"/>
+        <rdfs:label xml:lang="en">pds_Collection_with_Type_Data</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SDDO_3000043 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000043">
@@ -443,30 +470,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000048 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000048">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000066"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000027"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000110"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A data product or data service that returns bulk science data.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is generally agreed that data is in the eye of the beholder; but, for the purposes of this project the terms data and data product are limited to traditional mostly numeric science data products that NASA holds and actually calls data, data sets or data products. Thus a DataProductService is any product or service that returns bulk science data.</obo:IAO_0000116>
-        <oboInOwl:hasSynonym xml:lang="en">dataProductOrService</oboInOwl:hasSynonym>
-        <rdfs:label>data product or service</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/SDDO_3000049 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000049">
@@ -500,10 +503,17 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115></obo:IAO_0000115>
+        <obo:IAO_0000115>Processed data from the same source, normally compiled into a set according to shared characteristics.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym>data set</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasSynonym>dataProduct</oboInOwl:hasSynonym>
         <rdfs:label xml:lang="en">data Product</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Processed data from the same source, normally compiled into a set according to shared characteristics.</owl:annotatedTarget>
+        <obo:IAO_0000119>NASA (2012) NASA Thesaurus: Hierarchical Listing with Definitions. Vol 1, NASA.</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -651,8 +661,8 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000069 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000069">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000048"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data product service in the GeneLab repository</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data product from the GeneLab repository</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rduerr</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-01T20:52:05.98268Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">study</rdfs:label>
@@ -762,7 +772,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000078 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000078">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000096"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100051"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000021"/>
@@ -773,7 +783,6 @@
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rduerr</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-30T21:35:20.533927Z</oboInOwl:creation_date>
         <oboInOwl:hasSynonym>sample</oboInOwl:hasSynonym>
-        <rdfs:comment>A substance, or portion of material obtained for use in testing, examination, or study.</rdfs:comment>
         <rdfs:label xml:lang="en">specimen</rdfs:label>
         <skos:example>A preparation of tissue or bodily fluid taken for examination or diagnosis.</skos:example>
     </owl:Class>
@@ -789,7 +798,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000079 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000079">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000085"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:label xml:lang="en">informationProduct</rdfs:label>
     </owl:Class>
     
@@ -845,87 +854,6 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000084">
         <rdfs:label xml:lang="en">software</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000085 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000085">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000066"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000054"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000065"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000069"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000078"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000084"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000090"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000094"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000101"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000109"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000113"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">informationProductOrService</rdfs:label>
     </owl:Class>
     
 
@@ -1116,7 +1044,8 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000095">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000079"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">While agreed that metadata is just data about data and so is really an unneeded term, we recognize that the term metadata is often applied to information about data no matter its form.  In many cases, a metadata product is available for access, even if the data is not.  Thus a Metadata Product Service is any information product or service that returns metadata about science data.</obo:IAO_0000116>
+        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any information product that contains structured metadata.</obo:IAO_0000116>
+        <rdfs:comment>While agreed that metadata is just data about data and so is really an unneeded term, we recognize that the term metadata is often applied to information about data no matter its form.  In many cases, a metadata product is available for access, even if the data is not.</rdfs:comment>
         <rdfs:label xml:lang="en">metadataProduct</rdfs:label>
     </owl:Class>
     
@@ -1152,9 +1081,10 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A material entity that has characteristics that can be characterized or quantified through observation or experiment.</obo:IAO_0000115>
+        <obo:IAO_0000115>A material entity that has characteristics that can be qualified or quantified through observation or experiment.</obo:IAO_0000115>
+        <rdfs:comment>Depending on the context, individual entities such as a human or star, may be either features or specimens - depending on whether you are interested in studying the entire class of humans or stars, or a particular star or human.</rdfs:comment>
         <rdfs:label xml:lang="en">feature</rdfs:label>
-        <skos:example>Mars, a hurricane, the aurora, a molecular cloud, a sunspot, a mouse&apos;s liver, etc.</skos:example>
+        <skos:example>Mars, a hurricane, the aurora, a molecular cloud, a sunspot, a mouse, its  liver, etc.</skos:example>
     </owl:Class>
     
 
@@ -1360,8 +1290,18 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000109 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000109">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000079"/>
+        <obo:IAO_0000115>A written or printed paper that bears the original, official, or legal form of something and can be used to furnish decisive evidence or information.</obo:IAO_0000115>
+        <rdfs:comment>May be electronic or physical paper.</rdfs:comment>
         <rdfs:label xml:lang="en">document</rdfs:label>
+        <skos:example>Journal articles, technical or other reports, books, etc.</skos:example>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000109"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A written or printed paper that bears the original, official, or legal form of something and can be used to furnish decisive evidence or information.</owl:annotatedTarget>
+        <obo:IAO_0000119>The American Heritage® Dictionary of the English Language, 5th Edition.</obo:IAO_0000119>
+    </owl:Axiom>
     
 
 
@@ -1440,7 +1380,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_/SDDO_1000000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000048"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051"/>
         <rdfs:label xml:lang="en">pds_Collection</rdfs:label>
     </owl:Class>
     
@@ -1449,54 +1389,76 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000048"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_1000007"/>
+        <obo:IAO_0000115>A data Product from the PDS system.</obo:IAO_0000115>
+        <rdfs:comment>PDS data is tricky as while PDS3 has the concept of a data set; PDS4 doesn&apos;t really.  You have to find Collections that have a collection_type of data.</rdfs:comment>
         <rdfs:label xml:lang="en">pds_Data_Set_PDS3</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A data Product from the PDS system.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource=" https://orcid.org/0000-0003-4808-4736"/>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000048"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051"/>
+        <obo:IAO_0000112>Examples are line plots and spectrograms.</obo:IAO_0000112>
+        <obo:IAO_0000115>A graphical representation of data wherein the underlying numeric values are not (readily) accessible for analysis.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">spase:DisplayData</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A graphical representation of data wherein the underlying numeric values are not (readily) accessible for analysis.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.48322/E72C-5Y75"/>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000048"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051"/>
+        <obo:IAO_0000112>Catalogs include lists of events, files in a product, and data availability.</obo:IAO_0000112>
+        <obo:IAO_0000115>A tabular listing of events or observational notes, especially those that have utility in aiding a user in locating data.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">spase:Catalog</rdfs:label>
     </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>A tabular listing of events or observational notes, especially those that have utility in aiding a user in locating data.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.48322/E72C-5Y75"/>
+    </owl:Axiom>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000048"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051"/>
+        <obo:IAO_0000115>Data stored as numerical values in one or more specified formats.</obo:IAO_0000115>
         <rdfs:label xml:lang="en">spase:NumericalData</rdfs:label>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/sddo.owl#Annotation -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/sddo.owl#Annotation"/>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>Data stored as numerical values in one or more specified formats.</owl:annotatedTarget>
+        <obo:IAO_0000119 rdf:resource="https://doi.org/10.48322/E72C-5Y75"/>
+    </owl:Axiom>
     <rdf:Description>
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/sddo.owl#Annotation"/>
         <AnnotationProperty></AnnotationProperty>
         <Literal>None</Literal>
     </rdf:Description>
     <rdf:Description>
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/sddo.owl#Annotation"/>
         <AnnotationProperty></AnnotationProperty>
         <Literal>Science Data Discovery Ontology</Literal>
     </rdf:Description>
     <rdf:Description>
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/sddo.owl#Annotation"/>
         <AnnotationProperty></AnnotationProperty>
         <IRI>https://creativecommons.org/licenses/unspecified</IRI>
     </rdf:Description>
