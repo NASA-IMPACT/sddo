@@ -1,9 +1,6 @@
 Level	Rule Name	Subject	Property	Value
-WARN	missing_definition	pds_Collection	IAO:0000115	
-WARN	missing_definition	pds_Data_Set_PDS3	IAO:0000115	
-WARN	missing_definition	spase:DisplayData	IAO:0000115	
-WARN	missing_definition	spase:Catalog	IAO:0000115	
-WARN	missing_definition	spase:NumericalData	IAO:0000115	
+WARN	missing_definition	PDS data Product	IAO:0000115	
+WARN	missing_definition	pds_Collection_with_Type_Data	IAO:0000115	
 WARN	missing_definition	provideInformationOn	IAO:0000115	
 WARN	missing_definition	providesAccessTo	IAO:0000115	
 WARN	missing_definition	consistOf	IAO:0000115	
@@ -35,9 +32,7 @@ WARN	missing_definition	quantifiedBy	IAO:0000115
 WARN	missing_definition	partOf	IAO:0000115	
 WARN	missing_definition	project	IAO:0000115	
 WARN	missing_definition	toolDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	needsDiscussion	IAO:0000115	
 WARN	missing_definition	selectionParameter	IAO:0000115	
-WARN	missing_definition	engineeringPlatform	IAO:0000115	
 WARN	missing_definition	legend	IAO:0000115	
 WARN	missing_definition	instrumentDiscoveryCriterion	IAO:0000115	
 WARN	missing_definition	instrumentOperatingModeDiscoveryCriterion	IAO:0000115	
@@ -47,7 +42,6 @@ WARN	missing_definition	discoveryCriterion	IAO:0000115
 WARN	missing_definition	researchStudy	IAO:0000115	
 WARN	missing_definition	dataProductDiscoveryCriterion	IAO:0000115	
 WARN	missing_definition	productService	IAO:0000115	
-WARN	missing_definition	sciencePlatform	IAO:0000115	
 WARN	missing_definition	modelDiscoveryCriterion	IAO:0000115	
 WARN	missing_definition	dataSelectionParameter	IAO:0000115	
 WARN	missing_definition	dataDiscoveryCriterion	IAO:0000115	
@@ -56,7 +50,6 @@ WARN	missing_definition	researchInvestigation	IAO:0000115
 WARN	missing_definition	informationProduct	IAO:0000115	
 WARN	missing_definition	informationSelectionParameter	IAO:0000115	
 WARN	missing_definition	software	IAO:0000115	
-WARN	missing_definition	informationProductOrService	IAO:0000115	
 WARN	missing_definition	instrumentOperatingMode	IAO:0000115	
 WARN	missing_definition	person	IAO:0000115	
 WARN	missing_definition	missionDiscoveryCriterion	IAO:0000115	
@@ -66,17 +59,15 @@ WARN	missing_definition	facility	IAO:0000115
 WARN	missing_definition	phenomenon	IAO:0000115	
 WARN	missing_definition	observation	IAO:0000115	
 WARN	missing_definition	photoGallery	IAO:0000115	
-WARN	missing_definition	discoveryInterface	IAO:0000115	
+WARN	missing_definition	organization	IAO:0000115	
 WARN	missing_definition	experimentDiscoveryCriterion	IAO:0000115	
 WARN	missing_definition	investigator	IAO:0000115	
 WARN	missing_definition	OperationDiscoveryCriterion	IAO:0000115	
 WARN	missing_definition	program	IAO:0000115	
 WARN	missing_definition	locationDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	document	IAO:0000115	
 WARN	missing_definition	sampleDiscoveryCriterion	IAO:0000115	
 WARN	missing_definition	observableDiscoveryCriterion	IAO:0000115	
 WARN	missing_definition	platformDiscoveryCriterion	IAO:0000115	
-INFO	missing_superclass	needsDiscussion	rdfs:subClassOf	
 INFO	missing_superclass	selectionParameter	rdfs:subClassOf	
 INFO	missing_superclass	legend	rdfs:subClassOf	
 INFO	missing_superclass	author	rdfs:subClassOf	
@@ -86,5 +77,4 @@ INFO	missing_superclass	researchStudy	rdfs:subClassOf
 INFO	missing_superclass	productService	rdfs:subClassOf	
 INFO	missing_superclass	software	rdfs:subClassOf	
 INFO	missing_superclass	photoGallery	rdfs:subClassOf	
-INFO	missing_superclass	document	rdfs:subClassOf	
-INFO	lowercase_definition	data Product	IAO:0000115	
+INFO	missing_superclass	investigator	rdfs:subClassOf	
