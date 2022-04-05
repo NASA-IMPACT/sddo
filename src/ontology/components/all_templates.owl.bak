@@ -9,8 +9,6 @@
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/sddo/components/all_templates.owl">
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sddo/releases/2022-03-31/components/all_templates.owl"/>
     </owl:Ontology>
-	
-</rdf:RDF>
     
 
 

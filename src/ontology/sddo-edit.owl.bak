@@ -1,24 +1,24 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/sddo/sddo-base.owl#"
-     xml:base="http://purl.obolibrary.org/obo/sddo/sddo-base.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/sddo.owl#"
+     xml:base="http://purl.obolibrary.org/obo/sddo.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:sddo="http://purl.obolibrary.org/obo/sddo.owl#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/sddo/sddo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sddo/releases/2022-03-31/sddo-base.owl"/>
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/sddo.owl">
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/sddo/components/all_templates.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/sddo/imports/obi_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/sddo/imports/sosa_import.owl"/>
         <dc:description>The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA&apos;s Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science.</dc:description>
         <dc:title>Science Data Discovery Ontology</dc:title>
-        <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-03-31</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -31,48 +31,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000179 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000179"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
     
 
 
@@ -112,18 +70,6 @@
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#created_by"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
-    
-
-
     <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonym -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonym"/>
@@ -136,12 +82,6 @@
     
 
 
-    <!-- http://www.w3.org/2004/02/skos/core#example -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#example"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -150,24 +90,6 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000312"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000081 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0000081"/>
     
 
 
@@ -406,118 +328,11 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_5000001 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_5000001">
-        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Criterion</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_5000002 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_5000002">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_5000001"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DiscoveryCriterion</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_5000003 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_5000003">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_5000002"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DataDiscoveryCriterion</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_5000004 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_5000004">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_5000003"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ExperimentDiscoveryCriterion</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_5000005 -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_5000005">
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_5000004"/>
-        <rdfs:domain rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ExperimentID</rdfs:label>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000023"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000010 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000010"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0100026"/>
     
 
 
@@ -1349,8 +1164,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rduerr</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-02T22:57:22.551595Z</oboInOwl:creation_date>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-02T22:58:11.536811Z</oboInOwl:creation_date>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-02T22:58:56.536404Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">spaceTimeBoundingDiscoveryCriterion</rdfs:label>
     </owl:Class>
     
@@ -1483,7 +1296,6 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A PDS 4 collection where the collection_type is &quot;Data&quot;</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rduerr</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-10T20:53:48.676522Z</oboInOwl:creation_date>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-10T20:55:07.211503Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">organization</rdfs:label>
     </owl:Class>
     
@@ -1669,36 +1481,24 @@
     <!-- http://purl.obolibrary.org/obo/sddo.owl#Annotation -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/sddo.owl#Annotation"/>
-    
-
-
-    <!-- http://www.w3.org/1999/02/22-rdf-syntax-ns#Property -->
-
-    <owl:Class rdf:about="http://www.w3.org/1999/02/22-rdf-syntax-ns#Property"/>
-    
-
-
-    <!-- http://www.w3.org/ns/sosa/Observation -->
-
-    <owl:Class rdf:about="http://www.w3.org/ns/sosa/Observation"/>
     <rdf:Description>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/sddo.owl#Annotation"/>
-        <sddo:AnnotationProperty></sddo:AnnotationProperty>
-        <sddo:Literal>None</sddo:Literal>
+        <AnnotationProperty></AnnotationProperty>
+        <Literal>None</Literal>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/sddo.owl#Annotation"/>
-        <sddo:AnnotationProperty></sddo:AnnotationProperty>
-        <sddo:Literal>Science Data Discovery Ontology</sddo:Literal>
+        <AnnotationProperty></AnnotationProperty>
+        <Literal>Science Data Discovery Ontology</Literal>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/sddo.owl#Annotation"/>
-        <sddo:AnnotationProperty></sddo:AnnotationProperty>
-        <sddo:IRI>https://creativecommons.org/licenses/unspecified</sddo:IRI>
+        <AnnotationProperty></AnnotationProperty>
+        <IRI>https://creativecommons.org/licenses/unspecified</IRI>
     </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 4.5.6) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
 

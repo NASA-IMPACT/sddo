@@ -1,0 +1,21 @@
+id: sddo
+title: "Science Data Discovery Ontology"
+github_org: NASA-IMPACT
+git_main_branch: master
+repo: sddo
+export_formats:
+  - owl
+  - obo
+  - json
+import_group:
+  release_imports: FALSE
+  products:
+    - id: sosa
+      mirror_from: https://www.w3.org/ns/sosa/
+    - id: obi
+    - id: swo
+robot_java_args: '-Xmx6G'
+create_obo_metadata: FALSE
+components:
+  products:
+    - filename: all_templates.owl

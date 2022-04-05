@@ -1,87 +1,87 @@
 Level	Rule Name	Subject	Property	Value
-WARN	missing_definition	pds_Collection	textual definition	
-WARN	missing_definition	pds_Data_Set_PDS3	textual definition	
-WARN	missing_definition	spase:DisplayData	textual definition	
-WARN	missing_definition	spase:Catalog	textual definition	
-WARN	missing_definition	spase:NumericalData	textual definition	
-WARN	missing_definition	provideInformationOn	textual definition	
-WARN	missing_definition	providesAccessTo	textual definition	
-WARN	missing_definition	consistOf	textual definition	
-WARN	missing_definition	experimentalContextFor	textual definition	
-WARN	missing_definition	generates	textual definition	
-WARN	missing_definition	uses	textual definition	
-WARN	missing_definition	componentOf	textual definition	
-WARN	missing_definition	relatedTo	textual definition	
-WARN	missing_definition	organizedBy	textual definition	
-WARN	missing_definition	createdBy	textual definition	
-WARN	missing_definition	deployedOn	textual definition	
-WARN	missing_definition	leadTo	textual definition	
-WARN	missing_definition	resultsIn	textual definition	
-WARN	missing_definition	usedIn	textual definition	
-WARN	missing_definition	conductedAt	textual definition	
-WARN	missing_definition	capableOfIdentifying	textual definition	
-WARN	missing_definition	provideAccessTo	textual definition	
-WARN	missing_definition	capableOfDetecting	textual definition	
-WARN	missing_definition	contain	textual definition	
-WARN	missing_definition	present	textual definition	
-WARN	missing_definition	sameAs	textual definition	
-WARN	missing_definition	isResultOf	textual definition	
-WARN	missing_definition	aggregate	textual definition	
-WARN	missing_definition	hasRole	textual definition	
-WARN	missing_definition	characterizedBy	textual definition	
-WARN	missing_definition	conductedOn	textual definition	
-WARN	missing_definition	operatesOn	textual definition	
-WARN	missing_definition	quantifiedBy	textual definition	
-WARN	missing_definition	partOf	textual definition	
-WARN	missing_definition	project	textual definition	
-WARN	missing_definition	toolDiscoveryCriterion	textual definition	
-WARN	missing_definition	dataProductOrService	textual definition	
-WARN	missing_definition	needsDiscussion	textual definition	
-WARN	missing_definition	selectionParameter	textual definition	
-WARN	missing_definition	dataProduct	textual definition	
-WARN	missing_definition	engineeringPlatform	textual definition	
-WARN	missing_definition	legend	textual definition	
-WARN	missing_definition	hardware	textual definition	
-WARN	missing_definition	instrumentDiscoveryCriterion	textual definition	
-WARN	missing_definition	instrumentOperatingModeDiscoveryCriterion	textual definition	
-WARN	missing_definition	spaceAgency	textual definition	
-WARN	missing_definition	applicationDiscoveryCriterion	textual definition	
-WARN	missing_definition	discoveryCriterion	textual definition	
-WARN	missing_definition	researchStudy	textual definition	
-WARN	missing_definition	dataProductDiscoveryCriterion	textual definition	
-WARN	missing_definition	productService	textual definition	
-WARN	missing_definition	sciencePlatform	textual definition	
-WARN	missing_definition	modelDiscoveryCriterion	textual definition	
-WARN	missing_definition	dataSelectionParameter	textual definition	
-WARN	missing_definition	dataDiscoveryCriterion	textual definition	
-WARN	missing_definition	informationDiscoveryCriterion	textual definition	
-WARN	missing_definition	researchInvestigation	textual definition	
-WARN	missing_definition	specimen	textual definition	
-WARN	missing_definition	informationProduct	textual definition	
-WARN	missing_definition	experimentApparatus	textual definition	
-WARN	missing_definition	informationSelectionParameter	textual definition	
-WARN	missing_definition	engineeringMission	textual definition	
-WARN	missing_definition	software	textual definition	
-WARN	missing_definition	informationProductOrService	textual definition	
-WARN	missing_definition	instrumentOperatingMode	textual definition	
-WARN	missing_definition	person	textual definition	
-WARN	missing_definition	missionDiscoveryCriterion	textual definition	
-WARN	missing_definition	metadataProduct	textual definition	
-WARN	missing_definition	spaceTimeBoundingDiscoveryCriterion	textual definition	
-WARN	missing_definition	facility	textual definition	
-WARN	missing_definition	phenomenon	textual definition	
-WARN	missing_definition	observation	textual definition	
-WARN	missing_definition	photoGallery	textual definition	
-WARN	missing_definition	discoveryInterface	textual definition	
-WARN	missing_definition	experimentDiscoveryCriterion	textual definition	
-WARN	missing_definition	investigator	textual definition	
-WARN	missing_definition	OperationDiscoveryCriterion	textual definition	
-WARN	missing_definition	program	textual definition	
-WARN	missing_definition	locationDiscoveryCriterion	textual definition	
-WARN	missing_definition	document	textual definition	
-WARN	missing_definition	sampleDiscoveryCriterion	textual definition	
-WARN	missing_definition	observableDiscoveryCriterion	textual definition	
-WARN	missing_definition	platformDiscoveryCriterion	textual definition	
+WARN	missing_definition	pds_Collection	IAO:0000115	
+WARN	missing_definition	pds_Data_Set_PDS3	IAO:0000115	
+WARN	missing_definition	spase:DisplayData	IAO:0000115	
+WARN	missing_definition	spase:Catalog	IAO:0000115	
+WARN	missing_definition	spase:NumericalData	IAO:0000115	
+WARN	missing_definition	provideInformationOn	IAO:0000115	
+WARN	missing_definition	providesAccessTo	IAO:0000115	
+WARN	missing_definition	consistOf	IAO:0000115	
+WARN	missing_definition	experimentalContextFor	IAO:0000115	
+WARN	missing_definition	generates	IAO:0000115	
+WARN	missing_definition	uses	IAO:0000115	
+WARN	missing_definition	componentOf	IAO:0000115	
+WARN	missing_definition	relatedTo	IAO:0000115	
+WARN	missing_definition	organizedBy	IAO:0000115	
+WARN	missing_definition	createdBy	IAO:0000115	
+WARN	missing_definition	deployedOn	IAO:0000115	
+WARN	missing_definition	leadTo	IAO:0000115	
+WARN	missing_definition	resultsIn	IAO:0000115	
+WARN	missing_definition	usedIn	IAO:0000115	
+WARN	missing_definition	conductedAt	IAO:0000115	
+WARN	missing_definition	capableOfIdentifying	IAO:0000115	
+WARN	missing_definition	provideAccessTo	IAO:0000115	
+WARN	missing_definition	capableOfDetecting	IAO:0000115	
+WARN	missing_definition	contain	IAO:0000115	
+WARN	missing_definition	present	IAO:0000115	
+WARN	missing_definition	sameAs	IAO:0000115	
+WARN	missing_definition	isResultOf	IAO:0000115	
+WARN	missing_definition	aggregate	IAO:0000115	
+WARN	missing_definition	hasRole	IAO:0000115	
+WARN	missing_definition	characterizedBy	IAO:0000115	
+WARN	missing_definition	conductedOn	IAO:0000115	
+WARN	missing_definition	operatesOn	IAO:0000115	
+WARN	missing_definition	quantifiedBy	IAO:0000115	
+WARN	missing_definition	partOf	IAO:0000115	
+WARN	missing_definition	project	IAO:0000115	
+WARN	missing_definition	toolDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	needsDiscussion	IAO:0000115	
+WARN	missing_definition	selectionParameter	IAO:0000115	
+WARN	missing_definition	engineeringPlatform	IAO:0000115	
+WARN	missing_definition	legend	IAO:0000115	
+WARN	missing_definition	instrumentDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	instrumentOperatingModeDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	spaceAgency	IAO:0000115	
+WARN	missing_definition	applicationDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	discoveryCriterion	IAO:0000115	
+WARN	missing_definition	researchStudy	IAO:0000115	
+WARN	missing_definition	dataProductDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	productService	IAO:0000115	
+WARN	missing_definition	sciencePlatform	IAO:0000115	
+WARN	missing_definition	modelDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	dataSelectionParameter	IAO:0000115	
+WARN	missing_definition	dataDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	informationDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	researchInvestigation	IAO:0000115	
+WARN	missing_definition	informationProduct	IAO:0000115	
+WARN	missing_definition	informationSelectionParameter	IAO:0000115	
+WARN	missing_definition	software	IAO:0000115	
+WARN	missing_definition	informationProductOrService	IAO:0000115	
+WARN	missing_definition	instrumentOperatingMode	IAO:0000115	
+WARN	missing_definition	person	IAO:0000115	
+WARN	missing_definition	missionDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	metadataProduct	IAO:0000115	
+WARN	missing_definition	spaceTimeBoundingDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	facility	IAO:0000115	
+WARN	missing_definition	phenomenon	IAO:0000115	
+WARN	missing_definition	observation	IAO:0000115	
+WARN	missing_definition	photoGallery	IAO:0000115	
+WARN	missing_definition	discoveryInterface	IAO:0000115	
+WARN	missing_definition	experimentDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	investigator	IAO:0000115	
+WARN	missing_definition	OperationDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	program	IAO:0000115	
+WARN	missing_definition	locationDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	document	IAO:0000115	
+WARN	missing_definition	sampleDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	observableDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	platformDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	Criterion	IAO:0000115	
+WARN	missing_definition	DiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	DataDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	ExperimentDiscoveryCriterion	IAO:0000115	
+WARN	missing_definition	ExperimentID	IAO:0000115	
+INFO	lowercase_definition	data Product	IAO:0000115	
 INFO	missing_superclass	needsDiscussion	rdfs:subClassOf	
 INFO	missing_superclass	selectionParameter	rdfs:subClassOf	
 INFO	missing_superclass	legend	rdfs:subClassOf	

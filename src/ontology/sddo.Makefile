@@ -14,11 +14,11 @@ TEMPLATES=$(patsubst %.tsv, $(TEMPLATESDIR)/%.owl, $(notdir $(wildcard $(TEMPLAT
 $(TEMPLATESDIR)/%.owl: $(TEMPLATESDIR)/%.tsv $(SRC)
 	$(ROBOT) merge -i $(SRC) template --template $< --output $@ && \
 	$(ROBOT) annotate --input $@ --ontology-iri $(ONTBASE)/components/$*.owl -o $@
-	
+
 components/all_templates.owl: $(TEMPLATES)
 	$(ROBOT) merge $(patsubst %, -i %, $^) \
 		annotate --ontology-iri $(ONTBASE)/$@ --version-iri $(ONTBASE)/releases/$(TODAY)/$@ \
 		--output $@.tmp.owl && mv $@.tmp.owl $@
-		
+
 templates: $(TEMPLATES)
 	echo $(TEMPLATES)

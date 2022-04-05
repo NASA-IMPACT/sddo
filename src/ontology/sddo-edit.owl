@@ -13,10 +13,8 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/sddo.owl">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/sddo/components/all_templates.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/sddo/imports/obi_import.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/sddo/imports/sosa_import.owl"/>
-        <owl:imports rdf:resource="http://www.ebi.ac.uk/swo/swo.owl"/>
         <dc:description>The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA&apos;s Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science.</dc:description>
         <dc:title>Science Data Discovery Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
@@ -1165,8 +1163,6 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074"/>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rduerr</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-02T22:57:22.551595Z</oboInOwl:creation_date>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-02T22:58:11.536811Z</oboInOwl:creation_date>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-02T22:58:56.536404Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">spaceTimeBoundingDiscoveryCriterion</rdfs:label>
     </owl:Class>
     
@@ -1299,7 +1295,6 @@
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A PDS 4 collection where the collection_type is &quot;Data&quot;</obo:IAO_0000115>
         <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rduerr</oboInOwl:created_by>
         <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-10T20:53:48.676522Z</oboInOwl:creation_date>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-10T20:55:07.211503Z</oboInOwl:creation_date>
         <rdfs:label xml:lang="en">organization</rdfs:label>
     </owl:Class>
     
