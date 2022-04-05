@@ -1,1501 +1,1991 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/sddo.owl#"
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://purl.obolibrary.org/obo/sddo.owl"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:efo="http://www.ebi.ac.uk/efo/"
-     xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/sddo.owl">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/sddo/imports/obi_import.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/sddo/imports/sosa_import.owl"/>
-        <dc:description>The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA&apos;s Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science.</dc:description>
-        <dc:title>Science Data Discovery Ontology</dc:title>
-        <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-    </owl:Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotation properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/sddo.owl#AnnotationProperty -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/sddo.owl#AnnotationProperty"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/sddo.owl#IRI -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/sddo.owl#IRI"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/sddo.owl#Literal -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/sddo.owl#Literal"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/description -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
-    
-
-
-    <!-- http://purl.org/dc/elements/1.1/title -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
-    
-
-
-    <!-- http://purl.org/dc/terms/license -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasSynonym -->
-
-    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasSynonym"/>
-    
-
-
-    <!-- http://www.w3.org/2004/02/skos/core#definition -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#definition"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000001 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000001">
-        <rdfs:label xml:lang="en">provideInformationOn</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000004 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000004">
-        <rdfs:label xml:lang="en">providesAccessTo</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000006 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000006">
-        <rdfs:label xml:lang="en">consistOf</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000007 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000007">
-        <rdfs:label xml:lang="en">experimentalContextFor</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000008 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000008">
-        <rdfs:label xml:lang="en">generates</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000009 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000009">
-        <rdfs:label xml:lang="en">uses</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000013 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000013">
-        <rdfs:label xml:lang="en">componentOf</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000014 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000014">
-        <rdfs:label xml:lang="en">relatedTo</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000015 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000015">
-        <rdfs:label xml:lang="en">organizedBy</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000017 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000017">
-        <rdfs:label xml:lang="en">createdBy</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000018 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000018">
-        <rdfs:label xml:lang="en">deployedOn</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000019 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000019">
-        <rdfs:label xml:lang="en">leadTo</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000020 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000020">
-        <rdfs:label xml:lang="en">resultsIn</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000021 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000021">
-        <rdfs:label xml:lang="en">usedIn</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000023 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000023">
-        <rdfs:label xml:lang="en">conductedAt</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000024 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000024">
-        <rdfs:label xml:lang="en">capableOfIdentifying</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000025 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000025">
-        <rdfs:label xml:lang="en">provideAccessTo</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000026 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000026">
-        <rdfs:label xml:lang="en">capableOfDetecting</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000027 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000027">
-        <rdfs:label xml:lang="en">contain</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000029 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000029">
-        <rdfs:label xml:lang="en">present</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000030 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000030">
-        <rdfs:label xml:lang="en">sameAs</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000031 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000031">
-        <rdfs:label xml:lang="en">isResultOf</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000033 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000033">
-        <rdfs:label xml:lang="en">aggregate</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000034 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000034">
-        <rdfs:label xml:lang="en">hasRole</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000035 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000035">
-        <rdfs:label xml:lang="en">characterizedBy</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000036 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000036">
-        <rdfs:label xml:lang="en">conductedOn</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000039 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000039">
-        <rdfs:label xml:lang="en">operatesOn</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000041 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000041">
-        <rdfs:label xml:lang="en">quantifiedBy</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000042 -->
-
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/SDDO_3000042">
-        <rdfs:label xml:lang="en">partOf</rdfs:label>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Classes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000043 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000043">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000009"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000060"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000066"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">project</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000044 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000044">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000035"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000100"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000041"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000100"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000112>A coronal mass ejection, supernova, earthquake, spacecraft launch, etc.</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Something observable that happened at a given time and place</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adapted from http://purl.obolibrary.org/obo/NCIT_C25499</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">event</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000045 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000045">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000009"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000060"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000020"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000066"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000112>A single science campaign may require all or part of several missions.</obo:IAO_0000112>
-        <obo:IAO_0000112>There may be several science campaigns occurring over the course of a single mission.</obo:IAO_0000112>
-        <obo:IAO_0000115>A systematic set of activities undertaken to meet a particular science objective.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-        <obo:IAO_0000118>science campaign</obo:IAO_0000118>
-        <obo:IAO_0000119>Morris, Robert, Jennifer Dungan, Lina Khatib, A. Bachman, John Gasch, Paul Hempel, Jenny Williams, Terri Wood, and Christopher Bruno. &quot;Coordinated science campaign planning for earth observing missions.&quot; In Proc. of ESTC’04. 2004.</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">campaign</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000046 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000046">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000062"/>
-        <rdfs:label xml:lang="en">toolDiscoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000047 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000047">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000017"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000089"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000024"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000096"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000026"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000044"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An assay is an investigative (analytic) procedure for qualitatively assessing or quantitatively measuring the presence, amount, or functional activity of a target entity.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">assay</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000048 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000048">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000066"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000027"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000110"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A data product or data service that returns bulk science data.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It is generally agreed that data is in the eye of the beholder; but, for the purposes of this project the terms data and data product are limited to traditional mostly numeric science data products that NASA holds and actually calls data, data sets or data products. Thus a DataProductService is any product or service that returns bulk science data.</obo:IAO_0000116>
-        <oboInOwl:hasSynonym xml:lang="en">dataProductOrService</oboInOwl:hasSynonym>
-        <rdfs:label>data product or service</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000049 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000049">
-        <rdfs:label xml:lang="en">needsDiscussion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000050 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000050">
-        <rdfs:label xml:lang="en">selectionParameter</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000051 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000051">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000088"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000094"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115></obo:IAO_0000115>
-        <oboInOwl:hasSynonym>dataProduct</oboInOwl:hasSynonym>
-        <rdfs:label xml:lang="en">data Product</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000052 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000052">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000060"/>
-        <rdfs:label xml:lang="en">engineeringPlatform</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000053 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000053">
-        <rdfs:label xml:lang="en">legend</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000054 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000054">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <obo:IAO_0000115>The mechanical, magnetic, electronic, and electrical equipment necessary for conducting an activity.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:resource="https://www.dictionary.com/browse/hardware"/>
-        <rdfs:comment>Hardware is usually distinguished from the theory and design that make the activity possible.</rdfs:comment>
-        <rdfs:label xml:lang="en">hardware</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000056 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000056">
-        <obo:IAO_0000115>An originator or creator of a work</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-        <rdfs:label xml:lang="en">author</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000057 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000057">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074"/>
-        <rdfs:label xml:lang="en">instrumentDiscoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000058 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000058">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074"/>
-        <rdfs:label xml:lang="en">instrumentOperatingModeDiscoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000059 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000059">
-        <rdfs:label xml:lang="en">spaceAgency</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000060 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000060">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000054"/>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A spacecraft, a person, a ship, a piece of laboratory equipment</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A platform is a physical object to which an instrument is attached or in which it is contained.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">platform</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000061 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000061">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000062"/>
-        <rdfs:label xml:lang="en">applicationDiscoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000062 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000062">
-        <rdfs:label xml:lang="en">discoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000063 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000063">
-        <rdfs:label xml:lang="en">researchStudy</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000064 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000064">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074"/>
-        <rdfs:label xml:lang="en">dataProductDiscoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000065 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000065">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-        <obo:IAO_0000112>&quot;mouse&quot;, &quot;Mus musculus&quot;, &quot;rodent&quot;, &quot;mammal&quot;, &quot;microorganism&quot;, &quot;fungi&quot;</obo:IAO_0000112>
-        <obo:IAO_0000115>The quality of a living subject that indicates the taxonomical grouping of the subject.  This grouping can be at any level in a hierachy of organism classification, or a collection of levels, and can be using scientific language or colloquial language.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rduerr</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-30T21:34:56.970241Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">organism</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000066 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000066">
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Peter Fox</oboInOwl:created_by>
-        <rdfs:label xml:lang="en">productService</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000067 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000067">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000060"/>
-        <rdfs:label xml:lang="en">sciencePlatform</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000069 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000069">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000048"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data product service in the GeneLab repository</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rduerr</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-01T20:52:05.98268Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">study</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000071 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000071">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000007"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000100"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000112>Gender is known to be a factor in the study of high blood pressure.</obo:IAO_0000112>
-        <obo:IAO_0000115>The role played by an entity as part of a scientific investigation such that levels of the measurement or observation of the entity are thought to bear upon the hypotheses being investigated.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-4312-9552"/>
-        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-        <obo:IAO_0000119>0000-0003-4312-9552</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">factor</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000072 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000072">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000062"/>
-        <rdfs:label xml:lang="en">modelDiscoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000073 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000073">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000050"/>
-        <rdfs:label xml:lang="en">dataSelectionParameter</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000074 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000074">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000062"/>
-        <rdfs:label xml:lang="en">dataDiscoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000075 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000075">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000029"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000050"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000029"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000066"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A software interface that 1) presents users with selection criteria and 2) presents products or services that meet the criteria the user then selects.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-        <obo:IAO_0000119 rdf:resource="https://cmapscloud.ihmc.us:443/rid=1XX21YCGT-24LYD72-V8Y/SMD_ConceptualIMVersion1-20220324.cmap"/>
-        <rdfs:label xml:lang="en">accessInterface</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000076 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000076">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000062"/>
-        <rdfs:label xml:lang="en">informationDiscoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000077 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000077">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000030"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000063"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">researchInvestigation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000078 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000078">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000096"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000021"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000047"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A part of a feature, taken to demonstrate or to determine the character of the whole.</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rduerr</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-30T21:35:20.533927Z</oboInOwl:creation_date>
-        <oboInOwl:hasSynonym>sample</oboInOwl:hasSynonym>
-        <rdfs:comment>A substance, or portion of material obtained for use in testing, examination, or study.</rdfs:comment>
-        <rdfs:label xml:lang="en">specimen</rdfs:label>
-        <skos:example>A preparation of tissue or bodily fluid taken for examination or diagnosis.</skos:example>
-    </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000078"/>
-        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>A part of a feature, taken to demonstrate or to determine the character of the whole.</owl:annotatedTarget>
-        <obo:IAO_0000119>Adapted from http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157</obo:IAO_0000119>
-    </owl:Axiom>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000079 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000079">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000085"/>
-        <rdfs:label xml:lang="en">informationProduct</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000080 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000080">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000054"/>
-        <obo:IAO_0000115>Hardware used in conducting an experiment.</obo:IAO_0000115>
-        <oboInOwl:hasSynonym>experimentApparatus</oboInOwl:hasSynonym>
-        <rdfs:label xml:lang="en">experiment Apparatus</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000081 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000081">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000042"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>The realisation of an application, or execution of a plan, idea, model, design, specification, standard, algorithm, or policy.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:resource="https://en.wikipedia.org/wiki/Deployment_management"/>
-        <rdfs:label xml:lang="en">deployment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000082 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000082">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000050"/>
-        <rdfs:label xml:lang="en">informationSelectionParameter</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000083 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000083">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
-        <obo:IAO_0000115>A mission that has a primary purpose to test or validate engineering designs or implementations.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">engineeringMission</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000084 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000084">
-        <rdfs:label xml:lang="en">software</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000085 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000085">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000066"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000051"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000054"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000065"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000069"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000078"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000084"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000090"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000094"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000101"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000109"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000001"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000113"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">informationProductOrService</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000086 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000086">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000023"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000081"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000103"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A role in which the bearer delivers financial support to enable some activity.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">funder</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000087 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000087">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000024"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000096"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000026"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000044"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">instrumentOperatingMode</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000088 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000088">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000015"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000059"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000018"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000054"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mission is a named activity for some purpose</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Discussion by SDDO project team</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">mission</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000089 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000089">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000023"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000098"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Any procedure that involves testing or manipulating a sample or subject in a laboratory setting</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A broadened version of http://purl.obolibrary.org/obo/NCIT_C25294</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">laboratoryProcedure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000090 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000090">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000034"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000056"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000034"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000065"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">person</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000091 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000091">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A  mission led or funded by NASA</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Per the NASA SMD glossary at https://science.nasa.gov/glossary/ a mission is a &quot;NASA Science-funded activity with the purpose of meeting goals laid out by presidential directive, and detailed in Science Mission Directorate&apos;s strategic plan.&quot;  This would mean the ontology would need to include the concepts of a presidential directive and a strategic plan - wait for a use case before implementing this change.</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SDDO team</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">NASAMission</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000092 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000092">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000054"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000039"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000060"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A camera, MODIS, a survey instrument (e.g., google form)</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An instrument is a physical object that can be used to collect data.</obo:IAO_0000115>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adapted from pds:Instrument</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">instrument</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000093 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000093">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074"/>
-        <rdfs:label xml:lang="en">missionDiscoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000094 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000094">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000008"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000078"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000009"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000080"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000013"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000077"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000023"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000098"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000036"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000065"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000042"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A plan for a coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing.</obo:IAO_0000115>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Added the phrase &quot;plan for a&quot; to the front of the definition per Dan&apos;s request</obo:IAO_0000116>
-        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">adapted from http://purl.obolibrary.org/obo/NCIT_C42790</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">experiment</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000095 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000095">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000079"/>
-        <obo:IAO_0000116 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">While agreed that metadata is just data about data and so is really an unneeded term, we recognize that the term metadata is often applied to information about data no matter its form.  In many cases, a metadata product is available for access, even if the data is not.  Thus a Metadata Product Service is any information product or service that returns metadata about science data.</obo:IAO_0000116>
-        <rdfs:label xml:lang="en">metadataProduct</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000096 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000096">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000035"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000094"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000100"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000041"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000094"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/SDDO_3000100"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A material entity that has characteristics that can be characterized or quantified through observation or experiment.</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">feature</rdfs:label>
-        <skos:example>Mars, a hurricane, the aurora, a molecular cloud, a sunspot, a mouse&apos;s liver, etc.</skos:example>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000097 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000097">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074"/>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rduerr</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-02T22:57:22.551595Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">spaceTimeBoundingDiscoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000098 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000098">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-        <rdfs:label xml:lang="en">facility</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000099 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000099">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000006"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000044"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000006"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000096"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">phenomenon</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000100 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000100">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/sosa/Observation"/>
-        <rdfs:label xml:lang="en">observation</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000101 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000101">
-        <rdfs:label xml:lang="en">photoGallery</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000102 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000102">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000019"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000075"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000029"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000062"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000033"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000046"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000033"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000061"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000033"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000072"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000033"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000033"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000076"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">discoveryInterface</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000103 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000103">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000034"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000056"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000034"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000059"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000034"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000086"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000034"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000105"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A PDS 4 collection where the collection_type is &quot;Data&quot;</obo:IAO_0000115>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rduerr</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-12-10T20:53:48.676522Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">organization</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000104 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000104">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074"/>
-        <rdfs:label xml:lang="en">experimentDiscoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000105 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000105">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000110"/>
-        <oboInOwl:created_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rduerr</oboInOwl:created_by>
-        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021-11-30T19:43:39.350414Z</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">investigator</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000106 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000106">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074"/>
-        <rdfs:label xml:lang="en">OperationDiscoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000107 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000107">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000014"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000091"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:label xml:lang="en">program</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000108 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000108">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074"/>
-        <rdfs:label xml:lang="en">locationDiscoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000109 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000109">
-        <rdfs:label xml:lang="en">document</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000110 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000110">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000031"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000100"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:BFO_0000179 xml:lang="en">data element</obo:BFO_0000179>
-        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The meaning of a column within a spreadsheet (e.g., identifier or height); the meaning of each pixel in an image (e.g., surface temperature)|another test example</obo:IAO_0000112>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data element is any characteristic that can help in understanding data content. That is, a data element is any parameter or variable that is useful, or critical, when identifying  or describing the content of a data object.</obo:IAO_0000115>
-        <rdfs:label>data element</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000111 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000111">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074"/>
-        <rdfs:label xml:lang="en">sampleDiscoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000112 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000112">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A mission that has a primary purpose to gather scientific data</obo:IAO_0000115>
-        <rdfs:label xml:lang="en">researchMission</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000113 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000113">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000010"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000054"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>Software that provides the low-level control for a device&apos;s specific hardware.</obo:IAO_0000115>
-        <obo:IAO_0000117 rdf:resource="https://orcid.org/0000-0003-4808-4736"/>
-        <obo:IAO_0000119 rdf:resource="https://en.wikipedia.org/wiki/Firmware"/>
-        <rdfs:label xml:lang="en">firmware</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000114 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000114">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074"/>
-        <rdfs:label xml:lang="en">observableDiscoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_3000115 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000115">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000074"/>
-        <rdfs:label xml:lang="en">platformDiscoveryCriterion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_/SDDO_1000000 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000000">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000048"/>
-        <rdfs:label xml:lang="en">pds_Collection</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000048"/>
-        <rdfs:label xml:lang="en">pds_Data_Set_PDS3</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000048"/>
-        <rdfs:label xml:lang="en">spase:DisplayData</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000048"/>
-        <rdfs:label xml:lang="en">spase:Catalog</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000048"/>
-        <rdfs:label xml:lang="en">spase:NumericalData</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/sddo.owl#Annotation -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/sddo.owl#Annotation"/>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/sddo.owl#Annotation"/>
-        <AnnotationProperty></AnnotationProperty>
-        <Literal>None</Literal>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/sddo.owl#Annotation"/>
-        <AnnotationProperty></AnnotationProperty>
+     ontologyIRI="http://purl.obolibrary.org/obo/sddo.owl">
+    <Prefix name="" IRI="http://purl.obolibrary.org/obo/sddo.owl"/>
+    <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
+    <Prefix name="efo" IRI="http://www.ebi.ac.uk/efo/"/>
+    <Prefix name="obo" IRI="http://purl.obolibrary.org/obo/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
+    <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
+    <Prefix name="oboInOwl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
+    <Import>http://purl.obolibrary.org/obo/sddo/components/all_templates.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/sddo/imports/obi_import.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/sddo/imports/sosa_import.owl</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+        <Literal>The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA&apos;s Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
         <Literal>Science Data Discovery Ontology</Literal>
-    </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="http://purl.obolibrary.org/obo/sddo.owl#Annotation"/>
-        <AnnotationProperty></AnnotationProperty>
-        <IRI>https://creativecommons.org/licenses/unspecified</IRI>
-    </rdf:Description>
-</rdf:RDF>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="terms:license"/>
+        <IRI>http://creativecommons.org/licenses/by/3.0/</IRI>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_1000007"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_1000008"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000043"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000044"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000045"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000046"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000047"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000049"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000050"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000051"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000052"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000053"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000054"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000056"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000057"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000058"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000059"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000060"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000061"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000062"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000063"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000064"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000065"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000066"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000067"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000069"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000071"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000072"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000073"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000074"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000075"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000076"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000077"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000078"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000079"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000080"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000081"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000082"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000083"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000084"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000086"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000087"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000088"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000089"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000090"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000091"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000092"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000093"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000094"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000095"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000096"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000097"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000098"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000099"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000100"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000101"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000102"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000103"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000104"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000105"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000106"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000107"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000108"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000109"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000110"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000111"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000112"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000113"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000114"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_3000115"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000001"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000004"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000006"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000007"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000008"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000009"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000013"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000014"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000015"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000017"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000018"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000019"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000020"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000021"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000023"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000024"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000025"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000026"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000027"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000029"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000030"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000031"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000033"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000034"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000035"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000036"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000039"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000041"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="obo:SDDO_3000042"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#AnnotationProperty"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#IRI"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#Literal"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:description"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="dc:title"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="terms:license"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:hasRelatedSynonym"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:hasSynonym"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:definition"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_1000007"/>
+        <Class abbreviatedIRI="obo:SDDO_3000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_1000008"/>
+        <Class abbreviatedIRI="obo:SDDO_1000007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000043"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000009"/>
+            <Class abbreviatedIRI="obo:SDDO_3000060"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000043"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000020"/>
+            <Class abbreviatedIRI="obo:SDDO_3000066"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000044"/>
+        <Class abbreviatedIRI="obo:BFO_0000015"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000044"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000035"/>
+            <Class abbreviatedIRI="obo:SDDO_3000100"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000044"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000041"/>
+            <Class abbreviatedIRI="obo:SDDO_3000100"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000045"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000009"/>
+            <Class abbreviatedIRI="obo:SDDO_3000060"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000045"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000020"/>
+            <Class abbreviatedIRI="obo:SDDO_3000066"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000046"/>
+        <Class abbreviatedIRI="obo:SDDO_3000062"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000047"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000017"/>
+            <Class abbreviatedIRI="obo:SDDO_3000089"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000047"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000024"/>
+            <Class abbreviatedIRI="obo:SDDO_3000096"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000047"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000026"/>
+            <Class abbreviatedIRI="obo:SDDO_3000044"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000051"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000051"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:OBI_0000312"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="obo:SDDO_3000088"/>
+                <Class abbreviatedIRI="obo:SDDO_3000094"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000052"/>
+        <Class abbreviatedIRI="obo:SDDO_3000060"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000054"/>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000057"/>
+        <Class abbreviatedIRI="obo:SDDO_3000074"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000058"/>
+        <Class abbreviatedIRI="obo:SDDO_3000074"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000060"/>
+        <Class abbreviatedIRI="obo:SDDO_3000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000061"/>
+        <Class abbreviatedIRI="obo:SDDO_3000062"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000064"/>
+        <Class abbreviatedIRI="obo:SDDO_3000074"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000065"/>
+        <Class abbreviatedIRI="obo:OBI_0100026"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000067"/>
+        <Class abbreviatedIRI="obo:SDDO_3000060"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000069"/>
+        <Class abbreviatedIRI="obo:SDDO_3000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000071"/>
+        <Class abbreviatedIRI="obo:BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000071"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0000081"/>
+            <Class abbreviatedIRI="owl:Thing"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000071"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000007"/>
+            <Class abbreviatedIRI="obo:SDDO_3000100"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000072"/>
+        <Class abbreviatedIRI="obo:SDDO_3000062"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000073"/>
+        <Class abbreviatedIRI="obo:SDDO_3000050"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000074"/>
+        <Class abbreviatedIRI="obo:SDDO_3000062"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000075"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000029"/>
+            <Class abbreviatedIRI="obo:SDDO_3000050"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000075"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000029"/>
+            <Class abbreviatedIRI="obo:SDDO_3000066"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000076"/>
+        <Class abbreviatedIRI="obo:SDDO_3000062"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000077"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000030"/>
+            <Class abbreviatedIRI="obo:SDDO_3000063"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000078"/>
+        <Class abbreviatedIRI="obo:OBI_0100051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000078"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000021"/>
+            <Class abbreviatedIRI="obo:SDDO_3000047"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000079"/>
+        <Class abbreviatedIRI="obo:IAO_0000030"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000080"/>
+        <Class abbreviatedIRI="obo:SDDO_3000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000081"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000042"/>
+            <Class abbreviatedIRI="obo:SDDO_3000088"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000082"/>
+        <Class abbreviatedIRI="obo:SDDO_3000050"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000083"/>
+        <Class abbreviatedIRI="obo:SDDO_3000088"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000086"/>
+        <Class abbreviatedIRI="obo:BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000086"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:RO_0000081"/>
+            <Class abbreviatedIRI="obo:SDDO_3000103"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000087"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000024"/>
+            <Class abbreviatedIRI="obo:SDDO_3000096"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000087"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000026"/>
+            <Class abbreviatedIRI="obo:SDDO_3000044"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000088"/>
+        <Class abbreviatedIRI="obo:OBI_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000088"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000015"/>
+            <Class abbreviatedIRI="obo:SDDO_3000059"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000088"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000018"/>
+            <Class abbreviatedIRI="obo:SDDO_3000054"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000089"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000023"/>
+            <Class abbreviatedIRI="obo:SDDO_3000098"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000090"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000034"/>
+            <Class abbreviatedIRI="obo:SDDO_3000056"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000090"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000034"/>
+            <Class abbreviatedIRI="obo:SDDO_3000065"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000091"/>
+        <Class abbreviatedIRI="obo:SDDO_3000088"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000092"/>
+        <Class abbreviatedIRI="obo:SDDO_3000054"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000092"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000039"/>
+            <Class abbreviatedIRI="obo:SDDO_3000060"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000093"/>
+        <Class abbreviatedIRI="obo:SDDO_3000074"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000094"/>
+        <Class abbreviatedIRI="obo:OBI_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000094"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000008"/>
+            <Class abbreviatedIRI="obo:SDDO_3000078"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000094"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000009"/>
+            <Class abbreviatedIRI="obo:SDDO_3000080"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000094"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000013"/>
+            <Class abbreviatedIRI="obo:SDDO_3000077"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000094"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000023"/>
+            <Class abbreviatedIRI="obo:SDDO_3000098"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000094"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000036"/>
+            <Class abbreviatedIRI="obo:SDDO_3000065"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000094"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000042"/>
+            <Class abbreviatedIRI="obo:SDDO_3000088"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000095"/>
+        <Class abbreviatedIRI="obo:SDDO_3000079"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000096"/>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000096"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000035"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="obo:SDDO_3000094"/>
+                <Class abbreviatedIRI="obo:SDDO_3000100"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000096"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000041"/>
+            <ObjectUnionOf>
+                <Class abbreviatedIRI="obo:SDDO_3000094"/>
+                <Class abbreviatedIRI="obo:SDDO_3000100"/>
+            </ObjectUnionOf>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000097"/>
+        <Class abbreviatedIRI="obo:SDDO_3000074"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000098"/>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000099"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000006"/>
+            <Class abbreviatedIRI="obo:SDDO_3000044"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000099"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000006"/>
+            <Class abbreviatedIRI="obo:SDDO_3000096"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000100"/>
+        <Class abbreviatedIRI="obo:OBI_0000011"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000100"/>
+        <Class IRI="http://www.w3.org/ns/sosa/Observation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000102"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000019"/>
+            <Class abbreviatedIRI="obo:SDDO_3000075"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000102"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000029"/>
+            <Class abbreviatedIRI="obo:SDDO_3000062"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000102"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000033"/>
+            <Class abbreviatedIRI="obo:SDDO_3000046"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000102"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000033"/>
+            <Class abbreviatedIRI="obo:SDDO_3000061"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000102"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000033"/>
+            <Class abbreviatedIRI="obo:SDDO_3000072"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000102"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000033"/>
+            <Class abbreviatedIRI="obo:SDDO_3000074"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000102"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000033"/>
+            <Class abbreviatedIRI="obo:SDDO_3000076"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000103"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000034"/>
+            <Class abbreviatedIRI="obo:SDDO_3000056"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000103"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000034"/>
+            <Class abbreviatedIRI="obo:SDDO_3000059"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000103"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000034"/>
+            <Class abbreviatedIRI="obo:SDDO_3000086"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000103"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000034"/>
+            <Class abbreviatedIRI="obo:SDDO_3000105"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000104"/>
+        <Class abbreviatedIRI="obo:SDDO_3000074"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000105"/>
+        <Class abbreviatedIRI="obo:SDDO_3000110"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000106"/>
+        <Class abbreviatedIRI="obo:SDDO_3000074"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000107"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000014"/>
+            <Class abbreviatedIRI="obo:SDDO_3000091"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000108"/>
+        <Class abbreviatedIRI="obo:SDDO_3000074"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000109"/>
+        <Class abbreviatedIRI="obo:SDDO_3000079"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000110"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:SDDO_3000031"/>
+            <Class abbreviatedIRI="obo:SDDO_3000100"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000111"/>
+        <Class abbreviatedIRI="obo:SDDO_3000074"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000112"/>
+        <Class abbreviatedIRI="obo:SDDO_3000088"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000113"/>
+        <Class abbreviatedIRI="obo:IAO_0000010"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000113"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty abbreviatedIRI="obo:BFO_0000050"/>
+            <Class abbreviatedIRI="obo:SDDO_3000054"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000114"/>
+        <Class abbreviatedIRI="obo:SDDO_3000074"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000115"/>
+        <Class abbreviatedIRI="obo:SDDO_3000074"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001"/>
+        <Class abbreviatedIRI="obo:SDDO_1000007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002"/>
+        <Class abbreviatedIRI="obo:SDDO_3000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003"/>
+        <Class abbreviatedIRI="obo:SDDO_3000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004"/>
+        <Class abbreviatedIRI="obo:SDDO_3000051"/>
+    </SubClassOf>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <AbbreviatedIRI>obo:SDDO_1000007</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-04T23:21:32Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>obo:SDDO_1000007</AbbreviatedIRI>
+        <IRI>http://orcid.org/0000-0003-4808-4736</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_1000007</AbbreviatedIRI>
+        <Literal xml:lang="en">PDS data Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="dc:date"/>
+        <AbbreviatedIRI>obo:SDDO_1000008</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2022-04-04T23:25:25Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>obo:SDDO_1000008</AbbreviatedIRI>
+        <IRI>http://orcid.org/0000-0003-4808-4736</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_1000008</AbbreviatedIRI>
+        <Literal xml:lang="en">pds_Collection_with_Type_Data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000001</AbbreviatedIRI>
+        <Literal xml:lang="en">provideInformationOn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000004</AbbreviatedIRI>
+        <Literal xml:lang="en">providesAccessTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000006</AbbreviatedIRI>
+        <Literal xml:lang="en">consistOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000007</AbbreviatedIRI>
+        <Literal xml:lang="en">experimentalContextFor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000008</AbbreviatedIRI>
+        <Literal xml:lang="en">generates</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000009</AbbreviatedIRI>
+        <Literal xml:lang="en">uses</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000013</AbbreviatedIRI>
+        <Literal xml:lang="en">componentOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000014</AbbreviatedIRI>
+        <Literal xml:lang="en">relatedTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000015</AbbreviatedIRI>
+        <Literal xml:lang="en">organizedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000017</AbbreviatedIRI>
+        <Literal xml:lang="en">createdBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000018</AbbreviatedIRI>
+        <Literal xml:lang="en">deployedOn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000019</AbbreviatedIRI>
+        <Literal xml:lang="en">leadTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000020</AbbreviatedIRI>
+        <Literal xml:lang="en">resultsIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000021</AbbreviatedIRI>
+        <Literal xml:lang="en">usedIn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000023</AbbreviatedIRI>
+        <Literal xml:lang="en">conductedAt</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000024</AbbreviatedIRI>
+        <Literal xml:lang="en">capableOfIdentifying</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000025</AbbreviatedIRI>
+        <Literal xml:lang="en">provideAccessTo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000026</AbbreviatedIRI>
+        <Literal xml:lang="en">capableOfDetecting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000027</AbbreviatedIRI>
+        <Literal xml:lang="en">contain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000029</AbbreviatedIRI>
+        <Literal xml:lang="en">present</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000030</AbbreviatedIRI>
+        <Literal xml:lang="en">sameAs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000031</AbbreviatedIRI>
+        <Literal xml:lang="en">isResultOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000033</AbbreviatedIRI>
+        <Literal xml:lang="en">aggregate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000034</AbbreviatedIRI>
+        <Literal xml:lang="en">hasRole</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000035</AbbreviatedIRI>
+        <Literal xml:lang="en">characterizedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000036</AbbreviatedIRI>
+        <Literal xml:lang="en">conductedOn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000039</AbbreviatedIRI>
+        <Literal xml:lang="en">operatesOn</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000041</AbbreviatedIRI>
+        <Literal xml:lang="en">quantifiedBy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000042</AbbreviatedIRI>
+        <Literal xml:lang="en">partOf</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000043</AbbreviatedIRI>
+        <Literal xml:lang="en">project</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
+        <AbbreviatedIRI>obo:SDDO_3000044</AbbreviatedIRI>
+        <Literal>A coronal mass ejection, supernova, earthquake, spacecraft launch, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000044</AbbreviatedIRI>
+        <Literal>Something observable that happened at a given time and place</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:SDDO_3000044</AbbreviatedIRI>
+        <Literal>Adapted from http://purl.obolibrary.org/obo/NCIT_C25499</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000044</AbbreviatedIRI>
+        <Literal xml:lang="en">event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
+        <AbbreviatedIRI>obo:SDDO_3000045</AbbreviatedIRI>
+        <Literal>A single science campaign may require all or part of several missions.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
+        <AbbreviatedIRI>obo:SDDO_3000045</AbbreviatedIRI>
+        <Literal>There may be several science campaigns occurring over the course of a single mission.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000045</AbbreviatedIRI>
+        <Literal>A systematic set of activities undertaken to meet a particular science objective.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <AbbreviatedIRI>obo:SDDO_3000045</AbbreviatedIRI>
+        <IRI>https://orcid.org/0000-0003-4808-4736</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000118"/>
+        <AbbreviatedIRI>obo:SDDO_3000045</AbbreviatedIRI>
+        <Literal>science campaign</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:SDDO_3000045</AbbreviatedIRI>
+        <Literal>Morris, Robert, Jennifer Dungan, Lina Khatib, A. Bachman, John Gasch, Paul Hempel, Jenny Williams, Terri Wood, and Christopher Bruno. &quot;Coordinated science campaign planning for earth observing missions.&quot; In Proc. of ESTC’04. 2004.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000045</AbbreviatedIRI>
+        <Literal xml:lang="en">campaign</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000046</AbbreviatedIRI>
+        <Literal xml:lang="en">toolDiscoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000047</AbbreviatedIRI>
+        <Literal>An assay is an investigative (analytic) procedure for qualitatively assessing or quantitatively measuring the presence, amount, or functional activity of a target entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000047</AbbreviatedIRI>
+        <Literal xml:lang="en">assay</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000049</AbbreviatedIRI>
+        <Literal xml:lang="en">needsDiscussion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000050</AbbreviatedIRI>
+        <Literal xml:lang="en">selectionParameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+            <Literal>NASA (2012) NASA Thesaurus: Hierarchical Listing with Definitions. Vol 1, NASA.</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000051</AbbreviatedIRI>
+        <Literal>Processed data from the same source, normally compiled into a set according to shared characteristics.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:hasRelatedSynonym"/>
+        <AbbreviatedIRI>obo:SDDO_3000051</AbbreviatedIRI>
+        <Literal>data set</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:hasSynonym"/>
+        <AbbreviatedIRI>obo:SDDO_3000051</AbbreviatedIRI>
+        <Literal>dataProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000051</AbbreviatedIRI>
+        <Literal xml:lang="en">data Product</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000052</AbbreviatedIRI>
+        <Literal xml:lang="en">engineeringPlatform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000053</AbbreviatedIRI>
+        <Literal xml:lang="en">legend</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000054</AbbreviatedIRI>
+        <Literal>The mechanical, magnetic, electronic, and electrical equipment necessary for conducting an activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:SDDO_3000054</AbbreviatedIRI>
+        <IRI>https://www.dictionary.com/browse/hardware</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>obo:SDDO_3000054</AbbreviatedIRI>
+        <Literal>Hardware is usually distinguished from the theory and design that make the activity possible.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000054</AbbreviatedIRI>
+        <Literal xml:lang="en">hardware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000056</AbbreviatedIRI>
+        <Literal>An originator or creator of a work</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <AbbreviatedIRI>obo:SDDO_3000056</AbbreviatedIRI>
+        <IRI>https://orcid.org/0000-0003-4808-4736</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000056</AbbreviatedIRI>
+        <Literal xml:lang="en">author</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000057</AbbreviatedIRI>
+        <Literal xml:lang="en">instrumentDiscoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000058</AbbreviatedIRI>
+        <Literal xml:lang="en">instrumentOperatingModeDiscoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000059</AbbreviatedIRI>
+        <Literal xml:lang="en">spaceAgency</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
+        <AbbreviatedIRI>obo:SDDO_3000060</AbbreviatedIRI>
+        <Literal>A spacecraft, a person, a ship, a piece of laboratory equipment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000060</AbbreviatedIRI>
+        <Literal>A platform is a physical object to which an instrument is attached or in which it is contained.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000060</AbbreviatedIRI>
+        <Literal xml:lang="en">platform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000061</AbbreviatedIRI>
+        <Literal xml:lang="en">applicationDiscoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000062</AbbreviatedIRI>
+        <Literal xml:lang="en">discoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000063</AbbreviatedIRI>
+        <Literal xml:lang="en">researchStudy</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000064</AbbreviatedIRI>
+        <Literal xml:lang="en">dataProductDiscoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
+        <AbbreviatedIRI>obo:SDDO_3000065</AbbreviatedIRI>
+        <Literal>&quot;mouse&quot;, &quot;Mus musculus&quot;, &quot;rodent&quot;, &quot;mammal&quot;, &quot;microorganism&quot;, &quot;fungi&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000065</AbbreviatedIRI>
+        <Literal>The quality of a living subject that indicates the taxonomical grouping of the subject.  This grouping can be at any level in a hierachy of organism classification, or a collection of levels, and can be using scientific language or colloquial language.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>obo:SDDO_3000065</AbbreviatedIRI>
+        <Literal>Rduerr</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:creation_date"/>
+        <AbbreviatedIRI>obo:SDDO_3000065</AbbreviatedIRI>
+        <Literal>2021-11-30T21:34:56.970241Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000065</AbbreviatedIRI>
+        <Literal xml:lang="en">organism</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>obo:SDDO_3000066</AbbreviatedIRI>
+        <Literal>Peter Fox</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000066</AbbreviatedIRI>
+        <Literal xml:lang="en">productService</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000067</AbbreviatedIRI>
+        <Literal xml:lang="en">sciencePlatform</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000069</AbbreviatedIRI>
+        <Literal>A data product from the GeneLab repository</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>obo:SDDO_3000069</AbbreviatedIRI>
+        <Literal>Rduerr</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:creation_date"/>
+        <AbbreviatedIRI>obo:SDDO_3000069</AbbreviatedIRI>
+        <Literal>2021-12-01T20:52:05.98268Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000069</AbbreviatedIRI>
+        <Literal xml:lang="en">study</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
+        <AbbreviatedIRI>obo:SDDO_3000071</AbbreviatedIRI>
+        <Literal>Gender is known to be a factor in the study of high blood pressure.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000071</AbbreviatedIRI>
+        <Literal>The role played by an entity as part of a scientific investigation such that levels of the measurement or observation of the entity are thought to bear upon the hypotheses being investigated.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <AbbreviatedIRI>obo:SDDO_3000071</AbbreviatedIRI>
+        <IRI>https://orcid.org/0000-0003-4312-9552</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <AbbreviatedIRI>obo:SDDO_3000071</AbbreviatedIRI>
+        <IRI>https://orcid.org/0000-0003-4808-4736</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:SDDO_3000071</AbbreviatedIRI>
+        <Literal>0000-0003-4312-9552</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000071</AbbreviatedIRI>
+        <Literal xml:lang="en">factor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000072</AbbreviatedIRI>
+        <Literal xml:lang="en">modelDiscoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000073</AbbreviatedIRI>
+        <Literal xml:lang="en">dataSelectionParameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000074</AbbreviatedIRI>
+        <Literal xml:lang="en">dataDiscoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000075</AbbreviatedIRI>
+        <Literal>A software interface that 1) presents users with selection criteria and 2) presents products or services that meet the criteria the user then selects.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <AbbreviatedIRI>obo:SDDO_3000075</AbbreviatedIRI>
+        <IRI>https://orcid.org/0000-0003-4808-4736</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:SDDO_3000075</AbbreviatedIRI>
+        <IRI>https://cmapscloud.ihmc.us:443/rid=1XX21YCGT-24LYD72-V8Y/SMD_ConceptualIMVersion1-20220324.cmap</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000075</AbbreviatedIRI>
+        <Literal xml:lang="en">accessInterface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000076</AbbreviatedIRI>
+        <Literal xml:lang="en">informationDiscoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000077</AbbreviatedIRI>
+        <Literal xml:lang="en">researchInvestigation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+            <Literal>Adapted from http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000078</AbbreviatedIRI>
+        <Literal>A part of a feature, taken to demonstrate or to determine the character of the whole.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>obo:SDDO_3000078</AbbreviatedIRI>
+        <Literal>Rduerr</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:creation_date"/>
+        <AbbreviatedIRI>obo:SDDO_3000078</AbbreviatedIRI>
+        <Literal>2021-11-30T21:35:20.533927Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:hasSynonym"/>
+        <AbbreviatedIRI>obo:SDDO_3000078</AbbreviatedIRI>
+        <Literal>sample</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000078</AbbreviatedIRI>
+        <Literal xml:lang="en">specimen</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <AbbreviatedIRI>obo:SDDO_3000078</AbbreviatedIRI>
+        <Literal>A preparation of tissue or bodily fluid taken for examination or diagnosis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000079</AbbreviatedIRI>
+        <Literal xml:lang="en">informationProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000080</AbbreviatedIRI>
+        <Literal>Hardware used in conducting an experiment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:hasSynonym"/>
+        <AbbreviatedIRI>obo:SDDO_3000080</AbbreviatedIRI>
+        <Literal>experimentApparatus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000080</AbbreviatedIRI>
+        <Literal xml:lang="en">experiment Apparatus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000081</AbbreviatedIRI>
+        <Literal>The realisation of an application, or execution of a plan, idea, model, design, specification, standard, algorithm, or policy.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:SDDO_3000081</AbbreviatedIRI>
+        <IRI>https://en.wikipedia.org/wiki/Deployment_management</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000081</AbbreviatedIRI>
+        <Literal xml:lang="en">deployment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000082</AbbreviatedIRI>
+        <Literal xml:lang="en">informationSelectionParameter</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000083</AbbreviatedIRI>
+        <Literal>A mission that has a primary purpose to test or validate engineering designs or implementations.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000083</AbbreviatedIRI>
+        <Literal xml:lang="en">engineeringMission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000084</AbbreviatedIRI>
+        <Literal xml:lang="en">software</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000086</AbbreviatedIRI>
+        <Literal>A role in which the bearer delivers financial support to enable some activity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000086</AbbreviatedIRI>
+        <Literal xml:lang="en">funder</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000087</AbbreviatedIRI>
+        <Literal xml:lang="en">instrumentOperatingMode</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000088</AbbreviatedIRI>
+        <Literal>A mission is a named activity for some purpose</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:SDDO_3000088</AbbreviatedIRI>
+        <Literal>Discussion by SDDO project team</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000088</AbbreviatedIRI>
+        <Literal xml:lang="en">mission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000089</AbbreviatedIRI>
+        <Literal>Any procedure that involves testing or manipulating a sample or subject in a laboratory setting</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:SDDO_3000089</AbbreviatedIRI>
+        <Literal>A broadened version of http://purl.obolibrary.org/obo/NCIT_C25294</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000089</AbbreviatedIRI>
+        <Literal xml:lang="en">laboratoryProcedure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000090</AbbreviatedIRI>
+        <Literal xml:lang="en">person</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000091</AbbreviatedIRI>
+        <Literal>A  mission led or funded by NASA</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
+        <AbbreviatedIRI>obo:SDDO_3000091</AbbreviatedIRI>
+        <Literal>Per the NASA SMD glossary at https://science.nasa.gov/glossary/ a mission is a &quot;NASA Science-funded activity with the purpose of meeting goals laid out by presidential directive, and detailed in Science Mission Directorate&apos;s strategic plan.&quot;  This would mean the ontology would need to include the concepts of a presidential directive and a strategic plan - wait for a use case before implementing this change.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:SDDO_3000091</AbbreviatedIRI>
+        <Literal>SDDO team</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000091</AbbreviatedIRI>
+        <Literal xml:lang="en">NASAMission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
+        <AbbreviatedIRI>obo:SDDO_3000092</AbbreviatedIRI>
+        <Literal>A camera, MODIS, a survey instrument (e.g., google form)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000092</AbbreviatedIRI>
+        <Literal>An instrument is a physical object that can be used to collect data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:SDDO_3000092</AbbreviatedIRI>
+        <Literal>Adapted from pds:Instrument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000092</AbbreviatedIRI>
+        <Literal xml:lang="en">instrument</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000093</AbbreviatedIRI>
+        <Literal xml:lang="en">missionDiscoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000094</AbbreviatedIRI>
+        <Literal>A plan for a coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
+        <AbbreviatedIRI>obo:SDDO_3000094</AbbreviatedIRI>
+        <Literal>Added the phrase &quot;plan for a&quot; to the front of the definition per Dan&apos;s request</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:SDDO_3000094</AbbreviatedIRI>
+        <Literal>adapted from http://purl.obolibrary.org/obo/NCIT_C42790</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000094</AbbreviatedIRI>
+        <Literal xml:lang="en">experiment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
+        <AbbreviatedIRI>obo:SDDO_3000095</AbbreviatedIRI>
+        <Literal>Any information product that contains structured metadata.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>obo:SDDO_3000095</AbbreviatedIRI>
+        <Literal>While agreed that metadata is just data about data and so is really an unneeded term, we recognize that the term metadata is often applied to information about data no matter its form.  In many cases, a metadata product is available for access, even if the data is not.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000095</AbbreviatedIRI>
+        <Literal xml:lang="en">metadataProduct</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000096</AbbreviatedIRI>
+        <Literal>A material entity that has characteristics that can be qualified or quantified through observation or experiment.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>obo:SDDO_3000096</AbbreviatedIRI>
+        <Literal>Depending on the context, individual entities such as a human or star, may be either features or specimens - depending on whether you are interested in studying the entire class of humans or stars, or a particular star or human.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000096</AbbreviatedIRI>
+        <Literal xml:lang="en">feature</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <AbbreviatedIRI>obo:SDDO_3000096</AbbreviatedIRI>
+        <Literal>Mars, a hurricane, the aurora, a molecular cloud, a sunspot, a mouse, its  liver, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>obo:SDDO_3000097</AbbreviatedIRI>
+        <Literal>Rduerr</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:creation_date"/>
+        <AbbreviatedIRI>obo:SDDO_3000097</AbbreviatedIRI>
+        <Literal>2021-12-02T22:57:22.551595Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:creation_date"/>
+        <AbbreviatedIRI>obo:SDDO_3000097</AbbreviatedIRI>
+        <Literal>2021-12-02T22:58:11.536811Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:creation_date"/>
+        <AbbreviatedIRI>obo:SDDO_3000097</AbbreviatedIRI>
+        <Literal>2021-12-02T22:58:56.536404Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000097</AbbreviatedIRI>
+        <Literal xml:lang="en">spaceTimeBoundingDiscoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000098</AbbreviatedIRI>
+        <Literal xml:lang="en">facility</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000099</AbbreviatedIRI>
+        <Literal xml:lang="en">phenomenon</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000100</AbbreviatedIRI>
+        <Literal xml:lang="en">observation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000101</AbbreviatedIRI>
+        <Literal xml:lang="en">photoGallery</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000102</AbbreviatedIRI>
+        <Literal xml:lang="en">discoveryInterface</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000103</AbbreviatedIRI>
+        <Literal>A PDS 4 collection where the collection_type is &quot;Data&quot;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>obo:SDDO_3000103</AbbreviatedIRI>
+        <Literal>Rduerr</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:creation_date"/>
+        <AbbreviatedIRI>obo:SDDO_3000103</AbbreviatedIRI>
+        <Literal>2021-12-10T20:53:48.676522Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:creation_date"/>
+        <AbbreviatedIRI>obo:SDDO_3000103</AbbreviatedIRI>
+        <Literal>2021-12-10T20:55:07.211503Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000103</AbbreviatedIRI>
+        <Literal xml:lang="en">organization</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000104</AbbreviatedIRI>
+        <Literal xml:lang="en">experimentDiscoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
+        <AbbreviatedIRI>obo:SDDO_3000105</AbbreviatedIRI>
+        <Literal>Rduerr</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="oboInOwl:creation_date"/>
+        <AbbreviatedIRI>obo:SDDO_3000105</AbbreviatedIRI>
+        <Literal>2021-11-30T19:43:39.350414Z</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000105</AbbreviatedIRI>
+        <Literal xml:lang="en">investigator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000106</AbbreviatedIRI>
+        <Literal xml:lang="en">OperationDiscoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000107</AbbreviatedIRI>
+        <Literal xml:lang="en">program</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000108</AbbreviatedIRI>
+        <Literal xml:lang="en">locationDiscoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+            <Literal>The American Heritage® Dictionary of the English Language, 5th Edition.</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000109</AbbreviatedIRI>
+        <Literal>A written or printed paper that bears the original, official, or legal form of something and can be used to furnish decisive evidence or information.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>obo:SDDO_3000109</AbbreviatedIRI>
+        <Literal>May be electronic or physical paper.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000109</AbbreviatedIRI>
+        <Literal xml:lang="en">document</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+        <AbbreviatedIRI>obo:SDDO_3000109</AbbreviatedIRI>
+        <Literal>Journal articles, technical or other reports, books, etc.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:BFO_0000179"/>
+        <AbbreviatedIRI>obo:SDDO_3000110</AbbreviatedIRI>
+        <Literal xml:lang="en">data element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
+        <AbbreviatedIRI>obo:SDDO_3000110</AbbreviatedIRI>
+        <Literal>The meaning of a column within a spreadsheet (e.g., identifier or height); the meaning of each pixel in an image (e.g., surface temperature)|another test example</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000110</AbbreviatedIRI>
+        <Literal>A data element is any characteristic that can help in understanding data content. That is, a data element is any parameter or variable that is useful, or critical, when identifying  or describing the content of a data object.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000110</AbbreviatedIRI>
+        <Literal>data element</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000111</AbbreviatedIRI>
+        <Literal xml:lang="en">sampleDiscoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000112</AbbreviatedIRI>
+        <Literal>A mission that has a primary purpose to gather scientific data</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000112</AbbreviatedIRI>
+        <Literal xml:lang="en">researchMission</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000113</AbbreviatedIRI>
+        <Literal>Software that provides the low-level control for a device&apos;s specific hardware.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000117"/>
+        <AbbreviatedIRI>obo:SDDO_3000113</AbbreviatedIRI>
+        <IRI>https://orcid.org/0000-0003-4808-4736</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+        <AbbreviatedIRI>obo:SDDO_3000113</AbbreviatedIRI>
+        <IRI>https://en.wikipedia.org/wiki/Firmware</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000113</AbbreviatedIRI>
+        <Literal xml:lang="en">firmware</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000114</AbbreviatedIRI>
+        <Literal xml:lang="en">observableDiscoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_3000115</AbbreviatedIRI>
+        <Literal xml:lang="en">platformDiscoveryCriterion</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+            <IRI>https://orcid.org/0000-0003-4808-4736</IRI>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001</IRI>
+        <Literal>A data Product from the PDS system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001</IRI>
+        <Literal>PDS data is tricky as while PDS3 has the concept of a data set; PDS4 doesn&apos;t really.  You have to find Collections that have a collection_type of data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001</IRI>
+        <Literal xml:lang="en">pds_Data_Set_PDS3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002</IRI>
+        <Literal>Examples are line plots and spectrograms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+            <IRI>https://doi.org/10.48322/E72C-5Y75</IRI>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002</IRI>
+        <Literal>A graphical representation of data wherein the underlying numeric values are not (readily) accessible for analysis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002</IRI>
+        <Literal xml:lang="en">spase:DisplayData</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003</IRI>
+        <Literal>Catalogs include lists of events, files in a product, and data availability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+            <IRI>https://doi.org/10.48322/E72C-5Y75</IRI>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003</IRI>
+        <Literal>A tabular listing of events or observational notes, especially those that have utility in aiding a user in locating data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003</IRI>
+        <Literal xml:lang="en">spase:Catalog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+            <IRI>https://doi.org/10.48322/E72C-5Y75</IRI>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004</IRI>
+        <Literal>Data stored as numerical values in one or more specified formats.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004</IRI>
+        <Literal xml:lang="en">spase:NumericalData</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#AnnotationProperty"/>
+        <AnonymousIndividual nodeID="_:genid2147483948"/>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Literal"/>
+        <AnonymousIndividual nodeID="_:genid2147483948"/>
+        <Literal>None</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#AnnotationProperty"/>
+        <AnonymousIndividual nodeID="_:genid2147483949"/>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#Literal"/>
+        <AnonymousIndividual nodeID="_:genid2147483949"/>
+        <Literal>Science Data Discovery Ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#AnnotationProperty"/>
+        <AnonymousIndividual nodeID="_:genid2147483950"/>
+        <Literal></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#IRI"/>
+        <AnonymousIndividual nodeID="_:genid2147483950"/>
+        <Literal>https://creativecommons.org/licenses/unspecified</Literal>
+    </AnnotationAssertion>
+</Ontology>
 
 
 
