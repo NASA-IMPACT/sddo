@@ -61,9 +61,6 @@
         <Class abbreviatedIRI="obo:SDDO_3000051"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:SDDO_3000052"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:SDDO_3000053"/>
     </Declaration>
     <Declaration>
@@ -103,9 +100,6 @@
         <Class abbreviatedIRI="obo:SDDO_3000066"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:SDDO_3000067"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:SDDO_3000069"/>
     </Declaration>
     <Declaration>
@@ -143,9 +137,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:SDDO_3000082"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:SDDO_3000083"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:SDDO_3000084"/>
@@ -227,9 +218,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:SDDO_3000111"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:SDDO_3000112"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:SDDO_3000113"/>
@@ -466,10 +454,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class abbreviatedIRI="obo:SDDO_3000052"/>
-        <Class abbreviatedIRI="obo:SDDO_3000060"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_3000054"/>
         <Class abbreviatedIRI="obo:BFO_0000040"/>
     </SubClassOf>
@@ -496,10 +480,6 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_3000065"/>
         <Class abbreviatedIRI="obo:OBI_0100026"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:SDDO_3000067"/>
-        <Class abbreviatedIRI="obo:SDDO_3000060"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_3000069"/>
@@ -589,10 +569,6 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_3000082"/>
         <Class abbreviatedIRI="obo:SDDO_3000050"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:SDDO_3000083"/>
-        <Class abbreviatedIRI="obo:SDDO_3000088"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_3000086"/>
@@ -891,10 +867,6 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_3000111"/>
         <Class abbreviatedIRI="obo:SDDO_3000074"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:SDDO_3000112"/>
-        <Class abbreviatedIRI="obo:SDDO_3000088"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_3000113"/>
@@ -1212,11 +1184,6 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:SDDO_3000052</AbbreviatedIRI>
-        <Literal xml:lang="en">engineeringPlatform</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:SDDO_3000053</AbbreviatedIRI>
         <Literal xml:lang="en">legend</Literal>
     </AnnotationAssertion>
@@ -1278,7 +1245,7 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
         <AbbreviatedIRI>obo:SDDO_3000060</AbbreviatedIRI>
-        <Literal>A platform is a physical object to which an instrument is attached or in which it is contained.</Literal>
+        <Literal>A platform in the context of NASA&apos;s SMD catalog</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1339,11 +1306,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:SDDO_3000066</AbbreviatedIRI>
         <Literal xml:lang="en">productService</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:SDDO_3000067</AbbreviatedIRI>
-        <Literal xml:lang="en">sciencePlatform</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
@@ -1513,16 +1475,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:SDDO_3000082</AbbreviatedIRI>
         <Literal xml:lang="en">informationSelectionParameter</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:SDDO_3000083</AbbreviatedIRI>
-        <Literal>A mission that has a primary purpose to test or validate engineering designs or implementations.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:SDDO_3000083</AbbreviatedIRI>
-        <Literal xml:lang="en">engineeringMission</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1835,16 +1787,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:SDDO_3000111</AbbreviatedIRI>
         <Literal xml:lang="en">sampleDiscoveryCriterion</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:SDDO_3000112</AbbreviatedIRI>
-        <Literal>A mission that has a primary purpose to gather scientific data</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:SDDO_3000112</AbbreviatedIRI>
-        <Literal xml:lang="en">researchMission</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
