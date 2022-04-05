@@ -76,12 +76,6 @@ WARN	missing_definition	document	IAO:0000115
 WARN	missing_definition	sampleDiscoveryCriterion	IAO:0000115	
 WARN	missing_definition	observableDiscoveryCriterion	IAO:0000115	
 WARN	missing_definition	platformDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	Criterion	IAO:0000115	
-WARN	missing_definition	DiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	DataDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	ExperimentDiscoveryCriterion	IAO:0000115	
-WARN	missing_definition	ExperimentID	IAO:0000115	
-INFO	lowercase_definition	data Product	IAO:0000115	
 INFO	missing_superclass	needsDiscussion	rdfs:subClassOf	
 INFO	missing_superclass	selectionParameter	rdfs:subClassOf	
 INFO	missing_superclass	legend	rdfs:subClassOf	
@@ -93,3 +87,4 @@ INFO	missing_superclass	productService	rdfs:subClassOf
 INFO	missing_superclass	software	rdfs:subClassOf	
 INFO	missing_superclass	photoGallery	rdfs:subClassOf	
 INFO	missing_superclass	document	rdfs:subClassOf	
+INFO	lowercase_definition	data Product	IAO:0000115	

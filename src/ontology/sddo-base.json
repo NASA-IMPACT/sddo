@@ -1,0 +1,1584 @@
+{
+  "graphs": [
+    {
+      "domainRangeAxioms": [],
+      "edges": [
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000044"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000071"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000086"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000054"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000096"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000098"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000010",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000113"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000051"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000088"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000094"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000100"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0100026",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000065"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000044",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000006",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000099"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000044",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000026",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000047"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000044",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000026",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000087"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000046",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000033",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000102"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000047",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000021",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000078"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000048",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_/SDDO_1000000"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000048",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000048",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000048",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000048",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000048",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000069"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000050",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000029",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000075"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000050",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000073"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000050",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000082"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000051",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000001",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000085"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000051",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000025",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000048"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000054",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000050",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000113"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000054",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000001",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000085"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000054",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000018",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000088"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000054",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000060"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000054",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000080"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000054",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000092"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000056",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000034",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000090"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000056",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000034",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000103"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000059",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000015",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000088"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000059",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000034",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000103"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000060",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000009",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000043"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000060",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000009",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000045"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000060",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000039",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000092"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000060",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000052"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000060",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000067"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000061",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000033",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000102"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000062",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000029",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000102"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000062",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000046"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000062",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000061"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000062",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000072"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000062",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000074"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000062",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000076"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000063",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000030",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000077"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000065",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000001",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000085"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000065",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000034",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000090"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000065",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000036",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000094"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000066",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000020",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000043"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000066",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000020",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000045"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000066",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000029",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000075"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000066",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000048"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000066",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000085"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000069",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000001",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000085"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000072",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000033",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000102"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000074",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000033",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000102"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000074",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000057"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000074",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000058"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000074",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000064"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000074",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000093"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000074",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000097"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000074",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000104"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000074",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000106"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000074",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000108"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000074",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000111"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000074",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000114"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000074",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000115"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000075",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000019",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000102"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000076",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000033",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000102"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000077",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000013",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000094"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000078",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000001",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000085"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000078",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000008",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000094"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000079",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000095"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000080",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000009",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000094"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000084",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000001",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000085"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000085",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000079"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000086",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000034",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000103"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000088",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000001",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000085"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000088",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000042",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000081"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000088",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000042",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000094"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000088",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000083"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000088",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000091"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000088",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000112"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000089",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000017",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000047"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000090",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000001",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000085"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000091",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000014",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000107"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000094",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000001",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000085"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000096",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000006",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000099"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000096",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000024",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000047"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000096",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000024",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000087"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000096",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000078"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000098",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000023",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000089"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000098",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000023",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000094"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000100",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000007",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000071"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000100",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000031",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000110"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000100",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000035",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000044"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000100",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000041",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000044"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000101",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000001",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000085"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000103",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000081",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000086"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000105",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000034",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000103"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000109",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000001",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000085"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000110",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000027",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000048"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000110",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000105"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000113",
+          "pred": "http://purl.obolibrary.org/obo/SDDO_3000001",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000085"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/sddo.owl#Annotation",
+          "pred": "type",
+          "sub": "_:genid2147483723"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/sddo.owl#Annotation",
+          "pred": "type",
+          "sub": "_:genid2147483725"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/sddo.owl#Annotation",
+          "pred": "type",
+          "sub": "_:genid2147483727"
+        },
+        {
+          "obj": "http://www.w3.org/2002/07/owl#Thing",
+          "pred": "http://purl.obolibrary.org/obo/RO_0000081",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000071"
+        },
+        {
+          "obj": "http://www.w3.org/ns/sosa/Observation",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000100"
+        }
+      ],
+      "equivalentNodesSets": [],
+      "id": "http://purl.obolibrary.org/obo/sddo/sddo-base.json",
+      "logicalDefinitionAxioms": [],
+      "meta": {
+        "basicPropertyValues": [
+          {
+            "pred": "http://purl.org/dc/elements/1.1/description",
+            "val": "The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA's Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science."
+          },
+          {
+            "pred": "http://purl.org/dc/elements/1.1/title",
+            "val": "Science Data Discovery Ontology"
+          },
+          {
+            "pred": "http://purl.org/dc/elements/1.1/type",
+            "val": "http://purl.obolibrary.org/obo/IAO_8000001"
+          },
+          {
+            "pred": "http://purl.org/dc/terms/license",
+            "val": "http://creativecommons.org/licenses/by/3.0/"
+          },
+          {
+            "pred": "http://www.w3.org/2002/07/owl#versionInfo",
+            "val": "2022-04-05"
+          }
+        ],
+        "subsets": [],
+        "version": "http://purl.obolibrary.org/obo/sddo/releases/2022-04-05/sddo-base.json",
+        "xrefs": []
+      },
+      "nodes": [
+        {
+          "id": "_:genid2147483723"
+        },
+        {
+          "id": "_:genid2147483725"
+        },
+        {
+          "id": "_:genid2147483727"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000044",
+          "lbl": "event",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "A coronal mass ejection, supernova, earthquake, spacecraft launch, etc."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "Adapted from http://purl.obolibrary.org/obo/NCIT_C25499"
+              }
+            ],
+            "definition": {
+              "val": "Something observable that happened at a given time and place",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000045",
+          "lbl": "campaign",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "A single science campaign may require all or part of several missions."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "There may be several science campaigns occurring over the course of a single mission."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "https://orcid.org/0000-0003-4808-4736"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "science campaign"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "Morris, Robert, Jennifer Dungan, Lina Khatib, A. Bachman, John Gasch, Paul Hempel, Jenny Williams, Terri Wood, and Christopher Bruno. \"Coordinated science campaign planning for earth observing missions.\" In Proc. of ESTC’04. 2004."
+              }
+            ],
+            "definition": {
+              "val": "A systematic set of activities undertaken to meet a particular science objective.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000047",
+          "lbl": "assay",
+          "meta": {
+            "definition": {
+              "val": "An assay is an investigative (analytic) procedure for qualitatively assessing or quantitatively measuring the presence, amount, or functional activity of a target entity.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000048",
+          "lbl": "data product or service",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "It is generally agreed that data is in the eye of the beholder; but, for the purposes of this project the terms data and data product are limited to traditional mostly numeric science data products that NASA holds and actually calls data, data sets or data products. Thus a DataProductService is any product or service that returns bulk science data."
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasSynonym",
+                "val": "dataProductOrService"
+              }
+            ],
+            "definition": {
+              "val": "A data product or data service that returns bulk science data.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000051",
+          "lbl": "data Product",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasSynonym",
+                "val": "dataProduct"
+              }
+            ],
+            "definition": {
+              "val": "",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000054",
+          "lbl": "hardware",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://www.dictionary.com/browse/hardware"
+              }
+            ],
+            "comments": [
+              "Hardware is usually distinguished from the theory and design that make the activity possible."
+            ],
+            "definition": {
+              "val": "The mechanical, magnetic, electronic, and electrical equipment necessary for conducting an activity.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000056",
+          "lbl": "author",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "https://orcid.org/0000-0003-4808-4736"
+              }
+            ],
+            "definition": {
+              "val": "An originator or creator of a work",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000060",
+          "lbl": "platform",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "A spacecraft, a person, a ship, a piece of laboratory equipment"
+              }
+            ],
+            "definition": {
+              "val": "A platform is a physical object to which an instrument is attached or in which it is contained.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000065",
+          "lbl": "organism",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "\"mouse\", \"Mus musculus\", \"rodent\", \"mammal\", \"microorganism\", \"fungi\""
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "Rduerr"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-11-30T21:34:56.970241Z"
+              }
+            ],
+            "definition": {
+              "val": "The quality of a living subject that indicates the taxonomical grouping of the subject.  This grouping can be at any level in a hierachy of organism classification, or a collection of levels, and can be using scientific language or colloquial language.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000066",
+          "lbl": "productService",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "Peter Fox"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000069",
+          "lbl": "study",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "Rduerr"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-12-01T20:52:05.98268Z"
+              }
+            ],
+            "definition": {
+              "val": "A data product service in the GeneLab repository",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000071",
+          "lbl": "factor",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "Gender is known to be a factor in the study of high blood pressure."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "https://orcid.org/0000-0003-4312-9552"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "https://orcid.org/0000-0003-4808-4736"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "0000-0003-4312-9552"
+              }
+            ],
+            "definition": {
+              "val": "The role played by an entity as part of a scientific investigation such that levels of the measurement or observation of the entity are thought to bear upon the hypotheses being investigated.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000075",
+          "lbl": "accessInterface",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "https://orcid.org/0000-0003-4808-4736"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://cmapscloud.ihmc.us:443/rid=1XX21YCGT-24LYD72-V8Y/SMD_ConceptualIMVersion1-20220324.cmap"
+              }
+            ],
+            "definition": {
+              "val": "A software interface that 1) presents users with selection criteria and 2) presents products or services that meet the criteria the user then selects.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000078",
+          "lbl": "specimen",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "Rduerr"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-11-30T21:35:20.533927Z"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasSynonym",
+                "val": "sample"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#example",
+                "val": "A preparation of tissue or bodily fluid taken for examination or diagnosis."
+              }
+            ],
+            "comments": [
+              "A substance, or portion of material obtained for use in testing, examination, or study."
+            ],
+            "definition": {
+              "val": "A part of a feature, taken to demonstrate or to determine the character of the whole.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000080",
+          "lbl": "experiment Apparatus",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasSynonym",
+                "val": "experimentApparatus"
+              }
+            ],
+            "definition": {
+              "val": "Hardware used in conducting an experiment.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000081",
+          "lbl": "deployment",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://en.wikipedia.org/wiki/Deployment_management"
+              }
+            ],
+            "definition": {
+              "val": "The realisation of an application, or execution of a plan, idea, model, design, specification, standard, algorithm, or policy.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000083",
+          "lbl": "engineeringMission",
+          "meta": {
+            "definition": {
+              "val": "A mission that has a primary purpose to test or validate engineering designs or implementations.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000086",
+          "lbl": "funder",
+          "meta": {
+            "definition": {
+              "val": "A role in which the bearer delivers financial support to enable some activity.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000088",
+          "lbl": "mission",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "Discussion by SDDO project team"
+              }
+            ],
+            "definition": {
+              "val": "A mission is a named activity for some purpose",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000089",
+          "lbl": "laboratoryProcedure",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "A broadened version of http://purl.obolibrary.org/obo/NCIT_C25294"
+              }
+            ],
+            "definition": {
+              "val": "Any procedure that involves testing or manipulating a sample or subject in a laboratory setting",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000091",
+          "lbl": "NASAMission",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "Per the NASA SMD glossary at https://science.nasa.gov/glossary/ a mission is a \"NASA Science-funded activity with the purpose of meeting goals laid out by presidential directive, and detailed in Science Mission Directorate's strategic plan.\"  This would mean the ontology would need to include the concepts of a presidential directive and a strategic plan - wait for a use case before implementing this change."
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "SDDO team"
+              }
+            ],
+            "definition": {
+              "val": "A  mission led or funded by NASA",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000092",
+          "lbl": "instrument",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "A camera, MODIS, a survey instrument (e.g., google form)"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "Adapted from pds:Instrument"
+              }
+            ],
+            "definition": {
+              "val": "An instrument is a physical object that can be used to collect data.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000094",
+          "lbl": "experiment",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "Added the phrase \"plan for a\" to the front of the definition per Dan's request"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "adapted from http://purl.obolibrary.org/obo/NCIT_C42790"
+              }
+            ],
+            "definition": {
+              "val": "A plan for a coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000095",
+          "lbl": "metadataProduct",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
+                "val": "While agreed that metadata is just data about data and so is really an unneeded term, we recognize that the term metadata is often applied to information about data no matter its form.  In many cases, a metadata product is available for access, even if the data is not.  Thus a Metadata Product Service is any information product or service that returns metadata about science data."
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000096",
+          "lbl": "feature",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#example",
+                "val": "Mars, a hurricane, the aurora, a molecular cloud, a sunspot, a mouse's liver, etc."
+              }
+            ],
+            "definition": {
+              "val": "A material entity that has characteristics that can be characterized or quantified through observation or experiment.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000097",
+          "lbl": "spaceTimeBoundingDiscoveryCriterion",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "Rduerr"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-12-02T22:57:22.551595Z"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000103",
+          "lbl": "organization",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "Rduerr"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-12-10T20:53:48.676522Z"
+              }
+            ],
+            "definition": {
+              "val": "A PDS 4 collection where the collection_type is \"Data\"",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000105",
+          "lbl": "investigator",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
+                "val": "Rduerr"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
+                "val": "2021-11-30T19:43:39.350414Z"
+              }
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000110",
+          "lbl": "data element",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/BFO_0000179",
+                "val": "data element"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "The meaning of a column within a spreadsheet (e.g., identifier or height); the meaning of each pixel in an image (e.g., surface temperature)|another test example"
+              }
+            ],
+            "definition": {
+              "val": "A data element is any characteristic that can help in understanding data content. That is, a data element is any parameter or variable that is useful, or critical, when identifying  or describing the content of a data object.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000112",
+          "lbl": "researchMission",
+          "meta": {
+            "definition": {
+              "val": "A mission that has a primary purpose to gather scientific data",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000113",
+          "lbl": "firmware",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "https://orcid.org/0000-0003-4808-4736"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://en.wikipedia.org/wiki/Firmware"
+              }
+            ],
+            "definition": {
+              "val": "Software that provides the low-level control for a device's specific hardware.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_/SDDO_1000000",
+          "lbl": "pds_Collection",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001",
+          "lbl": "pds_Data_Set_PDS3",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002",
+          "lbl": "spase:DisplayData",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003",
+          "lbl": "spase:Catalog",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004",
+          "lbl": "spase:NumericalData",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000001",
+          "lbl": "provideInformationOn",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000004",
+          "lbl": "providesAccessTo",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000006",
+          "lbl": "consistOf",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000007",
+          "lbl": "experimentalContextFor",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000008",
+          "lbl": "generates",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000009",
+          "lbl": "uses",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000013",
+          "lbl": "componentOf",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000014",
+          "lbl": "relatedTo",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000015",
+          "lbl": "organizedBy",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000017",
+          "lbl": "createdBy",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000018",
+          "lbl": "deployedOn",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000019",
+          "lbl": "leadTo",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000020",
+          "lbl": "resultsIn",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000021",
+          "lbl": "usedIn",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000023",
+          "lbl": "conductedAt",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000024",
+          "lbl": "capableOfIdentifying",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000025",
+          "lbl": "provideAccessTo",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000026",
+          "lbl": "capableOfDetecting",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000027",
+          "lbl": "contain",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000029",
+          "lbl": "present",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000030",
+          "lbl": "sameAs",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000031",
+          "lbl": "isResultOf",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000033",
+          "lbl": "aggregate",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000034",
+          "lbl": "hasRole",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000035",
+          "lbl": "characterizedBy",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000036",
+          "lbl": "conductedOn",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000039",
+          "lbl": "operatesOn",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000041",
+          "lbl": "quantifiedBy",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000042",
+          "lbl": "partOf",
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000043",
+          "lbl": "project",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000046",
+          "lbl": "toolDiscoveryCriterion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000049",
+          "lbl": "needsDiscussion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000050",
+          "lbl": "selectionParameter",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000052",
+          "lbl": "engineeringPlatform",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000053",
+          "lbl": "legend",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000057",
+          "lbl": "instrumentDiscoveryCriterion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000058",
+          "lbl": "instrumentOperatingModeDiscoveryCriterion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000059",
+          "lbl": "spaceAgency",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000061",
+          "lbl": "applicationDiscoveryCriterion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000062",
+          "lbl": "discoveryCriterion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000063",
+          "lbl": "researchStudy",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000064",
+          "lbl": "dataProductDiscoveryCriterion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000067",
+          "lbl": "sciencePlatform",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000072",
+          "lbl": "modelDiscoveryCriterion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000073",
+          "lbl": "dataSelectionParameter",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000074",
+          "lbl": "dataDiscoveryCriterion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000076",
+          "lbl": "informationDiscoveryCriterion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000077",
+          "lbl": "researchInvestigation",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000079",
+          "lbl": "informationProduct",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000082",
+          "lbl": "informationSelectionParameter",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000084",
+          "lbl": "software",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000085",
+          "lbl": "informationProductOrService",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000087",
+          "lbl": "instrumentOperatingMode",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000090",
+          "lbl": "person",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000093",
+          "lbl": "missionDiscoveryCriterion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000098",
+          "lbl": "facility",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000099",
+          "lbl": "phenomenon",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000100",
+          "lbl": "observation",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000101",
+          "lbl": "photoGallery",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000102",
+          "lbl": "discoveryInterface",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000104",
+          "lbl": "experimentDiscoveryCriterion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000106",
+          "lbl": "OperationDiscoveryCriterion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000107",
+          "lbl": "program",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000108",
+          "lbl": "locationDiscoveryCriterion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000109",
+          "lbl": "document",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000111",
+          "lbl": "sampleDiscoveryCriterion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000114",
+          "lbl": "observableDiscoveryCriterion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000115",
+          "lbl": "platformDiscoveryCriterion",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/sddo.owl#Annotation",
+          "type": "CLASS"
+        }
+      ],
+      "propertyChainAxioms": []
+    }
+  ]
+}
