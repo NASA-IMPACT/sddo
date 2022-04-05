@@ -230,7 +230,17 @@ We also have the outstanding issue of how to aim different definitions to differ
 
     <!-- http://purl.org/dc/elements/1.1/date -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date">
+        <dc:description xml:lang="en-us">Typically, Date will be associated with the creation or
+         availability of the resource.  Recommended best practice
+         for encoding the date value is defined in a profile of
+         ISO 8601 [W3CDTF] and follows the YYYY-MM-DD format.</dc:description>
+        <rdfs:comment xml:lang="en-us">A date associated with an event in the life cycle of the
+         resource.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+        <rdfs:label>Date</rdfs:label>
+        <rdfs:label xml:lang="en-us">Date</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 

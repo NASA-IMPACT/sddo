@@ -55,9 +55,6 @@
         <Class abbreviatedIRI="obo:SDDO_3000047"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="obo:SDDO_3000049"/>
-    </Declaration>
-    <Declaration>
         <Class abbreviatedIRI="obo:SDDO_3000050"/>
     </Declaration>
     <Declaration>
@@ -256,6 +253,9 @@
         <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://www.w3.org/ns/sosa/Observation"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty abbreviatedIRI="obo:SDDO_3000001"/>
     </Declaration>
     <Declaration>
@@ -369,6 +369,9 @@
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:definition"/>
     </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="skos:example"/>
+    </Declaration>
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_1000007"/>
         <Class abbreviatedIRI="obo:SDDO_3000051"/>
@@ -480,7 +483,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_3000060"/>
-        <Class abbreviatedIRI="obo:SDDO_3000054"/>
+        <Class IRI="http://www.w3.org/ns/sosa/Platform"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_3000061"/>
@@ -661,7 +664,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_3000092"/>
-        <Class abbreviatedIRI="obo:SDDO_3000054"/>
+        <Class IRI="http://www.w3.org/ns/sosa/Sensor"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_3000092"/>
@@ -858,10 +861,6 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_3000104"/>
         <Class abbreviatedIRI="obo:SDDO_3000074"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class abbreviatedIRI="obo:SDDO_3000105"/>
-        <Class abbreviatedIRI="obo:SDDO_3000110"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_3000106"/>
@@ -1181,11 +1180,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:SDDO_3000047</AbbreviatedIRI>
         <Literal xml:lang="en">assay</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:SDDO_3000049</AbbreviatedIRI>
-        <Literal xml:lang="en">needsDiscussion</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -1731,29 +1725,27 @@
         <Literal xml:lang="en">photoGallery</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+            <IRI>https://coggle.it/diagram/YFkAQ4_Z_IuZWoVl/t/smd-team-terminology</IRI>
+        </Annotation>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+            <Literal>SMD Catalog Team</Literal>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_3000102</AbbreviatedIRI>
+        <Literal>An interface that allows the user to discover the existence of relevant products and services.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000116"/>
+        <AbbreviatedIRI>obo:SDDO_3000102</AbbreviatedIRI>
+        <Literal>This should be a child of SWO_9000050 (software interface).  Need to understand the conflicts between SWO and OBI before that can happen.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:SDDO_3000102</AbbreviatedIRI>
         <Literal xml:lang="en">discoveryInterface</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <AbbreviatedIRI>obo:SDDO_3000103</AbbreviatedIRI>
-        <Literal>A PDS 4 collection where the collection_type is &quot;Data&quot;</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboInOwl:created_by"/>
-        <AbbreviatedIRI>obo:SDDO_3000103</AbbreviatedIRI>
-        <Literal>Rduerr</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboInOwl:creation_date"/>
-        <AbbreviatedIRI>obo:SDDO_3000103</AbbreviatedIRI>
-        <Literal>2021-12-10T20:53:48.676522Z</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="oboInOwl:creation_date"/>
-        <AbbreviatedIRI>obo:SDDO_3000103</AbbreviatedIRI>
-        <Literal>2021-12-10T20:55:07.211503Z</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

@@ -1,1 +1,3 @@
 http://www.w3.org/ns/sosa/Observation
+http://www.w3.org/ns/sosa/Platform
+http://www.w3.org/ns/sosa/Sensor
