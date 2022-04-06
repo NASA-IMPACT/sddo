@@ -13,9 +13,9 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:edamontology="http://edamontology.org#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/sddo/imports/swo_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sddo/releases/2022-04-05/imports/swo_import.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sddo/releases/2022-04-06/imports/swo_import.owl"/>
         <dc:source rdf:resource="http://www.ebi.ac.uk/swo/swo.owl/1.7"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-05</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-06</owl:versionInfo>
     </owl:Ontology>
     
 
