@@ -18,6 +18,7 @@
     <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="oboInOwl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
+    <Import>http://purl.obolibrary.org/obo/ro/core.owl</Import>
     <Import>http://purl.obolibrary.org/obo/sddo/components/all_templates.owl</Import>
     <Import>http://purl.obolibrary.org/obo/sddo/imports/obi_import.owl</Import>
     <Import>http://purl.obolibrary.org/obo/sddo/imports/sosa_import.owl</Import>
@@ -467,6 +468,10 @@
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_3000060"/>
+        <Class abbreviatedIRI="obo:BFO_0000023"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000060"/>
         <Class IRI="http://www.w3.org/ns/sosa/Platform"/>
     </SubClassOf>
     <SubClassOf>
@@ -637,6 +642,10 @@
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_3000091"/>
         <Class abbreviatedIRI="obo:SDDO_3000088"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_3000092"/>
+        <Class abbreviatedIRI="obo:BFO_0000040"/>
     </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_3000092"/>
