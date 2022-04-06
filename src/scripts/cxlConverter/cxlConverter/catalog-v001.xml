@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/sddo/releases/2022-01-14/sddo.owl" uri="file:/C:/Users/dcberrio/git/sddo/src/ontology/sddo.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/sddo/releases/2022-03-11/sddo.owl" uri="sddo.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/sddo/releases/2022-01-14/sddo.owl" uri="sddo.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/sddo/releases/2022-01-14/sddo.owl" uri="sddo.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/sddo/releases/2022-01-14/sddo.owl" uri="sddo.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/sddo/releases/2022-04-06/sddo.owl" uri="sddo.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1647454723393" name="http://purl.obolibrary.org/obo/lsdao.owl" uri="lsdao_module.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1647454723393" name="http://purl.obolibrary.org/obo/ro.owl" uri="ro.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1647454723393" name="http://purl.obolibrary.org/obo/ro/ro-base.owl" uri="ro-base.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1647454723393" name="duplicate:http://purl.obolibrary.org/obo/sddo.owl" uri="sddo-merged.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1647454723393" name="duplicate:http://purl.obolibrary.org/obo/sddo.owl" uri="sddo.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1647454723393" name="https://lsda.jsc.nasa.gov/schema/" uri="schema.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649267209200" name="http://purl.obolibrary.org/obo/lsdao.owl" uri="lsdao_module.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649267209200" name="http://purl.obolibrary.org/obo/ro.owl" uri="ro.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649267209200" name="http://purl.obolibrary.org/obo/ro/ro-base.owl" uri="ro-base.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649267209200" name="duplicate:http://purl.obolibrary.org/obo/sddo.owl" uri="sddo-merged.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649267209200" name="duplicate:http://purl.obolibrary.org/obo/sddo.owl" uri="sddo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1649267209200" name="https://lsda.jsc.nasa.gov/schema/" uri="schema.owl"/>
     </group>
 </catalog>
