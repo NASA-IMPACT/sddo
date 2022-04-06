@@ -1,0 +1,337 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/sddo.owl#" xmlns:ns2="http://www.w3.org/2002/07/owl#" xmlns:ns3="http://www.w3.org/2000/01/rdf-schema#" xmlns:ns4="http://purl.obolibrary.org/obo/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     <ns2:Ontology rdf:about="http://purl.obolibrary.org/obo/sddo.owl" />
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000001">
+          <ns3:label xml:lang="en">Dataset</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000017" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000002">
+          <ns3:label xml:lang="en">Program</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000019" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000015" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000016" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000022" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000003">
+          <ns3:label xml:lang="en">Duration</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000004">
+          <ns3:label xml:lang="en">Experiment</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000020" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000022" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000025" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000016" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000024" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000023" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000005">
+          <ns3:label xml:lang="en">MissionStudy</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000025" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000022" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000021" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000006">
+          <ns3:label xml:lang="en">Mission</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000019" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000024" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000016" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000023" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000026" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000020" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000015" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000007">
+          <ns3:label xml:lang="en">Hardware</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000024" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000020" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000023" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000016" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000008">
+          <ns3:label xml:lang="en">City</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000021" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000009">
+          <ns3:label xml:lang="en">SubjectSpecies</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000016" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000010">
+          <ns3:label xml:lang="en">Instrument</ns3:label>
+          <ns3:subClassOf rdf:resource="https://lsda.jsc.nasa.gov/schema/LSDA_0000007" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000011">
+          <ns3:label xml:lang="en">Biospecimen</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000024" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000023" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000012">
+          <ns3:label xml:lang="en">ResearchCategory</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000026" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000019" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000022" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000015" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000013">
+          <ns3:label xml:lang="en">Person</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000023" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000014">
+          <ns3:label xml:lang="en">LivingSubject</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000015">
+          <ns3:label xml:lang="en">Center</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000015" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000019" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000016">
+          <ns3:label xml:lang="en">Investigator</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000022" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000020" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000015" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000015">
+          <ns3:label xml:lang="en">ExperimentDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000027" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000017">
+          <ns3:label xml:lang="en">VersionTitle</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000026" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000018">
+          <ns3:label xml:lang="en">Institution</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000021" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000019">
+          <ns3:label xml:lang="en">Protocol</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000024" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000016">
+          <ns3:label xml:lang="en">SubjectDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000027" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000020">
+          <ns3:label xml:lang="en">HardwareAlias</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000026" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000021">
+          <ns3:label xml:lang="en">Payload</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000016" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000024" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000021" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000025" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000019" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000020" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000022" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000015" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000026" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000017">
+          <ns3:label xml:lang="en">DataProductService</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000022">
+          <ns3:label xml:lang="en">ExperimentType</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000015" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000018">
+          <ns3:label xml:lang="en">DataDiscoveryCriterion</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000023">
+          <ns3:label xml:lang="en">SpecimenCategory</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000024" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000024">
+          <ns3:label xml:lang="en">Spacecraft</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000019" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000025">
+          <ns3:label xml:lang="en">HardwareItem</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000022" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000019">
+          <ns3:label xml:lang="en">MissionDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000027" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000026">
+          <ns3:label xml:lang="en">Species</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000015" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000019" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000020" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000027">
+          <ns3:label xml:lang="en">ResearchArea</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000020" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000028">
+          <ns3:label xml:lang="en">ExperimentApparatus</ns3:label>
+          <ns3:subClassOf rdf:resource="https://lsda.jsc.nasa.gov/schema/LSDA_0000007" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000029">
+          <ns3:label xml:lang="en">Keyword</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000015" />
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000022" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000030">
+          <ns3:label xml:lang="en">ScientificName</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000016" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000031">
+          <ns3:label xml:lang="en">ExperimentID</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000021" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000032">
+          <ns3:label xml:lang="en">ComponentTitle</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000026" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000033">
+          <ns3:label xml:lang="en">ExperimentAlias</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000015" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000034">
+          <ns3:label xml:lang="en">Subject</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000023" />
+          <ns4:sameAs rdf:resource="https://lsda.jsc.nasa.gov/schema/LSDA_0000014" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000035">
+          <ns3:label xml:lang="en">ExperimentTitle</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000026" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000036">
+          <ns3:label xml:lang="en">DocumentType</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000025" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000037">
+          <ns3:label xml:lang="en">LaunchYear</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000015" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000020">
+          <ns3:label xml:lang="en">DataProductDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000018" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000038">
+          <ns3:label xml:lang="en">HardwareCode</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000026" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000039">
+          <ns3:label xml:lang="en">HardwareType</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000026" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000040">
+          <ns3:label xml:lang="en">HealthSafteyEquipment</ns3:label>
+          <ns3:subClassOf rdf:resource="https://lsda.jsc.nasa.gov/schema/LSDA_0000007" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000041">
+          <ns3:label xml:lang="en">Photo</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000023" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000042">
+          <ns3:label xml:lang="en">Role</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000021" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000021">
+          <ns3:label xml:lang="en">PersonDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000027" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000043">
+          <ns3:label xml:lang="en">Vehicle</ns3:label>
+          <ns3:subClassOf rdf:resource="https://lsda.jsc.nasa.gov/schema/LSDA_0000007" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000022">
+          <ns3:label xml:lang="en">PhotoGalleryDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000027" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000044">
+          <ns3:label xml:lang="en">Weight</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000016" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000045">
+          <ns3:label xml:lang="en">Year</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000019" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000023">
+          <ns3:label xml:lang="en">InformationProductService</ns3:label>
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000024">
+          <ns3:label xml:lang="en">BiospecimenDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000027" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000046">
+          <ns3:label xml:lang="en">Age</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000016" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000047">
+          <ns3:label xml:lang="en">Strain</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000016" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000048">
+          <ns3:label xml:lang="en">Gender</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000016" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000049">
+          <ns3:label xml:lang="en">Document</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000023" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000025">
+          <ns3:label xml:lang="en">DocumentDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000027" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000050">
+          <ns3:label xml:lang="en">Country</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000021" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000026">
+          <ns3:label xml:lang="en">HardwareDiscoveryCriterion</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000027" />
+     </ns2:Class>
+     <ns2:Class rdf:about="https://lsda.jsc.nasa.gov/schema/LSDA_0000051">
+          <ns3:label xml:lang="en">SpecimenSubcategory</ns3:label>
+          <ns3:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000024" />
+     </ns2:Class>
+     <ns2:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000027">
+          <ns3:label xml:lang="en">InformationDiscoveryCriterion</ns3:label>
+     </ns2:Class>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000014">
+          <ns3:label xml:lang="en-US">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000014">
+          <ns3:label xml:lang="en-US">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000014">
+          <ns3:label xml:lang="en-US">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000014">
+          <ns3:label xml:lang="en-US">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000014">
+          <ns3:label xml:lang="en-US">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000014">
+          <ns3:label xml:lang="en-US">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000014">
+          <ns3:label xml:lang="en-US">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000007">
+          <ns3:label xml:lang="en-US">sameAs</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000014">
+          <ns3:label xml:lang="en-US">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000014">
+          <ns3:label xml:lang="en-US">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000014">
+          <ns3:label xml:lang="en-US">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000014">
+          <ns3:label xml:lang="en-US">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000014">
+          <ns3:label xml:lang="en-US">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000014">
+          <ns3:label xml:lang="en-US">isA</ns3:label>
+     </ns2:ObjectProperty>
+     <ns2:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/3000014">
+          <ns3:label xml:lang="en-US">isA</ns3:label>
+     </ns2:ObjectProperty>
+</rdf:RDF>

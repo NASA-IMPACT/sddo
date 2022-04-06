@@ -1,0 +1,14 @@
+http://purl.obolibrary.org/obo/SDDO_3000015
+http://purl.obolibrary.org/obo/SDDO_3000016
+http://purl.obolibrary.org/obo/SDDO_3000017
+http://purl.obolibrary.org/obo/SDDO_3000018
+http://purl.obolibrary.org/obo/SDDO_3000019
+http://purl.obolibrary.org/obo/SDDO_3000020
+http://purl.obolibrary.org/obo/SDDO_3000021
+http://purl.obolibrary.org/obo/SDDO_3000022
+http://purl.obolibrary.org/obo/SDDO_3000023
+http://purl.obolibrary.org/obo/SDDO_3000024
+http://purl.obolibrary.org/obo/SDDO_3000025
+http://purl.obolibrary.org/obo/SDDO_3000026
+http://purl.obolibrary.org/obo/SDDO_3000027
+

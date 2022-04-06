@@ -150,7 +150,8 @@ def getOntologies():
     onto_path.append("./")
     sddoOnto = get_ontology('http://purl.obolibrary.org/obo/sddo.owl').load()
     roOnto = get_ontology('ro-base.owl').load()
-    instr = sddoOnto.search_one(label = "instrument")
+    archaea = sddoOnto.search_one(label = "Archaea")
+    print("Archaea: " + archaea.label.first())
     for cls in sddoOnto.classes():
         if (not cls.iri.startswith("http://purl.obolibrary.org/obo/SDDO_")):
             ontoClasses["iri:" + cls.iri] = cls
