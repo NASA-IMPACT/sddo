@@ -1,0 +1,522 @@
+LABEL,ID,SubClass Of,http://purl.obolibrary.org/obo/IAO_0000115,SYNONYMS
+0: asymptomatic,OBI:0002361,,An Eastern Cooperative Oncology Group score value specification indicating a patient is asymptomatic.,
+100: asymptomatic,OBI:0002364,,A Karnofsky score vaue specification indicating that a patient is asymptomatic.,
+1: symptomatic but fully ambulatory,OBI:0002362,,An Eastern Cooperative Oncology Group score value specification indicating a patient is symptomatic but is fully ambulatory.,
+2: symptomatic but in bed less than 50% of the day,OBI:0002359,,An Eastern Cooperative Oncology Group score value specification indicating a patient is symptomatic but is in bed for less than 50% of the day.,
+3: symptomatic in bed more than 50% of the day but not bed ridden,OBI:0002358,,An Eastern Cooperative Oncology Group score value specification indicating a patient is symptomatic and in bed for more than 50% of the day but is not bed ridden.,
+"40-50: symptomatic, in bed more than 50% of the day, but not bed ridden",OBI:0002367,,"A Karnofsky score vaue specification indicating that a patient is symptomatic, in bed more than 50% of the day, but not bed ridden.",
+4: bed ridden,OBI:0002360,,An Eastern Cooperative Oncology Group score value specification indicating a patient is symptomatic and is bed ridden.,
+60-70: symptomatic but in bed less than 50% of the day,OBI:0002366,,A Karnofsky score vaue specification indicating that a patient is symptomatic but in bed less than 50% of the day.,
+80-90: symptomatic but fully ambulatory,OBI:0002365,,A Karnofsky score vaue specification indicating that a patient is symptomatic but fully ambulatory.,
+ACS,OBI:0000321,,ACS is a format standard of a digital entity that is conformant with the Analytical Cytometry Standard. (http://www.isac-net.org/content/view/607/150/),
+AES Chemunex,OBI:0001428,,A supplier of flow cytometry analyzers,
+Advanced Instruments Inc. (AI Companies),OBI:0001375,,A supplier of flow cytometry analyzers,
+Affymetrix,OBI:0000462,,"An organization which supplies technology, tools and protocols for use in high throughput applications",
+Agilent,OBI:0000765,,,
+Ambion,OBI:0000756,,,
+Amniota,NCBITaxon:32524,Tetrapoda,,amniotes
+Antigenix,OBI:0001347,,A supplier of flow cytometry analyzers,
+Apogee Flow Systems,OBI:0001312,,A supplier of flow cytometry analyzers,
+Applied Biosystems,OBI:0000776,,,
+Archaea,NCBITaxon:2157,organism,,
+BIO-RAD,OBI:0000754,,,
+Bacteria,NCBITaxon:2,organism,,eubacteria
+Beckman Coulter,OBI:0001372,,A supplier of flow cytometry analyzers,
+Becton Dickinson (BD Biosciences),OBI:0001321,,A supplier of flow cytometry analyzers,
+Bentley Instruments,OBI:0001431,,A supplier of flow cytometry analyzers,
+Bilateria,NCBITaxon:33213,Opisthokonta,,
+BioGents,OBI:0002903,,An organization that manufactures mosquito traps and other mosquito control products.,
+Bruker Corporation,OBI:0000770,,,
+Bruker Daltonics,OBI:0000779,,,
+CART,OBI:0000749,decision tree building data transformation,A CART (classification and regression trees) is a data transformation method for producing a classification or regression model with a tree-based structure.,classification and regression trees
+Compensation-ML,OBI:0000329,,Compensation-ML is a format standard of a digital entity that is conformant with the Compensation-ML standard. (http://wiki.ficcs.org/ficcs/Compensation-ML?action=AttachFile&do=get&target=Compensation-ML_v1.0.24.pdf),
+CytoBuoy,OBI:0001458,,A supplier of flow cytometry analyzers,
+Cytopeia,OBI:0001224,,A supplier of flow cytometry analyzers,
+Dako Cytomation,OBI:0001338,,A supplier of flow cytometry analyzers,
+Eastern Cooperative Oncology Group score value specification,OBI:0002357,performance status value specification,A performance status value specification designed by the Eastern Cooperative Oncology Group to assess disease progression and its affect on the daily living abilities of the patient.,ECOG score
+Edingburgh handedness inventory,OBI:0001004,,The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person's right or left hand in everyday activities. ,
+Euarchontoglires,NCBITaxon:314146,Mammalia,,
+Eukaryota,NCBITaxon:2759,organism,,eucaryotes|eukaryotes
+Euteleostomi,NCBITaxon:117571,Vertebrata <vertebrates>,,bony vertebrates
+Exalpha Biological,OBI:0001287,,A supplier of flow cytometry analyzers,
+Exbio Antibodies,OBI:0001320,,A supplier of flow cytometry analyzers,
+FCS,OBI:0000327,,FCS is a format standard of a digital entity that is conformant with the Flow Cytometry Data File Standard.(http://www.fcspress.com/),
+G1 (Fuhrman),OBI:0002211,,"A histologic grade according to the Fuhrman Nuclear Grading System indicating that nuclei are round, uniform, approximately 10um and that nucleoli are inconspicuous or absent.",Grade 1
+G1 (WHO),OBI:0002220,,A histologic grade for ovarian tumor according to the World Health Organization indicating that the tumor is well differentiated.,G1
+G1: Well differentiated,OBI:0002206,,A histologic grade according to AJCC 7th edition indicating that the tumor cells and the organization of the tumor tissue appear close to normal.,G1
+G2 (Fuhrman),OBI:0002212,,"A histologic grade according to the Fuhrman Nuclear Grading System indicating that nuclei are slightly irregular, approximately 15um and nucleoli are evident.",Grade 2
+G2 (WHO),OBI:0002221,,A histologic grade for ovarian tumor according to the World Health Organization indicating that the tumor is moderately differentiated.,G2
+G2: Moderately differentiated,OBI:0002207,,A histologic grade according to AJCC 7th edition indicating that the tumor cells are moderately differentiated and reflect an intermediate grade.,G2
+G3 (Fuhrman),OBI:0002213,,"A histologic grade according to the Fuhrman Nuclear Grading System indicating that nuclei are very irregular, approximately 20um and nucleoli large and prominent.",Grade 3
+G3 (WHO),OBI:0002222,,A histologic grade for ovarian tumor according to the World Health Organization indicating that the tumor is poorly differentiated.,G3
+G3: Poorly differentiated,OBI:0002208,,A histologic grade according to AJCC 7th edition indicating that the tumor cells are poorly differentiated and do not look like normal cells and tissue.,G3
+G4 (Fuhrman),OBI:0002214,,"A histologic grade according to the Fuhrman Nuclear Grading System indicating that nuclei arei bizarre and multilobulated, 20um or greater and nucleoli are prominent and chromatin clumped.",Grade 4
+G4 (WHO),OBI:0002223,,A histologic grade for ovarian tumor according to the World Health Organization indicating that the tumor is undifferentiated.,G4
+G4: Undifferentiated,OBI:0002209,,A histologic grade according to AJCC 7th edition indicating that the tumor cells are undifferentiated and do not look like normal cells and tissue.,G4
+Gating-ML,OBI:0000330,,Gating-ML is a format standard of a digital entity that is conformant with the Gating-ML standard. (http://www.flowcyt.org/gating/),
+GenePattern CART,OBI:0000767,,,
+GenePattern HeatMapViewer data visualization,OBI:0000780,,The GenePattern process of generating Heat Maps from clustered data.,
+GenePattern HierarchicalClusteringViewer data visualization,OBI:0000781,,The GenePattern process of generating hierarchical clustering visualization from clustered data.,
+GenePattern LOOCV,OBI:0000763,,,
+GenePattern PCA,OBI:0000760,,,
+GenePattern SVM,OBI:0000775,,,
+GenePattern hierarchical clustering,OBI:0000755,,,
+GenePattern k-means clustering,OBI:0000764,,,
+GenePattern k-nearest neighbors,OBI:0000762,,,
+GenePattern module CARTXValidation,OBI:0000768,,GenePattern module CARTXValidation is a GenePattern software module which uses a CART decision tree induction with a leave one out cross validation data transformations.,
+GenePattern module HeatMapViewer,OBI:0000782,,A GenePattern software module which is used to generate a heatmap view of data.,
+GenePattern module HierarchicalClustering,OBI:0000774,,GenePattern module HierarchicalClustering is a GenePattern software module which is used to perform a hierarchical clustering data transformation.,
+GenePattern module HierarchicalClusteringViewer,OBI:0000783,,A GenePattern software module which is used to generate a view of data that has been hierarchically clustered.,
+GenePattern module KMeansClustering,OBI:0000766,,GenePattern module KMeansClustering is a GenePattern software module which is used to perform a k Means clustering data transformation.,
+GenePattern module KNN,OBI:0000773,,GenePattern module KNN is a GenePattern software module which perform a k-nearest neighbors data transformation.,
+GenePattern module KNNXValidation,OBI:0000771,,GenePattern module KNNXValidation is a GenePattern software module which uses a k-nearest neighbours clustering with a leave one out cross validation data transformations.,
+GenePattern module PCA,OBI:0000777,,GenePattern module PCA is a GenePattern software module which is used to perform a principal components analysis dimensionality reduction data transformation.,
+GenePattern module PeakMatch,OBI:0000772,,,
+GenePattern module SVM,OBI:0000761,,GenePattern module SVM is a GenePattern software module which is used to run a support vector machine data transformation.,
+GenePattern peak matching,OBI:0000778,,,
+GenePattern software,OBI:0000713,software,"a software that provides access to more than 100 tools for gene expression analysis, proteomics, SNP analysis and common data processing tasks.",
+Helicos,OBI:0000757,,,
+High grade ovarian tumor,OBI:0002218,,A histologic grade for ovarian tumor according to a two-tier grading system indicating that the tumor is high grade.,High grade
+Homo sapiens,NCBITaxon:9606,Euarchontoglires,,human|human being|man
+Illumina,OBI:0000759,,,
+International Federation of Gynecology and Obstetrics cervical cancer stage value specification,OBI:0002326,categorical value specification,A categorical value specification that is an assessment of the stage of a gynecologic cancer according to the International Federation of Gynecology and Obstetrics (FIGO) staging systems.,Clinical FIGO stage
+International Federation of Gynecology and Obstetrics ovarian cancer stage value specification,OBI:0002341,categorical value specification,A categorical value specification that is a pathologic finding about one or more characteristics of ovarian cancer following the rules of the FIGO classification system.,Pathologic Tumor Stage Grouping for ovarian cancer (FIGO)
+Invitrogen,OBI:0001434,,A supplier of flow cytometry analyzers,
+Karnofsky score vaue specification,OBI:0002363,performance status value specification,A performance status value specification designed for classifying patients 16 years of age or older by their functional impairment.,Karnofsky Score
+Li-Cor,OBI:0000769,,,
+Low grade ovarian tumor,OBI:0002217,,A histologic grade for ovarian tumor according to a two-tier grading system indicating that the tumor is low grade.,Low grade
+Luminex,OBI:0001443,,A supplier of flow cytometry analyzers,
+Mammalia,NCBITaxon:40674,Amniota,,mammals
+Millipore,OBI:0001340,,A supplier of flow cytometry analyzers,
+Miltenyi Biotec,OBI:0001424,,A supplier of flow cytometry analyzers,
+NASAMission,obo:SDDO_3000091,mission,A  mission led or funded by NASA,
+NanoString Technologies,OBI:0001860,,"An organization that supplies life science tools for translational research and molecular diagnostics based on a novel digital molecular barcoding technology. The NanoString platform can provide simple, multiplexed digital profiling of single molecules.",
+Nimblegen,OBI:0001855,,An organization that focuses on manufacturing target enrichment probe pools for DNA sequencing.,
+OWL,OBI:0000332,,OWL is a format standard of a digital entity that is conformant with the W3C Web Ontology Language specification.(http://www.w3.org/2004/OWL/),
+Observation,http://www.w3.org/ns/sosa/Observation,,,
+Occult Carcinoma (AJCC 7th),OBI:0002315,,"A clinical tumor stage group according to AJCC 7th edition indicating a small carcinoma, either asymptomatic or giving rise to metastases without symptoms due to the primary carcinoma.",Occult Carcinoma
+OperationDiscoveryCriterion,obo:SDDO_3000106,dataDiscoveryCriterion,,
+Opisthokonta,NCBITaxon:33154,Eukaryota,,
+Oxford Nanopore Technologies,OBI:0002755,,An organization that is developing and selling nanopore sequencing products and is based in the UK.,
+PDS data Product,obo:SDDO_1000007,data Product,,
+Pacific Biosciences,OBI:0001856,,"An organization that supplies tools for studying the synthesis and regulation of DNA, RNA and protein. It developed a powerful technology platform called single molecule real-time (SMRT) technology which enables real-time analysis of biomolecules with single molecule resolution.",
+Partec,OBI:0001355,,A supplier of flow cytometry analyzers,
+Platform,http://www.w3.org/ns/sosa/Platform,,,
+RDF,OBI:0000324,,RDF is a format standard of a digital entity that is conformant with the W3C Resource Description Framework RDF/XML Syntax specification.(http://www.w3.org/RDF/),
+Roche,OBI:0000758,,,
+Sensor,http://www.w3.org/ns/sosa/Sensor,,,
+Stage 0 (AJCC 7th),OBI:0002316,,A clinical tumor stage group according to AJCC 7th edition indicating a carcinoma in situ (or melanoma in situ for melanoma of the skin or germ cell neoplasia in situ for testicular germ cell tumors) and generally is considered to have no metastatic potential. ,Stage 0
+Stage 1 (FIGO),OBI:0002342,,"A International Federation of Gynecology and Obstetrics ovarian cancer stage value specification associated with TNM stage values of T1, N0, and M0.",Stage 1
+Stage 1A (FIGO),OBI:0002343,,"A International Federation of Gynecology and Obstetrics ovarian cancer stage value specification associated with TNM stage values of T1a, N0, and M0.",Stage 1A
+Stage 1B (FIGO),OBI:0002344,,"A International Federation of Gynecology and Obstetrics ovarian cancer stage value specification associated with TNM stage values of T1b, N0, and M0.",Stage 1B
+Stage 1C (FIGO),OBI:0002345,,"A International Federation of Gynecology and Obstetrics ovarian cancer stage value specification associated with TNM stage values of T1c, N0, and M0.",Stage 1C
+Stage 2 (FIGO),OBI:0002346,,"A International Federation of Gynecology and Obstetrics ovarian cancer stage value specification associated with TNM stage values of T2, N0, and M0.",Stage 2
+Stage 2A (FIGO),OBI:0002347,,"A International Federation of Gynecology and Obstetrics ovarian cancer stage value specification associated with TNM stage values of T2a, N0, and M0.",Stage 2A
+Stage 2B (FIGO),OBI:0002348,,"A International Federation of Gynecology and Obstetrics ovarian cancer stage value specification associated with TNM stage values of T2b, N0, and M0.",Stage 2B
+Stage 2C (FIGO),OBI:0002349,,"A International Federation of Gynecology and Obstetrics ovarian cancer stage value specification associated with TNM stage values of T2c, N0, and M0.",Stage 2C
+Stage 3 (FIGO),OBI:0002350,,"A International Federation of Gynecology and Obstetrics ovarian cancer stage value specification associated with TNM stage values of (T3, N0, and M0) or (T3,3a,3b, NX, and M0).",Stage 3
+Stage 3A (FIGO),OBI:0002351,,"A International Federation of Gynecology and Obstetrics ovarian cancer stage value specification associated with TNM stage values of T3a, N0, and M0 .",Stage 3A
+Stage 3B (FIGO),OBI:0002352,,"A International Federation of Gynecology and Obstetrics ovarian cancer stage value specification associated with TNM stage values of T3b, N0, and M0 .",Stage 3B
+Stage 3C (FIGO),OBI:0002353,,"A International Federation of Gynecology and Obstetrics ovarian cancer stage value specification associated with TNM stage values of (T3c, N0,X and M0) or (any T, N1 and M0).",Stage 3C
+Stage 4 (FIGO),OBI:0002354,,"A International Federation of Gynecology and Obstetrics ovarian cancer stage value specification associated with TNM stage values of any T, any N, and M1.",Stage 4
+Stage I (AJCC 7th),OBI:0002317,,A clinical tumor stage group according to AJCC 7th edition indicating cancers that are smaller or less deeply invasive without regional disease or nodes.,Stage I
+Stage IA (FIGO),OBI:0002327,,"An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating invasive carcinoma which can be diagnosed only by microscopy, with deepest invasion <5 mm and the largest extension <7 mm.",Stage IA
+Stage IA1 (FIGO),OBI:0002328,,An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating measured stromal invasion of <3.0 mm in depth and extension of <7.0 mm.,Stage IA1
+Stage IA2 (FIGO),OBI:0002329,,An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating measured stromal invasion of >3.0 mm and not >5.0 mm with an extension of not >7.0 mm.,Stage IA2
+Stage IB (FIGO),OBI:0002330,,An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating clinically visible lesions limited to the cervix uteri or pre-clinical cancers greater than stage IA,Stage IB
+Stage IB1 (FIGO),OBI:0002331,,An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating clinically visible lesion limited to the cervix uteri or pre-clinical cancers greater than stage IA <4.0 cm in greatest dimension.,Stage IB1
+Stage IB2 (FIGO),OBI:0002332,,An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating clinically visible lesion limited to the cervix uteri or pre-clinical cancers greater than stage IA >4.0 cm in greatest dimension.,Stage IB2
+Stage IIA (AJCC 7th),OBI:0002318,,A clinical tumor stage group according to AJCC 7th edition indicating cancers with increasing tumor or nodal extent but less than in Stage III and with differing characteristics from IIB and IIC.,Stage IIA
+Stage IIA (FIGO),OBI:0002333,,"An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion. ",Stage IIA
+Stage IIA1 (FIGO),OBI:0002334,,"An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion <4.0 cm in greatest dimension. ",Stage IIA1
+Stage IIA2 (FIGO),OBI:0002335,,"An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion >4.0 cm in greatest dimension. ",Stage IIA2
+Stage IIB (AJCC 7th),OBI:0002319,,A clinical tumor stage group according to AJCC 7th edition indicating cancers with increasing tumor or nodal extent but less than in Stage III and with differing characteristics from IIA and IIC.,Stage IIB
+Stage IIB (FIGO),OBI:0002336,,"An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina with obvious parametrial invasion. ",Stage IIB
+Stage IIC (AJCC 7th),OBI:0002320,,A clinical tumor stage group according to AJCC 7th edition indicating cancers with increasing tumor or nodal extent but less than in Stage III and with differing characteristics from IIA and IIB.,Stage IIC
+Stage IIIA (AJCC 7th),OBI:0002321,,A clinical tumor stage group according to AJCC 7th edition indicating cancers with increasing tumor or nodal extent greater than in Stage II and with differing characteristics from IIIB and IIIC.,Stage IIIA
+Stage IIIA (FIGO),OBI:0002337,,"An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating tumour involves lower third of the vagina, with no extension to the pelvic wall.",Stage IIIA
+Stage IIIB (AJCC 7th),OBI:0002322,,A clinical tumor stage group according to AJCC 7th edition indicating cancers with increasing tumor or nodal extent greater than in Stage II and with differing characteristics from IIIA and IIIC.,Stage IIIB
+Stage IIIB (FIGO),OBI:0002338,,An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating extension to the pelvic wall and/or hydronephrosis or non-functioning kidney.,Stage IIIB
+Stage IIIC (AJCC 7th),OBI:0002323,,A clinical tumor stage group according to AJCC 7th edition indicating cancers with increasing tumor or nodal extent greater than in Stage II and with differing characteristics from IIIA and IIIB.,Stage IIIC
+Stage IVA (AJCC 7th),OBI:0002324,,A clinical tumor stage group according to AJCC 7th edition indicating cancers in patients who present with distant metastases at diagnosis and with differing characteristics from IVB.,Stage IVA
+Stage IVA (FIGO),OBI:0002339,,An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating spread of the growth to adjacent organs.,Stage IVA
+Stage IVB (AJCC 7th),OBI:0002325,,A clinical tumor stage group according to AJCC 7th edition indicating cancers in patients who present with distant metastases at diagnosis and with differing characteristics from IVA.,Stage IVB
+Stage IVB (FIGO),OBI:0002340,,An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating spread to distant organs.,Stage IVB
+Stage Unknown (FIGO),OBI:0002355,,"A International Federation of Gynecology and Obstetrics ovarian cancer stage value specification associated with TNM stage values of (T0, N0, and M0) or (T1,1a-1c,2,2a-2c, NX, and M0) or (TX, N0,X, M0).",Stage Unknown
+"Sysmex Corporation, Kobe, Japan",OBI:0000829,,,
+Tetrapoda,NCBITaxon:32523,Euteleostomi,,tetrapods
+Thermo,OBI:0000752,,,
+Thermo Fisher Scientific,OBI:0002193,,"An organization that is an American multinational, biotechnology product development company, created in 2006 by the merger of Thermo Electron and Fisher Scientific.",
+Transformation-ML,OBI:0000317,,Transformation-ML is a format standard of a digital entity that is conformant with the Transformation-ML standard.(http://wiki.ficcs.org/ficcs/Transformation-ML?action=AttachFile&do=get&target=Transformation-ML_v1.0.26.pdf),
+U.S. Food and Drug Administration,OBI:0000901,,,FDA
+Vertebrata <vertebrates>,NCBITaxon:7742,Bilateria,,Vertebrata|vertebrates
+Viruses,NCBITaxon:10239,organism,,
+Waters,OBI:0000753,,,
+XML,OBI:0000322,,XML is a format standard of a digital entity that is conformant with the W3C Extensible Markup Language Recommendation.(http://www.w3.org/XML/),
+accessInterface,obo:SDDO_3000075,present some productService|present some selectionParameter,A software interface that 1) presents users with selection criteria and 2) presents products or services that meet the criteria the user then selects.,
+action specification,IAO:0000007,directive information entity,A directive information entity that describes an action the bearer will take.,
+algorithm,IAO:0000064,plan specification,A plan specification which describes the inputs and output of mathematical functions as well as workflow of execution for achieving an predefined objective. Algorithms are realized usually by means of implementation as computer programs for execution by automata.,
+ambidexterous,OBI:0000979,,,
+anatomical cluster,UBERON:0000477,material entity,Anatomical group that has its parts adjacent to one another.,
+angstrom,UO:0000019,,A length unit which is equal to 10 [-10] m.,
+applicationDiscoveryCriterion,obo:SDDO_3000061,discoveryCriterion,,
+assay,obo:SDDO_3000047,capableOfDetecting some event|capableOfIdentifying some feature|createdBy some laboratoryProcedure,"An assay is an investigative (analytic) procedure for qualitatively assessing or quantitatively measuring the presence, amount, or functional activity of a target entity.",
+author,obo:SDDO_3000056,,An originator or creator of a work,
+cM0 (colon),OBI:0002291,,A pathologic distant metastases stage for colon according to AJCC 7th edition indicating that there are no symptoms or signs of distant metastasis.,
+cM0 (kidney),OBI:0002307,,A pathologic distant metastases stage for kidney according to AJCC 7th edition indicating that there is no distant metastasis.,
+cM0 (lung),OBI:0002299,,A pathologic distant metastases stage for lung according to AJCC 7th edition indicating that there is no distant metastasis.,
+cM0 (ovary),OBI:0002311,,A pathologic distant metastases stage for ovary according to AJCC 7th edition indicating that there is no distant metastasis.,
+cM1 (colon),OBI:0002292,,"A pathologic distant metastases stage for colon according to AJCC 7th edition indicating that there is clinical evidence of distant metastases by history, physical examination, imaging studies, or invasive procedures, but without microscopic evidence of the presumed distant metastases.",
+cM1 (kidney),OBI:0002308,,A pathologic distant metastases stage for kidney according to AJCC 7th edition indicating that there are distant metastases based on clinical assessment.,
+cM1 (lung),OBI:0002300,,A pathologic distant metastases stage for lung according to AJCC 7th edition indicating that there are distant metastases based on clinical assessment.,
+cM1 (ovary),OBI:0002312,,A pathologic distant metastases stage for ovary according to AJCC 7th edition indicating that there is distant metastasis except peritoneal metastasis based on clinical assessment.,
+cM1a (colon),OBI:0002293,,A pathologic distant metastases stage for colon according to AJCC 7th edition indicating that metastasis is confined to one organ based on clinical assessment.,
+cM1a (lung),OBI:0002301,,A pathologic distant metastases stage for lung according to AJCC 7th edition indicating that metastasis is based on clinical assessment and a separate tumor nodule(s) in a contralateral lobe; tumor with pleural nodules OR malignant pleural or pericardial effusion.,
+cM1b (colon),OBI:0002294,,A pathologic distant metastases stage for colon according to AJCC 7th edition indicating that metastasis is in more than one organ or the peritoneum based on clinical assessment.,
+cM1b (lung),OBI:0002302,,A pathologic distant metastases stage for lung according to AJCC 7th edition indicating that there is a distant metastases based on clinical assessment.,
+campaign,obo:SDDO_3000045,resultsIn some productService|uses some platform,A systematic set of activities undertaken to meet a particular science objective.,science campaign
+categorical label,OBI:0000963,datum label,A label that is part of a categorical datum and that indicates the value of the data item on the categorical scale.,
+categorical value specification,OBI:0001930,value specification,A value specification that is specifies one category out of a fixed number of nominal categories,
+centimeter,UO:0000015,,A length unit which is equal to one hundredth of a meter or 10^[-2] m.,cm
+class discovery data transformation,OBI:0200175,data transformation,A class discovery data transformation (sometimes called unsupervised classification) is a data transformation that has objective class discovery.,clustering data transformation|unsupervised classification data transformation
+class discovery objective,OBI:0200178,data transformation objective,"A class discovery objective (sometimes called unsupervised classification) is a data transformation objective where the aim is to organize input data  (typically vectors of attributes) into classes, where the number of classes and their specifications are not known a priori. Depending on usage, the class assignment can be definite or probabilistic.",clustering objective|discriminant analysis objective|unsupervised classification objective
+class prediction data transformation,OBI:0000663,data transformation,A class prediction data transformation (sometimes called supervised classification) is a data transformation that has objective class prediction.,supervised classification data transformation
+class prediction objective,OBI:0200179,data transformation objective,"A class prediction objective (sometimes called supervised classification) is a data transformation objective where the aim is to create a predictor from training data through a machine learning technique. The training data consist of pairs of objects (typically vectors of attributes) and
+class labels for these objects. The resulting predictor can be used to attach class labels to any valid novel input object. Depending on usage, the prediction can be definite or probabilistic. A classification is learned from the training data and can then be tested on test data.",classification objective|supervised classification objective
+classified data set,OBI:0000023,data set|is_specified_output_of some 'class prediction data transformation',A data set that is produced as the output of a class prediction data transformation and consists of a data set with assigned class labels.,data set with assigned class labels
+clinical tumor stage group according to AJCC 7th edition,OBI:0002314,categorical value specification,A categorical value specification that is an assessment of the stage of a cancer according to the American Joint Committee on Cancer (AJCC) v7 staging systems.,Clinical tumor stage group (AJCC 7th Edition)
+clustered data set,OBI:0000648,data set|is_specified_output_of some 'class discovery data transformation',A data set that is produced as the output of a class discovery data transformation and consists of a data set with assigned discovered class labels.,data set with assigned discovered class labels
+clustered data visualization,OBI:0200190,data visualization|has_specified_input only 'clustered data set'|has_specified_output some ('dot plot' or histogram or heatmap or dendrogram or 'scatter plot'),A data visualization which has input of a clustered data set and produces an output of a report graph which is capable of rendering data of this type.,
+collection of specimens,OBI:0002076,material entity,A material entity that has two or more specimens as its parts.,
+colony forming unit per volume,UO:0000212,,A concentration unit which a measure of viable bacterial numbers in a given volume.,
+concentration unit,UO:0000051,measurement unit label,,
+conclusion based on data,OBI:0001909,information content entity|is_specified_output_of some 'drawing a conclusion based on data'|is_supported_by_data some 'data item',An information content entity that is inferred from data.,
+continuant,BFO:0000002,entity,"An entity that exists in full at any time in which it exists at all, persists through time while maintaining its identity and has no temporal parts.",
+count per molar,UO:0000285,,A rate unit which is equal to one over one molar.,
+count per molar second,UO:0000282,,A rate unit which is equal to one over one molar second.,
+count per nanomolar,UO:0000284,,A rate unit which is equal to one over one nanomolar.,
+count per nanomolar second,UO:0000281,,A rate unit which is equal to one over one nanomolar second.,
+cross validation objective,OBI:0200188,partitioning objective,"A cross validation objective is a data transformation objective in which the aim is to partition a sample of data into subsets such that the analysis is initially performed on a single subset, while the other subset(s) are retained for subsequent use in confirming and validating the initial analysis.",rotation estimation objective
+cubic centimeter,UO:0000097,,"A volume unit which is equal to one millionth of a cubic meter or 10^[-9] m^[3], or to 1 ml.",cc
+cubic decimeter,UO:0000100,,"A volume unit which is equal to one thousand of a cubic meter or 10^[-3] m^[3], or to 1 L.",
+curation status specification,IAO:0000078,data about an ontology part,The curation status of the term. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value.,
+data Product,obo:SDDO_3000051,information content entity|is_specified_output_of some (mission or experiment),"Processed data from the same source, normally compiled into a set according to shared characteristics.",data set
+data about an ontology part,IAO:0000102,data item,"Data about an ontology part is a data item about a part of an ontology, for example a term",
+data element,obo:SDDO_3000110,isResultOf some observation,"A data element is any characteristic that can help in understanding data content. That is, a data element is any parameter or variable that is useful, or critical, when identifying  or describing the content of a data object.",
+data format specification,IAO:0000098,directive information entity,"A data format specification is the information content borne by the document published defining the specification.
+Example: The ISO document specifying what encompasses an XML document; The instructions in a XSD file",
+data item,IAO:0000027,information content entity,"An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.",data
+data set,IAO:0000100,data item,A data item that is an aggregate of other data items of the same type that have something in common. Averages and distributions can be determined for data sets.,
+data transformation,OBI:0200000,achieves_planned_objective some 'data transformation objective'|has_specified_input only 'data item'|planned process|realizes some (concretizes some (algorithm and ('has part' some 'objective specification'))),A planned process that produces output data from input data.,data analysis|data processing
+data transformation objective,OBI:0200166,objective specification,An objective specification to transformation input data into output data,
+data visualization,OBI:0200111,has_specified_input only 'data item'|has_specified_input some 'data item'|has_specified_output only (graph or image)|has_specified_output some (graph or image)|planned process,"An planned process that creates images, diagrams or animations from the input data.",data encoding as image|visualization
+dataDiscoveryCriterion,obo:SDDO_3000074,discoveryCriterion,,
+dataProductDiscoveryCriterion,obo:SDDO_3000064,dataDiscoveryCriterion,,
+dataSelectionParameter,obo:SDDO_3000073,selectionParameter,,
+dataset creating,APOLLO_SV:00000796,has_specified_output some 'data set'|planned process,A planned process that has a data set as its specified output.,data set creation|dataset creation
+datum label,IAO:0000009,information content entity,A label is a symbol that is part of some other datum and is used to either partially define  the denotation of that datum or to provide a means for identifying the datum as a member of the set of data with the same label,
+day,UO:0000033,,A time unit which is equal to 24 hours.,
+decision tree building data transformation,OBI:0000707,achieves_planned_objective some 'decision tree induction objective'|data transformation,A decision tree building data transformation is a data transformation that has objective decision tree induction.,
+decision tree induction objective,OBI:0000704,data transformation objective,A decision tree induction objective is a data transformation objective in which a tree-like graph of edges and nodes is created and from which the selection of each branch requires that some type of logical decision is made.,
+defined class,IAO:0000420,,A defined class is a class that is defined by a set of logically necessary and sufficient conditions but is not a universal,
+degree Celsius,UO:0000027,,"A temperature unit which is equal to one kelvin degree. However, they have their zeros at different points. The centigrade scale has its zero at 273.15 K.",C|degree C
+degree Fahrenheit,UO:0000195,,A temperature unit which is equal to 5/9ths of a kelvin. Negative 40 degrees Fahrenheit is equal to negative 40 degrees Celsius.,
+dendrogram,IAO:0000183,graph,"A dendrogram is a report graph which is a tree diagram
+frequently used to illustrate the arrangement of the clusters produced by a
+clustering algorithm.",
+denotator type,IAO:0000409,data about an ontology part,A denotator type indicates how a term should be interpreted from an ontological perspective.,
+deployment,obo:SDDO_3000081,partOf some mission,"The realisation of an application, or execution of a plan, idea, model, design, specification, standard, algorithm, or policy.",
+device,OBI:0000968,'has function' some function|processed material,"A material entity that is designed to perform a function in a scientific investigation, but is not a reagent.",instrument
+diagram,IAO:0000309,figure,A figure that expresses one or more propositions,
+dimensionality reduction,OBI:0200050,(has_specified_output some 'clustered data set') and (achieves_planned_objective some 'class discovery objective')|class discovery data transformation|dataset creating,"A dimensionality reduction is data partitioning which transforms each input m-dimensional vector (x_1, x_2, ..., x_m) into an output n-dimensional vector (y_1, y_2, ..., y_n), where n is smaller than m.",data projection
+directive information entity,IAO:0000033,'is about' some 'realizable entity'|information content entity,An information content entity whose concretizations indicate to their bearer how to realize them in a process.,
+discoveryCriterion,obo:SDDO_3000062,,,
+discoveryInterface,obo:SDDO_3000102,aggregate some applicationDiscoveryCriterion|aggregate some dataDiscoveryCriterion|aggregate some informationDiscoveryCriterion|aggregate some modelDiscoveryCriterion|aggregate some toolDiscoveryCriterion|leadTo some accessInterface|present some discoveryCriterion,An interface that allows the user to discover the existence of relevant products and services.,
+disposition,BFO:0000016,realizable entity,,
+document,obo:SDDO_3000109,informationProduct,"A written or printed paper that bears the original, official, or legal form of something and can be used to furnish decisive evidence or information.",
+document,IAO:0000310,information content entity,A collection of information content entities intended to be understood together as a whole,
+documenting,IAO:0000572,has_specified_input some 'information content entity'|has_specified_output some document|planned process,A planned process in which a document is created or added to by including the specified input in it.,
+dot plot,IAO:0000037,graph,A dot plot is a report graph which is a graphical representation of data where each data point is represented by a single dot placed on coordinates corresponding to data point values in particular dimensions.,
+drawing a conclusion based on data,OBI:0000338,has_specified_input some 'data item'|has_specified_output some 'conclusion based on data'|planned process,A planned process in which data gathered in an investigation is evaluated in the context of existing knowledge with the objective to generate more general conclusions or to conclude that the data does not allow one to draw general conclusion,
+eBioscience,OBI:0001213,,A supplier of flow cytometry analyzers,
+entity,BFO:0000001,,,
+event,obo:SDDO_3000044,characterizedBy some observation|process|quantifiedBy some observation,Something observable that happened at a given time and place,
+example to be eventually removed,IAO:0000002,,,
+experiment,obo:SDDO_3000094,componentOf some researchInvestigation|conductedAt some facility|conductedOn some organism|generates some specimen|partOf some mission|planned process|uses some 'experiment Apparatus',"A plan for a coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing.",
+experiment Apparatus,obo:SDDO_3000080,hardware,Hardware used in conducting an experiment.,
+experimentDiscoveryCriterion,obo:SDDO_3000104,dataDiscoveryCriterion,,
+facility,obo:SDDO_3000098,material entity,,
+factor,obo:SDDO_3000071,'role of' some owl:Thing|experimentalContextFor some observation|role,The role played by an entity as part of a scientific investigation such that levels of the measurement or observation of the entity are thought to bear upon the hypotheses being investigated.,
+failed exploratory term,IAO:0000103,,The term was used in an attempt to structure part of the ontology but in retrospect failed to do a good job,
+feature,obo:SDDO_3000096,characterizedBy some (experiment or observation)|material entity|quantifiedBy some (experiment or observation),A material entity that has characteristics that can be qualified or quantified through observation or experiment.,
+figure,IAO:0000308,information content entity,An information content entity consisting of a two dimensional arrangement of information content entities such that the arrangement itself is about something.,
+firmware,obo:SDDO_3000113,'part of' some hardware|software,Software that provides the low-level control for a device's specific hardware.,
+frequency unit,UO:0000105,measurement unit label,,
+function,BFO:0000034,disposition,,
+funder,obo:SDDO_3000086,'role of' some organization|role,A role in which the bearer delivers financial support to enable some activity.,
+generically dependent continuant,BFO:0000031,continuant,A continuant that is dependent on one or other independent continuant bearers. For every instance of A requires some instance of (an independent continuant type) B but which instance of B serves can change from time to time.|b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001]),
+gram,UO:0000021,,A mass unit which is equal to one thousandth of a kilogram or 10^[-3] kg.,g
+gram per deciliter,UO:0000208,,A mass density unit which is equal to mass of an object in grams divided by the volume in deciliters.,g/dl
+gram per liter,UO:0000175,,A mass unit density which is equal to mass of an object in grams divided by the volume in liters.,g per L|g/L
+graph,IAO:0000038,diagram,A diagram that presents one or more tuples of information by mapping those tuples in to a two dimensional space in a non arbitrary way.,
+hardware,obo:SDDO_3000054,material entity,"The mechanical, magnetic, electronic, and electrical equipment necessary for conducting an activity.",
+heatmap,IAO:0000180,graph,"A heatmap is a report graph which is a graphical representation of data
+where the values taken by a variable(s) are shown as colors in a
+two-dimensional map.",
+hertz,UO:0000106,,A frequency unit which is equal to 1 complete cycle of a recurring phenomenon in 1 second.,
+hierarchical clustering,OBI:0200042,(has_specified_output some 'clustered data set') and (achieves_planned_objective some 'class discovery objective')|class discovery data transformation|dataset creating,"A hierarchical clustering is a data transformation which achieves a class discovery objective, which takes as input data item and builds a hierarchy of clusters. The traditional representation of this hierarchy is a tree (visualized by a dendrogram), with the individual input objects at one end (leaves) and a single cluster containing every object at the other (root).",
+histogram,IAO:0000179,graph,"A histogram is a report graph which is a statistical description of a
+distribution in terms of occurrence frequencies of different event classes.",
+histologic grade according to AJCC 7th edition,OBI:0002205,categorical value specification,A categorical value specification that is a histologic grade assigned to a tumor slide specimen according to the American Joint Committee on Cancer (AJCC) 7th Edition grading system.,
+histologic grade according to the Fuhrman Nuclear Grading System,OBI:0002210,categorical value specification,A categorical value specification that is a histologic grade assigned to a tumor slide specimen according to the Fuhrman Nuclear Grading System.,Histologic Grade (Fuhrman Nuclear Grading System)
+histologic grade for ovarian tumor,OBI:0002215,categorical value specification,A categorical value specification that is a histologic grade assigned to a ovarian tumor.,
+histologic grade for ovarian tumor according to a two-tier grading system,OBI:0002216,histologic grade for ovarian tumor,A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors. ,
+histologic grade for ovarian tumor according to the World Health Organization,OBI:0002219,histologic grade for ovarian tumor,A histologic grade for ovarian tumor that is from a histological classification by the World Health Organization (WHO).,
+hour,UO:0000032,,A time unit which is equal to 3600 seconds or 60 minutes.,h|hr
+image,IAO:0000101,figure,"An image is an affine projection to a two dimensional surface, of measurements of some quality of an entity or entities repeated at regular intervals across a spatial range, where the measurements are represented as color and luminosity on the projected on surface.",
+immaterial entity,BFO:0000141,independent continuant,,
+independent continuant,BFO:0000004,continuant,"A continuant that is a bearer of quality and realizable entity entities, in which other entities inhere and which itself cannot inhere in anything.|b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])",
+information content entity,IAO:0000030,'is about' some entity|generically dependent continuant,A generically dependent continuant that is about some thing.,
+informationDiscoveryCriterion,obo:SDDO_3000076,discoveryCriterion,,
+informationProduct,obo:SDDO_3000079,information content entity,,
+informationSelectionParameter,obo:SDDO_3000082,selectionParameter,,
+instrument,obo:SDDO_3000092,Sensor|material entity|operatesOn some platform,An instrument is a physical object that can be used to collect data.,
+instrumentDiscoveryCriterion,obo:SDDO_3000057,dataDiscoveryCriterion,,
+instrumentOperatingMode,obo:SDDO_3000087,capableOfDetecting some event|capableOfIdentifying some feature,,
+instrumentOperatingModeDiscoveryCriterion,obo:SDDO_3000058,dataDiscoveryCriterion,,
+investigation,OBI:0000066,'has part' some 'drawing a conclusion based on data'|'has part' some 'study design execution'|'has part' some (planning and (has_specified_output some 'study design'))|'has part' some documenting|planned process,"a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).",
+investigation agent role,OBI:0000202,'inheres in' some ('bearer of' some (concretizes some (objective_achieved_by some ('part of' some investigation))))|'realized in' only investigation|role,"A role borne by an entity and that is realized in a process that is part of an investigation in which an objective is achieved. These processes include, among others: planning, overseeing, funding, reviewing.",investigator
+investigator,obo:SDDO_3000105,,,
+k-means clustering,OBI:0200041,(has_specified_output some 'clustered data set') and (achieves_planned_objective some 'class discovery objective')|class discovery data transformation|dataset creating|partitioning data transformation,"A k-means clustering is a data transformation which achieves a class discovery or partitioning objective, which takes as input a collection of objects (represented as points in multidimensional space) and which partitions them into a specified number k of clusters. The algorithm attempts to find the centers of natural clusters in the data. The most common form of the algorithm starts by partitioning the input points into k initial sets, either at random or using some heuristic data. It then calculates the mean point, or centroid, of each set. It constructs a new partition by associating each point with the closest centroid. Then the centroids are recalculated for the new clusters, and the algorithm repeated by alternate applications of these two steps until convergence, which is obtained when the points no longer switch clusters (or alternatively centroids are no longer changed).",
+k-nearest neighbors,OBI:0000727,(has_specified_output some 'clustered data set') and (achieves_planned_objective some 'class discovery objective')|class discovery data transformation|dataset creating|partitioning data transformation,"A k-nearest neighbors is a data transformation which achieves a class discovery or partitioning objective, in which an input data object with vector y is assigned to a class label based upon the k closest training data set points to y; where k is the largest value that class label is assigned.",k-NN
+kilogram,UO:0000009,,"A mass unit which is equal to the mass of the International Prototype Kilogram kept by the BIPM at Svres, France.",kg
+laboratoryProcedure,obo:SDDO_3000089,conductedAt some facility,Any procedure that involves testing or manipulating a sample or subject in a laboratory setting,
+leave one out cross validation method,OBI:0200033,statistical model validation,"is a data transformation :  leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data",
+left handed,OBI:0000998,,,
+legend,obo:SDDO_3000053,,,
+length unit,UO:0000001,measurement unit label,A unit which is a standard measure of the distance between two points.,
+liter,UO:0000099,,"A volume unit which is equal to one thousandth of a cubic meter or 10^[-3] m^[3], or to 1 decimeter.",L
+locationDiscoveryCriterion,obo:SDDO_3000108,dataDiscoveryCriterion,,
+manufacturer,OBI:0000835,'has role' some 'manufacturer role'|material entity,A person or organization that has a manufacturer role,
+manufacturer role,OBI:0000571,'inheres in' some ('Homo sapiens' or organization)|'realized in' only manufacturing|role,Manufacturer role is a role which inheres in a person or organization and which is realized by a manufacturing process.,
+manufacturing,OBI:0000457,achieves_planned_objective some 'manufacturing objective'|has_specified_input some 'material entity'|material processing,Manufacturing is a process with the intent to produce a processed material which will have a function for future use. A person or organization (having manufacturer role) is a participant in this process,
+manufacturing objective,OBI:0000458,material transformation objective,is the objective to manufacture a material of a certain function (device),
+mass percentage,UO:0000163,,A dimensionless concentration unit which denotes the mass of a substance in a mixture as a percentage of the mass of the entire mixture.,% w/w|percent weight pr weight
+mass unit,UO:0000002,measurement unit label,A unit which is a standard measure of the amount of matter/energy of a physical object.,
+mass volume percentage,UO:0000164,,A dimensionless concentration unit which denotes the mass of the substance in a mixture as a percentage of the volume of the entire mixture.,% w/v|percent vol per vol
+material anatomical entity,UBERON:0000465,material entity,Anatomical entity that has mass.,
+material entity,BFO:0000040,independent continuant,An independent continuant that is spatially extended whose identity is independent of that of other entities and can be maintained through time.,
+material information bearer,IAO:0000178,'bearer of' some (concretizes some 'information content entity')|material entity,A material entity in which a concretization of an information content entity inheres.,
+material processing,OBI:0000094,achieves_planned_objective some 'material transformation objective'|has_specified_input only 'material entity'|has_specified_output some 'processed material'|planned process,A planned process which results in physical changes in a specified input material,material transformation
+material supplier,OBI:0002989,'has role' some 'material supplier role'|material entity,A person or organization that provides material supplies to other people or organizations.,
+material supplier role,OBI:0000018,service provider role,"a role realized through the process of supplying materials such as animal subjects, reagents or other materials used in an investigation.",material provider role|supplier
+material transformation objective,OBI:0000456,objective specification,an objective specifiction that creates an specific output object from input materials.,artifact  creation objective
+measurement unit label,IAO:0000003,datum label,A measurement unit label is as a label that is part of a scalar measurement datum and denotes a unit of measure.,
+metadata complete,IAO:0000120,,"Class has all its metadata, but is either not guaranteed to be in its final location in the asserted IS_A hierarchy or refers to another class that is not complete.",
+metadata incomplete,IAO:0000123,,"Class is being worked on; however, the metadata (including definition) are not complete or sufficiently clear to the branch editors.",
+metadataProduct,obo:SDDO_3000095,informationProduct,,
+meter,UO:0000008,,A length unit which is equal to the length of the path traveled by light in vacuum during a time interval of 1/299 792 458 of a second.,m
+microgram,UO:0000023,,A mass unit which is equal to one millionth of a gram or 10^[-6] g.,ug
+microgram per liter,UO:0000301,,A mass unit density which is equal to mass of an object in micrograms divided by the volume in liters.,ng/ml|ug/L
+microliter,UO:0000101,,A volume unit which is equal to one millionth of a liter or 10^[-6] L.,ul
+microliters per minute,UO:0000271,,A volumetric flow rate unit which is equal to one microliter volume through a given surface in one minute.,
+micrometer,UO:0000017,,A length unit which is equal to one millionth of a meter or 10^[-6] m.,um
+micromolar,UO:0000064,,A unit of molarity which is equal to one millionth of a molar or 10^[-6] M.,uM
+micromole,UO:0000039,,A substance unit equal to a millionth of a mol or 10^[-6] mol.,umol
+milligram,UO:0000022,,A mass unit which is equal to one thousandth of a gram or 10^[-3] g.,mg
+milligram per milliliter,UO:0000176,,A mass unit density which is equal to mass of an object in milligrams divided by the volume in milliliters.,mg per ml|mg/ml
+milliliter,UO:0000098,,"A volume unit which is equal to one thousandth of a liter or 10^[-3] L, or to 1 cubic centimeter.",ml
+milliliter per liter,UO:0000207,,A volume per unit volume unit which is equal to one millionth of a liter of solute in one liter of solution.,ml per L|ml/l
+millimeter,UO:0000016,,A length unit which is equal to one thousandth of a meter or 10^[-3] m.,mm
+millimolar,UO:0000063,,A unit of molarity which is equal to one thousandth of a molar or 10^[-3] M.,mM
+minute,UO:0000031,,A time unit which is equal to 60 seconds.,min
+mission,obo:SDDO_3000088,deployedOn some hardware|organizedBy some spaceAgency|planned process,A mission is a named activity for some purpose,
+missionDiscoveryCriterion,obo:SDDO_3000093,dataDiscoveryCriterion,,
+modelDiscoveryCriterion,obo:SDDO_3000072,discoveryCriterion,,
+molar,UO:0000062,,A unit of concentration which expresses a concentration of 1 mole of solute per liter of solution (mol/L).,M
+month,UO:0000035,,A time unit which is approximately equal to the length of time of one of cycle of the moon's phases which in science is taken to be equal to 30 days.,
+named class expression,IAO:0000421,,A named class expression is a logical expression that is given a name. The name can be used in place of the expression.,
+nanogram,UO:0000024,,A mass unit which is equal to one thousandth of one millionth of a gram or 10^[-9] g.,ng
+nanoliter,UO:0000102,,A volume unit which is equal to one thousandth of one millionth of a liter or 10^[-9] L.,nl
+nanometer,UO:0000018,,A length unit which is equal to one thousandth of one millionth of a meter or 10^[-9] m.,nm
+nanomolar,UO:0000065,,A unit of molarity which is equal to one thousandth of one millionth of a molar or 10^[-9] M.,nM
+nanomole,UO:0000041,,A substance unit equal to one thousandth of one millionth of a mole or 10^[-9] mol.,nmol
+objective specification,IAO:0000005,directive information entity,A directive information entity that describes an intended process endpoint. When part of a plan specification the concretization is realized in a planned process in which the bearer tries to effect the world so that the process endpoint is achieved.,goal specification
+observableDiscoveryCriterion,obo:SDDO_3000114,dataDiscoveryCriterion,,
+observation,obo:SDDO_3000100,Observation|planned process,,
+obsolescence reason specification,IAO:0000225,data about an ontology part,The reason for which a term has been deprecated. The allowed values come from an enumerated list of predefined terms. See the specification of these instances for more detailed definitions of each enumerated value.,
+occurrent,BFO:0000003,entity,"An entity that has temporal parts and that happens, unfolds or develops through time.",
+organism,obo:SDDO_3000065,organism,"The quality of a living subject that indicates the taxonomical grouping of the subject.  This grouping can be at any level in a hierachy of organism classification, or a collection of levels, and can be using scientific language or colloquial language.",
+organism,OBI:0100026,material entity,"A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs.",
+organization,obo:SDDO_3000103,hasRole some author|hasRole some funder|hasRole some investigator|hasRole some spaceAgency,,
+organization,OBI:0000245,material entity,"An entity that can bear roles, has members, and has a set of organization rules. Members of organizations are either organizations themselves or individual people. Members can bear specific organization member roles that are determined in the organization rules. The organization rules also determine how decisions are made on behalf of the organization by the organization members.",
+organizational term,IAO:0000121,,"Term created to ease viewing/sort terms for development purpose, and will not be included in a release",
+pH,UO:0000196,,A dimensionless concentration notation which denotes the acidity of a solution in terms of activity of hydrogen ions (H+).,
+pM1 (colon),OBI:0002295,,A pathologic distant metastases stage for colon according to AJCC 7th edition indicating that there is microscopic evidence confirming distant metastatic disease.,
+pM1 (kidney),OBI:0002309,,A pathologic distant metastases stage for kidney according to AJCC 7th edition indicating that there is a distant metastases that is histologically confirmed.,
+pM1 (lung),OBI:0002303,,A pathologic distant metastases stage for lung according to AJCC 7th edition indicating that there is a distant metastases that is histologically confirmed.,
+pM1 (ovary),OBI:0002313,,A pathologic distant metastases stage for ovary according to AJCC 7th edition indicating that there is distant metastasis except peritoneal metastasis that is histologically confirmed.,
+pM1a (colon),OBI:0002296,,A pathologic distant metastases stage for colon according to AJCC 7th edition indicating that metastasis is confined to one organ and histologically confirmed.,
+pM1a (lung),OBI:0002304,,A pathologic distant metastases stage for lung according to AJCC 7th edition indicating that metastasis is histologically confirmed and a separate tumor nodule(s) in a contralateral lobe; tumor with pleural nodules OR malignant pleural or pericardial effusion.,
+pM1b (colon),OBI:0002297,,A pathologic distant metastases stage for colon according to AJCC 7th edition indicating that metastasis is in more than one organ or the peritoneum and histologically confirmed.,
+pM1b (lung),OBI:0002305,,A pathologic distant metastases stage for lung according to AJCC 7th edition indicating that there is a distant metastases that is histologically confirmed and associated with distant lymph nodes or carcinomatosis.,
+pN0 (colon),OBI:0002271,,A pathologic lymph node stage for colon and rectum according to AJCC 7th edition indicating no regional lymph node metastsis.,
+pN0 (kidney),OBI:0002285,,A pathologic lymph node stage for kidney according to AJCC 7th edition indicating that there is no regional lymph node metastasis.,
+pN0 (lung),OBI:0002280,,A pathologic lymph node stage for lung according to AJCC 7th edition indicating no regional lymph node metastasis.,
+pN0 (ovary),OBI:0002288,,A pathologic lymph node stage for ovary according to AJCC 7th edition indicating that there is no regional lymph node metastasis.,
+pN1 (colon),OBI:0002272,,A pathologic lymph node stage for colon and rectum according to AJCC 7th edition indicating metastasis in 1-3 regional lymph nodes.,
+pN1 (kidney),OBI:0002286,,A pathologic lymph node stage for kidney according to AJCC 7th edition indicating that there is regional lymph node metastasis.,
+pN1 (lung),OBI:0002281,,"A pathologic lymph node stage for lung according to AJCC 7th edition indicating metastasis in ipsilateral peribronchial and/or ipsilateral hilar lymph nodes and intrapulmonary nodes, including involvement by direct extension.",
+pN1 (ovary),OBI:0002289,,A pathologic lymph node stage for ovary according to AJCC 7th edition indicating that there is regional lymph node metastasis.,
+pN1a (colon),OBI:0002273,,A pathologic lymph node stage for colon and rectum according to AJCC 7th edition indicating metastasis in 1 regional lymph node.,
+pN1b (colon),OBI:0002274,,A pathologic lymph node stage for colon and rectum according to AJCC 7th edition indicating metastasis in 2-3 regional lymph nodes.,
+pN1c (colon),OBI:0002275,,"A pathologic lymph node stage for colon and rectum according to AJCC 7th edition indicating tumor deposit(s), i.e., satellites in the subserosa, or in non-peritonealized pericolic or perirectal soft tissue without regional lymph node metastasis.",
+pN2 (colon),OBI:0002276,,A pathologic lymph node stage for colon and rectum according to AJCC 7th edition indicating metastasis in 4 or more regional lymph nodes.,
+pN2 (lung),OBI:0002282,,A pathologic lymph node stage for lung according to AJCC 7th edition indicating metastasis in ipsilateral mediastinal and/or subcarinal lymph node(s).,
+pN2a (colon),OBI:0002277,,A pathologic lymph node stage for colon and rectum according to AJCC 7th edition indicating metastasis in 4 to 6 regional lymph nodes.,
+pN2b (colon),OBI:0002278,,A pathologic lymph node stage for colon and rectum according to AJCC 7th edition indicating metastasis in 7 or more regional lymph nodes.,
+pN3 (lung),OBI:0002283,,"A pathologic lymph node stage for lung according to AJCC 7th edition indicating metastasis in contralateral mediastinal, contralateral hilar, ipsilateral or contralateral scalene, or supraclavicular lymph node(s).",
+pT0 (colon),OBI:0002225,,A pathologic primary tumor stage for colon and rectum according to AJCC 7th edition indicating that there is no evidence of primary tumor.,
+pT0 (kidney),OBI:0002244,,A pathologic primary tumor stage for kidney according to AJCC 7th edition indicating that there is no evidence of primary tumor.,
+pT0 (lung),OBI:0002233,,A pathologic primary tumor stage for lung according to AJCC 7th edition indicating that there is no evidence of primary tumor.,
+pT0 (ovary),OBI:0002257,,A pathologic primary tumor stage for ovary according to AJCC 7th edition indicating that there is no evidence of primary tumor.,
+pT1 (colon),OBI:0002227,,A pathologic primary tumor stage for colon and rectum according to AJCC 7th edition indicating that the tumor invades submucosa.,
+pT1 (kidney),OBI:0002245,,A pathologic primary tumor stage for kidney according to AJCC 7th edition indicating that the tumor is 7 cm or less in greatest dimension and limited to the kidney.,
+pT1 (lung),OBI:0002235,,"A pathologic primary tumor stage for lung according to AJCC 7th edition indicating that the tumor is 3 cm or less in greatest dimension, surrounded by lung or visceral pleura without bronchoscopic evidence of invasion more proximal than the lobar bronchus (i.e., not in the main bronchus).",
+pT1 (ovary),OBI:0002258,,A pathologic primary tumor stage for ovary according to AJCC 7th edition indicating that the tumor is limited to the ovaries (one or both).,
+pT1a (kidney),OBI:0002246,,A pathologic primary tumor stage for kidney according to AJCC 7th edition indicating that the tumor is 4 cm or less.,
+pT1a (lung),OBI:0002236,,A pathologic primary tumor stage for lung according to AJCC 7th edition indicating that the tumor is 2 cm or less in greatest dimension.,
+pT1a (ovary),OBI:0002259,,"A pathologic primary tumor stage for ovary according to AJCC 7th edition indicating that the tumor is limited to one ovary; capsule intact, no tumor on ovarian surface and no malignant cells in ascites or peritoneal washings.",
+pT1b (kidney),OBI:0002247,,A pathologic primary tumor stage for kidney according to AJCC 7th edition indicating that the tumor is more than 4 cm but not more than 7 cm.,
+pT1b (lung),OBI:0002237,,A pathologic primary tumor stage for lung according to AJCC 7th edition indicating that the tumor is more than 2 cm but not more than 3 cm in greatest dimension.,
+pT1b (ovary),OBI:0002260,,"A pathologic primary tumor stage for ovary according to AJCC 7th edition indicating that the tumor is limited to both ovaries; capsule intact, no tumor on ovarian surface and no malignant cells in ascites or peritoneal washings.",
+pT1c (ovary),OBI:0002261,,"A pathologic primary tumor stage for ovary according to AJCC 7th edition indicating that the tumor is limited to one or both ovaries with capsule ruptured, tumor on ovarian surface, or malignant cells in ascites or peritoneal washings.",
+pT2 (colon),OBI:0002228,,A pathologic primary tumor stage for colon and rectum according to AJCC 7th edition indicating that the tumor invades muscularis propria.,
+pT2 (kidney),OBI:0002248,,A pathologic primary tumor stage for kidney according to AJCC 7th edition indicating that the tumor is more than 7 cm in greatest dimension and limited to the kidney.,
+pT2 (lung),OBI:0002238,,"A pathologic primary tumor stage for lung according to AJCC 7th edition indicating that the tumor is more than 3 cm but not more than 7 cm or the tumor has any of the following features: involves main bronchus, 2 cm or more distal to the carina, invades visceral pleura, associated with atelectasis or obstructive pneumonitis that extends to the hilar region but does not involve the entire lung.",
+pT2 (ovary),OBI:0002262,,A pathologic primary tumor stage for ovary according to AJCC 7th edition indicating that the tumor involves one or both ovaries with pelvic extension.,
+pT2a (kidney),OBI:0002249,,A pathologic primary tumor stage for kidney according to AJCC 7th edition indicating that the tumor is more than 7 cm but not more than 10 cm.,
+pT2a (lung),OBI:0002239,,A pathologic primary tumor stage for lung according to AJCC 7th edition indicating that the tumor is more than 3 cm but not more than 5 cm in greatest dimension.,
+pT2a (ovary),OBI:0002263,,A pathologic primary tumor stage for ovary according to AJCC 7th edition indicating that the tumor has extension and/or implants on uterus and/or tube(s) and no malignant cells in ascites or peritoneal washings.,
+pT2b (kidney),OBI:0002250,,A pathologic primary tumor stage for kidney according to AJCC 7th edition indicating that the tumor is more than 10 cm and limited to the kidney.,
+pT2b (lung),OBI:0002240,,A pathologic primary tumor stage for lung according to AJCC 7th edition indicating that the tumor is more than 5 cm but not more than 7 cm in greatest dimension.,
+pT2b (ovary),OBI:0002264,,A pathologic primary tumor stage for ovary according to AJCC 7th edition indicating that the tumor has extension to other pelvic tissues and no malignant cells in ascites or peritoneal washings.,
+pT2c (ovary),OBI:0002265,,A pathologic primary tumor stage for ovary according to AJCC 7th edition indicating that the tumor has pelvic extension with malignant cells in ascites or peritoneal washings.,
+pT3 (colon),OBI:0002229,,A pathologic primary tumor stage for colon and rectum according to AJCC 7th edition indicating that the tumor invades subserosa or into non-peritionealized pericolic or perirectal tissues.,
+pT3 (kidney),OBI:0002251,,A pathologic primary tumor stage for kidney according to AJCC 7th edition indicating that the tumor extends into major veins or perinephric tissues but not into the ipsilateral adrenal gland and not beyond the Gerota fascia.,
+pT3 (lung),OBI:0002241,,"A pathologic primary tumor stage for lung according to AJCC 7th edition indicating that the tumor is more than 7 cm or one that directly invades any of: parietal pleura, chest wall (including superior sulcus tumors), diaphragm, phrenic nerve, mediastinal pleura, parietal pericardiu or the tumor is in the main bronchus less than 2 cm distal to the carina but without  involvement of the carina or there is associated atelectasis or obstructive pneumonitis of the entire lung or there is separate tumor nodule(s) in the same lobe as the primary.",
+pT3 (ovary),OBI:0002266,,A pathologic primary tumor stage for ovary according to AJCC 7th edition indicating that the tumor involves one or both ovaries with microscopically confirmed peritoneal metastasis outside the pelvis and/or regional lymph node metastasis.,
+pT3a (kidney),OBI:0002252,,"A pathologic primary tumor stage for kidney according to AJCC 7th edition indicating that the tumor grossly extends into the renal vein or its segmental (muscle containing) branches, or the tumor invades perirenal and/or renal sinus fat (peripelvic) fat but not beyond Gerota fascia.",
+pT3a (ovary),OBI:0002267,,A pathologic primary tumor stage for ovary according to AJCC 7th edition indicating that the tumor has microscopic peritoneal metastasis beyond pelvis.,
+pT3b (kidney),OBI:0002253,,A pathologic primary tumor stage for kidney according to AJCC 7th edition indicating that the tumor grossly extends into vena cava below diaphragm.,
+pT3b (ovary),OBI:0002268,,"A pathologic primary tumor stage for ovary according to AJCC 7th edition indicating that the tumor has macroscopic peritoneal, metastatasis beyond pelvis, 2 cm or less in greatest dimension.",
+pT3c (kidney),OBI:0002254,,A pathologic primary tumor stage for kidney according to AJCC 7th edition indicating that the tumor grossly extends into vena cava above the diaphragm or Invades the wall of the vena cava.,
+pT3c (ovary),OBI:0002269,,"A pathologic primary tumor stage for ovary according to AJCC 7th edition indicating that the tumor has peritoneal metastasis beyond pelvis, more than 2 cm in greatest dimension and/or regional lymph node metastasis.",
+pT4 (kidney),OBI:0002255,,A pathologic primary tumor stage for kidney according to AJCC 7th edition indicating that the tumor invades beyond Gerota fascia (including contiguous extension into the ipsilateral adrenal gland).,
+pT4 (lung),OBI:0002242,,"A pathologic primary tumor stage for lung according to AJCC 7th edition indicating that the tumor of any size that invades any of the following: mediastinum, heart, great vessels, trachea, recurrent laryngeal nerve, esophagus, vertebral body, carina or there is separate tumor nodule(s) in a different ipsilateral lobe to that of the primary.",
+pT4a (colon),OBI:0002230,,A pathologic primary tumor stage for colon and rectum according to AJCC 7th edition indicating that the tumor perforates visceral peritoneum.,
+pT4b (colon),OBI:0002231,,A pathologic primary tumor stage for colon and rectum according to AJCC 7th edition indicating that the tumor directly invades other organs or structures.,
+pTis (colon),OBI:0002226,,A pathologic primary tumor stage for colon and rectum according to AJCC 7th edition indicating carcinoma in situ (intraepithelial or invasion of lamina propria).,
+pTis (lung),OBI:0002234,,A pathologic primary tumor stage for lung according to AJCC 7th edition indicating carcinoma in situ.,
+partitioning data transformation,OBI:0200171,achieves_planned_objective some 'partitioning objective'|data transformation,A partitioning data transformation is a data transformation that has objective partitioning.,
+partitioning objective,OBI:0200172,data transformation objective,A partitioning objective is a data transformation objective where the aim is to generate a collection of disjoint non-empty subsets whose union equals a non-empty input set.,
+pathologic distant metastases stage for colon according to AJCC 7th edition,OBI:0002290,categorical value specification,A categorical value specification that is a pathologic finding about one or more characteristics of colon cancer following the rules of the TNM AJCC v7 classification system as they pertain to distant metastases. TNM pathologic distant metastasis findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery.,M: colon distant metastases (AJCC 7th Edition)
+pathologic distant metastases stage for kidney according to AJCC 7th edition,OBI:0002306,categorical value specification,A categorical value specification that is a pathologic finding about one or more characteristics of renal cancer following the rules of the TNM AJCC v7 classification system as they pertain to distant metastases. TNM pathologic distant metastasis findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery.,M: kidney distant Metastases (AJCC 7th Edition)
+pathologic distant metastases stage for lung according to AJCC 7th edition,OBI:0002298,categorical value specification,A categorical value specification that is a pathologic finding about one or more characteristics of lung cancer following the rules of the TNM AJCC v7 classification system as they pertain to distant metastases. TNM pathologic distant metastasis findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery.,M: lung distant metastases (AJCC 7th Edition)
+pathologic distant metastases stage for ovary according to AJCC 7th edition,OBI:0002310,categorical value specification,A categorical value specification that is a  pathologic finding about one or more characteristics of ovarian cancer following the rules of the TNM AJCC v7 classification system as they pertain to distant metastases. TNM pathologic distant metastasis findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery.,M: ovarian distant metastases (AJCC 7th Edition)
+pathologic lymph node stage for colon and rectum according to AJCC 7th edition,OBI:0002270,categorical value specification,A categorical value specification that is a pathologic finding about one or more characteristics of colorectal cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of regional lymph nodes.,pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)
+pathologic lymph node stage for kidney according to AJCC 7th edition,OBI:0002284,categorical value specification,A categorical value specification that is a pathologic finding about one or more characteristics of renal cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of regional lymph nodes.,pN: Pathologic spread kidney lymph nodes (AJCC 7th Edition)
+pathologic lymph node stage for lung according to AJCC 7th edition,OBI:0002279,categorical value specification,A categorical value specification that is a pathologic finding about one or more characteristics of lung cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of regional lymph nodes.,pN: Pathologic spread colon lymph nodes (AJCC 7th Edition)
+pathologic lymph node stage for ovary according to AJCC 7th edition,OBI:0002287,categorical value specification,A categorical value specification that is a pathologic finding about one or more characteristics of ovarian cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of regional lymph nodes.,pN: Pathologic spread ovarian lymph nodes (AJCC 7th Edition)
+pathologic primary tumor stage for colon and rectum according to AJCC 7th edition,OBI:0002224,categorical value specification,A categorical value specification that is a pathologic finding about one or more characteristics of colorectal cancer following the rules of the TNM American Joint Committee on Cancer (AJCC) version 7 classification system as they pertain to staging of the primary tumor. TNM pathologic primary tumor findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery.,pT: Pathologic spread colorectal primary tumor (AJCC 7th Edition)
+pathologic primary tumor stage for kidney according to AJCC 7th edition,OBI:0002243,categorical value specification,A categorical value specification that is a pathologic finding about one or more characteristics of renal cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of the primary tumor. TNM pathologic primary tumor findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery.,pT: Pathologic spread kidney primary tumor (AJCC 7th Edition)
+pathologic primary tumor stage for lung according to AJCC 7th edition,OBI:0002232,categorical value specification,A categorical value specification that is a pathologic finding about one or more characteristics of lung cancer following the rules of the TNM American Joint Committee on Cancer (AJCC) version 7 classification system as they pertain to staging of the primary tumor. TNM pathologic primary tumor findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery.,pT: Pathologic spread lung primary tumor (AJCC 7th Edition)
+pathologic primary tumor stage for ovary according to AJCC 7th edition,OBI:0002256,categorical value specification,A categorical value specification that is a pathologic finding about one or more characteristics of ovarian cancer following the rules of the TNM AJCC v7 classification system as they pertain to staging of the primary tumor. TNM pathologic primary tumor findings are based on clinical findings supplemented by histopathologic examination of one or more tissue specimens acquired during surgery.,pT: Pathologic spread ovarian primary tumor (AJCC 7th Edition)
+pds_Collection_with_Type_Data,obo:SDDO_1000008,PDS data Product,,
+pds_Data_Set_PDS3,obo:SDDO_/SDDO_1000001,PDS data Product,A data Product from the PDS system.,
+peak matching,OBI:0000726,data transformation,Peak matching is a data transformation performed on a dataset of a graph of ordered data points (e.g. a spectrum) with the objective of pattern matching local maxima above a noise threshold,
+pending final vetting,IAO:0000125,,"All definitions, placement in the asserted IS_A hierarchy and required minimal metadata are complete. The class is awaiting a final review by someone other than the term editor.",
+performance status value specification,OBI:0002356,categorical value specification,A categorical value specification that is an assessment of a participant's performance status (general well-being and activities of daily life).,Performance Status Scale
+person,obo:SDDO_3000090,hasRole some author|hasRole some organism,,
+phenomenon,obo:SDDO_3000099,consistOf some event|consistOf some feature,,
+photoGallery,obo:SDDO_3000101,,,
+picogram,UO:0000025,,A mass unit which is equal to 10^[-12] g.,pg
+picoliter,UO:0000103,,A volume unit which is equal to 10^[-12] L.,pl
+picomolar,UO:0000066,,A unit of molarity which is equal to 10^[-12] M.,pM
+picomole,UO:0000042,,A substance unit equal to 10^[-12] mol.,pmol
+placeholder removed,IAO:0000226,,,
+plan specification,IAO:0000104,'has part' some 'action specification'|'has part' some 'objective specification'|directive information entity,"A directive information entity with action specifications and objective specifications as parts that, when concretized, is realized in a process in which the bearer tries to achieve the objectives by taking the actions specified.",
+planned process,OBI:0000011,process|realizes some (concretizes some 'plan specification'),A process that realizes a plan which is the concretization of a plan specification.,
+planning,OBI:0000339,process and ('has participant' some 'plan specification'),a process of creating or modifying a plan specification,
+platform,obo:SDDO_3000060,Platform|role,A platform in the context of NASA's SMD catalog,
+platformDiscoveryCriterion,obo:SDDO_3000115,dataDiscoveryCriterion,,
+principal components analysis dimensionality reduction,OBI:0200051,dimensionality reduction,A principal components analysis dimensionality reduction is a dimensionality reduction achieved by applying principal components analysis and by keeping low-order principal components and excluding higher-order ones.,pca data reduction
+process,BFO:0000015,occurrent,"An occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t.|p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])",
+processed material,OBI:0000047,is_specified_output_of some 'material processing'|material entity,Is a material entity that is created or changed during material processing.,
+processed specimen,OBI:0000953,processed material|specimen,A specimen that has been intentionally physically modified.,
+productService,obo:SDDO_3000066,,,
+program,obo:SDDO_3000107,relatedTo some NASAMission,,
+project,obo:SDDO_3000043,resultsIn some productService|uses some platform,,
+protocol,OBI:0000272,plan specification,"A plan specification which has sufficient level of detail and quantitative information to communicate it between investigation agents, so that different investigation agents will reliably be able to independently reproduce the process.",
+quality,BFO:0000019,specifically dependent continuant,,
+questionnaire,OBI:0001000,document,"A document with a set of printed or written questions with a choice of answers, devised for the purposes of a survey or statistical study.",
+rate unit,UO:0000280,measurement unit label,,
+ready for release,IAO:0000122,,"Class has undergone final review, is ready for use, and will be included in the next release. Any class lacking ""ready_for_release"" should be considered likely to change place in hierarchy, have its definition refined, or be obsoleted in the next release.  Those classes deemed ""ready_for_release"" will also derived from a chain of ancestor classes that are also ""ready_for_release.""",
+realizable entity,BFO:0000017,specifically dependent continuant,"A specifically dependent continuant  that inheres in continuant  entities and are not exhibited in full at every time in which it inheres in an entity or group of entities. The exhibition or actualization of a realizable entity is a particular manifestation, functioning or process that occurs under certain circumstances.",
+regulator role,OBI:0000014,regulatory role,a regulatory role involved with making and/or enforcing relevant legislation and governmental orders,regulator
+regulatory agency,OBI:0000450,'has role' some 'regulator role'|organization,A regulatory agency is a organization that has responsibility over or for  the legislation (acts and regulations) for a given sector of the government.,
+regulatory role,OBI:0000017,role,"a role which inheres in material entities and is realized in the processes of making, enforcing or being defined by legislation or orders issued by a governmental body.",
+requires discussion,IAO:0000428,,"A term that is metadata complete, has been reviewed, and problems have been identified that require discussion before release. Such a term requires editor note(s) to identify the outstanding issues.",
+researchInvestigation,obo:SDDO_3000077,sameAs some researchStudy,,
+researchStudy,obo:SDDO_3000063,,,
+right handed,OBI:0000958,,,
+role,BFO:0000023,realizable entity,"A realizable entity  the manifestation of which brings about some result or end that is not essential to a continuant  in virtue of the kind of thing that it is but that can be served or participated in by that kind of continuant  in some kinds of natural, social or institutional contexts.",
+sampleDiscoveryCriterion,obo:SDDO_3000111,dataDiscoveryCriterion,,
+scatter plot,IAO:0000184,graph,"A scatterplot is a graph which uses Cartesian coordinates to display values for two variables for a set of data. The data is displayed as a collection of points, each having the value of one variable determining the position on the horizontal axis and the value of the other variable determining the position on the vertical axis.",scattergraph
+second,UO:0000010,,A time unit which is equal to the duration of 9 192 631 770 periods of the radiation corresponding to the transition between the two hyperfine levels of the ground state of the caesium 133 atom.,s|sec
+selectionParameter,obo:SDDO_3000050,,,
+service provider role,OBI:0000947,'inheres in' some ('Homo sapiens' or organization)|'realized in' only 'planned process'|role,"is a role which inheres in a person or organization and is realized in in a planned process which provides access to training, materials or execution of protocols for an organization or person",
+software,IAO:0000010,plan specification,"Software is a plan specification composed of a series of instructions that can be 
+interpreted by or directly executed by a processing unit.",
+software,obo:SDDO_3000084,,,
+software development,APOLLO_SV:00000008,has_specified_output some (software or 'source code module')|planned process,A planned process that has specified output a software product and that involves the creation of source code.,
+source code module,IAO:0000096,directive information entity,"A source code module is a directive information entity that specifies, using a programming language, some algorithm.",
+spaceAgency,obo:SDDO_3000059,,,
+spaceTimeBoundingDiscoveryCriterion,obo:SDDO_3000097,dataDiscoveryCriterion,,
+spase:Catalog,obo:SDDO_/SDDO_1000003,data Product,"A tabular listing of events or observational notes, especially those that have utility in aiding a user in locating data.",
+spase:DisplayData,obo:SDDO_/SDDO_1000002,data Product,A graphical representation of data wherein the underlying numeric values are not (readily) accessible for analysis.,
+spase:NumericalData,obo:SDDO_/SDDO_1000004,data Product,Data stored as numerical values in one or more specified formats.,
+spatial region,BFO:0000006,immaterial entity,,
+specifically dependent continuant,BFO:0000020,continuant,"A continuant that inheres in or is borne by other entities. Every instance of A requires some specific instance of B which must always be the same.|b is a relational specifically dependent continuant = Def. b is a specifically dependent continuant and there are n &gt; 1 independent continuants c1, … cn which are not spatial regions are such that for all 1  i &lt; j  n, ci  and cj share no common parts, are such that for each 1  i  n, b s-depends_on ci at every time t during the course of b’s existence (axiom label in BFO2 Reference: [131-004])|b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])",
+specimen,obo:SDDO_3000078,specimen|usedIn some assay,"A part of a feature, taken to demonstrate or to determine the character of the whole.",
+specimen,OBI:0100051,'has role' some 'specimen role'|material entity,A material entity that has the specimen role.,
+specimen collection objective,OBI:0000684,objective specification,A objective specification to obtain a material entity for potential use as an input during an investigation.,
+specimen collection process,OBI:0000659,achieves_planned_objective some 'specimen collection objective'|has_specified_input some 'material entity'|has_specified_output some specimen|planned process,A planned process with the objective of collecting a specimen.,specimen collection
+specimen from organism,OBI:0001479,'derives from' some ('material anatomical entity' or 'anatomical cluster')|specimen,"A specimen that derives from an anatomical part or substance arising from an organism. Examples of tissue specimen include tissue, organ, physiological system, blood, or body location (arm).",tissue specimen
+specimen role,OBI:0000112,'inheres in' some ('material entity' and (is_specified_output_of some 'specimen collection process'))|role,a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation,
+statistical model validation,OBI:0000792,achieves_planned_objective some 'cross validation objective'|partitioning data transformation,A data transformation which assesses how the results of a statistical analysis will generalize to an independent data set.,
+study,obo:SDDO_3000069,data Product,A data product from the GeneLab repository,
+study design,OBI:0500000,'has part' some protocol|plan specification,A plan specification comprised of protocols (which may specify how and what kinds of data will be gathered) that are executed as part of an investigation and is realized during a study design execution.,experimental design
+study design execution,OBI:0000471,planned process|realizes some (concretizes some 'study design'),a planned process that carries out a study design,
+substance unit,UO:0000006,measurement unit label,,
+support vector machine,OBI:0000700,achieves_planned_objective some 'class prediction objective'|class prediction data transformation,A support vector machine is a data transformation with a class prediction objective based on the construction of a separating hyperplane that maximizes the margin between two data sets of vectors in n-dimensional space.,SVM
+tar,OBI:0000326,,"tar is a format standard of a digital entity that is conformant with the tape archive file format as standardized by POSIX.1-1998, POSIX.1-2001, or any other tar format compliant with the GNU tar specification. (http://www.gnu.org/software/tar/manual/)",
+temperature unit,UO:0000005,measurement unit label,,
+term imported,IAO:0000228,,,
+term split,IAO:0000229,,,
+terms merged,IAO:0000227,,,
+time unit,UO:0000003,measurement unit label,A unit which is a standard measure of the dimension in which events occur in sequence.,
+to be replaced with external ontology term,IAO:0000423,,Terms with this status should eventually replaced with a term from another ontology.,
+toolDiscoveryCriterion,obo:SDDO_3000046,discoveryCriterion,,
+uncurated,IAO:0000124,,Nothing done yet beyond assigning a unique class ID and proposing a preferred term.,
+universal,IAO:0000410,,,
+value specification,OBI:0001933,information content entity,An information content entity that specifies a value within a classification scheme or on a quantitative scale.,
+volume percentage,UO:0000165,,A dimensionless concentration unit which denotes the volume of the solute in mL per 100 mL of the resulting solution.,% v/v|percent vol per vol
+volume unit,UO:0000095,measurement unit label,,
+volumetric flow rate unit,UO:0000270,measurement unit label,,
+week,UO:0000034,,A time unit which is equal to 7 days.,
+year,UO:0000036,,A time unit which is equal to 12 months which is science is taken to be equal to 365.25 days.,
+zip,OBI:0000325,,zip is a format standard of a digital entity that is conformant with the PKWARE .ZIP file format specification  (http://www.pkware.com/index.php?option=com_content&task=view&id=59&Itemid=103/),
+,http://purl.org/vocommons/voaf#Vocabulary,,,
+,foaf:Agent,,,
+,http://www.w3.org/ns/sosa/,,,
