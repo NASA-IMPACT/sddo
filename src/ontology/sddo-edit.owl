@@ -18,10 +18,10 @@
     <Prefix name="skos" IRI="http://www.w3.org/2004/02/skos/core#"/>
     <Prefix name="terms" IRI="http://purl.org/dc/terms/"/>
     <Prefix name="oboInOwl" IRI="http://www.geneontology.org/formats/oboInOwl#"/>
-    <Import>http://purl.obolibrary.org/obo/ro/core.owl</Import>
     <Import>http://purl.obolibrary.org/obo/sddo/components/all_templates.owl</Import>
     <Import>http://purl.obolibrary.org/obo/sddo/imports/obi_import.owl</Import>
     <Import>http://purl.obolibrary.org/obo/sddo/imports/sosa_import.owl</Import>
+    <Import>http://purl.obolibrary.org/obo/sddo/releases/2022-04-06/imports/ro_import.owl</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:description"/>
         <Literal>The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA&apos;s Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science.</Literal>
@@ -230,16 +230,16 @@
         <Class abbreviatedIRI="obo:SDDO_3000115"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SDDO_1000001"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SDDO_1000002"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SDDO_1000003"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SDDO_1000004"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://www.w3.org/ns/sosa/Observation"/>
@@ -897,19 +897,19 @@
         <Class abbreviatedIRI="obo:SDDO_3000074"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SDDO_1000001"/>
         <Class abbreviatedIRI="obo:SDDO_1000007"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SDDO_1000002"/>
         <Class abbreviatedIRI="obo:SDDO_3000051"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SDDO_1000003"/>
         <Class abbreviatedIRI="obo:SDDO_3000051"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004"/>
+        <Class IRI="http://purl.obolibrary.org/obo/SDDO_1000004"/>
         <Class abbreviatedIRI="obo:SDDO_3000051"/>
     </SubClassOf>
     <AnnotationAssertion>
@@ -1833,22 +1833,22 @@
             <IRI>https://orcid.org/0000-0003-4808-4736</IRI>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001</IRI>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_1000001</IRI>
         <Literal>A data Product from the PDS system.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001</IRI>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_1000001</IRI>
         <Literal>PDS data is tricky as while PDS3 has the concept of a data set; PDS4 doesn&apos;t really.  You have to find Collections that have a collection_type of data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000001</IRI>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_1000001</IRI>
         <Literal xml:lang="en">pds_Data_Set_PDS3</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002</IRI>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_1000002</IRI>
         <Literal>Examples are line plots and spectrograms.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1857,17 +1857,17 @@
             <IRI>https://doi.org/10.48322/E72C-5Y75</IRI>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002</IRI>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_1000002</IRI>
         <Literal>A graphical representation of data wherein the underlying numeric values are not (readily) accessible for analysis.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000002</IRI>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_1000002</IRI>
         <Literal xml:lang="en">spase:DisplayData</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003</IRI>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_1000003</IRI>
         <Literal>Catalogs include lists of events, files in a product, and data availability.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1876,12 +1876,12 @@
             <IRI>https://doi.org/10.48322/E72C-5Y75</IRI>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003</IRI>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_1000003</IRI>
         <Literal>A tabular listing of events or observational notes, especially those that have utility in aiding a user in locating data.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000003</IRI>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_1000003</IRI>
         <Literal xml:lang="en">spase:Catalog</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -1890,42 +1890,42 @@
             <IRI>https://doi.org/10.48322/E72C-5Y75</IRI>
         </Annotation>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004</IRI>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_1000004</IRI>
         <Literal>Data stored as numerical values in one or more specified formats.</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_/SDDO_1000004</IRI>
+        <IRI>http://purl.obolibrary.org/obo/SDDO_1000004</IRI>
         <Literal xml:lang="en">spase:NumericalData</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#AnnotationProperty"/>
-        <AnonymousIndividual nodeID="_:genid2147483948"/>
+        <AnonymousIndividual nodeID="_:genid2147483992"/>
         <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#Literal"/>
-        <AnonymousIndividual nodeID="_:genid2147483948"/>
+        <AnonymousIndividual nodeID="_:genid2147483992"/>
         <Literal>None</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#AnnotationProperty"/>
-        <AnonymousIndividual nodeID="_:genid2147483949"/>
+        <AnonymousIndividual nodeID="_:genid2147483993"/>
         <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#Literal"/>
-        <AnonymousIndividual nodeID="_:genid2147483949"/>
+        <AnonymousIndividual nodeID="_:genid2147483993"/>
         <Literal>Science Data Discovery Ontology</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#AnnotationProperty"/>
-        <AnonymousIndividual nodeID="_:genid2147483950"/>
+        <AnonymousIndividual nodeID="_:genid2147483994"/>
         <Literal></Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#IRI"/>
-        <AnonymousIndividual nodeID="_:genid2147483950"/>
+        <AnonymousIndividual nodeID="_:genid2147483994"/>
         <Literal>https://creativecommons.org/licenses/unspecified</Literal>
     </AnnotationAssertion>
 </Ontology>
