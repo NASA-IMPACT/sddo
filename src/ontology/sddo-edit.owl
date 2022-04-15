@@ -30,35 +30,23 @@ Declaration(Class(obo:SDDO_1000008))
 Declaration(Class(obo:SDDO_3000043))
 Declaration(Class(obo:SDDO_3000044))
 Declaration(Class(obo:SDDO_3000045))
-Declaration(Class(obo:SDDO_3000046))
 Declaration(Class(obo:SDDO_3000047))
-Declaration(Class(obo:SDDO_3000050))
 Declaration(Class(obo:SDDO_3000051))
 Declaration(Class(obo:SDDO_3000054))
 Declaration(Class(obo:SDDO_3000056))
-Declaration(Class(obo:SDDO_3000057))
-Declaration(Class(obo:SDDO_3000058))
 Declaration(Class(obo:SDDO_3000059))
 Declaration(Class(obo:SDDO_3000060))
-Declaration(Class(obo:SDDO_3000061))
-Declaration(Class(obo:SDDO_3000062))
 Declaration(Class(obo:SDDO_3000063))
-Declaration(Class(obo:SDDO_3000064))
 Declaration(Class(obo:SDDO_3000065))
 Declaration(Class(obo:SDDO_3000066))
 Declaration(Class(obo:SDDO_3000069))
 Declaration(Class(obo:SDDO_3000071))
-Declaration(Class(obo:SDDO_3000072))
-Declaration(Class(obo:SDDO_3000073))
-Declaration(Class(obo:SDDO_3000074))
 Declaration(Class(obo:SDDO_3000075))
-Declaration(Class(obo:SDDO_3000076))
 Declaration(Class(obo:SDDO_3000077))
 Declaration(Class(obo:SDDO_3000078))
 Declaration(Class(obo:SDDO_3000079))
 Declaration(Class(obo:SDDO_3000080))
 Declaration(Class(obo:SDDO_3000081))
-Declaration(Class(obo:SDDO_3000082))
 Declaration(Class(obo:SDDO_3000084))
 Declaration(Class(obo:SDDO_3000086))
 Declaration(Class(obo:SDDO_3000087))
@@ -67,28 +55,19 @@ Declaration(Class(obo:SDDO_3000089))
 Declaration(Class(obo:SDDO_3000090))
 Declaration(Class(obo:SDDO_3000091))
 Declaration(Class(obo:SDDO_3000092))
-Declaration(Class(obo:SDDO_3000093))
 Declaration(Class(obo:SDDO_3000094))
 Declaration(Class(obo:SDDO_3000095))
 Declaration(Class(obo:SDDO_3000096))
-Declaration(Class(obo:SDDO_3000097))
 Declaration(Class(obo:SDDO_3000098))
 Declaration(Class(obo:SDDO_3000099))
 Declaration(Class(obo:SDDO_3000100))
 Declaration(Class(obo:SDDO_3000101))
-Declaration(Class(obo:SDDO_3000102))
 Declaration(Class(obo:SDDO_3000103))
-Declaration(Class(obo:SDDO_3000104))
 Declaration(Class(obo:SDDO_3000105))
-Declaration(Class(obo:SDDO_3000106))
 Declaration(Class(obo:SDDO_3000107))
-Declaration(Class(obo:SDDO_3000108))
 Declaration(Class(obo:SDDO_3000109))
 Declaration(Class(obo:SDDO_3000110))
-Declaration(Class(obo:SDDO_3000111))
 Declaration(Class(obo:SDDO_3000113))
-Declaration(Class(obo:SDDO_3000114))
-Declaration(Class(obo:SDDO_3000115))
 Declaration(Class(<http://www.w3.org/ns/sosa/Observation>))
 Declaration(ObjectProperty(obo:SDDO_3000001))
 Declaration(ObjectProperty(obo:SDDO_3000004))
@@ -325,11 +304,6 @@ AnnotationAssertion(rdfs:label obo:SDDO_3000045 "campaign"@en)
 SubClassOf(obo:SDDO_3000045 ObjectSomeValuesFrom(obo:SDDO_3000009 obo:SDDO_3000060))
 SubClassOf(obo:SDDO_3000045 ObjectSomeValuesFrom(obo:SDDO_3000020 obo:SDDO_3000066))
 
-# Class: obo:SDDO_3000046 (toolDiscoveryCriterion)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000046 "toolDiscoveryCriterion"@en)
-SubClassOf(obo:SDDO_3000046 obo:SDDO_3000062)
-
 # Class: obo:SDDO_3000047 (assay)
 
 AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000047 "An assay is an investigative (analytic) procedure for qualitatively assessing or quantitatively measuring the presence, amount, or functional activity of a target entity.")
@@ -337,10 +311,6 @@ AnnotationAssertion(rdfs:label obo:SDDO_3000047 "assay"@en)
 SubClassOf(obo:SDDO_3000047 ObjectSomeValuesFrom(obo:SDDO_3000017 obo:SDDO_3000089))
 SubClassOf(obo:SDDO_3000047 ObjectSomeValuesFrom(obo:SDDO_3000024 obo:SDDO_3000096))
 SubClassOf(obo:SDDO_3000047 ObjectSomeValuesFrom(obo:SDDO_3000026 obo:SDDO_3000044))
-
-# Class: obo:SDDO_3000050 (selectionParameter)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000050 "selectionParameter"@en)
 
 # Class: obo:SDDO_3000051 (data Product)
 
@@ -365,16 +335,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000056 "An originator or creator o
 AnnotationAssertion(obo:IAO_0000117 obo:SDDO_3000056 <https://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(rdfs:label obo:SDDO_3000056 "author"@en)
 
-# Class: obo:SDDO_3000057 (instrumentDiscoveryCriterion)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000057 "instrumentDiscoveryCriterion"@en)
-SubClassOf(obo:SDDO_3000057 obo:SDDO_3000074)
-
-# Class: obo:SDDO_3000058 (instrumentOperatingModeDiscoveryCriterion)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000058 "instrumentOperatingModeDiscoveryCriterion"@en)
-SubClassOf(obo:SDDO_3000058 obo:SDDO_3000074)
-
 # Class: obo:SDDO_3000059 (spaceAgency)
 
 AnnotationAssertion(rdfs:label obo:SDDO_3000059 "spaceAgency"@en)
@@ -387,23 +347,9 @@ AnnotationAssertion(rdfs:label obo:SDDO_3000060 "platform"@en)
 SubClassOf(obo:SDDO_3000060 obo:BFO_0000023)
 SubClassOf(obo:SDDO_3000060 <http://www.w3.org/ns/sosa/Platform>)
 
-# Class: obo:SDDO_3000061 (applicationDiscoveryCriterion)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000061 "applicationDiscoveryCriterion"@en)
-SubClassOf(obo:SDDO_3000061 obo:SDDO_3000062)
-
-# Class: obo:SDDO_3000062 (discoveryCriterion)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000062 "discoveryCriterion"@en)
-
 # Class: obo:SDDO_3000063 (researchStudy)
 
 AnnotationAssertion(rdfs:label obo:SDDO_3000063 "researchStudy"@en)
-
-# Class: obo:SDDO_3000064 (dataProductDiscoveryCriterion)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000064 "dataProductDiscoveryCriterion"@en)
-SubClassOf(obo:SDDO_3000064 obo:SDDO_3000074)
 
 # Class: obo:SDDO_3000065 (organism)
 
@@ -439,34 +385,13 @@ SubClassOf(obo:SDDO_3000071 obo:BFO_0000023)
 SubClassOf(obo:SDDO_3000071 ObjectSomeValuesFrom(obo:RO_0000081 owl:Thing))
 SubClassOf(obo:SDDO_3000071 ObjectSomeValuesFrom(obo:SDDO_3000007 obo:SDDO_3000100))
 
-# Class: obo:SDDO_3000072 (modelDiscoveryCriterion)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000072 "modelDiscoveryCriterion"@en)
-SubClassOf(obo:SDDO_3000072 obo:SDDO_3000062)
-
-# Class: obo:SDDO_3000073 (dataSelectionParameter)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000073 "dataSelectionParameter"@en)
-SubClassOf(obo:SDDO_3000073 obo:SDDO_3000050)
-
-# Class: obo:SDDO_3000074 (dataDiscoveryCriterion)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000074 "dataDiscoveryCriterion"@en)
-SubClassOf(obo:SDDO_3000074 obo:SDDO_3000062)
-
 # Class: obo:SDDO_3000075 (accessInterface)
 
 AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000075 "A software interface that 1) presents users with selection criteria and 2) presents products or services that meet the criteria the user then selects.")
 AnnotationAssertion(obo:IAO_0000117 obo:SDDO_3000075 <https://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(obo:IAO_0000119 obo:SDDO_3000075 <https://cmapscloud.ihmc.us:443/rid=1XX21YCGT-24LYD72-V8Y/SMD_ConceptualIMVersion1-20220324.cmap>)
 AnnotationAssertion(rdfs:label obo:SDDO_3000075 "accessInterface"@en)
-SubClassOf(obo:SDDO_3000075 ObjectSomeValuesFrom(obo:SDDO_3000029 obo:SDDO_3000050))
 SubClassOf(obo:SDDO_3000075 ObjectSomeValuesFrom(obo:SDDO_3000029 obo:SDDO_3000066))
-
-# Class: obo:SDDO_3000076 (informationDiscoveryCriterion)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000076 "informationDiscoveryCriterion"@en)
-SubClassOf(obo:SDDO_3000076 obo:SDDO_3000062)
 
 # Class: obo:SDDO_3000077 (researchInvestigation)
 
@@ -502,11 +427,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000081 "The realisation of an appl
 AnnotationAssertion(obo:IAO_0000119 obo:SDDO_3000081 <https://en.wikipedia.org/wiki/Deployment_management>)
 AnnotationAssertion(rdfs:label obo:SDDO_3000081 "deployment"@en)
 SubClassOf(obo:SDDO_3000081 ObjectSomeValuesFrom(obo:SDDO_3000042 obo:SDDO_3000088))
-
-# Class: obo:SDDO_3000082 (informationSelectionParameter)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000082 "informationSelectionParameter"@en)
-SubClassOf(obo:SDDO_3000082 obo:SDDO_3000050)
 
 # Class: obo:SDDO_3000084 (software)
 
@@ -565,11 +485,6 @@ SubClassOf(obo:SDDO_3000092 obo:BFO_0000040)
 SubClassOf(obo:SDDO_3000092 <http://www.w3.org/ns/sosa/Sensor>)
 SubClassOf(obo:SDDO_3000092 ObjectSomeValuesFrom(obo:SDDO_3000039 obo:SDDO_3000060))
 
-# Class: obo:SDDO_3000093 (missionDiscoveryCriterion)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000093 "missionDiscoveryCriterion"@en)
-SubClassOf(obo:SDDO_3000093 obo:SDDO_3000074)
-
 # Class: obo:SDDO_3000094 (experiment)
 
 AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000094 "A plan for a coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing.")
@@ -601,15 +516,6 @@ SubClassOf(obo:SDDO_3000096 obo:BFO_0000040)
 SubClassOf(obo:SDDO_3000096 ObjectSomeValuesFrom(obo:SDDO_3000035 ObjectUnionOf(obo:SDDO_3000094 obo:SDDO_3000100)))
 SubClassOf(obo:SDDO_3000096 ObjectSomeValuesFrom(obo:SDDO_3000041 ObjectUnionOf(obo:SDDO_3000094 obo:SDDO_3000100)))
 
-# Class: obo:SDDO_3000097 (spaceTimeBoundingDiscoveryCriterion)
-
-AnnotationAssertion(oboInOwl:created_by obo:SDDO_3000097 "Rduerr")
-AnnotationAssertion(oboInOwl:creation_date obo:SDDO_3000097 "2021-12-02T22:57:22.551595Z")
-AnnotationAssertion(oboInOwl:creation_date obo:SDDO_3000097 "2021-12-02T22:58:11.536811Z")
-AnnotationAssertion(oboInOwl:creation_date obo:SDDO_3000097 "2021-12-02T22:58:56.536404Z")
-AnnotationAssertion(rdfs:label obo:SDDO_3000097 "spaceTimeBoundingDiscoveryCriterion"@en)
-SubClassOf(obo:SDDO_3000097 obo:SDDO_3000074)
-
 # Class: obo:SDDO_3000098 (facility)
 
 AnnotationAssertion(rdfs:label obo:SDDO_3000098 "facility"@en)
@@ -631,19 +537,6 @@ SubClassOf(obo:SDDO_3000100 <http://www.w3.org/ns/sosa/Observation>)
 
 AnnotationAssertion(rdfs:label obo:SDDO_3000101 "photoGallery"@en)
 
-# Class: obo:SDDO_3000102 (discoveryInterface)
-
-AnnotationAssertion(Annotation(obo:IAO_0000119 <https://coggle.it/diagram/YFkAQ4_Z_IuZWoVl/t/smd-team-terminology>) Annotation(obo:IAO_0000119 "SMD Catalog Team") obo:IAO_0000115 obo:SDDO_3000102 "An interface that allows the user to discover the existence of relevant products and services.")
-AnnotationAssertion(obo:IAO_0000116 obo:SDDO_3000102 "This should be a child of SWO_9000050 (software interface).  Need to understand the conflicts between SWO and OBI before that can happen.")
-AnnotationAssertion(rdfs:label obo:SDDO_3000102 "discoveryInterface"@en)
-SubClassOf(obo:SDDO_3000102 ObjectSomeValuesFrom(obo:SDDO_3000019 obo:SDDO_3000075))
-SubClassOf(obo:SDDO_3000102 ObjectSomeValuesFrom(obo:SDDO_3000029 obo:SDDO_3000062))
-SubClassOf(obo:SDDO_3000102 ObjectSomeValuesFrom(obo:SDDO_3000033 obo:SDDO_3000046))
-SubClassOf(obo:SDDO_3000102 ObjectSomeValuesFrom(obo:SDDO_3000033 obo:SDDO_3000061))
-SubClassOf(obo:SDDO_3000102 ObjectSomeValuesFrom(obo:SDDO_3000033 obo:SDDO_3000072))
-SubClassOf(obo:SDDO_3000102 ObjectSomeValuesFrom(obo:SDDO_3000033 obo:SDDO_3000074))
-SubClassOf(obo:SDDO_3000102 ObjectSomeValuesFrom(obo:SDDO_3000033 obo:SDDO_3000076))
-
 # Class: obo:SDDO_3000103 (organization)
 
 AnnotationAssertion(rdfs:label obo:SDDO_3000103 "organization"@en)
@@ -652,31 +545,16 @@ SubClassOf(obo:SDDO_3000103 ObjectSomeValuesFrom(obo:SDDO_3000034 obo:SDDO_30000
 SubClassOf(obo:SDDO_3000103 ObjectSomeValuesFrom(obo:SDDO_3000034 obo:SDDO_3000086))
 SubClassOf(obo:SDDO_3000103 ObjectSomeValuesFrom(obo:SDDO_3000034 obo:SDDO_3000105))
 
-# Class: obo:SDDO_3000104 (experimentDiscoveryCriterion)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000104 "experimentDiscoveryCriterion"@en)
-SubClassOf(obo:SDDO_3000104 obo:SDDO_3000074)
-
 # Class: obo:SDDO_3000105 (investigator)
 
 AnnotationAssertion(oboInOwl:created_by obo:SDDO_3000105 "Rduerr")
 AnnotationAssertion(oboInOwl:creation_date obo:SDDO_3000105 "2021-11-30T19:43:39.350414Z")
 AnnotationAssertion(rdfs:label obo:SDDO_3000105 "investigator"@en)
 
-# Class: obo:SDDO_3000106 (OperationDiscoveryCriterion)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000106 "OperationDiscoveryCriterion"@en)
-SubClassOf(obo:SDDO_3000106 obo:SDDO_3000074)
-
 # Class: obo:SDDO_3000107 (program)
 
 AnnotationAssertion(rdfs:label obo:SDDO_3000107 "program"@en)
 SubClassOf(obo:SDDO_3000107 ObjectSomeValuesFrom(obo:SDDO_3000014 obo:SDDO_3000091))
-
-# Class: obo:SDDO_3000108 (locationDiscoveryCriterion)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000108 "locationDiscoveryCriterion"@en)
-SubClassOf(obo:SDDO_3000108 obo:SDDO_3000074)
 
 # Class: obo:SDDO_3000109 (document)
 
@@ -694,11 +572,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000110 "A data element is any char
 AnnotationAssertion(rdfs:label obo:SDDO_3000110 "data element")
 SubClassOf(obo:SDDO_3000110 ObjectSomeValuesFrom(obo:SDDO_3000031 obo:SDDO_3000100))
 
-# Class: obo:SDDO_3000111 (sampleDiscoveryCriterion)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000111 "sampleDiscoveryCriterion"@en)
-SubClassOf(obo:SDDO_3000111 obo:SDDO_3000074)
-
 # Class: obo:SDDO_3000113 (firmware)
 
 AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000113 "Software that provides the low-level control for a device's specific hardware.")
@@ -707,16 +580,6 @@ AnnotationAssertion(obo:IAO_0000119 obo:SDDO_3000113 <https://en.wikipedia.org/w
 AnnotationAssertion(rdfs:label obo:SDDO_3000113 "firmware"@en)
 SubClassOf(obo:SDDO_3000113 obo:IAO_0000010)
 SubClassOf(obo:SDDO_3000113 ObjectSomeValuesFrom(obo:BFO_0000050 obo:SDDO_3000054))
-
-# Class: obo:SDDO_3000114 (observableDiscoveryCriterion)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000114 "observableDiscoveryCriterion"@en)
-SubClassOf(obo:SDDO_3000114 obo:SDDO_3000074)
-
-# Class: obo:SDDO_3000115 (platformDiscoveryCriterion)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000115 "platformDiscoveryCriterion"@en)
-SubClassOf(obo:SDDO_3000115 obo:SDDO_3000074)
 
 
 AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#AnnotationProperty> _:genid2147483992 "")
