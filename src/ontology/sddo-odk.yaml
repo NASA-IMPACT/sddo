@@ -25,7 +25,7 @@ import_group:
       slme_individuals: exclude
     - id: obi
     - id: swo
-       module_type: filter
+      module_type: filter
 robot_java_args: '-Xmx6G'
 create_obo_metadata: FALSE
 components:
