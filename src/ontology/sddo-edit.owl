@@ -35,6 +35,18 @@
         <IRI>http://creativecommons.org/licenses/by/3.0/</IRI>
     </Annotation>
     <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_1000001"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_1000002"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_1000003"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="obo:SDDO_1000004"/>
+    </Declaration>
+    <Declaration>
         <Class abbreviatedIRI="obo:SDDO_1000007"/>
     </Declaration>
     <Declaration>
@@ -60,9 +72,6 @@
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:SDDO_3000051"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="obo:SDDO_3000053"/>
     </Declaration>
     <Declaration>
         <Class abbreviatedIRI="obo:SDDO_3000054"/>
@@ -230,18 +239,6 @@
         <Class abbreviatedIRI="obo:SDDO_3000115"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/SDDO_1000001"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/SDDO_1000002"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/SDDO_1000003"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://purl.obolibrary.org/obo/SDDO_1000004"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://www.w3.org/ns/sosa/Observation"/>
     </Declaration>
     <Declaration>
@@ -361,6 +358,22 @@
     <Declaration>
         <AnnotationProperty abbreviatedIRI="skos:example"/>
     </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_1000001"/>
+        <Class abbreviatedIRI="obo:SDDO_1000007"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_1000002"/>
+        <Class abbreviatedIRI="obo:SDDO_3000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_1000003"/>
+        <Class abbreviatedIRI="obo:SDDO_3000051"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="obo:SDDO_1000004"/>
+        <Class abbreviatedIRI="obo:SDDO_3000051"/>
+    </SubClassOf>
     <SubClassOf>
         <Class abbreviatedIRI="obo:SDDO_1000007"/>
         <Class abbreviatedIRI="obo:SDDO_3000051"/>
@@ -896,22 +909,77 @@
         <Class abbreviatedIRI="obo:SDDO_3000115"/>
         <Class abbreviatedIRI="obo:SDDO_3000074"/>
     </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/SDDO_1000001"/>
-        <Class abbreviatedIRI="obo:SDDO_1000007"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/SDDO_1000002"/>
-        <Class abbreviatedIRI="obo:SDDO_3000051"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/SDDO_1000003"/>
-        <Class abbreviatedIRI="obo:SDDO_3000051"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://purl.obolibrary.org/obo/SDDO_1000004"/>
-        <Class abbreviatedIRI="obo:SDDO_3000051"/>
-    </SubClassOf>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+            <IRI>https://orcid.org/0000-0003-4808-4736</IRI>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_1000001</AbbreviatedIRI>
+        <Literal>A data Product from the PDS system.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>obo:SDDO_1000001</AbbreviatedIRI>
+        <Literal>PDS data is tricky as while PDS3 has the concept of a data set; PDS4 doesn&apos;t really.  You have to find Collections that have a collection_type of data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_1000001</AbbreviatedIRI>
+        <Literal xml:lang="en">pds_Data_Set_PDS3</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
+        <AbbreviatedIRI>obo:SDDO_1000002</AbbreviatedIRI>
+        <Literal>Examples are line plots and spectrograms.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+            <IRI>https://doi.org/10.48322/E72C-5Y75</IRI>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_1000002</AbbreviatedIRI>
+        <Literal>A graphical representation of data wherein the underlying numeric values are not (readily) accessible for analysis.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_1000002</AbbreviatedIRI>
+        <Literal xml:lang="en">spase:DisplayData</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
+        <AbbreviatedIRI>obo:SDDO_1000003</AbbreviatedIRI>
+        <Literal>Catalogs include lists of events, files in a product, and data availability.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+            <IRI>https://doi.org/10.48322/E72C-5Y75</IRI>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_1000003</AbbreviatedIRI>
+        <Literal>A tabular listing of events or observational notes, especially those that have utility in aiding a user in locating data.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_1000003</AbbreviatedIRI>
+        <Literal xml:lang="en">spase:Catalog</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <Annotation>
+            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
+            <IRI>https://doi.org/10.48322/E72C-5Y75</IRI>
+        </Annotation>
+        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
+        <AbbreviatedIRI>obo:SDDO_1000004</AbbreviatedIRI>
+        <Literal>Data stored as numerical values in one or more specified formats.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>obo:SDDO_1000004</AbbreviatedIRI>
+        <Literal xml:lang="en">spase:NumericalData</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dc:date"/>
         <AbbreviatedIRI>obo:SDDO_1000007</AbbreviatedIRI>
@@ -1190,11 +1258,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:SDDO_3000051</AbbreviatedIRI>
         <Literal xml:lang="en">data Product</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>obo:SDDO_3000053</AbbreviatedIRI>
-        <Literal xml:lang="en">legend</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
@@ -1826,77 +1889,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <AbbreviatedIRI>obo:SDDO_3000115</AbbreviatedIRI>
         <Literal xml:lang="en">platformDiscoveryCriterion</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-            <IRI>https://orcid.org/0000-0003-4808-4736</IRI>
-        </Annotation>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_1000001</IRI>
-        <Literal>A data Product from the PDS system.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_1000001</IRI>
-        <Literal>PDS data is tricky as while PDS3 has the concept of a data set; PDS4 doesn&apos;t really.  You have to find Collections that have a collection_type of data.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_1000001</IRI>
-        <Literal xml:lang="en">pds_Data_Set_PDS3</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_1000002</IRI>
-        <Literal>Examples are line plots and spectrograms.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-            <IRI>https://doi.org/10.48322/E72C-5Y75</IRI>
-        </Annotation>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_1000002</IRI>
-        <Literal>A graphical representation of data wherein the underlying numeric values are not (readily) accessible for analysis.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_1000002</IRI>
-        <Literal xml:lang="en">spase:DisplayData</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000112"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_1000003</IRI>
-        <Literal>Catalogs include lists of events, files in a product, and data availability.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-            <IRI>https://doi.org/10.48322/E72C-5Y75</IRI>
-        </Annotation>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_1000003</IRI>
-        <Literal>A tabular listing of events or observational notes, especially those that have utility in aiding a user in locating data.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_1000003</IRI>
-        <Literal xml:lang="en">spase:Catalog</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <Annotation>
-            <AnnotationProperty abbreviatedIRI="obo:IAO_0000119"/>
-            <IRI>https://doi.org/10.48322/E72C-5Y75</IRI>
-        </Annotation>
-        <AnnotationProperty abbreviatedIRI="obo:IAO_0000115"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_1000004</IRI>
-        <Literal>Data stored as numerical values in one or more specified formats.</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://purl.obolibrary.org/obo/SDDO_1000004</IRI>
-        <Literal xml:lang="en">spase:NumericalData</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="#AnnotationProperty"/>
