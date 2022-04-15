@@ -8,14 +8,24 @@ export_formats:
   - obo
   - json
 import_group:
+  module_type: filter
+  annotation_properties:
+    - rdfs:label
+    - IAO:0000115
+    - IAO:0000116
+    - IAO:0000111
+    - oboInOwl:hasDbXref
+    - rdfs:comment
   release_imports: FALSE
   products:
     - id: sosa
       mirror_from: https://www.w3.org/ns/sosa/
     - id: ro
-      mirror_from: http://purl.obolibrary.org/obo/ro/core.owl
+      module_type: slme
+      slme_individuals: exclude
     - id: obi
     - id: swo
+       module_type: filter
 robot_java_args: '-Xmx6G'
 create_obo_metadata: FALSE
 components:
