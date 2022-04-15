@@ -1,1 +1,2 @@
+http://www.ebi.ac.uk/swo/SWO_0000002 # license
 
