@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: sddo/releases/2022-04-06/sddo-base.owl
+data-version: sddo/releases/2022-04-18/sddo-base.owl
 ontology: sddo/sddo-base
 property_value: http://purl.org/dc/elements/1.1/description "The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA's Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Science Data Discovery Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
-property_value: owl:versionInfo "2022-04-06" xsd:string
+property_value: owl:versionInfo "2022-04-18" xsd:string
 
 [Term]
 id: SDDO:1000001
@@ -49,9 +49,42 @@ property_value: http://purl.org/dc/elements/1.1/date 2022-04-04T23:25:25Z xsd:da
 created_by: http://orcid.org/0000-0003-4808-4736
 
 [Term]
+id: SDDO:1000009
+name: discovery interface
+def: "An interface that 1) presents users with discovery criteria and may 2) lead to an access interface." [] {http://purl.obolibrary.org/obo/IAO_0000119="SMD:ConceptualIMVersion2.cmap"}
+property_value: http://purl.org/dc/elements/1.1/date 2022-04-15T23:48:19Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: SDDO:1000010
+name: field campaign
+def: "A campaign that is coordinated among one or more individuals and/or one or more organizations." [] {comment="ch05s849.html"}
+comment: Field campaigns are often characterized by in situ terrestrial field work.
+is_a: SDDO:3000045 ! campaign
+property_value: http://purl.org/dc/elements/1.1/date 2022-04-15T23:55:00Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: SDDO:1000011
+name: investigation
+def: "A set of experiments and/or observations." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://pds.nasa.gov/datastandards/documents/dd/current/PDS4_PDS_DD_1F00/webhelp/all/#ch05s850.html"}
+property_value: http://purl.org/dc/elements/1.1/date 2022-04-16T00:07:39Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: SDDO:1000012
+name: observing campaign
+def: "A campaign that 1) uses primarily but not exclusively existing facilities and 2) after and possibly during which other investigations are carried out using the same facilities." [] {http://purl.obolibrary.org/obo/IAO_0000119="ch05s850.html"}
+is_a: SDDO:3000045 ! campaign
+property_value: http://purl.org/dc/elements/1.1/date 2022-04-16T00:23:16Z xsd:dateTime
+property_value: IAO:0000112 "For example, the International Halley Watch mobilized observatories around the world for collection of data during the most recent apparition of Comet Halley. The Shoemaker-Levy-9 (SL9) campaign used both Earth-based and spacecraft instruments to monitor the SL9 impact on Jupiter." xsd:string
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
 id: SDDO:3000043
 name: project
-relationship: SDDO:3000009 SDDO:3000060 ! uses platform
+is_a: SDDO:1000011 ! investigation
+relationship: SDDO:3000009 SDDO:3000060 ! uses instrument host
 relationship: SDDO:3000020 SDDO:3000066 ! resultsIn productService
 
 [Term]
@@ -68,18 +101,14 @@ property_value: IAO:0000119 "Adapted from http://purl.obolibrary.org/obo/NCIT_C2
 id: SDDO:3000045
 name: campaign
 def: "A systematic set of activities undertaken to meet a particular science objective." []
-relationship: SDDO:3000009 SDDO:3000060 ! uses platform
+is_a: SDDO:1000011 ! investigation
+relationship: SDDO:3000009 SDDO:3000060 ! uses instrument host
 relationship: SDDO:3000020 SDDO:3000066 ! resultsIn productService
 property_value: IAO:0000112 "A single science campaign may require all or part of several missions." xsd:string
 property_value: IAO:0000112 "There may be several science campaigns occurring over the course of a single mission." xsd:string
 property_value: IAO:0000117 https://orcid.org/0000-0003-4808-4736
 property_value: IAO:0000118 "science campaign" xsd:string
 property_value: IAO:0000119 "Morris, Robert, Jennifer Dungan, Lina Khatib, A. Bachman, John Gasch, Paul Hempel, Jenny Williams, Terri Wood, and Christopher Bruno. \"Coordinated science campaign planning for earth observing missions.\" In Proc. of ESTC’04. 2004." xsd:string
-
-[Term]
-id: SDDO:3000046
-name: toolDiscoveryCriterion
-is_a: SDDO:3000062 ! discoveryCriterion
 
 [Term]
 id: SDDO:3000047
@@ -90,20 +119,12 @@ relationship: SDDO:3000024 SDDO:3000096 ! capableOfIdentifying feature
 relationship: SDDO:3000026 SDDO:3000044 ! capableOfDetecting event
 
 [Term]
-id: SDDO:3000050
-name: selectionParameter
-
-[Term]
 id: SDDO:3000051
 name: data Product
 def: "Processed data from the same source, normally compiled into a set according to shared characteristics." [] {http://purl.obolibrary.org/obo/IAO_0000119="NASA (2012) NASA Thesaurus: Hierarchical Listing with Definitions. Vol 1, NASA."}
 synonym: "data set" RELATED []
 is_a: IAO:0000030
 property_value: hasSynonym "dataProduct" xsd:string
-
-[Term]
-id: SDDO:3000053
-name: legend
 
 [Term]
 id: SDDO:3000054
@@ -120,44 +141,17 @@ def: "An originator or creator of a work" []
 property_value: IAO:0000117 https://orcid.org/0000-0003-4808-4736
 
 [Term]
-id: SDDO:3000057
-name: instrumentDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
-
-[Term]
-id: SDDO:3000058
-name: instrumentOperatingModeDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
-
-[Term]
 id: SDDO:3000059
 name: spaceAgency
 
 [Term]
 id: SDDO:3000060
-name: platform
-def: "A platform in the context of NASA's SMD catalog" []
+name: instrument host
+def: "The physical object upon which an instrument is mounted." [] {http://purl.obolibrary.org/obo/IAO_0000119="ch03s107.html"}
 is_a: BFO:0000023
 is_a: http://www.w3.org/ns/sosa/Platform
+property_value: hasSynonym "platform" xsd:string
 property_value: IAO:0000112 "A spacecraft, a person, a ship, a piece of laboratory equipment" xsd:string
-
-[Term]
-id: SDDO:3000061
-name: applicationDiscoveryCriterion
-is_a: SDDO:3000062 ! discoveryCriterion
-
-[Term]
-id: SDDO:3000062
-name: discoveryCriterion
-
-[Term]
-id: SDDO:3000063
-name: researchStudy
-
-[Term]
-id: SDDO:3000064
-name: dataProductDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
 
 [Term]
 id: SDDO:3000065
@@ -193,38 +187,20 @@ property_value: IAO:0000117 https://orcid.org/0000-0003-4808-4736
 property_value: IAO:0000119 "0000-0003-4312-9552" xsd:string
 
 [Term]
-id: SDDO:3000072
-name: modelDiscoveryCriterion
-is_a: SDDO:3000062 ! discoveryCriterion
-
-[Term]
-id: SDDO:3000073
-name: dataSelectionParameter
-is_a: SDDO:3000050 ! selectionParameter
-
-[Term]
-id: SDDO:3000074
-name: dataDiscoveryCriterion
-is_a: SDDO:3000062 ! discoveryCriterion
-
-[Term]
 id: SDDO:3000075
-name: accessInterface
-def: "A software interface that 1) presents users with selection criteria and 2) presents products or services that meet the criteria the user then selects." []
-relationship: SDDO:3000029 SDDO:3000050 ! present selectionParameter
+name: access interface
+def: "A software interface that 1) presents users with selection criteria and 2) presents products or services that meet the criteria the user then selects." [] {http://purl.obolibrary.org/obo/IAO_0000119="SMD:ConceptualIMVersion2.cmap"}
 relationship: SDDO:3000029 SDDO:3000066 ! present productService
 property_value: IAO:0000117 https://orcid.org/0000-0003-4808-4736
-property_value: IAO:0000119 SMD:ConceptualIMVersion1-20220324.cmap
-
-[Term]
-id: SDDO:3000076
-name: informationDiscoveryCriterion
-is_a: SDDO:3000062 ! discoveryCriterion
 
 [Term]
 id: SDDO:3000077
-name: researchInvestigation
-relationship: SDDO:3000030 SDDO:3000063 ! sameAs researchStudy
+name: research investigation
+def: "An investigation that 1) uses existing facilities and 2) is under the direction of a single individual." [] {http://purl.obolibrary.org/obo/IAO_0000119="ch05s850.html"}
+is_a: SDDO:1000011 ! investigation
+property_value: hasSynonym "individual investigation" xsd:string
+property_value: hasSynonym "research study" xsd:string
+property_value: IAO:0000112 "For example, a series of related laboratory experiments/observations conducted by a small university team and funded through a single proposal could be an Individual Investigation. Library research by one person on previously published results to distill common conclusions could also be an Individual Investigation." xsd:string
 
 [Term]
 id: SDDO:3000078
@@ -257,11 +233,6 @@ relationship: SDDO:3000042 SDDO:3000088 ! partOf mission
 property_value: IAO:0000119 Deployment:management
 
 [Term]
-id: SDDO:3000082
-name: informationSelectionParameter
-is_a: SDDO:3000050 ! selectionParameter
-
-[Term]
 id: SDDO:3000084
 name: software
 
@@ -281,10 +252,12 @@ relationship: SDDO:3000026 SDDO:3000044 ! capableOfDetecting event
 [Term]
 id: SDDO:3000088
 name: mission
-def: "A mission is a named activity for some purpose" []
+def: "An investigation that 1) occupies the designated resources for all (or at least a significant fraction) of the available time and 2) is usually conducted by a national or international space agency using a small number (often one) of spacecraft especially designed and built for the purpose." [] {http://purl.obolibrary.org/obo/IAO_0000119="ch05s850.html"}
 is_a: OBI:0000011
+is_a: SDDO:1000011 ! investigation
 relationship: SDDO:3000015 SDDO:3000059 ! organizedBy spaceAgency
 relationship: SDDO:3000018 SDDO:3000054 ! deployedOn hardware
+property_value: IAO:0000112 "For example: (1) the NASA Voyager mission launched two spacecraft to Jupiter and Saturn; (2) the Deep Impact (DI) mission launched a spacecraft, part of which impacted the comet Tempel 2; and (3) the EPOXI mission redefined the objectives of the surviving DI hardware for further exploration of the solar system." xsd:string
 property_value: IAO:0000119 "Discussion by SDDO project team" xsd:string
 
 [Term]
@@ -314,14 +287,9 @@ name: instrument
 def: "An instrument is a physical object that can be used to collect data." []
 is_a: BFO:0000040
 is_a: http://www.w3.org/ns/sosa/Sensor
-relationship: SDDO:3000039 SDDO:3000060 ! operatesOn platform
+relationship: SDDO:3000039 SDDO:3000060 ! operatesOn instrument host
 property_value: IAO:0000112 "A camera, MODIS, a survey instrument (e.g., google form)" xsd:string
 property_value: IAO:0000119 "Adapted from pds:Instrument" xsd:string
-
-[Term]
-id: SDDO:3000093
-name: missionDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
 
 [Term]
 id: SDDO:3000094
@@ -330,7 +298,7 @@ def: "A plan for a coordinated set of actions and observations designed to gener
 is_a: OBI:0000011
 relationship: SDDO:3000008 SDDO:3000078 ! generates specimen
 relationship: SDDO:3000009 SDDO:3000080 ! uses experiment Apparatus
-relationship: SDDO:3000013 SDDO:3000077 ! componentOf researchInvestigation
+relationship: SDDO:3000013 SDDO:3000077 ! componentOf research investigation
 relationship: SDDO:3000023 SDDO:3000098 ! conductedAt facility
 relationship: SDDO:3000036 SDDO:3000065 ! conductedOn organism
 relationship: SDDO:3000042 SDDO:3000088 ! partOf mission
@@ -351,15 +319,6 @@ def: "A material entity that has characteristics that can be qualified or quanti
 comment: Depending on the context, individual entities such as a human or star, may be either features or specimens - depending on whether you are interested in studying the entire class of humans or stars, or a particular star or human.
 is_a: BFO:0000040
 property_value: example "Mars, a hurricane, the aurora, a molecular cloud, a sunspot, a mouse, its  liver, etc." xsd:string
-
-[Term]
-id: SDDO:3000097
-name: spaceTimeBoundingDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
-created_by: Rduerr
-creation_date: 2021-12-02T22:57:22.551595Z
-creation_date: 2021-12-02T22:58:11.536811Z
-creation_date: 2021-12-02T22:58:56.536404Z
 
 [Term]
 id: SDDO:3000098
@@ -383,19 +342,6 @@ id: SDDO:3000101
 name: photoGallery
 
 [Term]
-id: SDDO:3000102
-name: discoveryInterface
-def: "An interface that allows the user to discover the existence of relevant products and services." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://coggle.it/diagram/YFkAQ4_Z_IuZWoVl/t/smd-team-terminology", http://purl.obolibrary.org/obo/IAO_0000119="SMD Catalog Team"}
-relationship: SDDO:3000019 SDDO:3000075 ! leadTo accessInterface
-relationship: SDDO:3000029 SDDO:3000062 ! present discoveryCriterion
-relationship: SDDO:3000033 SDDO:3000046 ! aggregate toolDiscoveryCriterion
-relationship: SDDO:3000033 SDDO:3000061 ! aggregate applicationDiscoveryCriterion
-relationship: SDDO:3000033 SDDO:3000072 ! aggregate modelDiscoveryCriterion
-relationship: SDDO:3000033 SDDO:3000074 ! aggregate dataDiscoveryCriterion
-relationship: SDDO:3000033 SDDO:3000076 ! aggregate informationDiscoveryCriterion
-property_value: IAO:0000116 "This should be a child of SWO_9000050 (software interface).  Need to understand the conflicts between SWO and OBI before that can happen." xsd:string
-
-[Term]
 id: SDDO:3000103
 name: organization
 relationship: SDDO:3000034 SDDO:3000056 ! hasRole author
@@ -404,30 +350,15 @@ relationship: SDDO:3000034 SDDO:3000086 ! hasRole funder
 relationship: SDDO:3000034 SDDO:3000105 ! hasRole investigator
 
 [Term]
-id: SDDO:3000104
-name: experimentDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
-
-[Term]
 id: SDDO:3000105
 name: investigator
 created_by: Rduerr
 creation_date: 2021-11-30T19:43:39.350414Z
 
 [Term]
-id: SDDO:3000106
-name: OperationDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
-
-[Term]
 id: SDDO:3000107
 name: program
 relationship: SDDO:3000014 SDDO:3000091 ! relatedTo NASAMission
-
-[Term]
-id: SDDO:3000108
-name: locationDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
 
 [Term]
 id: SDDO:3000109
@@ -446,11 +377,6 @@ property_value: BFO:0000179 "data element" xsd:string
 property_value: IAO:0000112 "The meaning of a column within a spreadsheet (e.g., identifier or height); the meaning of each pixel in an image (e.g., surface temperature)|another test example" xsd:string
 
 [Term]
-id: SDDO:3000111
-name: sampleDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
-
-[Term]
 id: SDDO:3000113
 name: firmware
 def: "Software that provides the low-level control for a device's specific hardware." []
@@ -458,16 +384,6 @@ is_a: IAO:0000010
 relationship: BFO:0000050 SDDO:3000054 ! hardware
 property_value: IAO:0000117 https://orcid.org/0000-0003-4808-4736
 property_value: IAO:0000119 https://en.wikipedia.org/wiki/Firmware
-
-[Term]
-id: SDDO:3000114
-name: observableDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
-
-[Term]
-id: SDDO:3000115
-name: platformDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
 
 [Typedef]
 id: SDDO:3000001
