@@ -16,6 +16,8 @@ Ontology(<http://purl.obolibrary.org/obo/sddo.owl>
 Import(<http://purl.obolibrary.org/obo/sddo/components/all_templates.owl>)
 Import(<http://purl.obolibrary.org/obo/sddo/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/sddo/imports/sosa_import.owl>)
+Import(<http://purl.obolibrary.org/obo/sddo/imports/swo_import.owl>)
+
 Import(<http://purl.obolibrary.org/obo/sddo/releases/2022-04-06/imports/ro_import.owl>)
 Annotation(dc:description "The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA's Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science.")
 Annotation(dc:title "Science Data Discovery Ontology")
