@@ -242,7 +242,7 @@ AnnotationAssertion(rdfs:label obo:SDDO_3000042 "partOf"@en)
 
 # Class: obo:SDDO_1000001 (pds_Data_Set_PDS3)
 
-AnnotationAssertion(Annotation(obo:IAO_0000119 <https://orcid.org/0000-0003-4808-4736>) obo:IAO_0000115 obo:SDDO_1000001 "A data Product from the PDS system.")
+AnnotationAssertion(Annotation(obo:IAO_0000119 <https://orcid.org/0000-0003-4808-4736>) obo:IAO_0000115 obo:SDDO_1000001 "A PDS data product from the PDS 3 data model.")
 AnnotationAssertion(rdfs:comment obo:SDDO_1000001 "PDS data is tricky as while PDS3 has the concept of a data set; PDS4 doesn't really.  You have to find Collections that have a collection_type of data.")
 AnnotationAssertion(rdfs:label obo:SDDO_1000001 "pds_Data_Set_PDS3"@en)
 SubClassOf(obo:SDDO_1000001 obo:SDDO_1000007)
@@ -267,17 +267,21 @@ AnnotationAssertion(Annotation(obo:IAO_0000119 <https://doi.org/10.48322/E72C-5Y
 AnnotationAssertion(rdfs:label obo:SDDO_1000004 "spase:NumericalData"@en)
 SubClassOf(obo:SDDO_1000004 obo:SDDO_3000051)
 
-# Class: obo:SDDO_1000007 (PDS data Product)
+# Class: obo:SDDO_1000007 (PDS data product)
 
+AnnotationAssertion(obo:IAO_0000115 obo:SDDO_1000007 "A product from the PDS data system")
 AnnotationAssertion(dc:date obo:SDDO_1000007 "2022-04-04T23:21:32Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:created_by obo:SDDO_1000007 <http://orcid.org/0000-0003-4808-4736>)
-AnnotationAssertion(rdfs:label obo:SDDO_1000007 "PDS data Product"@en)
+AnnotationAssertion(oboInOwl:hasSynonym obo:SDDO_1000007 "PDSDataProduct")
+AnnotationAssertion(rdfs:label obo:SDDO_1000007 "PDS data product"@en)
 SubClassOf(obo:SDDO_1000007 obo:SDDO_3000051)
 
 # Class: obo:SDDO_1000008 (pds_Collection_with_Type_Data)
 
+AnnotationAssertion(obo:IAO_0000115 obo:SDDO_1000008 "A PDS data product from the PDS 4 data model.")
 AnnotationAssertion(dc:date obo:SDDO_1000008 "2022-04-04T23:25:25Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:created_by obo:SDDO_1000008 <http://orcid.org/0000-0003-4808-4736>)
+AnnotationAssertion(rdfs:comment obo:SDDO_1000008 "In the PDS 4 data model, only the collections that have a type of data point directly to data.  Most other types point to other kinds of information products.")
 AnnotationAssertion(rdfs:label obo:SDDO_1000008 "pds_Collection_with_Type_Data"@en)
 SubClassOf(obo:SDDO_1000008 obo:SDDO_1000007)
 
@@ -449,7 +453,7 @@ SubClassOf(obo:SDDO_3000078 ObjectSomeValuesFrom(obo:SDDO_3000021 obo:SDDO_30000
 
 # Class: obo:SDDO_3000079 (information product)
 
-AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000079 "A product that contains a description of some entity.")
+AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000079 "A product that describes some entity.")
 AnnotationAssertion(rdfs:label obo:SDDO_3000079 "information product"@en)
 SubClassOf(obo:SDDO_3000079 obo:SDDO_3000066)
 
@@ -469,6 +473,7 @@ SubClassOf(obo:SDDO_3000081 ObjectSomeValuesFrom(obo:SDDO_3000042 obo:SDDO_30000
 
 # Class: obo:SDDO_3000084 (software)
 
+AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000084 "An information content entity that 1) contains a set of machine-readable instructions (most often in the form of a computer program) that 2) conform to a given syntax (sometimes referred to as a language) that 3) is interpretable by a given processor and that 4) directs a computer's processor to perform specific operations.")
 AnnotationAssertion(rdfs:label obo:SDDO_3000084 "software"@en)
 SubClassOf(obo:SDDO_3000084 <http://www.ebi.ac.uk/swo/SWO_0000001>)
 
@@ -623,6 +628,7 @@ AnnotationAssertion(Annotation(obo:IAO_0000119 "The American Heritage® Dictiona
 AnnotationAssertion(rdfs:comment obo:SDDO_3000109 "May be electronic or physical paper.")
 AnnotationAssertion(rdfs:label obo:SDDO_3000109 "document"@en)
 AnnotationAssertion(skos:example obo:SDDO_3000109 "Journal articles, technical or other reports, books, etc.")
+SubClassOf(obo:SDDO_3000109 obo:IAO_0000310)
 SubClassOf(obo:SDDO_3000109 obo:SDDO_3000079)
 
 # Class: obo:SDDO_3000110 (data element)
@@ -647,10 +653,10 @@ SubClassOf(obo:SDDO_3000113 ObjectSomeValuesFrom(obo:BFO_0000050 obo:SDDO_300005
 SubClassOf(<http://xmlns.com/foaf/0.1/Agent> obo:BFO_0000004)
 
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#AnnotationProperty> _:genid2147484271 "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#Literal> _:genid2147484271 "None")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#AnnotationProperty> _:genid2147484272 "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#Literal> _:genid2147484272 "Science Data Discovery Ontology")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#AnnotationProperty> _:genid2147484273 "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#IRI> _:genid2147484273 "https://creativecommons.org/licenses/unspecified")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#AnnotationProperty> _:genid2147484262 "")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#Literal> _:genid2147484262 "None")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#AnnotationProperty> _:genid2147484263 "")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#Literal> _:genid2147484263 "Science Data Discovery Ontology")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#AnnotationProperty> _:genid2147484264 "")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#IRI> _:genid2147484264 "https://creativecommons.org/licenses/unspecified")
 )
