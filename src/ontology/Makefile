@@ -231,7 +231,7 @@ ALLSEED = $(PRESEED) \
 $(IMPORTSEED): $(ALLSEED) | $(TMPDIR)
 	if [ $(IMP) = true ]; then cat $(ALLSEED) | sort | uniq > $@; fi
 
-ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 
+ANNOTATION_PROPERTIES=rdfs:label IAO:0000115 IAO:0000116 IAO:0000111 oboInOwl:hasDbXref rdfs:comment 
 
 # ----------------------------------------
 # Import modules
@@ -255,21 +255,22 @@ $(IMPORTDIR)/%_import.owl: $(MIRRORDIR)/%.owl $(IMPORTDIR)/%_terms_combined.txt
 
 .PRECIOUS: $(IMPORTDIR)/%_import.owl
 
+## Module for ontology: ro
+
+$(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms_combined.txt
+	if [ $(IMP) = true ]; then $(ROBOT) query  -i $< --update ../sparql/preprocess-module.ru \
+		extract -T $(IMPORTDIR)/ro_terms_combined.txt --force true --individuals exclude --method BOT \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
 
 ## Module for ontology: swo
 
 $(IMPORTDIR)/swo_import.owl: $(MIRRORDIR)/swo.owl $(IMPORTDIR)/swo_terms_combined.txt
 	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
-		query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
+		query --update ../sparql/preprocess-module.ru \
+		remove $(patsubst %, --term %, $(ANNOTATION_PROPERTIES)) -T $(IMPORTDIR)/swo_terms_combined.txt --select complement \
+		query --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
 		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi
-		
-## Module for ontology: ro
-
-$(IMPORTDIR)/ro_import.owl: $(MIRRORDIR)/ro.owl $(IMPORTDIR)/ro_terms_combined.txt
-	if [ $(IMP) = true ]; then $(ROBOT) merge -i $< \
-		query --update ../sparql/preprocess-module.ru --update ../sparql/inject-subset-declaration.ru --update ../sparql/postprocess-module.ru \
-		annotate --ontology-iri $(ONTBASE)/$@ $(ANNOTATE_ONTOLOGY_VERSION) --output $@.tmp.owl && mv $@.tmp.owl $@; fi		
-
 
 .PHONY: refresh-imports
 refresh-imports:
@@ -328,7 +329,7 @@ mirror-sosa: | $(TMPDIR)
 .PHONY: mirror-ro
 .PRECIOUS: $(MIRRORDIR)/ro.owl
 mirror-ro: | $(TMPDIR)
-	if [ $(MIR) = true ] && [ $(IMP) = true ]; then $(ROBOT) convert -I http://purl.obolibrary.org/obo/ro/core.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
+	if [ $(MIR) = true ] && [ $(IMP) = true ]; then curl -L $(URIBASE)/ro.owl --create-dirs -o $(MIRRORDIR)/ro.owl --retry 4 --max-time 200 && $(ROBOT) convert -i $(MIRRORDIR)/ro.owl -o $@.tmp.owl && mv $@.tmp.owl $(TMPDIR)/$@.owl; fi
 
 
 ## ONTOLOGY: obi

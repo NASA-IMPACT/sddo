@@ -16,6 +16,7 @@ Ontology(<http://purl.obolibrary.org/obo/sddo.owl>
 Import(<http://purl.obolibrary.org/obo/sddo/components/all_templates.owl>)
 Import(<http://purl.obolibrary.org/obo/sddo/imports/obi_import.owl>)
 Import(<http://purl.obolibrary.org/obo/sddo/imports/sosa_import.owl>)
+Import(<http://purl.obolibrary.org/obo/sddo/imports/swo_import.owl>)
 Import(<http://purl.obolibrary.org/obo/sddo/releases/2022-04-06/imports/ro_import.owl>)
 Annotation(dc:description "The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA's Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science.")
 Annotation(dc:title "Science Data Discovery Ontology")
@@ -31,7 +32,6 @@ Declaration(Class(obo:SDDO_1000009))
 Declaration(Class(obo:SDDO_1000010))
 Declaration(Class(obo:SDDO_1000011))
 Declaration(Class(obo:SDDO_1000012))
-Declaration(Class(obo:SDDO_3000043))
 Declaration(Class(obo:SDDO_3000044))
 Declaration(Class(obo:SDDO_3000045))
 Declaration(Class(obo:SDDO_3000047))
@@ -72,6 +72,8 @@ Declaration(Class(obo:SDDO_3000109))
 Declaration(Class(obo:SDDO_3000110))
 Declaration(Class(obo:SDDO_3000113))
 Declaration(Class(<http://www.w3.org/ns/sosa/Observation>))
+Declaration(Class(<http://www.w3.org/ns/sosa/Platform>))
+Declaration(Class(<http://www.w3.org/ns/sosa/Sensor>))
 Declaration(ObjectProperty(obo:SDDO_3000001))
 Declaration(ObjectProperty(obo:SDDO_3000004))
 Declaration(ObjectProperty(obo:SDDO_3000006))
@@ -311,13 +313,6 @@ AnnotationAssertion(oboInOwl:created_by obo:SDDO_1000012 <http://orcid.org/0000-
 AnnotationAssertion(rdfs:label obo:SDDO_1000012 "observing campaign"@en)
 SubClassOf(obo:SDDO_1000012 obo:SDDO_3000045)
 
-# Class: obo:SDDO_3000043 (project)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000043 "project"@en)
-SubClassOf(obo:SDDO_3000043 obo:SDDO_1000011)
-SubClassOf(obo:SDDO_3000043 ObjectSomeValuesFrom(obo:SDDO_3000009 obo:SDDO_3000060))
-SubClassOf(obo:SDDO_3000043 ObjectSomeValuesFrom(obo:SDDO_3000020 obo:SDDO_3000066))
-
 # Class: obo:SDDO_3000044 (event)
 
 AnnotationAssertion(obo:IAO_0000112 obo:SDDO_3000044 "A coronal mass ejection, supernova, earthquake, spacecraft launch, etc.")
@@ -349,14 +344,15 @@ SubClassOf(obo:SDDO_3000047 ObjectSomeValuesFrom(obo:SDDO_3000017 obo:SDDO_30000
 SubClassOf(obo:SDDO_3000047 ObjectSomeValuesFrom(obo:SDDO_3000024 obo:SDDO_3000096))
 SubClassOf(obo:SDDO_3000047 ObjectSomeValuesFrom(obo:SDDO_3000026 obo:SDDO_3000044))
 
-# Class: obo:SDDO_3000051 (data Product)
+# Class: obo:SDDO_3000051 (data product)
 
-AnnotationAssertion(Annotation(obo:IAO_0000119 "NASA (2012) NASA Thesaurus: Hierarchical Listing with Definitions. Vol 1, NASA.") obo:IAO_0000115 obo:SDDO_3000051 "Processed data from the same source, normally compiled into a set according to shared characteristics.")
+AnnotationAssertion(Annotation(obo:IAO_0000119 "NASA (2012) NASA Thesaurus: Hierarchical Listing with Definitions. Vol 1, NASA.") obo:IAO_0000115 obo:SDDO_3000051 "A product containing science data from some investigation.")
 AnnotationAssertion(oboInOwl:hasRelatedSynonym obo:SDDO_3000051 "data set")
 AnnotationAssertion(oboInOwl:hasSynonym obo:SDDO_3000051 "dataProduct")
-AnnotationAssertion(rdfs:label obo:SDDO_3000051 "data Product"@en)
-SubClassOf(obo:SDDO_3000051 obo:IAO_0000030)
-SubClassOf(obo:SDDO_3000051 ObjectSomeValuesFrom(obo:OBI_0000312 ObjectUnionOf(obo:SDDO_3000088 obo:SDDO_3000094)))
+AnnotationAssertion(rdfs:comment obo:SDDO_3000051 "It is generally agreed that data is in the eye of the beholder; but, for the purposes of this project the terms data and data product are limited to traditional mostly numeric science data products that NASA holds and actually calls data or data products. Thus a DataProductService is any product or service that returns science data, normally compiled into a set according to shared characteristics.")
+AnnotationAssertion(rdfs:label obo:SDDO_3000051 "data product"@en)
+SubClassOf(obo:SDDO_3000051 obo:SDDO_3000066)
+SubClassOf(obo:SDDO_3000051 ObjectSomeValuesFrom(obo:OBI_0000312 obo:OBI_0000066))
 
 # Class: obo:SDDO_3000054 (hardware)
 
@@ -371,15 +367,17 @@ SubClassOf(obo:SDDO_3000054 obo:BFO_0000040)
 AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000056 "An originator or creator of a work")
 AnnotationAssertion(obo:IAO_0000117 obo:SDDO_3000056 <https://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(rdfs:label obo:SDDO_3000056 "author"@en)
+SubClassOf(obo:SDDO_3000056 obo:BFO_0000023)
 
-# Class: obo:SDDO_3000059 (spaceAgency)
+# Class: obo:SDDO_3000059 (space agency)
 
-AnnotationAssertion(rdfs:label obo:SDDO_3000059 "spaceAgency"@en)
+AnnotationAssertion(Annotation(obo:IAO_0000119 <https://www.yourdictionary.com/space-agency>) obo:IAO_0000115 obo:SDDO_3000059 "A government agency engaged in activities related to outer space and space exploration.")
+AnnotationAssertion(rdfs:label obo:SDDO_3000059 "space agency"@en)
 
 # Class: obo:SDDO_3000060 (instrument host)
 
 AnnotationAssertion(obo:IAO_0000112 obo:SDDO_3000060 "A spacecraft, a person, a ship, a piece of laboratory equipment")
-AnnotationAssertion(Annotation(obo:IAO_0000119 <https://pds.nasa.gov/datastandards/documents/dd/current/PDS4_PDS_DD_1F00/webhelp/all/#ch03s107.html>) obo:IAO_0000115 obo:SDDO_3000060 "The physical object upon which an instrument is mounted.")
+AnnotationAssertion(Annotation(obo:IAO_0000119 <https://pds.nasa.gov/datastandards/documents/dd/current/PDS4_PDS_DD_1F00/webhelp/all/#ch03s107.html>) obo:IAO_0000115 obo:SDDO_3000060 "The physical object upon or within which an instrument is mounted.")
 AnnotationAssertion(oboInOwl:hasSynonym obo:SDDO_3000060 "platform")
 AnnotationAssertion(rdfs:label obo:SDDO_3000060 "instrument host"@en)
 SubClassOf(obo:SDDO_3000060 obo:BFO_0000023)
@@ -394,10 +392,13 @@ AnnotationAssertion(oboInOwl:creation_date obo:SDDO_3000065 "2021-11-30T21:34:56
 AnnotationAssertion(rdfs:label obo:SDDO_3000065 "organism"@en)
 SubClassOf(obo:SDDO_3000065 obo:OBI_0100026)
 
-# Class: obo:SDDO_3000066 (productService)
+# Class: obo:SDDO_3000066 (product)
 
+AnnotationAssertion(obo:IAO_0000112 obo:SDDO_3000066 "MOD10A1 data files; structured metadata files; data landing page; scientific report; an API that provides search and access to a particular satellite's data; an application for displaying or analyzing data; a movie of a solar flare, images of the MODIS instrument, the Terra satellite, an astronaut, etc.")
+AnnotationAssertion(Annotation(obo:IAO_0000119 <http://schema.org/Product>) obo:IAO_0000115 obo:SDDO_3000066 "Any offered product or service.")
 AnnotationAssertion(oboInOwl:created_by obo:SDDO_3000066 "Peter Fox")
-AnnotationAssertion(rdfs:label obo:SDDO_3000066 "productService"@en)
+AnnotationAssertion(rdfs:label obo:SDDO_3000066 "product"@en)
+SubClassOf(obo:SDDO_3000066 obo:IAO_0000030)
 
 # Class: obo:SDDO_3000069 (study)
 
@@ -446,10 +447,11 @@ AnnotationAssertion(skos:example obo:SDDO_3000078 "A preparation of tissue or bo
 SubClassOf(obo:SDDO_3000078 obo:OBI_0100051)
 SubClassOf(obo:SDDO_3000078 ObjectSomeValuesFrom(obo:SDDO_3000021 obo:SDDO_3000047))
 
-# Class: obo:SDDO_3000079 (informationProduct)
+# Class: obo:SDDO_3000079 (information product)
 
-AnnotationAssertion(rdfs:label obo:SDDO_3000079 "informationProduct"@en)
-SubClassOf(obo:SDDO_3000079 obo:IAO_0000030)
+AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000079 "A product that contains a description of some entity.")
+AnnotationAssertion(rdfs:label obo:SDDO_3000079 "information product"@en)
+SubClassOf(obo:SDDO_3000079 obo:SDDO_3000066)
 
 # Class: obo:SDDO_3000080 (experiment Apparatus)
 
@@ -468,6 +470,7 @@ SubClassOf(obo:SDDO_3000081 ObjectSomeValuesFrom(obo:SDDO_3000042 obo:SDDO_30000
 # Class: obo:SDDO_3000084 (software)
 
 AnnotationAssertion(rdfs:label obo:SDDO_3000084 "software"@en)
+SubClassOf(obo:SDDO_3000084 <http://www.ebi.ac.uk/swo/SWO_0000001>)
 
 # Class: obo:SDDO_3000086 (funder)
 
@@ -476,9 +479,12 @@ AnnotationAssertion(rdfs:label obo:SDDO_3000086 "funder"@en)
 SubClassOf(obo:SDDO_3000086 obo:BFO_0000023)
 SubClassOf(obo:SDDO_3000086 ObjectSomeValuesFrom(obo:RO_0000081 obo:SDDO_3000103))
 
-# Class: obo:SDDO_3000087 (instrumentOperatingMode)
+# Class: obo:SDDO_3000087 (instrument operating mode)
 
-AnnotationAssertion(rdfs:label obo:SDDO_3000087 "instrumentOperatingMode"@en)
+AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000087 "An identified configuration for an instrument.")
+AnnotationAssertion(oboInOwl:hasSynonym obo:SDDO_3000087 "instrumentOperatingMode")
+AnnotationAssertion(rdfs:comment obo:SDDO_3000087 "Instrument operating modes may include both hardware configurations (e.g., for instruments with multiple filters) as well as software configurations (e.g., to control how long an exposure should last).  Some instruments have many such modes, others may only have one.")
+AnnotationAssertion(rdfs:label obo:SDDO_3000087 "instrument operating mode"@en)
 SubClassOf(obo:SDDO_3000087 ObjectSomeValuesFrom(obo:SDDO_3000024 obo:SDDO_3000096))
 SubClassOf(obo:SDDO_3000087 ObjectSomeValuesFrom(obo:SDDO_3000026 obo:SDDO_3000044))
 
@@ -502,7 +508,9 @@ SubClassOf(obo:SDDO_3000089 ObjectSomeValuesFrom(obo:SDDO_3000023 obo:SDDO_30000
 
 # Class: obo:SDDO_3000090 (person)
 
+AnnotationAssertion(Annotation(obo:IAO_0000119 <http://xmlns.com/foaf/0.1/Person>) obo:IAO_0000115 obo:SDDO_3000090 "An agent that is a human being.")
 AnnotationAssertion(rdfs:label obo:SDDO_3000090 "person"@en)
+SubClassOf(obo:SDDO_3000090 <http://xmlns.com/foaf/0.1/Agent>)
 SubClassOf(obo:SDDO_3000090 ObjectSomeValuesFrom(obo:SDDO_3000034 obo:SDDO_3000056))
 SubClassOf(obo:SDDO_3000090 ObjectSomeValuesFrom(obo:SDDO_3000034 obo:SDDO_3000065))
 
@@ -520,7 +528,7 @@ AnnotationAssertion(obo:IAO_0000112 obo:SDDO_3000092 "A camera, MODIS, a survey 
 AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000092 "An instrument is a physical object that can be used to collect data.")
 AnnotationAssertion(obo:IAO_0000119 obo:SDDO_3000092 "Adapted from pds:Instrument")
 AnnotationAssertion(rdfs:label obo:SDDO_3000092 "instrument"@en)
-SubClassOf(obo:SDDO_3000092 obo:BFO_0000040)
+SubClassOf(obo:SDDO_3000092 obo:SDDO_3000075)
 SubClassOf(obo:SDDO_3000092 <http://www.w3.org/ns/sosa/Sensor>)
 SubClassOf(obo:SDDO_3000092 ObjectSomeValuesFrom(obo:SDDO_3000039 obo:SDDO_3000060))
 
@@ -538,11 +546,13 @@ SubClassOf(obo:SDDO_3000094 ObjectSomeValuesFrom(obo:SDDO_3000023 obo:SDDO_30000
 SubClassOf(obo:SDDO_3000094 ObjectSomeValuesFrom(obo:SDDO_3000036 obo:SDDO_3000065))
 SubClassOf(obo:SDDO_3000094 ObjectSomeValuesFrom(obo:SDDO_3000042 obo:SDDO_3000088))
 
-# Class: obo:SDDO_3000095 (metadataProduct)
+# Class: obo:SDDO_3000095 (metadata product)
 
-AnnotationAssertion(obo:IAO_0000116 obo:SDDO_3000095 "Any information product that contains structured metadata.")
+AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000095 "An information product that contains structured metadata.")
+AnnotationAssertion(oboInOwl:hasSynonym obo:SDDO_3000095 "metadata")
+AnnotationAssertion(oboInOwl:hasSynonym obo:SDDO_3000095 "metadataProduct")
 AnnotationAssertion(rdfs:comment obo:SDDO_3000095 "While agreed that metadata is just data about data and so is really an unneeded term, we recognize that the term metadata is often applied to information about data no matter its form.  In many cases, a metadata product is available for access, even if the data is not.")
-AnnotationAssertion(rdfs:label obo:SDDO_3000095 "metadataProduct"@en)
+AnnotationAssertion(rdfs:label obo:SDDO_3000095 "metadata product"@en)
 SubClassOf(obo:SDDO_3000095 obo:SDDO_3000079)
 
 # Class: obo:SDDO_3000096 (feature)
@@ -557,28 +567,37 @@ SubClassOf(obo:SDDO_3000096 ObjectSomeValuesFrom(obo:SDDO_3000041 ObjectUnionOf(
 
 # Class: obo:SDDO_3000098 (facility)
 
+AnnotationAssertion(obo:IAO_0000112 obo:SDDO_3000098 "An observatory or laboratory")
+AnnotationAssertion(Annotation(obo:IAO_0000119 < 	  http://purl.obolibrary.org/obo/ENVO_01001813>) obo:IAO_0000115 obo:SDDO_3000098 "A construction, permanent or temporary, on land, in air, space or water, where scientific research or measurements can be undertaken.")
 AnnotationAssertion(rdfs:label obo:SDDO_3000098 "facility"@en)
 SubClassOf(obo:SDDO_3000098 obo:BFO_0000040)
 
 # Class: obo:SDDO_3000099 (phenomenon)
 
+AnnotationAssertion(Annotation(obo:IAO_0000119 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C61380>) obo:IAO_0000115 obo:SDDO_3000099 "A fact or situation that is observed to exist.")
 AnnotationAssertion(rdfs:label obo:SDDO_3000099 "phenomenon"@en)
 SubClassOf(obo:SDDO_3000099 ObjectSomeValuesFrom(obo:SDDO_3000006 obo:SDDO_3000044))
 SubClassOf(obo:SDDO_3000099 ObjectSomeValuesFrom(obo:SDDO_3000006 obo:SDDO_3000096))
 
 # Class: obo:SDDO_3000100 (observation)
 
+AnnotationAssertion(Annotation(obo:IAO_0000119 <http://www.w3.org/ns/sosa/Observation>) obo:IAO_0000115 obo:SDDO_3000100 "Act of carrying out an procedure to estimate or calculate a value of a property of a feature.")
 AnnotationAssertion(rdfs:label obo:SDDO_3000100 "observation"@en)
 SubClassOf(obo:SDDO_3000100 obo:OBI_0000011)
 SubClassOf(obo:SDDO_3000100 <http://www.w3.org/ns/sosa/Observation>)
 
 # Class: obo:SDDO_3000101 (photoGallery)
 
+AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000101 "A graphical user interface that provides access to photographs/images.")
+AnnotationAssertion(obo:IAO_0000119 obo:SDDO_3000101 <https://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(rdfs:label obo:SDDO_3000101 "photoGallery"@en)
+SubClassOf(obo:SDDO_3000101 <http://www.ebi.ac.uk/swo/interface/SWO_9000052>)
 
 # Class: obo:SDDO_3000103 (organization)
 
+AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000103 "An entity that can bear roles, has members, and has a set of organization rules.")
 AnnotationAssertion(rdfs:label obo:SDDO_3000103 "organization"@en)
+SubClassOf(obo:SDDO_3000103 <http://xmlns.com/foaf/0.1/Agent>)
 SubClassOf(obo:SDDO_3000103 ObjectSomeValuesFrom(obo:SDDO_3000034 obo:SDDO_3000056))
 SubClassOf(obo:SDDO_3000103 ObjectSomeValuesFrom(obo:SDDO_3000034 obo:SDDO_3000059))
 SubClassOf(obo:SDDO_3000103 ObjectSomeValuesFrom(obo:SDDO_3000034 obo:SDDO_3000086))
@@ -588,10 +607,13 @@ SubClassOf(obo:SDDO_3000103 ObjectSomeValuesFrom(obo:SDDO_3000034 obo:SDDO_30001
 
 AnnotationAssertion(oboInOwl:created_by obo:SDDO_3000105 "Rduerr")
 AnnotationAssertion(oboInOwl:creation_date obo:SDDO_3000105 "2021-11-30T19:43:39.350414Z")
+AnnotationAssertion(rdfs:comment obo:SDDO_3000105 "A role which inheres in a person or organization and which is realized during an investigation.")
 AnnotationAssertion(rdfs:label obo:SDDO_3000105 "investigator"@en)
+SubClassOf(obo:SDDO_3000105 obo:BFO_0000023)
 
 # Class: obo:SDDO_3000107 (program)
 
+AnnotationAssertion(Annotation(obo:IAO_0000119 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C52647>) obo:IAO_0000115 obo:SDDO_3000107 "A broad framework of goals to be achieved.")
 AnnotationAssertion(rdfs:label obo:SDDO_3000107 "program"@en)
 SubClassOf(obo:SDDO_3000107 ObjectSomeValuesFrom(obo:SDDO_3000014 obo:SDDO_3000091))
 
@@ -620,11 +642,15 @@ AnnotationAssertion(rdfs:label obo:SDDO_3000113 "firmware"@en)
 SubClassOf(obo:SDDO_3000113 obo:IAO_0000010)
 SubClassOf(obo:SDDO_3000113 ObjectSomeValuesFrom(obo:BFO_0000050 obo:SDDO_3000054))
 
+# Class: <http://xmlns.com/foaf/0.1/Agent> (<http://xmlns.com/foaf/0.1/Agent>)
 
-AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#AnnotationProperty> _:genid2147483992 "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#Literal> _:genid2147483992 "None")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#AnnotationProperty> _:genid2147483993 "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#Literal> _:genid2147483993 "Science Data Discovery Ontology")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#AnnotationProperty> _:genid2147483994 "")
-AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#IRI> _:genid2147483994 "https://creativecommons.org/licenses/unspecified")
+SubClassOf(<http://xmlns.com/foaf/0.1/Agent> obo:BFO_0000004)
+
+
+AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#AnnotationProperty> _:genid2147484271 "")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#Literal> _:genid2147484271 "None")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#AnnotationProperty> _:genid2147484272 "")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#Literal> _:genid2147484272 "Science Data Discovery Ontology")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#AnnotationProperty> _:genid2147484273 "")
+AnnotationAssertion(<http://purl.obolibrary.org/obo/sddo.owl#IRI> _:genid2147484273 "https://creativecommons.org/licenses/unspecified")
 )
