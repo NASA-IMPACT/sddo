@@ -1,8 +1,8 @@
-http://www.ebi.ac.uk/swo/SWO_0000002 # license
-http://www.ebi.ac.uk/swo/SWO_0000001 # software
-http://www.ebi.ac.uk/swo/SWO_9000050 # software interface
-http://www.ebi.ac.uk/swo/interface/SWO_9000054 # application programming interface
-http://www.ebi.ac.uk/swo/interface/SWO_9000052 # graphical user interface
+#http://www.ebi.ac.uk/swo/SWO_0000002 # license
+#http://www.ebi.ac.uk/swo/SWO_0000001 # software
+#http://www.ebi.ac.uk/swo/SWO_9000050 # software interface
+#http://www.ebi.ac.uk/swo/interface/SWO_9000054 # application programming interface
+#http://www.ebi.ac.uk/swo/interface/SWO_9000052 # graphical user interface
 http://www.ebi.ac.uk/swo/interface/SWO_9000051 # web service
 
 
