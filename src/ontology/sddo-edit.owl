@@ -71,6 +71,7 @@ Declaration(Class(obo:SDDO_3000107))
 Declaration(Class(obo:SDDO_3000109))
 Declaration(Class(obo:SDDO_3000110))
 Declaration(Class(obo:SDDO_3000113))
+Declaration(Class(obo:SDDO_3000114))
 Declaration(Class(<http://www.w3.org/ns/sosa/Observation>))
 Declaration(Class(<http://www.w3.org/ns/sosa/Platform>))
 Declaration(Class(<http://www.w3.org/ns/sosa/Sensor>))
@@ -90,7 +91,6 @@ Declaration(ObjectProperty(obo:SDDO_3000020))
 Declaration(ObjectProperty(obo:SDDO_3000021))
 Declaration(ObjectProperty(obo:SDDO_3000023))
 Declaration(ObjectProperty(obo:SDDO_3000024))
-Declaration(ObjectProperty(obo:SDDO_3000025))
 Declaration(ObjectProperty(obo:SDDO_3000026))
 Declaration(ObjectProperty(obo:SDDO_3000027))
 Declaration(ObjectProperty(obo:SDDO_3000029))
@@ -146,9 +146,9 @@ AnnotationAssertion(rdfs:label obo:SDDO_3000009 "uses"@en)
 
 AnnotationAssertion(rdfs:label obo:SDDO_3000013 "componentOf"@en)
 
-# Object Property: obo:SDDO_3000014 (relatedTo)
+# Object Property: obo:SDDO_3000014 (funds)
 
-AnnotationAssertion(rdfs:label obo:SDDO_3000014 "relatedTo"@en)
+AnnotationAssertion(rdfs:label obo:SDDO_3000014 "funds"@en)
 
 # Object Property: obo:SDDO_3000015 (organizedBy)
 
@@ -181,10 +181,6 @@ AnnotationAssertion(rdfs:label obo:SDDO_3000023 "conductedAt"@en)
 # Object Property: obo:SDDO_3000024 (capableOfIdentifying)
 
 AnnotationAssertion(rdfs:label obo:SDDO_3000024 "capableOfIdentifying"@en)
-
-# Object Property: obo:SDDO_3000025 (provideAccessTo)
-
-AnnotationAssertion(rdfs:label obo:SDDO_3000025 "provideAccessTo"@en)
 
 # Object Property: obo:SDDO_3000026 (capableOfDetecting)
 
@@ -291,6 +287,7 @@ AnnotationAssertion(Annotation(obo:IAO_0000119 <https://cmapscloud.ihmc.us:443/r
 AnnotationAssertion(dc:date obo:SDDO_1000009 "2022-04-15T23:48:19Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:created_by obo:SDDO_1000009 <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(rdfs:label obo:SDDO_1000009 "discovery interface"@en)
+SubClassOf(obo:SDDO_1000009 <http://www.ebi.ac.uk/swo/SWO_9000050>)
 
 # Class: obo:SDDO_1000010 (field campaign)
 
@@ -307,6 +304,7 @@ AnnotationAssertion(Annotation(obo:IAO_0000119 "https://pds.nasa.gov/datastandar
 AnnotationAssertion(dc:date obo:SDDO_1000011 "2022-04-16T00:07:39Z"^^xsd:dateTime)
 AnnotationAssertion(oboInOwl:created_by obo:SDDO_1000011 <http://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(rdfs:label obo:SDDO_1000011 "investigation"@en)
+SubClassOf(obo:SDDO_1000011 obo:OBI_0000011)
 
 # Class: obo:SDDO_1000012 (observing campaign)
 
@@ -324,8 +322,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000044 "Something observable that 
 AnnotationAssertion(obo:IAO_0000119 obo:SDDO_3000044 "Adapted from http://purl.obolibrary.org/obo/NCIT_C25499")
 AnnotationAssertion(rdfs:label obo:SDDO_3000044 "event"@en)
 SubClassOf(obo:SDDO_3000044 obo:BFO_0000015)
-SubClassOf(obo:SDDO_3000044 ObjectSomeValuesFrom(obo:SDDO_3000035 obo:SDDO_3000100))
-SubClassOf(obo:SDDO_3000044 ObjectSomeValuesFrom(obo:SDDO_3000041 obo:SDDO_3000100))
+SubClassOf(obo:SDDO_3000044 obo:SDDO_3000099)
 
 # Class: obo:SDDO_3000045 (campaign)
 
@@ -377,6 +374,7 @@ SubClassOf(obo:SDDO_3000056 obo:BFO_0000023)
 
 AnnotationAssertion(Annotation(obo:IAO_0000119 <https://www.yourdictionary.com/space-agency>) obo:IAO_0000115 obo:SDDO_3000059 "A government agency engaged in activities related to outer space and space exploration.")
 AnnotationAssertion(rdfs:label obo:SDDO_3000059 "space agency"@en)
+SubClassOf(obo:SDDO_3000059 obo:SDDO_3000103)
 
 # Class: obo:SDDO_3000060 (instrument host)
 
@@ -429,6 +427,7 @@ SubClassOf(obo:SDDO_3000071 ObjectSomeValuesFrom(obo:SDDO_3000007 obo:SDDO_30001
 AnnotationAssertion(Annotation(obo:IAO_0000119 <https://cmapscloud.ihmc.us:443/rid=1XYJDF318-2CJXW9D-1JH/SMD_ConceptualIMVersion2.cmap>) obo:IAO_0000115 obo:SDDO_3000075 "A software interface that 1) presents users with selection criteria and 2) presents products or services that meet the criteria the user then selects.")
 AnnotationAssertion(obo:IAO_0000117 obo:SDDO_3000075 <https://orcid.org/0000-0003-4808-4736>)
 AnnotationAssertion(rdfs:label obo:SDDO_3000075 "access interface"@en)
+SubClassOf(obo:SDDO_3000075 <http://www.ebi.ac.uk/swo/SWO_9000050>)
 SubClassOf(obo:SDDO_3000075 ObjectSomeValuesFrom(obo:SDDO_3000029 obo:SDDO_3000066))
 
 # Class: obo:SDDO_3000077 (research investigation)
@@ -469,7 +468,8 @@ SubClassOf(obo:SDDO_3000080 obo:SDDO_3000054)
 AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000081 "The realisation of an application, or execution of a plan, idea, model, design, specification, standard, algorithm, or policy.")
 AnnotationAssertion(obo:IAO_0000119 obo:SDDO_3000081 <https://en.wikipedia.org/wiki/Deployment_management>)
 AnnotationAssertion(rdfs:label obo:SDDO_3000081 "deployment"@en)
-SubClassOf(obo:SDDO_3000081 ObjectSomeValuesFrom(obo:SDDO_3000042 obo:SDDO_3000088))
+SubClassOf(obo:SDDO_3000081 obo:OBI_0000011)
+SubClassOf(obo:SDDO_3000081 ObjectSomeValuesFrom(obo:BFO_0000051 obo:SDDO_3000088))
 
 # Class: obo:SDDO_3000084 (software)
 
@@ -490,6 +490,7 @@ AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000087 "An identified configuratio
 AnnotationAssertion(oboInOwl:hasSynonym obo:SDDO_3000087 "instrumentOperatingMode")
 AnnotationAssertion(rdfs:comment obo:SDDO_3000087 "Instrument operating modes may include both hardware configurations (e.g., for instruments with multiple filters) as well as software configurations (e.g., to control how long an exposure should last).  Some instruments have many such modes, others may only have one.")
 AnnotationAssertion(rdfs:label obo:SDDO_3000087 "instrument operating mode"@en)
+SubClassOf(obo:SDDO_3000087 obo:IAO_0000033)
 SubClassOf(obo:SDDO_3000087 ObjectSomeValuesFrom(obo:SDDO_3000024 obo:SDDO_3000096))
 SubClassOf(obo:SDDO_3000087 ObjectSomeValuesFrom(obo:SDDO_3000026 obo:SDDO_3000044))
 
@@ -499,7 +500,6 @@ AnnotationAssertion(obo:IAO_0000112 obo:SDDO_3000088 "For example: (1) the NASA 
 AnnotationAssertion(Annotation(obo:IAO_0000119 <https://pds.nasa.gov/datastandards/documents/dd/current/PDS4_PDS_DD_1F00/webhelp/all/#ch05s850.html>) obo:IAO_0000115 obo:SDDO_3000088 "An investigation that 1) occupies the designated resources for all (or at least a significant fraction) of the available time and 2) is usually conducted by a national or international space agency using a small number (often one) of spacecraft especially designed and built for the purpose.")
 AnnotationAssertion(obo:IAO_0000119 obo:SDDO_3000088 "Discussion by SDDO project team")
 AnnotationAssertion(rdfs:label obo:SDDO_3000088 "mission"@en)
-SubClassOf(obo:SDDO_3000088 obo:OBI_0000011)
 SubClassOf(obo:SDDO_3000088 obo:SDDO_1000011)
 SubClassOf(obo:SDDO_3000088 ObjectSomeValuesFrom(obo:SDDO_3000015 obo:SDDO_3000059))
 SubClassOf(obo:SDDO_3000088 ObjectSomeValuesFrom(obo:SDDO_3000018 obo:SDDO_3000054))
@@ -509,6 +509,7 @@ SubClassOf(obo:SDDO_3000088 ObjectSomeValuesFrom(obo:SDDO_3000018 obo:SDDO_30000
 AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000089 "Any procedure that involves testing or manipulating a sample or subject in a laboratory setting")
 AnnotationAssertion(obo:IAO_0000119 obo:SDDO_3000089 "A broadened version of http://purl.obolibrary.org/obo/NCIT_C25294")
 AnnotationAssertion(rdfs:label obo:SDDO_3000089 "laboratoryProcedure"@en)
+SubClassOf(obo:SDDO_3000089 obo:OBI_0000011)
 SubClassOf(obo:SDDO_3000089 ObjectSomeValuesFrom(obo:SDDO_3000023 obo:SDDO_3000098))
 
 # Class: obo:SDDO_3000090 (person)
@@ -567,8 +568,7 @@ AnnotationAssertion(rdfs:comment obo:SDDO_3000096 "Depending on the context, ind
 AnnotationAssertion(rdfs:label obo:SDDO_3000096 "feature"@en)
 AnnotationAssertion(skos:example obo:SDDO_3000096 "Mars, a hurricane, the aurora, a molecular cloud, a sunspot, a mouse, its  liver, etc.")
 SubClassOf(obo:SDDO_3000096 obo:BFO_0000040)
-SubClassOf(obo:SDDO_3000096 ObjectSomeValuesFrom(obo:SDDO_3000035 ObjectUnionOf(obo:SDDO_3000094 obo:SDDO_3000100)))
-SubClassOf(obo:SDDO_3000096 ObjectSomeValuesFrom(obo:SDDO_3000041 ObjectUnionOf(obo:SDDO_3000094 obo:SDDO_3000100)))
+SubClassOf(obo:SDDO_3000096 obo:SDDO_3000099)
 
 # Class: obo:SDDO_3000098 (facility)
 
@@ -581,8 +581,8 @@ SubClassOf(obo:SDDO_3000098 obo:BFO_0000040)
 
 AnnotationAssertion(Annotation(obo:IAO_0000119 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C61380>) obo:IAO_0000115 obo:SDDO_3000099 "A fact or situation that is observed to exist.")
 AnnotationAssertion(rdfs:label obo:SDDO_3000099 "phenomenon"@en)
-SubClassOf(obo:SDDO_3000099 ObjectSomeValuesFrom(obo:SDDO_3000006 obo:SDDO_3000044))
-SubClassOf(obo:SDDO_3000099 ObjectSomeValuesFrom(obo:SDDO_3000006 obo:SDDO_3000096))
+EquivalentClasses(obo:SDDO_3000099 ObjectSomeValuesFrom(obo:SDDO_3000035 ObjectUnionOf(obo:SDDO_3000094 obo:SDDO_3000100)))
+EquivalentClasses(obo:SDDO_3000099 ObjectSomeValuesFrom(obo:SDDO_3000041 ObjectUnionOf(obo:SDDO_3000094 obo:SDDO_3000100)))
 
 # Class: obo:SDDO_3000100 (observation)
 
@@ -604,7 +604,6 @@ AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000103 "An entity that can bear ro
 AnnotationAssertion(rdfs:label obo:SDDO_3000103 "organization"@en)
 SubClassOf(obo:SDDO_3000103 <http://xmlns.com/foaf/0.1/Agent>)
 SubClassOf(obo:SDDO_3000103 ObjectSomeValuesFrom(obo:SDDO_3000034 obo:SDDO_3000056))
-SubClassOf(obo:SDDO_3000103 ObjectSomeValuesFrom(obo:SDDO_3000034 obo:SDDO_3000059))
 SubClassOf(obo:SDDO_3000103 ObjectSomeValuesFrom(obo:SDDO_3000034 obo:SDDO_3000086))
 SubClassOf(obo:SDDO_3000103 ObjectSomeValuesFrom(obo:SDDO_3000034 obo:SDDO_3000105))
 
@@ -620,7 +619,7 @@ SubClassOf(obo:SDDO_3000105 obo:BFO_0000023)
 
 AnnotationAssertion(Annotation(obo:IAO_0000119 <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C52647>) obo:IAO_0000115 obo:SDDO_3000107 "A broad framework of goals to be achieved.")
 AnnotationAssertion(rdfs:label obo:SDDO_3000107 "program"@en)
-SubClassOf(obo:SDDO_3000107 ObjectSomeValuesFrom(obo:SDDO_3000014 obo:SDDO_3000091))
+SubClassOf(obo:SDDO_3000107 obo:SDDO_3000103)
 
 # Class: obo:SDDO_3000109 (document)
 
@@ -637,6 +636,7 @@ AnnotationAssertion(obo:BFO_0000179 obo:SDDO_3000110 "data element"@en)
 AnnotationAssertion(obo:IAO_0000112 obo:SDDO_3000110 "The meaning of a column within a spreadsheet (e.g., identifier or height); the meaning of each pixel in an image (e.g., surface temperature)|another test example")
 AnnotationAssertion(obo:IAO_0000115 obo:SDDO_3000110 "A data element is any characteristic that can help in understanding data content. That is, a data element is any parameter or variable that is useful, or critical, when identifying  or describing the content of a data object.")
 AnnotationAssertion(rdfs:label obo:SDDO_3000110 "data element")
+SubClassOf(obo:SDDO_3000110 obo:IAO_0000027)
 SubClassOf(obo:SDDO_3000110 ObjectSomeValuesFrom(obo:SDDO_3000031 obo:SDDO_3000100))
 
 # Class: obo:SDDO_3000113 (firmware)
@@ -647,6 +647,12 @@ AnnotationAssertion(obo:IAO_0000119 obo:SDDO_3000113 <https://en.wikipedia.org/w
 AnnotationAssertion(rdfs:label obo:SDDO_3000113 "firmware"@en)
 SubClassOf(obo:SDDO_3000113 obo:IAO_0000010)
 SubClassOf(obo:SDDO_3000113 ObjectSomeValuesFrom(obo:BFO_0000050 obo:SDDO_3000054))
+
+# Class: obo:SDDO_3000114 (NASA program)
+
+AnnotationAssertion(rdfs:label obo:SDDO_3000114 "NASA program")
+SubClassOf(obo:SDDO_3000114 obo:SDDO_3000107)
+SubClassOf(obo:SDDO_3000114 ObjectSomeValuesFrom(obo:SDDO_3000014 obo:SDDO_3000091))
 
 # Class: <http://xmlns.com/foaf/0.1/Agent> (<http://xmlns.com/foaf/0.1/Agent>)
 
