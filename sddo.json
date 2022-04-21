@@ -463,6 +463,11 @@
           "sub": "http://purl.obolibrary.org/obo/BFO_0000040"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000004",
+          "pred": "is_a",
+          "sub": "http://xmlns.com/foaf/0.1/Agent"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000015",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/GO_0003674"
@@ -545,6 +550,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000056"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000060"
         },
         {
@@ -556,6 +566,11 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000086"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/BFO_0000023",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000105"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000031",
@@ -621,11 +636,6 @@
           "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000054"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/SDDO_3000092"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000040",
@@ -838,6 +848,11 @@
           "sub": "http://purl.obolibrary.org/obo/IAO_0000102"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000027",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000110"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
           "pred": "http://purl.obolibrary.org/obo/OBI_0000293",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000572"
@@ -880,12 +895,22 @@
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/SDDO_3000051"
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000066"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/SDDO_3000079"
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000001"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_0000002"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000030",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/swo/SWO_9000050"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000033",
@@ -911,6 +936,11 @@
           "obj": "http://purl.obolibrary.org/obo/IAO_0000033",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000104"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000033",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000087"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000038",
@@ -1133,6 +1163,11 @@
           "sub": "http://purl.obolibrary.org/obo/OBI_0001000"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/IAO_0000310",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000109"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/IAO_0000409",
           "pred": "type",
           "sub": "http://purl.obolibrary.org/obo/IAO_0000410"
@@ -1250,7 +1285,17 @@
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/SDDO_3000088"
+          "sub": "http://purl.obolibrary.org/obo/SDDO_1000011"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000081"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000089"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
@@ -1291,6 +1336,11 @@
           "obj": "http://purl.obolibrary.org/obo/OBI_0000047",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/OBI_0000968"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000066",
+          "pred": "http://purl.obolibrary.org/obo/OBI_0000312",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000051"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000094",
@@ -3455,11 +3505,6 @@
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_1000011",
           "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/SDDO_3000043"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/SDDO_1000011",
-          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000045"
         },
         {
@@ -3471,11 +3516,6 @@
           "obj": "http://purl.obolibrary.org/obo/SDDO_1000011",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000088"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/SDDO_3000044",
-          "pred": "http://purl.obolibrary.org/obo/SDDO_3000006",
-          "sub": "http://purl.obolibrary.org/obo/SDDO_3000099"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000044",
@@ -3558,16 +3598,6 @@
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000088"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/SDDO_3000059",
-          "pred": "http://purl.obolibrary.org/obo/SDDO_3000034",
-          "sub": "http://purl.obolibrary.org/obo/SDDO_3000103"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/SDDO_3000060",
-          "pred": "http://purl.obolibrary.org/obo/SDDO_3000009",
-          "sub": "http://purl.obolibrary.org/obo/SDDO_3000043"
-        },
-        {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000060",
           "pred": "http://purl.obolibrary.org/obo/SDDO_3000009",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000045"
@@ -3590,17 +3620,27 @@
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000066",
           "pred": "http://purl.obolibrary.org/obo/SDDO_3000020",
-          "sub": "http://purl.obolibrary.org/obo/SDDO_3000043"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/SDDO_3000066",
-          "pred": "http://purl.obolibrary.org/obo/SDDO_3000020",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000045"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000066",
           "pred": "http://purl.obolibrary.org/obo/SDDO_3000029",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000075"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000066",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000051"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000066",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000079"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000075",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000092"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000077",
@@ -3634,7 +3674,7 @@
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000088",
-          "pred": "http://purl.obolibrary.org/obo/SDDO_3000042",
+          "pred": "http://purl.obolibrary.org/obo/BFO_0000051",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000081"
         },
         {
@@ -3655,12 +3695,7 @@
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000091",
           "pred": "http://purl.obolibrary.org/obo/SDDO_3000014",
-          "sub": "http://purl.obolibrary.org/obo/SDDO_3000107"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/SDDO_3000096",
-          "pred": "http://purl.obolibrary.org/obo/SDDO_3000006",
-          "sub": "http://purl.obolibrary.org/obo/SDDO_3000099"
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000114"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000096",
@@ -3683,6 +3718,16 @@
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000094"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000099",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000044"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000099",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000096"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000100",
           "pred": "http://purl.obolibrary.org/obo/SDDO_3000007",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000071"
@@ -3693,24 +3738,29 @@
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000110"
         },
         {
-          "obj": "http://purl.obolibrary.org/obo/SDDO_3000100",
-          "pred": "http://purl.obolibrary.org/obo/SDDO_3000035",
-          "sub": "http://purl.obolibrary.org/obo/SDDO_3000044"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/SDDO_3000100",
-          "pred": "http://purl.obolibrary.org/obo/SDDO_3000041",
-          "sub": "http://purl.obolibrary.org/obo/SDDO_3000044"
-        },
-        {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000103",
           "pred": "http://purl.obolibrary.org/obo/RO_0000081",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000086"
         },
         {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000103",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000059"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000103",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000107"
+        },
+        {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000105",
           "pred": "http://purl.obolibrary.org/obo/SDDO_3000034",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000103"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/SDDO_3000107",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000114"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/UO_0000001",
@@ -3973,6 +4023,46 @@
           "sub": "http://purl.obolibrary.org/obo/UO_0000285"
         },
         {
+          "obj": "http://purl.org/vocommons/voaf#Vocabulary",
+          "pred": "type",
+          "sub": "http://www.w3.org/ns/sosa/"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/swo/SWO_0000001",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000084"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/swo/SWO_9000050",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_1000009"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/swo/SWO_9000050",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000075"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/swo/SWO_9000050",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/swo/interface/SWO_9000051"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/swo/SWO_9000050",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/swo/interface/SWO_9000052"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/swo/SWO_9000050",
+          "pred": "is_a",
+          "sub": "http://www.ebi.ac.uk/swo/interface/SWO_9000054"
+        },
+        {
+          "obj": "http://www.ebi.ac.uk/swo/interface/SWO_9000052",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000101"
+        },
+        {
           "obj": "http://www.w3.org/2002/07/owl#Thing",
           "pred": "http://purl.obolibrary.org/obo/RO_0000081",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000071"
@@ -3996,10 +4086,45 @@
           "obj": "http://www.w3.org/ns/sosa/Sensor",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000092"
+        },
+        {
+          "obj": "http://xmlns.com/foaf/0.1/Agent",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000090"
+        },
+        {
+          "obj": "http://xmlns.com/foaf/0.1/Agent",
+          "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000103"
+        },
+        {
+          "obj": "http://xmlns.com/foaf/0.1/Agent",
+          "pred": "type",
+          "sub": "_:genid2147484110"
+        },
+        {
+          "obj": "http://xmlns.com/foaf/0.1/Agent",
+          "pred": "type",
+          "sub": "_:genid2147484111"
+        },
+        {
+          "obj": "http://xmlns.com/foaf/0.1/Agent",
+          "pred": "type",
+          "sub": "_:genid2147484112"
+        },
+        {
+          "obj": "http://xmlns.com/foaf/0.1/Agent",
+          "pred": "type",
+          "sub": "_:genid2147484113"
+        },
+        {
+          "obj": "http://xmlns.com/foaf/0.1/Agent",
+          "pred": "type",
+          "sub": "_:genid2147484114"
         }
       ],
       "equivalentNodesSets": [],
-      "id": "http://purl.obolibrary.org/obo/sddo/sddo-full.json",
+      "id": "http://purl.obolibrary.org/obo/sddo.json",
       "logicalDefinitionAxioms": [
         {
           "definedClassId": "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
@@ -4133,14 +4258,29 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-04-18"
+            "val": "2022-04-21"
           }
         ],
         "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/sddo/releases/2022-04-18/sddo-full.json",
+        "version": "http://purl.obolibrary.org/obo/sddo/releases/2022-04-21/sddo.json",
         "xrefs": []
       },
       "nodes": [
+        {
+          "id": "_:genid2147484110"
+        },
+        {
+          "id": "_:genid2147484111"
+        },
+        {
+          "id": "_:genid2147484112"
+        },
+        {
+          "id": "_:genid2147484113"
+        },
+        {
+          "id": "_:genid2147484114"
+        },
         {
           "id": "http://purl.obolibrary.org/obo/APOLLO_SV_00000008",
           "lbl": "software development",
@@ -4295,19 +4435,19 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] "
+                "val": "(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002]"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] "
+                "val": "(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001]"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] "
+                "val": "(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002]"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] "
+                "val": "(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002]"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
@@ -4364,11 +4504,11 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] "
+                "val": "(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001]"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] "
+                "val": "(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001]"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
@@ -4445,15 +4585,15 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] "
+                "val": "(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001]"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] "
+                "val": "(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002]"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] "
+                "val": "(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002]"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
@@ -4514,7 +4654,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] "
+                "val": "(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003]"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
@@ -4571,11 +4711,11 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] "
+                "val": "(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002]"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] "
+                "val": "(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002]"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
@@ -4628,11 +4768,11 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] "
+                "val": "(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002]"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] "
+                "val": "(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002]"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
@@ -4717,11 +4857,11 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004] "
+                "val": "(iff (RelationalSpecificallyDependentContinuant a) (and (SpecificallyDependentContinuant a) (forall (t) (exists (b c) (and (not (SpatialRegion b)) (not (SpatialRegion c)) (not (= b c)) (not (exists (d) (and (continuantPartOfAt d b t) (continuantPartOfAt d c t)))) (specificallyDependsOnAt a b t) (specificallyDependsOnAt a c t)))))) // axiom label in BFO2 CLIF: [131-004]"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] "
+                "val": "(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003]"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
@@ -4786,7 +4926,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] "
+                "val": "(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001]"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
@@ -4827,7 +4967,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] "
+                "val": "(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001]"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
@@ -4876,7 +5016,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] "
+                "val": "(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001]"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
@@ -4902,6 +5042,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
                 "val": "material entity"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "Collection of random bacteria, a chair, dorsal surface of the body."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
@@ -4964,6 +5108,10 @@
                 "val": "BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here."
               },
               {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "BFO"
+              },
+              {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000412",
                 "val": "http://purl.obolibrary.org/obo/ido.owl"
               },
@@ -4981,15 +5129,15 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] "
+                "val": "(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002]"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] "
+                "val": "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002]"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000602",
-                "val": "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] "
+                "val": "(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002]"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
@@ -5497,7 +5645,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000232",
-                "val": "9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. \n"
+                "val": "9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum."
               }
             ],
             "definition": {
@@ -5607,7 +5755,7 @@
               }
             ],
             "definition": {
-              "val": "An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.",
+              "val": "a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.",
               "xrefs": []
             }
           },
@@ -5621,6 +5769,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
                 "val": "information content entity"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "Examples of information content entites include journal articles, data, graphical layouts, and graphs."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
@@ -5641,6 +5793,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "PERSON: Chris Stoeckert"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "IAO"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
@@ -6122,10 +6278,55 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/IAO_0000111",
+          "lbl": "editor preferred term~editor preferred label",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "editor preferred label"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "editor preferred label"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "editor preferred term"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "editor preferred term"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "editor preferred term~editor preferred label"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
+                "val": "PERSON:Daniel Schober"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+              }
+            ],
+            "definition": {
+              "val": "The concise, meaningful, and human-friendly name for a class or property preferred by the ontology developers. (US-English)",
+              "xrefs": []
+            }
+          },
+          "type": "PROPERTY"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/IAO_0000112",
           "lbl": "example of usage",
           "meta": {
             "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "example"
+              },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
                 "val": "example of usage"
@@ -6141,6 +6342,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
                 "val": "GROUP:OBI:<http://purl.obolibrary.org/obo/obi>"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "IAO"
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
@@ -6177,7 +6382,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  "
+                "val": "2012-04-05: \nBarry Smith\n\nThe official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.\n\nCan you fix to something like:\n\nA statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.\n\nAlan Ruttenberg\n\nYour proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. \n\nOn the specifics of the proposed definition:\n\nWe don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. \n\nPersonally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. \n\nWe also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -6215,6 +6420,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "PERSON:Daniel Schober"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "GROUP:OBI:<http://purl.obfoundry.org/obo/obi>"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
@@ -6318,6 +6527,10 @@
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
                 "val": "PERSON:Daniel Schober"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w"
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
@@ -7366,7 +7579,7 @@
               }
             ],
             "definition": {
-              "val": "A process that realizes a plan which is the concretization of a plan specification.",
+              "val": "A processual entity that realizes a plan which is the concretization of a plan specification.",
               "xrefs": []
             }
           },
@@ -7711,7 +7924,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "The relation between the conclusion \"Gene tpbA is involved in EPS production\" and the data items produced using two sets of organisms, one being a tpbA knockout, the other being tpbA wildtype tested in polysacharide production assays and analyzed using an ANOVA. "
+                "val": "The relation between the conclusion \"Gene tpbA is involved in EPS production\" and the data items produced using two sets of organisms, one being a tpbA knockout, the other being tpbA wildtype tested in polysacharide production assays and analyzed using an ANOVA."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
@@ -8388,7 +8601,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "Concluding that a gene is upregulated in a tissue sample based on the band intensity in a western blot.  Concluding that a patient has a infection based on measurement of an elevated body temperature and reported headache. Concluding that there were problems in an investigation because data from PCR and microarray are conflicting. Concluding that 'defects in gene XYZ cause cancer due to improper DNA repair' based on data from experiments in that study that gene XYZ is involved in DNA repair, and the conclusion of a previous study that cancer patients have an increased number of mutations in this gene. "
+                "val": "Concluding that a gene is upregulated in a tissue sample based on the band intensity in a western blot.  Concluding that a patient has a infection based on measurement of an elevated body temperature and reported headache. Concluding that there were problems in an investigation because data from PCR and microarray are conflicting. Concluding that 'defects in gene XYZ cause cancer due to improper DNA repair' based on data from experiments in that study that gene XYZ is involved in DNA repair, and the conclusion of a previous study that cancer patients have an increased number of mutations in this gene."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
@@ -8433,7 +8646,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "7/18/2011 BP: planning used to itself be a planned process. Barry Smith pointed out that this would lead to an infinite regression, as there would have to be a plan to conduct a planning process, which in itself would be the result of planning etc. Therefore, the restrictions on 'planning' were loosened to allow for informal processes that result in an 'ad hoc plan '. This required changing from 'has_specified_output some plan specifiction' to 'has_participant some plan specification'. "
+                "val": "7/18/2011 BP: planning used to itself be a planned process. Barry Smith pointed out that this would lead to an infinite regression, as there would have to be a plan to conduct a planning process, which in itself would be the result of planning etc. Therefore, the restrictions on 'planning' were loosened to allow for informal processes that result in an 'ad hoc plan '. This required changing from 'has_specified_output some plan specifiction' to 'has_participant some plan specification'."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -10104,7 +10317,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
-                "val": "The labels 'positive' vs. 'negative', or 'left handed', 'right handed', 'ambidexterous', or 'strongly binding', 'weakly binding' , 'not binding', or '+++', '++', '+', '-' etc. form scales of categorical labels. "
+                "val": "The labels 'positive' vs. 'negative', or 'left handed', 'right handed', 'ambidexterous', or 'strongly binding', 'weakly binding' , 'not binding', or '+++', '++', '+', '-' etc. form scales of categorical labels."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000114",
@@ -10149,7 +10362,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "2012-12-17 JAO: In common lab usage, there is a distinction made between devices and reagents that is difficult to model. Therefore we have chosen to specifically exclude reagents from the definition of \"device\", and are enumerating the types of roles that a reagent can perform.\n\n2013-6-5 MHB: The following clarifications are outcomes of the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions.  Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear.  For example:\n\n(1) An HPLC machine is considered a device, but has a column that holds a stationary phase resin as an operational component.  This resin qualifies as a device if it participates purely in size exclusion, but bears a reagent role that is realized in the running of a column if it interacts electrostatically or chemically with the evaluant. The container the resin is in (“the column”) considered alone is a device. So the entire column as well as the entire HPLC machine are devices that have a reagent as an operating part.\n\n(2) A pH meter is a device, but its electrode component bears a reagent role in virtue of its interacting directly with the evaluant in execution of an assay.\n\n(3) A gel running  box  is a device that has a metallic lead as a component that participates in a chemical reaction with the running buffer when a charge is passed through it.  This metallic lead is considered to have a reagent role as a component of this device realized in the running of a gel.\n\nIn the examples above, a reagent is an operational component of a device, but the device itself does not realize a reagent role (as bearing a reagent role is not transitive across the part_of relation).  In this way, the asserted disjointness between a reagent and device holds, as both roles are never realized in the same bearer during execution of an assay.  "
+                "val": "2012-12-17 JAO: In common lab usage, there is a distinction made between devices and reagents that is difficult to model. Therefore we have chosen to specifically exclude reagents from the definition of \"device\", and are enumerating the types of roles that a reagent can perform.\n\n2013-6-5 MHB: The following clarifications are outcomes of the May 2013 Philly Workshop. Reagents are distinguished from devices that also participate in scientific techniques by the fact that reagents are chemical or biological in nature and necessarily participate in some chemical interaction or reaction during the realization of their experimental role. By contrast, devices do not participate in such chemical reactions/interactions.  Note that there are cases where devices use reagent components during their operation, where the reagent-device distinction is less clear.  For example:\n\n(1) An HPLC machine is considered a device, but has a column that holds a stationary phase resin as an operational component.  This resin qualifies as a device if it participates purely in size exclusion, but bears a reagent role that is realized in the running of a column if it interacts electrostatically or chemically with the evaluant. The container the resin is in (“the column”) considered alone is a device. So the entire column as well as the entire HPLC machine are devices that have a reagent as an operating part.\n\n(2) A pH meter is a device, but its electrode component bears a reagent role in virtue of its interacting directly with the evaluant in execution of an assay.\n\n(3) A gel running  box  is a device that has a metallic lead as a component that participates in a chemical reaction with the running buffer when a charge is passed through it.  This metallic lead is considered to have a reagent role as a component of this device realized in the running of a gel.\n\nIn the examples above, a reagent is an operational component of a device, but the device itself does not realize a reagent role (as bearing a reagent role is not transitive across the part_of relation).  In this way, the asserted disjointness between a reagent and device holds, as both roles are never realized in the same bearer during execution of an assay."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -10220,7 +10433,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "JT: It plays a role in collecting data that could be fleshed out more; but I'm thinking it is, in itself, an edited document. \nJZ: based on textual definition of edited document, it can be defined as N&S. I prefer to leave questionnaire as a document now. We can add more restrictions in the future and use that to determine it is an edited document or not. "
+                "val": "JT: It plays a role in collecting data that could be fleshed out more; but I'm thinking it is, in itself, an edited document. \nJZ: based on textual definition of edited document, it can be defined as N&S. I prefer to leave questionnaire as a document now. We can add more restrictions in the future and use that to determine it is an edited document or not."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
@@ -10273,7 +10486,7 @@
               }
             ],
             "definition": {
-              "val": "The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person's right or left hand in everyday activities. ",
+              "val": "The Edinburgh Handedness Inventory is a set of questions used to assess the dominance of a person's right or left hand in everyday activities.",
               "xrefs": []
             }
           },
@@ -10924,7 +11137,7 @@
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "In the Philly 2013 workshop, we recognized the limitations of \"conclusion textual entity\", and we introduced this as more general. The need for the 'textual entity' term going forward is up for future debate. "
+                "val": "In the Philly 2013 workshop, we recognized the limitations of \"conclusion textual entity\", and we introduced this as more general. The need for the 'textual entity' term going forward is up for future debate."
               },
               {
                 "pred": "http://purl.obolibrary.org/obo/IAO_0000117",
@@ -11504,7 +11717,7 @@
               }
             ],
             "definition": {
-              "val": "A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors. ",
+              "val": "A histologic grade for ovarian tumor that is from a two-tier histological classification of tumors.",
               "xrefs": []
             }
           },
@@ -14888,7 +15101,7 @@
               }
             ],
             "definition": {
-              "val": "A clinical tumor stage group according to AJCC 7th edition indicating a carcinoma in situ (or melanoma in situ for melanoma of the skin or germ cell neoplasia in situ for testicular germ cell tumors) and generally is considered to have no metastatic potential. ",
+              "val": "A clinical tumor stage group according to AJCC 7th edition indicating a carcinoma in situ (or melanoma in situ for melanoma of the skin or germ cell neoplasia in situ for testicular germ cell tumors) and generally is considered to have no metastatic potential.",
               "xrefs": []
             }
           },
@@ -15517,7 +15730,7 @@
               }
             ],
             "definition": {
-              "val": "An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion. ",
+              "val": "An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion.",
               "xrefs": []
             }
           },
@@ -15554,7 +15767,7 @@
               }
             ],
             "definition": {
-              "val": "An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion <4.0 cm in greatest dimension. ",
+              "val": "An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion <4.0 cm in greatest dimension.",
               "xrefs": []
             }
           },
@@ -15591,7 +15804,7 @@
               }
             ],
             "definition": {
-              "val": "An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion >4.0 cm in greatest dimension. ",
+              "val": "An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina without parametrial invasion and clinically visible lesion >4.0 cm in greatest dimension.",
               "xrefs": []
             }
           },
@@ -15628,7 +15841,7 @@
               }
             ],
             "definition": {
-              "val": "An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina with obvious parametrial invasion. ",
+              "val": "An International Federation of Gynecology and Obstetrics cervical cancer stage value specification indicating cervical carcinoma invades beyond the uterus, but not to the pelvic wall or to the lower third of the vagina with obvious parametrial invasion.",
               "xrefs": []
             }
           },
@@ -18592,7 +18805,7 @@
               }
             ],
             "definition": {
-              "val": "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process. ",
+              "val": "A relation between a material entity (such as a cell) and a process, in which the material entity has the ability to carry out the process.",
               "xrefs": []
             },
             "subsets": [
@@ -20305,7 +20518,7 @@
               "PDS data is tricky as while PDS3 has the concept of a data set; PDS4 doesn't really.  You have to find Collections that have a collection_type of data."
             ],
             "definition": {
-              "val": "A data Product from the PDS system.",
+              "val": "A PDS data product from the PDS 3 data model.",
               "xrefs": []
             }
           },
@@ -20358,7 +20571,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/SDDO_1000007",
-          "lbl": "PDS data Product",
+          "lbl": "PDS data product",
           "meta": {
             "basicPropertyValues": [
               {
@@ -20368,8 +20581,16 @@
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
                 "val": "http://orcid.org/0000-0003-4808-4736"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasSynonym",
+                "val": "PDSDataProduct"
               }
-            ]
+            ],
+            "definition": {
+              "val": "A product from the PDS data system",
+              "xrefs": []
+            }
           },
           "type": "CLASS"
         },
@@ -20386,7 +20607,14 @@
                 "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
                 "val": "http://orcid.org/0000-0003-4808-4736"
               }
-            ]
+            ],
+            "comments": [
+              "In the PDS 4 data model, only the collections that have a type of data point directly to data.  Most other types point to other kinds of information products."
+            ],
+            "definition": {
+              "val": "A PDS data product from the PDS 4 data model.",
+              "xrefs": []
+            }
           },
           "type": "CLASS"
         },
@@ -20548,7 +20776,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/SDDO_3000051",
-          "lbl": "data Product",
+          "lbl": "data product",
           "meta": {
             "basicPropertyValues": [
               {
@@ -20556,8 +20784,11 @@
                 "val": "dataProduct"
               }
             ],
+            "comments": [
+              "It is generally agreed that data is in the eye of the beholder; but, for the purposes of this project the terms data and data product are limited to traditional mostly numeric science data products that NASA holds and actually calls data or data products. Thus a DataProductService is any product or service that returns science data, normally compiled into a set according to shared characteristics."
+            ],
             "definition": {
-              "val": "Processed data from the same source, normally compiled into a set according to shared characteristics.",
+              "val": "A product containing science data from some investigation.",
               "xrefs": []
             },
             "synonyms": [
@@ -20608,6 +20839,17 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000059",
+          "lbl": "space agency",
+          "meta": {
+            "definition": {
+              "val": "A government agency engaged in activities related to outer space and space exploration.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/SDDO_3000060",
           "lbl": "instrument host",
           "meta": {
@@ -20622,7 +20864,7 @@
               }
             ],
             "definition": {
-              "val": "The physical object upon which an instrument is mounted.",
+              "val": "The physical object upon or within which an instrument is mounted.",
               "xrefs": []
             }
           },
@@ -20655,14 +20897,22 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/SDDO_3000066",
-          "lbl": "productService",
+          "lbl": "product",
           "meta": {
             "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "MOD10A1 data files; structured metadata files; data landing page; scientific report; an API that provides search and access to a particular satellite's data; an application for displaying or analyzing data; a movie of a solar flare, images of the MODIS instrument, the Terra satellite, an astronaut, etc."
+              },
               {
                 "pred": "http://www.geneontology.org/formats/oboInOwl#created_by",
                 "val": "Peter Fox"
               }
-            ]
+            ],
+            "definition": {
+              "val": "Any offered product or service.",
+              "xrefs": []
+            }
           },
           "type": "CLASS"
         },
@@ -20788,6 +21038,17 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000079",
+          "lbl": "information product",
+          "meta": {
+            "definition": {
+              "val": "A product that describes some entity.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/SDDO_3000080",
           "lbl": "experiment Apparatus",
           "meta": {
@@ -20822,11 +21083,42 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000084",
+          "lbl": "software",
+          "meta": {
+            "definition": {
+              "val": "An information content entity that 1) contains a set of machine-readable instructions (most often in the form of a computer program) that 2) conform to a given syntax (sometimes referred to as a language) that 3) is interpretable by a given processor and that 4) directs a computer's processor to perform specific operations.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/SDDO_3000086",
           "lbl": "funder",
           "meta": {
             "definition": {
               "val": "A role in which the bearer delivers financial support to enable some activity.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000087",
+          "lbl": "instrument operating mode",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasSynonym",
+                "val": "instrumentOperatingMode"
+              }
+            ],
+            "comments": [
+              "Instrument operating modes may include both hardware configurations (e.g., for instruments with multiple filters) as well as software configurations (e.g., to control how long an exposure should last).  Some instruments have many such modes, others may only have one."
+            ],
+            "definition": {
+              "val": "An identified configuration for an instrument.",
               "xrefs": []
             }
           },
@@ -20865,6 +21157,17 @@
             ],
             "definition": {
               "val": "Any procedure that involves testing or manipulating a sample or subject in a laboratory setting",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000090",
+          "lbl": "person",
+          "meta": {
+            "definition": {
+              "val": "An agent that is a human being.",
               "xrefs": []
             }
           },
@@ -20935,17 +21238,25 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/SDDO_3000095",
-          "lbl": "metadataProduct",
+          "lbl": "metadata product",
           "meta": {
             "basicPropertyValues": [
               {
-                "pred": "http://purl.obolibrary.org/obo/IAO_0000116",
-                "val": "Any information product that contains structured metadata."
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasSynonym",
+                "val": "metadata"
+              },
+              {
+                "pred": "http://www.geneontology.org/formats/oboInOwl#hasSynonym",
+                "val": "metadataProduct"
               }
             ],
             "comments": [
               "While agreed that metadata is just data about data and so is really an unneeded term, we recognize that the term metadata is often applied to information about data no matter its form.  In many cases, a metadata product is available for access, even if the data is not."
-            ]
+            ],
+            "definition": {
+              "val": "An information product that contains structured metadata.",
+              "xrefs": []
+            }
           },
           "type": "CLASS"
         },
@@ -20970,6 +21281,73 @@
           "type": "CLASS"
         },
         {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000098",
+          "lbl": "facility",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000112",
+                "val": "An observatory or laboratory"
+              }
+            ],
+            "definition": {
+              "val": "A construction, permanent or temporary, on land, in air, space or water, where scientific research or measurements can be undertaken.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000099",
+          "lbl": "phenomenon",
+          "meta": {
+            "definition": {
+              "val": "A fact or situation that is observed to exist.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000100",
+          "lbl": "observation",
+          "meta": {
+            "definition": {
+              "val": "Act of carrying out an procedure to estimate or calculate a value of a property of a feature.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000101",
+          "lbl": "photoGallery",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "https://orcid.org/0000-0003-4808-4736"
+              }
+            ],
+            "definition": {
+              "val": "A graphical user interface that provides access to photographs/images.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000103",
+          "lbl": "organization",
+          "meta": {
+            "definition": {
+              "val": "An entity that can bear roles, has members, and has a set of organization rules.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
           "id": "http://purl.obolibrary.org/obo/SDDO_3000105",
           "lbl": "investigator",
           "meta": {
@@ -20982,7 +21360,21 @@
                 "pred": "http://www.geneontology.org/formats/oboInOwl#creation_date",
                 "val": "2021-11-30T19:43:39.350414Z"
               }
+            ],
+            "comments": [
+              "A role which inheres in a person or organization and which is realized during an investigation."
             ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000107",
+          "lbl": "program",
+          "meta": {
+            "definition": {
+              "val": "A broad framework of goals to be achieved.",
+              "xrefs": []
+            }
           },
           "type": "CLASS"
         },
@@ -22599,7 +22991,7 @@
             "basicPropertyValues": [
               {
                 "pred": "http://purl.org/dc/elements/1.1/description",
-                "val": "\n        Typically, a Title will be a name by which the resource is\n         formally known.\n    "
+                "val": "Typically, a Title will be a name by which the resource is\n         formally known."
               },
               {
                 "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
@@ -22611,6 +23003,203 @@
             ]
           },
           "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000001",
+          "lbl": "software",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "James Malone"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "Modified in parts from https://en.wikipedia.org/wiki/Software"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "Robert Stevens"
+              }
+            ],
+            "definition": {
+              "val": "Computer software, or generally just software, is any set of machine-readable instructions (most often in the form of a computer program) that conform to a given syntax (sometimes referred to as a language) that is interpretable by a given processor and that directs a computer's processor to perform specific operations.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_0000002",
+          "lbl": "licence",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "Modified from http://en.wikipedia.org/wiki/Software_license"
+              }
+            ],
+            "definition": {
+              "val": "A licence is a legal instrument (usually by way of contract law, with or without printed material) governing the use or redistribution of the resource containing the licence.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/SWO_9000050",
+          "lbl": "software interface",
+          "meta": {
+            "definition": {
+              "val": "The mode of interaction with a piece of software.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/interface/SWO_9000051",
+          "lbl": "web service",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "Web Service"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "Modified from http://www.w3.org/TR/ws-arch/, accessed 6 June 2013; Modified from http://en.wikipedia.org/wiki/Web_service, accessed 6 June 2013."
+              }
+            ],
+            "definition": {
+              "val": "A web service is a software interface which works as a method of communication between two electronic devices over the World Wide Web and which is provided at a particular network address. There are two major classes of Web services: REST-compliant Web services, and arbitrary (or application-specific) Web services.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/interface/SWO_9000052",
+          "lbl": "graphical user interface",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "GUI"
+              }
+            ],
+            "definition": {
+              "val": "https://en.wikipedia.org/wiki/Graphical_user_interface, accessed 6 June 2013.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.ebi.ac.uk/swo/interface/SWO_9000054",
+          "lbl": "application programming interface",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "API"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000119",
+                "val": "http://en.wikipedia.org/wiki/Application_programming_interface, accessed 25 November 2014."
+              }
+            ],
+            "definition": {
+              "val": "An application programming interface is a set of routines, protocols, and tools for building software applications. An API expresses a software component in terms of its operations, inputs, outputs, and underlying types. An API defines functionalities that are independent of their respective implementations, which allows definitions and implementations to vary without compromising each other. The API specifies how software components should interact.",
+              "xrefs": []
+            }
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.w3.org/2000/01/rdf-schema#label",
+          "lbl": "label",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000111",
+                "val": "label"
+              }
+            ]
+          },
+          "type": "PROPERTY"
+        },
+        {
+          "id": "http://www.w3.org/ns/sosa/Observation",
+          "lbl": "Observation",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://www.w3.org/ns/sosa/"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#definition",
+                "val": "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with."
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#example",
+                "val": "The activity of estimating the intensity of an Earthquake using the Mercalli intensity scale is an Observation as is measuring the moment magnitude, i.e., the energy released by said earthquake."
+              }
+            ],
+            "comments": [
+              "Act of carrying out an (Observation) Procedure to estimate or calculate a value of a property of a FeatureOfInterest. Links to a Sensor to describe what made the Observation and how; links to an ObservableProperty to describe what the result is an estimate of, and to a FeatureOfInterest to detail what that property was associated with."
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.w3.org/ns/sosa/Platform",
+          "lbl": "Platform",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://www.w3.org/ns/sosa/"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#definition",
+                "val": "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#example",
+                "val": "A post, buoy, vehicle, ship, aircraft, satellite, cell-phone, human or animal may act as platforms for (technical or biological) sensors or actuators."
+              }
+            ],
+            "comments": [
+              "A Platform is an entity that hosts other entities, particularly Sensors, Actuators, Samplers, and other Platforms."
+            ]
+          },
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.w3.org/ns/sosa/Sensor",
+          "lbl": "Sensor",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+                "val": "http://www.w3.org/ns/sosa/"
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#definition",
+                "val": "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."
+              },
+              {
+                "pred": "http://www.w3.org/2004/02/skos/core#example",
+                "val": "Accelerometers, gyroscopes, barometers, magnetometers, and so forth are Sensors that are typically mounted on a modern smart phone (which acts as Platform). Other examples of sensors include the human eyes."
+              }
+            ],
+            "comments": [
+              "Device, agent (including humans), or software (simulation) involved in, or implementing, a Procedure. Sensors respond to a stimulus, e.g., a change in the environment, or input data composed from the results of prior Observations, and generate a Result. Sensors can be hosted by Platforms."
+            ]
+          },
+          "type": "CLASS"
         },
         {
           "id": "http://purl.obolibrary.org/obo/BFO_0000019",
@@ -22679,7 +23268,7 @@
         },
         {
           "id": "http://purl.obolibrary.org/obo/SDDO_3000014",
-          "lbl": "relatedTo",
+          "lbl": "funds",
           "type": "PROPERTY"
         },
         {
@@ -22720,11 +23309,6 @@
         {
           "id": "http://purl.obolibrary.org/obo/SDDO_3000024",
           "lbl": "capableOfIdentifying",
-          "type": "PROPERTY"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/SDDO_3000025",
-          "lbl": "provideAccessTo",
           "type": "PROPERTY"
         },
         {
@@ -22788,69 +23372,51 @@
           "type": "PROPERTY"
         },
         {
-          "id": "http://purl.obolibrary.org/obo/SDDO_3000043",
-          "lbl": "project",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/SDDO_3000059",
-          "lbl": "spaceAgency",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/SDDO_3000079",
-          "lbl": "informationProduct",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/SDDO_3000084",
-          "lbl": "software",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/SDDO_3000087",
-          "lbl": "instrumentOperatingMode",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/SDDO_3000090",
-          "lbl": "person",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/SDDO_3000098",
-          "lbl": "facility",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/SDDO_3000099",
-          "lbl": "phenomenon",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/SDDO_3000100",
-          "lbl": "observation",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/SDDO_3000101",
-          "lbl": "photoGallery",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/SDDO_3000103",
-          "lbl": "organization",
-          "type": "CLASS"
-        },
-        {
-          "id": "http://purl.obolibrary.org/obo/SDDO_3000107",
-          "lbl": "program",
+          "id": "http://purl.obolibrary.org/obo/SDDO_3000114",
+          "lbl": "NASA program",
           "type": "CLASS"
         },
         {
           "id": "http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym",
           "lbl": "has_related_synonym",
           "type": "PROPERTY"
+        },
+        {
+          "id": "http://edamontology.org/format_2573",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": ".sam"
+              },
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "Sequence Alignment/Map format"
+              }
+            ]
+          }
+        },
+        {
+          "id": "http://edamontology.org/format_3005",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": "Wiggle format"
+              }
+            ]
+          }
+        },
+        {
+          "id": "http://edamontology.org/format_3008",
+          "meta": {
+            "basicPropertyValues": [
+              {
+                "pred": "http://purl.obolibrary.org/obo/IAO_0000118",
+                "val": ".maf"
+              }
+            ]
+          }
         },
         {
           "id": "http://purl.org/dc/terms/license",
@@ -22867,6 +23433,18 @@
             ]
           },
           "type": "PROPERTY"
+        },
+        {
+          "id": "http://purl.org/vocommons/voaf#Vocabulary",
+          "type": "CLASS"
+        },
+        {
+          "id": "http://www.w3.org/ns/sosa/",
+          "type": "INDIVIDUAL"
+        },
+        {
+          "id": "http://xmlns.com/foaf/0.1/Agent",
+          "type": "CLASS"
         }
       ],
       "propertyChainAxioms": [

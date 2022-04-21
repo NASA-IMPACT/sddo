@@ -1,61 +1,112 @@
 format-version: 1.2
-data-version: sddo/releases/2022-03-24/sddo-base.owl
+data-version: sddo/releases/2022-04-21/sddo-base.owl
 ontology: sddo/sddo-base
 property_value: http://purl.org/dc/elements/1.1/description "The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA's Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Science Data Discovery Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
-property_value: owl:versionInfo "2022-03-24" xsd:string
-
-[Term]
-id: SDDO:1000000
-name: pds_Collection
-is_a: SDDO:3000048 ! dataProductOrService
+property_value: owl:versionInfo "2022-04-21" xsd:string
 
 [Term]
 id: SDDO:1000001
 name: pds_Data_Set_PDS3
-is_a: SDDO:3000048 ! dataProductOrService
+def: "A PDS data product from the PDS 3 data model." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://orcid.org/0000-0003-4808-4736"}
+comment: PDS data is tricky as while PDS3 has the concept of a data set; PDS4 doesn't really.  You have to find Collections that have a collection_type of data.
+is_a: SDDO:1000007 ! PDS data product
 
 [Term]
 id: SDDO:1000002
 name: spase:DisplayData
-is_a: SDDO:3000048 ! dataProductOrService
+def: "A graphical representation of data wherein the underlying numeric values are not (readily) accessible for analysis." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://doi.org/10.48322/E72C-5Y75"}
+is_a: SDDO:3000051 ! data product
+property_value: IAO:0000112 "Examples are line plots and spectrograms." xsd:string
 
 [Term]
 id: SDDO:1000003
 name: spase:Catalog
-is_a: SDDO:3000048 ! dataProductOrService
+def: "A tabular listing of events or observational notes, especially those that have utility in aiding a user in locating data." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://doi.org/10.48322/E72C-5Y75"}
+is_a: SDDO:3000051 ! data product
+property_value: IAO:0000112 "Catalogs include lists of events, files in a product, and data availability." xsd:string
 
 [Term]
 id: SDDO:1000004
 name: spase:NumericalData
-is_a: SDDO:3000048 ! dataProductOrService
+def: "Data stored as numerical values in one or more specified formats." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://doi.org/10.48322/E72C-5Y75"}
+is_a: SDDO:3000051 ! data product
 
 [Term]
-id: SDDO:3000043
-name: project
-relationship: SDDO:3000009 SDDO:3000060 ! uses platform
-relationship: SDDO:3000020 SDDO:3000066 ! resultsIn productService
+id: SDDO:1000007
+name: PDS data product
+def: "A product from the PDS data system" []
+is_a: SDDO:3000051 ! data product
+property_value: hasSynonym "PDSDataProduct" xsd:string
+property_value: http://purl.org/dc/elements/1.1/date 2022-04-04T23:21:32Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: SDDO:1000008
+name: pds_Collection_with_Type_Data
+def: "A PDS data product from the PDS 4 data model." []
+comment: In the PDS 4 data model, only the collections that have a type of data point directly to data.  Most other types point to other kinds of information products.
+is_a: SDDO:1000007 ! PDS data product
+property_value: http://purl.org/dc/elements/1.1/date 2022-04-04T23:25:25Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: SDDO:1000009
+name: discovery interface
+def: "An interface that 1) presents users with discovery criteria and may 2) lead to an access interface." [] {http://purl.obolibrary.org/obo/IAO_0000119="SMD:ConceptualIMVersion2.cmap"}
+is_a: SWO:9000050
+property_value: http://purl.org/dc/elements/1.1/date 2022-04-15T23:48:19Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: SDDO:1000010
+name: field campaign
+def: "A campaign that is coordinated among one or more individuals and/or one or more organizations." [] {comment="ch05s849.html"}
+comment: Field campaigns are often characterized by in situ terrestrial field work.
+is_a: SDDO:3000045 ! campaign
+property_value: http://purl.org/dc/elements/1.1/date 2022-04-15T23:55:00Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: SDDO:1000011
+name: investigation
+def: "A set of experiments and/or observations." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://pds.nasa.gov/datastandards/documents/dd/current/PDS4_PDS_DD_1F00/webhelp/all/#ch05s850.html"}
+is_a: OBI:0000011
+property_value: http://purl.org/dc/elements/1.1/date 2022-04-16T00:07:39Z xsd:dateTime
+created_by: http://orcid.org/0000-0003-4808-4736
+
+[Term]
+id: SDDO:1000012
+name: observing campaign
+def: "A campaign that 1) uses primarily but not exclusively existing facilities and 2) after and possibly during which other investigations are carried out using the same facilities." [] {http://purl.obolibrary.org/obo/IAO_0000119="ch05s850.html"}
+is_a: SDDO:3000045 ! campaign
+property_value: http://purl.org/dc/elements/1.1/date 2022-04-16T00:23:16Z xsd:dateTime
+property_value: IAO:0000112 "For example, the International Halley Watch mobilized observatories around the world for collection of data during the most recent apparition of Comet Halley. The Shoemaker-Levy-9 (SL9) campaign used both Earth-based and spacecraft instruments to monitor the SL9 impact on Jupiter." xsd:string
+created_by: http://orcid.org/0000-0003-4808-4736
 
 [Term]
 id: SDDO:3000044
 name: event
 def: "Something observable that happened at a given time and place" []
-relationship: SDDO:3000035 SDDO:3000100 ! characterizedBy observation
-relationship: SDDO:3000041 SDDO:3000100 ! quantifiedBy observation
+is_a: BFO:0000015
+is_a: SDDO:3000099 ! phenomenon
+property_value: IAO:0000112 "A coronal mass ejection, supernova, earthquake, spacecraft launch, etc." xsd:string
 property_value: IAO:0000119 "Adapted from http://purl.obolibrary.org/obo/NCIT_C25499" xsd:string
 
 [Term]
 id: SDDO:3000045
 name: campaign
-relationship: SDDO:3000009 SDDO:3000060 ! uses platform
-relationship: SDDO:3000020 SDDO:3000066 ! resultsIn productService
-
-[Term]
-id: SDDO:3000046
-name: toolDiscoveryCriterion
-is_a: SDDO:3000062 ! discoveryCriterion
+def: "A systematic set of activities undertaken to meet a particular science objective." []
+is_a: SDDO:1000011 ! investigation
+relationship: SDDO:3000009 SDDO:3000060 ! uses instrument host
+relationship: SDDO:3000020 SDDO:3000066 ! resultsIn product
+property_value: IAO:0000112 "A single science campaign may require all or part of several missions." xsd:string
+property_value: IAO:0000112 "There may be several science campaigns occurring over the course of a single mission." xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0003-4808-4736
+property_value: IAO:0000118 "science campaign" xsd:string
+property_value: IAO:0000119 "Morris, Robert, Jennifer Dungan, Lina Khatib, A. Bachman, John Gasch, Paul Hempel, Jenny Williams, Terri Wood, and Christopher Bruno. \"Coordinated science campaign planning for earth observing missions.\" In Proc. of ESTC’04. 2004." xsd:string
 
 [Term]
 id: SDDO:3000047
@@ -66,85 +117,44 @@ relationship: SDDO:3000024 SDDO:3000096 ! capableOfIdentifying feature
 relationship: SDDO:3000026 SDDO:3000044 ! capableOfDetecting event
 
 [Term]
-id: SDDO:3000048
-name: dataProductOrService
-is_a: SDDO:3000066 ! productService
-relationship: SDDO:3000025 SDDO:3000051 ! provideAccessTo dataProduct
-relationship: SDDO:3000027 SDDO:3000110 ! contain dataParameter
-property_value: IAO:0000116 "It is generally agreed that data is in the eye of the beholder; but, for the purposes of this project the terms data and data product are limited to traditional mostly numeric science data products that NASA holds and actually calls data, data sets or data products. Thus a DataProductService is any product or service that returns bulk science data." xsd:string
-
-[Term]
-id: SDDO:3000049
-name: needsDiscussion
-
-[Term]
-id: SDDO:3000050
-name: selectionParameter
-
-[Term]
 id: SDDO:3000051
-name: dataProduct
-is_a: IAO:0000030
-
-[Term]
-id: SDDO:3000052
-name: engineeringPlatform
-is_a: SDDO:3000060 ! platform
-
-[Term]
-id: SDDO:3000053
-name: legend
+name: data product
+def: "A product containing science data from some investigation." [] {http://purl.obolibrary.org/obo/IAO_0000119="NASA (2012) NASA Thesaurus: Hierarchical Listing with Definitions. Vol 1, NASA."}
+comment: It is generally agreed that data is in the eye of the beholder; but, for the purposes of this project the terms data and data product are limited to traditional mostly numeric science data products that NASA holds and actually calls data or data products. Thus a DataProductService is any product or service that returns science data, normally compiled into a set according to shared characteristics.
+synonym: "data set" RELATED []
+is_a: SDDO:3000066 ! product
+relationship: OBI:0000312 OBI:0000066
+property_value: hasSynonym "dataProduct" xsd:string
 
 [Term]
 id: SDDO:3000054
 name: hardware
-
-[Term]
-id: SDDO:3000055
-name: mutableNecessaryEvil
+def: "The mechanical, magnetic, electronic, and electrical equipment necessary for conducting an activity." []
+comment: Hardware is usually distinguished from the theory and design that make the activity possible.
+is_a: BFO:0000040
+property_value: IAO:0000119 https://www.dictionary.com/browse/hardware
 
 [Term]
 id: SDDO:3000056
 name: author
-
-[Term]
-id: SDDO:3000057
-name: instrumentDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
-
-[Term]
-id: SDDO:3000058
-name: instrumentOperatingModeDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
+def: "An originator or creator of a work" []
+is_a: BFO:0000023
+property_value: IAO:0000117 https://orcid.org/0000-0003-4808-4736
 
 [Term]
 id: SDDO:3000059
-name: spaceAgency
+name: space agency
+def: "A government agency engaged in activities related to outer space and space exploration." [] {http://purl.obolibrary.org/obo/IAO_0000119="https://www.yourdictionary.com/space-agency"}
+is_a: SDDO:3000103 ! organization
 
 [Term]
 id: SDDO:3000060
-name: platform
-def: "A platform is a physical object to which an instrument is attached or in which it is contained." []
-is_a: SDDO:3000054 ! hardware
+name: instrument host
+def: "The physical object upon or within which an instrument is mounted." [] {http://purl.obolibrary.org/obo/IAO_0000119="ch03s107.html"}
+is_a: BFO:0000023
+is_a: http://www.w3.org/ns/sosa/Platform
+property_value: hasSynonym "platform" xsd:string
 property_value: IAO:0000112 "A spacecraft, a person, a ship, a piece of laboratory equipment" xsd:string
-
-[Term]
-id: SDDO:3000061
-name: applicationDiscoveryCriterion
-is_a: SDDO:3000062 ! discoveryCriterion
-
-[Term]
-id: SDDO:3000062
-name: discoveryCriterion
-
-[Term]
-id: SDDO:3000063
-name: researchStudy
-
-[Term]
-id: SDDO:3000064
-name: dataProductDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
 
 [Term]
 id: SDDO:3000065
@@ -157,156 +167,133 @@ creation_date: 2021-11-30T21:34:56.970241Z
 
 [Term]
 id: SDDO:3000066
-name: productService
-relationship: SDDO:3000004 SDDO:3000048 ! providesAccessTo dataProductOrService
-relationship: SDDO:3000004 SDDO:3000079 ! providesAccessTo informationProduct
+name: product
+def: "Any offered product or service." [] {http://purl.obolibrary.org/obo/IAO_0000119="http://schema.org/Product"}
+is_a: IAO:0000030
+property_value: IAO:0000112 "MOD10A1 data files; structured metadata files; data landing page; scientific report; an API that provides search and access to a particular satellite's data; an application for displaying or analyzing data; a movie of a solar flare, images of the MODIS instrument, the Terra satellite, an astronaut, etc." xsd:string
 created_by: Peter Fox
-
-[Term]
-id: SDDO:3000067
-name: sciencePlatform
-is_a: SDDO:3000060 ! platform
-
-[Term]
-id: SDDO:3000068
-name: dataProperties
 
 [Term]
 id: SDDO:3000069
 name: study
-def: "A data product service in the GeneLab repository" []
-is_a: SDDO:3000048 ! dataProductOrService
+def: "A data product from the GeneLab repository" []
+is_a: SDDO:3000051 ! data product
 created_by: Rduerr
 creation_date: 2021-12-01T20:52:05.98268Z
 
 [Term]
-id: SDDO:3000070
-name: definedClasses
-
-[Term]
 id: SDDO:3000071
 name: factor
+def: "The role played by an entity as part of a scientific investigation such that levels of the measurement or observation of the entity are thought to bear upon the hypotheses being investigated." []
+is_a: BFO:0000023
 relationship: SDDO:3000007 SDDO:3000100 ! experimentalContextFor observation
-
-[Term]
-id: SDDO:3000072
-name: modelDiscoveryCriterion
-is_a: SDDO:3000062 ! discoveryCriterion
-
-[Term]
-id: SDDO:3000073
-name: dataSelectionParameter
-is_a: SDDO:3000050 ! selectionParameter
-
-[Term]
-id: SDDO:3000074
-name: dataDiscoveryCriterion
-is_a: SDDO:3000062 ! discoveryCriterion
+property_value: IAO:0000112 "Gender is known to be a factor in the study of high blood pressure." xsd:string
+property_value: IAO:0000117 https://orcid.org/0000-0003-4312-9552
+property_value: IAO:0000117 https://orcid.org/0000-0003-4808-4736
+property_value: IAO:0000119 "0000-0003-4312-9552" xsd:string
 
 [Term]
 id: SDDO:3000075
-name: accessInterface
-relationship: SDDO:3000029 SDDO:3000050 ! present selectionParameter
-relationship: SDDO:3000029 SDDO:3000066 ! present productService
-
-[Term]
-id: SDDO:3000076
-name: informationDiscoveryCriterion
-is_a: SDDO:3000062 ! discoveryCriterion
+name: access interface
+def: "A software interface that 1) presents users with selection criteria and 2) presents products or services that meet the criteria the user then selects." [] {http://purl.obolibrary.org/obo/IAO_0000119="SMD:ConceptualIMVersion2.cmap"}
+is_a: SWO:9000050
+relationship: SDDO:3000029 SDDO:3000066 ! present product
+property_value: IAO:0000117 https://orcid.org/0000-0003-4808-4736
 
 [Term]
 id: SDDO:3000077
-name: researchInvestigation
-relationship: SDDO:3000030 SDDO:3000063 ! sameAs researchStudy
+name: research investigation
+def: "An investigation that 1) uses existing facilities and 2) is under the direction of a single individual." [] {http://purl.obolibrary.org/obo/IAO_0000119="ch05s850.html"}
+is_a: SDDO:1000011 ! investigation
+property_value: hasSynonym "individual investigation" xsd:string
+property_value: hasSynonym "research study" xsd:string
+property_value: IAO:0000112 "For example, a series of related laboratory experiments/observations conducted by a small university team and funded through a single proposal could be an Individual Investigation. Library research by one person on previously published results to distill common conclusions could also be an Individual Investigation." xsd:string
 
 [Term]
 id: SDDO:3000078
 name: specimen
+def: "A part of a feature, taken to demonstrate or to determine the character of the whole." [] {http://purl.obolibrary.org/obo/IAO_0000119="Adapted from http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157"}
+is_a: OBI:0100051
 relationship: SDDO:3000021 SDDO:3000047 ! usedIn assay
+property_value: example "A preparation of tissue or bodily fluid taken for examination or diagnosis." xsd:string
+property_value: hasSynonym "sample" xsd:string
 created_by: Rduerr
 creation_date: 2021-11-30T21:35:20.533927Z
 
 [Term]
 id: SDDO:3000079
-name: informationProduct
+name: information product
+def: "A product that describes some entity." []
+is_a: SDDO:3000066 ! product
 
 [Term]
 id: SDDO:3000080
-name: experimentApparatus
+name: experiment Apparatus
+def: "Hardware used in conducting an experiment." []
 is_a: SDDO:3000054 ! hardware
+property_value: hasSynonym "experimentApparatus" xsd:string
 
 [Term]
 id: SDDO:3000081
 name: deployment
-relationship: SDDO:3000042 SDDO:3000088 ! partOf mission
-
-[Term]
-id: SDDO:3000082
-name: informationSelectionParameter
-is_a: SDDO:3000050 ! selectionParameter
-
-[Term]
-id: SDDO:3000083
-name: engineeringMission
-is_a: SDDO:3000088 ! mission
+def: "The realisation of an application, or execution of a plan, idea, model, design, specification, standard, algorithm, or policy." []
+is_a: OBI:0000011
+relationship: BFO:0000051 SDDO:3000088 ! mission
+property_value: IAO:0000119 Deployment:management
 
 [Term]
 id: SDDO:3000084
 name: software
-
-[Term]
-id: SDDO:3000085
-name: informationProductService
-is_a: SDDO:3000066 ! productService
-relationship: SDDO:3000001 SDDO:3000051 ! provideInformationOn dataProduct
-relationship: SDDO:3000001 SDDO:3000054 ! provideInformationOn hardware
-relationship: SDDO:3000001 SDDO:3000065 ! provideInformationOn organism
-relationship: SDDO:3000001 SDDO:3000069 ! provideInformationOn study
-relationship: SDDO:3000001 SDDO:3000078 ! provideInformationOn specimen
-relationship: SDDO:3000001 SDDO:3000084 ! provideInformationOn software
-relationship: SDDO:3000001 SDDO:3000088 ! provideInformationOn mission
-relationship: SDDO:3000001 SDDO:3000090 ! provideInformationOn person
-relationship: SDDO:3000001 SDDO:3000094 ! provideInformationOn experiment
-relationship: SDDO:3000001 SDDO:3000101 ! provideInformationOn photoGallery
-relationship: SDDO:3000001 SDDO:3000109 ! provideInformationOn document
-relationship: SDDO:3000001 SDDO:3000113 ! provideInformationOn firmware
+def: "An information content entity that 1) contains a set of machine-readable instructions (most often in the form of a computer program) that 2) conform to a given syntax (sometimes referred to as a language) that 3) is interpretable by a given processor and that 4) directs a computer's processor to perform specific operations." []
+is_a: SWO:0000001
 
 [Term]
 id: SDDO:3000086
 name: funder
+def: "A role in which the bearer delivers financial support to enable some activity." []
+is_a: BFO:0000023
+relationship: RO:0000081 SDDO:3000103 ! organization
 
 [Term]
 id: SDDO:3000087
-name: instrumentOperatingMode
+name: instrument operating mode
+def: "An identified configuration for an instrument." []
+comment: Instrument operating modes may include both hardware configurations (e.g., for instruments with multiple filters) as well as software configurations (e.g., to control how long an exposure should last).  Some instruments have many such modes, others may only have one.
+is_a: IAO:0000033
 relationship: SDDO:3000024 SDDO:3000096 ! capableOfIdentifying feature
 relationship: SDDO:3000026 SDDO:3000044 ! capableOfDetecting event
+property_value: hasSynonym "instrumentOperatingMode" xsd:string
 
 [Term]
 id: SDDO:3000088
 name: mission
-def: "A mission is a named activity for some purpose" []
-relationship: SDDO:3000015 SDDO:3000059 ! organizedBy spaceAgency
+def: "An investigation that 1) occupies the designated resources for all (or at least a significant fraction) of the available time and 2) is usually conducted by a national or international space agency using a small number (often one) of spacecraft especially designed and built for the purpose." [] {http://purl.obolibrary.org/obo/IAO_0000119="ch05s850.html"}
+is_a: SDDO:1000011 ! investigation
+relationship: SDDO:3000015 SDDO:3000059 ! organizedBy space agency
 relationship: SDDO:3000018 SDDO:3000054 ! deployedOn hardware
+property_value: IAO:0000112 "For example: (1) the NASA Voyager mission launched two spacecraft to Jupiter and Saturn; (2) the Deep Impact (DI) mission launched a spacecraft, part of which impacted the comet Tempel 2; and (3) the EPOXI mission redefined the objectives of the surviving DI hardware for further exploration of the solar system." xsd:string
 property_value: IAO:0000119 "Discussion by SDDO project team" xsd:string
 
 [Term]
 id: SDDO:3000089
 name: laboratoryProcedure
 def: "Any procedure that involves testing or manipulating a sample or subject in a laboratory setting" []
+is_a: OBI:0000011
 relationship: SDDO:3000023 SDDO:3000098 ! conductedAt facility
 property_value: IAO:0000119 "A broadened version of http://purl.obolibrary.org/obo/NCIT_C25294" xsd:string
 
 [Term]
 id: SDDO:3000090
 name: person
-is_a: SDDO:3000055 ! mutableNecessaryEvil
+def: "An agent that is a human being." [] {http://purl.obolibrary.org/obo/IAO_0000119="http://xmlns.com/foaf/0.1/Person"}
+is_a: http://xmlns.com/foaf/0.1/Agent
 relationship: SDDO:3000034 SDDO:3000056 ! hasRole author
 relationship: SDDO:3000034 SDDO:3000065 ! hasRole organism
 
 [Term]
 id: SDDO:3000091
 name: NASAMission
-def: "A NASA mission is a mission led or funded by NASA" []
+def: "A  mission led or funded by NASA" []
 is_a: SDDO:3000088 ! mission
 property_value: IAO:0000116 "Per the NASA SMD glossary at https://science.nasa.gov/glossary/ a mission is a \"NASA Science-funded activity with the purpose of meeting goals laid out by presidential directive, and detailed in Science Mission Directorate's strategic plan.\"  This would mean the ontology would need to include the concepts of a presidential directive and a strategic plan - wait for a use case before implementing this change." xsd:string
 property_value: IAO:0000119 "SDDO team" xsd:string
@@ -315,15 +302,11 @@ property_value: IAO:0000119 "SDDO team" xsd:string
 id: SDDO:3000092
 name: instrument
 def: "An instrument is a physical object that can be used to collect data." []
-is_a: SDDO:3000054 ! hardware
-relationship: SDDO:3000039 SDDO:3000060 ! operatesOn platform
+is_a: http://www.w3.org/ns/sosa/Sensor
+is_a: SDDO:3000075 ! access interface
+relationship: SDDO:3000039 SDDO:3000060 ! operatesOn instrument host
 property_value: IAO:0000112 "A camera, MODIS, a survey instrument (e.g., google form)" xsd:string
 property_value: IAO:0000119 "Adapted from pds:Instrument" xsd:string
-
-[Term]
-id: SDDO:3000093
-name: missionDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
 
 [Term]
 id: SDDO:3000094
@@ -331,8 +314,8 @@ name: experiment
 def: "A plan for a coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing." []
 is_a: OBI:0000011
 relationship: SDDO:3000008 SDDO:3000078 ! generates specimen
-relationship: SDDO:3000009 SDDO:3000080 ! uses experimentApparatus
-relationship: SDDO:3000013 SDDO:3000077 ! componentOf researchInvestigation
+relationship: SDDO:3000009 SDDO:3000080 ! uses experiment Apparatus
+relationship: SDDO:3000013 SDDO:3000077 ! componentOf research investigation
 relationship: SDDO:3000023 SDDO:3000098 ! conductedAt facility
 relationship: SDDO:3000036 SDDO:3000065 ! conductedOn organism
 relationship: SDDO:3000042 SDDO:3000088 ! partOf mission
@@ -341,127 +324,107 @@ property_value: IAO:0000119 "adapted from http://purl.obolibrary.org/obo/NCIT_C4
 
 [Term]
 id: SDDO:3000095
-name: metadataProduct
-is_a: SDDO:3000079 ! informationProduct
-property_value: IAO:0000116 "While agreed that metadata is just data about data and so is really an unneeded term, we recognize that the term metadata is often applied to information about data no matter its form.  In many cases, a metadata product is available for access, even if the data is not.  Thus a Metadata Product Service is any information product or service that returns metadata about science data." xsd:string
+name: metadata product
+def: "An information product that contains structured metadata." []
+comment: While agreed that metadata is just data about data and so is really an unneeded term, we recognize that the term metadata is often applied to information about data no matter its form.  In many cases, a metadata product is available for access, even if the data is not.
+is_a: SDDO:3000079 ! information product
+property_value: hasSynonym "metadata" xsd:string
+property_value: hasSynonym "metadataProduct" xsd:string
 
 [Term]
 id: SDDO:3000096
 name: feature
-relationship: RO:0000052 OBI:0100051
-
-[Term]
-id: SDDO:3000097
-name: spaceTimeBoundingDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
-created_by: Rduerr
-creation_date: 2021-12-02T22:57:22.551595Z
-creation_date: 2021-12-02T22:58:11.536811Z
-creation_date: 2021-12-02T22:58:56.536404Z
+def: "A material entity that has characteristics that can be qualified or quantified through observation or experiment." []
+comment: Depending on the context, individual entities such as a human or star, may be either features or specimens - depending on whether you are interested in studying the entire class of humans or stars, or a particular star or human.
+is_a: BFO:0000040
+is_a: SDDO:3000099 ! phenomenon
+property_value: example "Mars, a hurricane, the aurora, a molecular cloud, a sunspot, a mouse, its  liver, etc." xsd:string
 
 [Term]
 id: SDDO:3000098
 name: facility
+def: "A construction, permanent or temporary, on land, in air, space or water, where scientific research or measurements can be undertaken." [] {http://purl.obolibrary.org/obo/IAO_0000119="ENVO:01001813"}
+is_a: BFO:0000040
+property_value: IAO:0000112 "An observatory or laboratory" xsd:string
 
 [Term]
 id: SDDO:3000099
 name: phenomenon
-relationship: SDDO:3000006 SDDO:3000044 ! consistOf event
-relationship: SDDO:3000006 SDDO:3000096 ! consistOf feature
+def: "A fact or situation that is observed to exist." [] {http://purl.obolibrary.org/obo/IAO_0000119="C61380"}
 
 [Term]
 id: SDDO:3000100
 name: observation
+def: "Act of carrying out an procedure to estimate or calculate a value of a property of a feature." [] {http://purl.obolibrary.org/obo/IAO_0000119="http://www.w3.org/ns/sosa/Observation"}
+is_a: http://www.w3.org/ns/sosa/Observation
+is_a: OBI:0000011
 
 [Term]
 id: SDDO:3000101
 name: photoGallery
-
-[Term]
-id: SDDO:3000102
-name: discoveryInterface
-relationship: SDDO:3000019 SDDO:3000075 ! leadTo accessInterface
-relationship: SDDO:3000029 SDDO:3000062 ! present discoveryCriterion
-relationship: SDDO:3000033 SDDO:3000046 ! aggregate toolDiscoveryCriterion
-relationship: SDDO:3000033 SDDO:3000061 ! aggregate applicationDiscoveryCriterion
-relationship: SDDO:3000033 SDDO:3000072 ! aggregate modelDiscoveryCriterion
-relationship: SDDO:3000033 SDDO:3000074 ! aggregate dataDiscoveryCriterion
-relationship: SDDO:3000033 SDDO:3000076 ! aggregate informationDiscoveryCriterion
+def: "A graphical user interface that provides access to photographs/images." []
+is_a: SWO:9000052
+property_value: IAO:0000119 https://orcid.org/0000-0003-4808-4736
 
 [Term]
 id: SDDO:3000103
 name: organization
-def: "A PDS 4 collection where the collection_type is \"Data\"" []
+def: "An entity that can bear roles, has members, and has a set of organization rules." []
+is_a: http://xmlns.com/foaf/0.1/Agent
 relationship: SDDO:3000034 SDDO:3000056 ! hasRole author
-relationship: SDDO:3000034 SDDO:3000059 ! hasRole spaceAgency
 relationship: SDDO:3000034 SDDO:3000086 ! hasRole funder
 relationship: SDDO:3000034 SDDO:3000105 ! hasRole investigator
-created_by: Rduerr
-creation_date: 2021-12-10T20:53:48.676522Z
-creation_date: 2021-12-10T20:55:07.211503Z
-
-[Term]
-id: SDDO:3000104
-name: experimentDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
 
 [Term]
 id: SDDO:3000105
 name: investigator
-is_a: SDDO:3000110 ! dataParameter
+comment: A role which inheres in a person or organization and which is realized during an investigation.
+is_a: BFO:0000023
 created_by: Rduerr
 creation_date: 2021-11-30T19:43:39.350414Z
 
 [Term]
-id: SDDO:3000106
-name: OperationDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
-
-[Term]
 id: SDDO:3000107
 name: program
-relationship: SDDO:3000014 SDDO:3000091 ! relatedTo NASAMission
-
-[Term]
-id: SDDO:3000108
-name: locationDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
+def: "A broad framework of goals to be achieved." [] {http://purl.obolibrary.org/obo/IAO_0000119="C52647"}
+is_a: SDDO:3000103 ! organization
 
 [Term]
 id: SDDO:3000109
 name: document
+def: "A written or printed paper that bears the original, official, or legal form of something and can be used to furnish decisive evidence or information." [] {http://purl.obolibrary.org/obo/IAO_0000119="The American Heritage® Dictionary of the English Language, 5th Edition."}
+comment: May be electronic or physical paper.
+is_a: IAO:0000310
+is_a: SDDO:3000079 ! information product
+property_value: example "Journal articles, technical or other reports, books, etc." xsd:string
 
 [Term]
 id: SDDO:3000110
-name: dataParameter
-def: "A data parameter is any characteristic that can help in understanding data content. That is, a parameter is a data element that is useful, or critical, when identifying  or describing the content of a data object." []
+name: data element
+def: "A data element is any characteristic that can help in understanding data content. That is, a data element is any parameter or variable that is useful, or critical, when identifying  or describing the content of a data object." []
+is_a: IAO:0000027
 relationship: SDDO:3000031 SDDO:3000100 ! isResultOf observation
+property_value: BFO:0000179 "data element" xsd:string
 property_value: IAO:0000112 "The meaning of a column within a spreadsheet (e.g., identifier or height); the meaning of each pixel in an image (e.g., surface temperature)|another test example" xsd:string
-
-[Term]
-id: SDDO:3000111
-name: sampleDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
-
-[Term]
-id: SDDO:3000112
-name: researchMission
-def: "A mission that gather scientific data" []
-is_a: SDDO:3000088 ! mission
 
 [Term]
 id: SDDO:3000113
 name: firmware
+def: "Software that provides the low-level control for a device's specific hardware." []
+is_a: IAO:0000010
+relationship: BFO:0000050 SDDO:3000054 ! hardware
+property_value: IAO:0000117 https://orcid.org/0000-0003-4808-4736
+property_value: IAO:0000119 https://en.wikipedia.org/wiki/Firmware
 
 [Term]
 id: SDDO:3000114
-name: observableDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
+name: NASA program
+is_a: SDDO:3000107 ! program
+relationship: SDDO:3000014 SDDO:3000091 ! funds NASAMission
 
 [Term]
-id: SDDO:3000115
-name: platformDiscoveryCriterion
-is_a: SDDO:3000074 ! dataDiscoveryCriterion
+id: http://xmlns.com/foaf/0.1/Agent
+is_a: BFO:0000004
 
 [Typedef]
 id: SDDO:3000001
@@ -493,7 +456,7 @@ name: componentOf
 
 [Typedef]
 id: SDDO:3000014
-name: relatedTo
+name: funds
 
 [Typedef]
 id: SDDO:3000015
@@ -526,10 +489,6 @@ name: conductedAt
 [Typedef]
 id: SDDO:3000024
 name: capableOfIdentifying
-
-[Typedef]
-id: SDDO:3000025
-name: provideAccessTo
 
 [Typedef]
 id: SDDO:3000026
@@ -570,10 +529,6 @@ name: conductedOn
 [Typedef]
 id: SDDO:3000039
 name: operatesOn
-
-[Typedef]
-id: SDDO:3000040
-name: isA
 
 [Typedef]
 id: SDDO:3000041

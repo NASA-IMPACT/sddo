@@ -1,6 +1,6 @@
 Level	Rule Name	Subject	Property	Value
-WARN	missing_definition	PDS data Product	IAO:0000115	
-WARN	missing_definition	pds_Collection_with_Type_Data	IAO:0000115	
+ERROR	missing_label	foaf:Agent	rdfs:label	
+WARN	multiple_equivalent_classes	phenomenon	owl:equivalentClass	blank node
 WARN	missing_definition	provideInformationOn	IAO:0000115	
 WARN	missing_definition	providesAccessTo	IAO:0000115	
 WARN	missing_definition	consistOf	IAO:0000115	
@@ -8,7 +8,7 @@ WARN	missing_definition	experimentalContextFor	IAO:0000115
 WARN	missing_definition	generates	IAO:0000115	
 WARN	missing_definition	uses	IAO:0000115	
 WARN	missing_definition	componentOf	IAO:0000115	
-WARN	missing_definition	relatedTo	IAO:0000115	
+WARN	missing_definition	funds	IAO:0000115	
 WARN	missing_definition	organizedBy	IAO:0000115	
 WARN	missing_definition	createdBy	IAO:0000115	
 WARN	missing_definition	deployedOn	IAO:0000115	
@@ -17,7 +17,6 @@ WARN	missing_definition	resultsIn	IAO:0000115
 WARN	missing_definition	usedIn	IAO:0000115	
 WARN	missing_definition	conductedAt	IAO:0000115	
 WARN	missing_definition	capableOfIdentifying	IAO:0000115	
-WARN	missing_definition	provideAccessTo	IAO:0000115	
 WARN	missing_definition	capableOfDetecting	IAO:0000115	
 WARN	missing_definition	contain	IAO:0000115	
 WARN	missing_definition	present	IAO:0000115	
@@ -30,26 +29,7 @@ WARN	missing_definition	conductedOn	IAO:0000115
 WARN	missing_definition	operatesOn	IAO:0000115	
 WARN	missing_definition	quantifiedBy	IAO:0000115	
 WARN	missing_definition	partOf	IAO:0000115	
-WARN	missing_definition	project	IAO:0000115	
-WARN	missing_definition	spaceAgency	IAO:0000115	
-WARN	missing_definition	productService	IAO:0000115	
-WARN	missing_definition	informationProduct	IAO:0000115	
-WARN	missing_definition	software	IAO:0000115	
-WARN	missing_definition	instrumentOperatingMode	IAO:0000115	
-WARN	missing_definition	person	IAO:0000115	
-WARN	missing_definition	metadataProduct	IAO:0000115	
-WARN	missing_definition	facility	IAO:0000115	
-WARN	missing_definition	phenomenon	IAO:0000115	
-WARN	missing_definition	observation	IAO:0000115	
-WARN	missing_definition	photoGallery	IAO:0000115	
-WARN	missing_definition	organization	IAO:0000115	
 WARN	missing_definition	investigator	IAO:0000115	
-WARN	missing_definition	program	IAO:0000115	
-INFO	missing_superclass	discovery interface	rdfs:subClassOf	
-INFO	missing_superclass	investigation	rdfs:subClassOf	
-INFO	missing_superclass	author	rdfs:subClassOf	
-INFO	missing_superclass	spaceAgency	rdfs:subClassOf	
-INFO	missing_superclass	productService	rdfs:subClassOf	
-INFO	missing_superclass	software	rdfs:subClassOf	
-INFO	missing_superclass	photoGallery	rdfs:subClassOf	
-INFO	missing_superclass	investigator	rdfs:subClassOf	
+WARN	missing_definition	NASA program	IAO:0000115	
+WARN	missing_definition	foaf:Agent	IAO:0000115	
+INFO	missing_superclass	phenomenon	rdfs:subClassOf	
