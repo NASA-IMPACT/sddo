@@ -17,11 +17,11 @@
      xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/sddo/sddo-full.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sddo/releases/2022-04-21/sddo-full.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sddo/releases/2023-01-31/sddo-full.owl"/>
         <dc:description>The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA&apos;s Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science.</dc:description>
         <dc:title>Science Data Discovery Ontology</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-21</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-31</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -76,7 +76,6 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
-        <obo:IAO_0000111 xml:lang="en">example</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">example of usage</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115>A phrase describing how a class name should be used. May also include other kinds of examples that facilitate immediate understanding of a class semantics, such as widely known prototypical subclasses or instances of the class. Although essential for high level terms, examples for low level terms (e.g., Affymetrix HU133 array) are not.</obo:IAO_0000115>
@@ -143,7 +142,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">An administrative note intended for its editor. It may not be included in the publication version of the ontology, so it should contain nothing necessary for end users to understand the ontology.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obfoundry.org/obo/obi&gt;</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obofoundry.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">editor note</rdfs:label>
@@ -169,12 +167,17 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <obo:IAO_0000111 xml:lang="en">alternative label</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">alternative term</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">A label for a class or property that can be used to refer to the class or property instead of the preferred rdfs:label. Alternative labels should be used to indicate community- or context-specific labels, abbreviations, shorthand forms and the like.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">An alternative name for a class or property which means the same thing as the preferred name (semantically equivalent)</obo:IAO_0000115>
+        <obo:IAO_0000117>OBO Operations committee</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
+        <rdfs:comment>Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
+        <rdfs:label xml:lang="en">alternative label</rdfs:label>
         <rdfs:label>alternative term</rdfs:label>
         <rdfs:label xml:lang="en">alternative term</rdfs:label>
     </owl:AnnotationProperty>
@@ -187,9 +190,7 @@ We also have the outstanding issue of how to aim different definitions to differ
         <obo:IAO_0000111 xml:lang="en">definition source</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">Formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">formal citation, e.g. identifier in external database to indicate / attribute source(s) for the definition. Free text indicate / attribute source(s) for the definition. EXAMPLE: Author Name, URI, MeSH Term C04, PUBMED ID, Wiki uri on 31.01.2007</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">PERSON:Daniel Schober</obo:IAO_0000117>
-        <obo:IAO_0000119>Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">Discussion on obo-discuss mailing-list, see http://bit.ly/hgm99w</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="en">GROUP:OBI:&lt;http://purl.obolibrary.org/obo/obi&gt;</obo:IAO_0000119>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
@@ -282,6 +283,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://purl.obolibrary.org/obo/RO_0002575 -->
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002575"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002579 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002579"/>
     
 
 
@@ -447,6 +454,7 @@ We also have the outstanding issue of how to aim different definitions to differ
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license">
         <obo:IAO_0000117>Mark Miller</obo:IAO_0000117>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2018-05-11T13:47:29Z</dc:date>
+        <rdfs:label>license</rdfs:label>
     </owl:AnnotationProperty>
     
 
@@ -478,6 +486,12 @@ We also have the outstanding issue of how to aim different definitions to differ
     <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
 
     <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym"/>
     
 
 
@@ -1310,6 +1324,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002131">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002323"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
         <owl:propertyChainAxiom rdf:parseType="Collection">
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/BFO_0000050"/>
@@ -1379,9 +1394,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002578"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002578"/>
         </owl:propertyChainAxiom>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000115>process(P1) regulates process(P2) iff: P1 results in the initiation or termination of P2 OR affects the frequency of its initiation or termination OR affects the magnitude or rate of output of P2.</obo:IAO_0000115>
-        <obo:IAO_0000116>We use &apos;regulates&apos; here to specifically imply control. However, many colloquial usages of the term correctly correspond to the weaker relation of &apos;causally upstream of or within&apos; (aka influences). Consider relabeling to make things more explicit</obo:IAO_0000116>
+        <obo:IAO_0000115>p regulates q iff p is causally upstream of q, the execution of p is not constant and varies according to specific conditions, and p influences the rate or magnitude of execution of q due to an effect either on some enabler of q or some enabler of a part of q.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000117>David Hill</obo:IAO_0000117>
         <obo:IAO_0000117>Tanya Berardini</obo:IAO_0000117>
@@ -1404,7 +1417,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002305"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002335"/>
-        <obo:IAO_0000115>Process(P1) negatively regulates process(P2) iff: P1 terminates P2, or P1 descreases the the frequency of initiation of P2 or the magnitude or rate of output of P2.</obo:IAO_0000115>
+        <obo:IAO_0000115>p negatively regulates q iff p regulates q, and p decreases the rate or magnitude of execution of q.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <obo:IAO_0000589>negatively regulates (process to process)</obo:IAO_0000589>
@@ -1428,7 +1441,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002212"/>
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002212"/>
         </owl:propertyChainAxiom>
-        <obo:IAO_0000115>Process(P1) postively regulates process(P2) iff: P1 initiates P2, or P1 increases the the frequency of initiation of P2 or the magnitude or rate of output of P2.</obo:IAO_0000115>
+        <obo:IAO_0000115>p positively regulates q iff p regulates q, and p increases the rate or magnitude of execution of q.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <obo:IAO_0000589>positively regulates (process to process)</obo:IAO_0000589>
@@ -1564,6 +1577,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002304">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0004047"/>
+        <obo:IAO_0000115>p is causally upstream of, positive effect q iff p is casually upstream of q, and the execution of p is required for the execution of q.</obo:IAO_0000115>
         <obo:RO_0004049 rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
         <terms:creator>cjm</terms:creator>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
@@ -1579,9 +1593,11 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002305">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0004046"/>
+        <obo:IAO_0000115>p is causally upstream of, negative effect q iff p is casually upstream of q, and the execution of p decreases the execution of q.</obo:IAO_0000115>
         <obo:RO_0004050 rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
         <terms:creator>cjm</terms:creator>
-        <rdfs:comment>holds between x and y if and only if x is causally upstream of y and the progression of x decreases the frequency, rate or extent of y</rdfs:comment>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
         <rdfs:label>causally upstream of, negative effect</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1646,6 +1662,7 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002017"/>
         </owl:propertyChainAxiom>
         <obo:IAO_0000112>a particular instances of akt-2 enables some instance of protein kinase activity</obo:IAO_0000112>
+        <obo:IAO_0000115>c enables p iff c is capable of p and c acts to execute p.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000118>catalyzes</obo:IAO_0000118>
         <obo:IAO_0000118>executes</obo:IAO_0000118>
@@ -1841,18 +1858,75 @@ Some currently missing phenomena that should be considered &quot;about&quot; are
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0002407 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002407">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0012012"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002407"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002629"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002409"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002409"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002629"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002407"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002629"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002629"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000115>p indirectly positively regulates q iff p is indirectly causally upstream of q and p positively regulates q.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000118>indirectly activates</obo:IAO_0000118>
+        <obo:RO_0002579 rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
+        <rdfs:label xml:lang="en">indirectly positively regulates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002409 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002409">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0012012"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002409"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002630"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002630"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002409"/>
+        </owl:propertyChainAxiom>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002630"/>
+            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002630"/>
+        </owl:propertyChainAxiom>
+        <obo:IAO_0000115>p indirectly negatively regulates q iff p is indirectly causally upstream of q and p negatively regulates q.</obo:IAO_0000115>
+        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
+        <obo:IAO_0000118>indirectly inhibits</obo:IAO_0000118>
+        <obo:RO_0002579 rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
+        <rdfs:label xml:lang="en">indirectly negatively regulates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0002410 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002410">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <obo:IAO_0000115>This relation groups causal relations between material entities and causal relations between processes</obo:IAO_0000115>
+        <obo:IAO_0000115>relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.</obo:IAO_0000115>
         <obo:IAO_0000116>This branch of the ontology deals with causal relations between entities. It is divided into two branches: causal relations between occurrents/processes, and causal relations between material entities. We take an &apos;activity flow-centric approach&apos;, with the former as primary, and define causal relations between material entities in terms of causal relations between occurrents.
 
 To define causal relations in an activity-flow type network, we make use of 3 primitives:
 
  * Temporal: how do the intervals of the two occurrents relate? 
  * Is the causal relation regulatory?
- * Is the influence positive or negative
+ * Is the influence positive or negative?
 
 The first of these can be formalized in terms of the Allen Interval Algebra. Informally, the 3 bins we care about are &apos;direct&apos;, &apos;indirect&apos; or overlapping. Note that all causal relations should be classified under a RO temporal relation (see the branch under &apos;temporally related to&apos;). Note that all causal relations are temporal, but not all temporal relations are causal. Two occurrents can be related in time without being causally connected. We take causal influence to be primitive, elucidated as being such that has the upstream changed, some qualities of the donwstream would necessarily be modified.
 
@@ -1865,6 +1939,12 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <obo:IAO_0000232>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.</obo:IAO_0000232>
         <rdfs:label xml:lang="en">causally related to</rdfs:label>
     </owl:ObjectProperty>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget>relation that links two events, processes, states, or objects such that one event, process, state, or object (a cause) contributes to the production of another event, process, state, or object (an effect) where the cause is partly or wholly responsible for the effect, and the effect is partly or wholly dependent on the cause.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref>https://en.wikipedia.org/wiki/Causality</oboInOwl:hasDbXref>
+    </owl:Axiom>
     
 
 
@@ -1874,8 +1954,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000063"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002418"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <obo:IAO_0000115>p is causally upstream of q if and only if p precedes q and p and q are linked in a causal chain</obo:IAO_0000115>
+        <obo:IAO_0000115>p is causally upstream of q iff p is causally related to q, the end of p precedes the end of q, and p is not an occurrent part of q.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_go_annotation_extension"/>
         <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/valid_for_gocam"/>
@@ -1889,8 +1968,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002412">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002090"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000428"/>
-        <obo:IAO_0000115>p is immediately causally upstream of q iff both (a) p immediately precedes q and (b) p is causally upstream of q. In addition, the output of p  must be an input of q.</obo:IAO_0000115>
+        <obo:IAO_0000115>p is immediately causally upstream of q iff p is causally upstream of q, and the end of p is coincident with the beginning of q.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:RO_0002575 rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
         <rdfs:label xml:lang="en">immediately causally upstream of</rdfs:label>
@@ -1904,7 +1982,7 @@ Each of these 3 primitives can be composed to yield a cross-product of different
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002501"/>
         <owl:inverseOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002427"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
-        <obo:IAO_0000115>p &apos;causally upstream or within&apos; q iff (1) the end of p is before the end of q and (2) the execution of p exerts some causal influence over the outputs of q; i.e. if p was abolished or the outputs of p were to be modified, this would necessarily affect q.</obo:IAO_0000115>
+        <obo:IAO_0000115>p is &apos;causally upstream or within&apos; q iff p is causally related to q, and the end of p precedes, or is coincident with, the end of q.</obo:IAO_0000115>
         <obo:IAO_0000116>We would like to make this disjoint with &apos;preceded by&apos;, but this is prohibited in OWL2</obo:IAO_0000116>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000118>influences (processual)</obo:IAO_0000118>
@@ -2156,7 +2234,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002410"/>
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/BFO_0000003"/>
-        <obo:IAO_0000115>p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one of direct activation or direct inhibition. p may be upstream, downstream, part of or a container of q.</obo:IAO_0000115>
+        <obo:IAO_0000115>p is causally related to q if and only if p or any part of p and q or any part of q are linked by a chain of events where each event pair is one where the execution of p influences the execution of q. p may be upstream, downstream, part of, or a container of q.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <obo:IAO_0000232>Do not use this relation directly. It is intended as a grouping for a diverse set of relations, all involving cause and effect.</obo:IAO_0000232>
@@ -2256,7 +2334,7 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002578">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002412"/>
-        <obo:IAO_0000115>Process(P1) directly regulates process(P2) iff: P1 regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  regulates the kinase activity (P2) of protein B then P1 directly regulates P2.</obo:IAO_0000115>
+        <obo:IAO_0000115>p directly regulates q iff p is immediately causally upstream of q and p regulates q.</obo:IAO_0000115>
         <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <obo:IAO_0000589>directly regulates (processual)</obo:IAO_0000589>
@@ -2364,7 +2442,7 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002629">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002213"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002578"/>
-        <obo:IAO_0000115>Process(P1) directly postively regulates process(P2) iff: P1 positively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding positively regulates the kinase activity (P2) of protein B then P1 directly positively regulates P2.</obo:IAO_0000115>
+        <obo:IAO_0000115>p directly positively regulates q iff p is immediately causally upstream of q, and p positively regulates q.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <obo:IAO_0000589>directly positively regulates (process to process)</obo:IAO_0000589>
         <obo:RO_0004049 rdf:resource="http://purl.obolibrary.org/obo/RO_0002578"/>
@@ -2381,7 +2459,7 @@ For example, A and B may be gene products and binding of B by A positively regul
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0002630">
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002578"/>
-        <obo:IAO_0000115>Process(P1) directly negatively regulates process(P2) iff: P1 negatively regulates P2 via direct physical interaction between an agent executing P1 (or some part of P1) and an agent executing P2 (or some part of P2).  For example, if protein A has protein binding activity(P1) that targets protein B and this binding  negatively regulates the kinase activity (P2) of protein B then P1 directly negatively regulates P2.</obo:IAO_0000115>
+        <obo:IAO_0000115>p directly negatively regulates q iff p is immediately causally upstream of q, and p negatively regulates q.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:resource="http://purl.obolibrary.org/obo/ro/docs/causal-relations"/>
         <obo:IAO_0000589>directly negatively regulates (process to process)</obo:IAO_0000589>
         <obo:RO_0004050 rdf:resource="http://purl.obolibrary.org/obo/RO_0002578"/>
@@ -2521,6 +2599,31 @@ For example, A and B may be gene products and binding of B by A positively regul
     
 
 
+    <!-- http://purl.obolibrary.org/obo/RO_0012011 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0012011">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
+        <obo:IAO_0000115>p is indirectly causally upstream of q iff p is causally upstream of q and there exists some process r such that p is causally upstream of r and r is causally upstream of q.</obo:IAO_0000115>
+        <oboInOwl:created_by>pg</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-26T06:07:17Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">indirectly causally upstream of</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0012012 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0012012">
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/RO_0012011"/>
+        <obo:IAO_0000115>p indirectly regulates q iff p is indirectly causally upstream of q and p regulates q.</obo:IAO_0000115>
+        <oboInOwl:created_by>pg</oboInOwl:created_by>
+        <oboInOwl:creation_date rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2022-09-26T06:08:01Z</oboInOwl:creation_date>
+        <rdfs:label xml:lang="en">indirectly regulates</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0017001 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/RO_0017001">
@@ -2529,13 +2632,14 @@ For example, A and B may be gene products and binding of B by A positively regul
             <rdf:Description rdf:about="http://purl.obolibrary.org/obo/RO_0002233"/>
         </owl:propertyChainAxiom>
         <obo:IAO_0000112>A diagnostic testing device utilizes a specimen.</obo:IAO_0000112>
-        <obo:IAO_0000115>X utilizes Y means X and Y are material entities, and X is capable of some process P that has input Y.</obo:IAO_0000115>
-        <obo:IAO_0000117>Asiyah Lin</obo:IAO_0000117>
-        <obo:IAO_0000117>https://orcid.org/0000-0001-9625-1899 Bill Duncan</obo:IAO_0000117>
+        <obo:IAO_0000115>X device utilizes material Y means X and Y are material entities, and X is capable of some process P that has input Y.</obo:IAO_0000115>
+        <obo:IAO_0000117>https://orcid.org/0000-0001-9625-1899</obo:IAO_0000117>
+        <obo:IAO_0000117>https://orcid.org/0000-0003-2620-0345</obo:IAO_0000117>
         <obo:IAO_0000232>A diagnostic testing device utilizes a specimen means that the diagnostic testing device is capable of an assay, and this assay a specimen as its input.</obo:IAO_0000232>
         <obo:IAO_0000232>See github ticket https://github.com/oborel/obo-relations/issues/497</obo:IAO_0000232>
-        <oboInOwl:creation_date>2021-11-08</oboInOwl:creation_date>
-        <rdfs:label xml:lang="en">utilizes</rdfs:label>
+        <oboInOwl:creation_date>2021-11-08T12:00:00Z</oboInOwl:creation_date>
+        <oboInOwl:hasBroadSynonym>utilizes</oboInOwl:hasBroadSynonym>
+        <rdfs:label xml:lang="en">device utilizes material</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -3495,6 +3599,7 @@ For example, A and B may be gene products and binding of B by A positively regul
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000004"/>
         <obo:BFO_0000179>material</obo:BFO_0000179>
         <obo:BFO_0000180>MaterialEntity</obo:BFO_0000180>
+        <obo:IAO_0000111>material entity</obo:IAO_0000111>
         <obo:IAO_0000111 xml:lang="en">material entity</obo:IAO_0000111>
         <obo:IAO_0000112>Collection of random bacteria, a chair, dorsal surface of the body.</obo:IAO_0000112>
         <obo:IAO_0000112 xml:lang="en">a flame</obo:IAO_0000112>
@@ -3515,7 +3620,9 @@ For example, A and B may be gene products and binding of B by A positively regul
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: Object, Fiat Object Part and Object Aggregate are not intended to be exhaustive of Material Entity. Users are invited to propose new subcategories of Material Entity.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">BFO 2 Reference: ‘Matter’ is intended to encompass both mass and energy (we will address the ontological treatment of portions of energy in a later version of BFO). A portion of matter is anything that includes elementary particles among its proper or improper parts: quarks and leptons, including electrons, as the smallest particles thus far discovered; baryons (including protons and neutrons) at a higher level of granularity; atoms and molecules at still higher levels, forming the cells, organs, organisms and other material entities studied by biologists, the portions of rock studied by geologists, the fossils studied by paleontologists, and so on.Material entities are three-dimensional entities (entities extended in three spatial dimensions), as contrasted with the processes in which they participate, which are four-dimensional entities (entities extended also along the dimension of time).According to the FMA, material entities may have immaterial entities as parts – including the entities identified below as sites; for example the interior (or ‘lumen’) of your small intestine is a part of your body. BFO 2.0 embodies a decision to follow the FMA here.</obo:IAO_0000116>
         <obo:IAO_0000119>BFO</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/cl.owl"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ido.owl"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/uberon.owl"/>
         <obo:IAO_0000600 xml:lang="en">A material entity is an independent continuant that has some portion of matter as proper or improper continuant part. (axiom label in BFO2 Reference: [019-002])</obo:IAO_0000600>
         <obo:IAO_0000601 xml:lang="en">Every entity which has a material entity as continuant part is a material entity. (axiom label in BFO2 Reference: [020-002])</obo:IAO_0000601>
         <obo:IAO_0000601 xml:lang="en">every entity of which a material entity is continuant part is also a material entity. (axiom label in BFO2 Reference: [021-002])</obo:IAO_0000601>
@@ -3727,7 +3834,6 @@ interpreted by or directly executed by a processing unit.</obo:IAO_0000115>
         <obo:IAO_0000112 xml:lang="en">Data items include counts of things, analyte concentrations, and statistical summaries.</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000115 xml:lang="en">An information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">a data item is an information content entity that is intended to be a truthful statement about something (modulo, e.g., measurement precision or other systematic errors) and is constructed/acquired by a method which reliably tends to produce (approximately) truthful statements.</obo:IAO_0000115>
         <obo:IAO_0000116 xml:lang="en">2/2/2009 Alan and Bjoern discussing FACS run output data. This is a data item because it is about the cell population. Each element records an event and is typically further composed a set of measurment data items that record the fluorescent intensity stimulated by one of the lasers.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: data item deliberatly ambiguous: we merged data set and datum to be one entity, not knowing how to define singular versus plural. So data item is more general than datum.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">2009-03-16: removed datum as alternative term as datum specifically refers to singular form, and is thus not an exact synonym.</obo:IAO_0000116>
@@ -4344,10 +4450,23 @@ clustering algorithm.</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_33208 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_33208">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33154"/>
+        <obo:IAO_0000111>Metazoa</obo:IAO_0000111>
+        <obo:IAO_0000118>metazoans</obo:IAO_0000118>
+        <obo:IAO_0000118>multicellular animals</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
+        <rdfs:label>Metazoa</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_33213 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/NCBITaxon_33213">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33154"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/NCBITaxon_33208"/>
         <obo:IAO_0000111>Bilateria</obo:IAO_0000111>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <rdfs:label>Bilateria</rdfs:label>
@@ -4387,7 +4506,6 @@ clustering algorithm.</obo:IAO_0000115>
         <obo:IAO_0000111>Homo sapiens</obo:IAO_0000111>
         <obo:IAO_0000118>human</obo:IAO_0000118>
         <obo:IAO_0000118>human being</obo:IAO_0000118>
-        <obo:IAO_0000118>man</obo:IAO_0000118>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ncbitaxon.owl"/>
         <rdfs:label>Homo sapiens</rdfs:label>
     </owl:Class>
@@ -4425,7 +4543,6 @@ clustering algorithm.</obo:IAO_0000115>
         <obo:IAO_0000112>Injecting mice with a vaccine in order to test its efficacy</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000115 xml:lang="en">A process that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="en">A processual entity that realizes a plan which is the concretization of a plan specification.</obo:IAO_0000115>
         <obo:IAO_0000116>&apos;Plan&apos; includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn&apos;t have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)</obo:IAO_0000116>
         <obo:IAO_0000116>We are only considering successfully completed planned processes. A plan may be modified, and details added during execution. For a given planned process, the associated realized plan specification is the one encompassing all changes made during execution. This means that all processes in which an agent acts towards achieving some 
 objectives is a planned process.</obo:IAO_0000116>
@@ -4678,6 +4795,7 @@ something taken from study subject, leaves the study and becomes the specimen.</
 specimen can later be subject.</obo:IAO_0000116>
         <obo:IAO_0000117>GROUP:  Role Branch</obo:IAO_0000117>
         <obo:IAO_0000119>OBI</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/obi-ontology/obi/issues/1013"/>
         <rdfs:label xml:lang="en">specimen role</rdfs:label>
     </owl:Class>
     
@@ -6113,6 +6231,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117>PERSON: James Malone</obo:IAO_0000117>
         <obo:IAO_0000117>PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">GROUP: OBI Biomaterial Branch</obo:IAO_0000119>
+        <obo:IAO_0000233 rdf:resource="https://github.com/obi-ontology/obi/issues/1013"/>
         <rdfs:label xml:lang="en">specimen</rdfs:label>
     </owl:Class>
     
@@ -7131,7 +7250,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/SDDO_3000088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000088">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_1000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000015"/>
@@ -7145,14 +7264,14 @@ class labels for these objects. The resulting predictor can be used to attach cl
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112>For example: (1) the NASA Voyager mission launched two spacecraft to Jupiter and Saturn; (2) the Deep Impact (DI) mission launched a spacecraft, part of which impacted the comet Tempel 2; and (3) the EPOXI mission redefined the objectives of the surviving DI hardware for further exploration of the solar system.</obo:IAO_0000112>
-        <obo:IAO_0000115>An investigation that 1) occupies the designated resources for all (or at least a significant fraction) of the available time and 2) is usually conducted by a national or international space agency using a small number (often one) of spacecraft especially designed and built for the purpose.</obo:IAO_0000115>
+        <obo:IAO_0000115>Coordinated tasks and operations undertaken to meet a set of specific  objectives, within clearly delineated time and location constraints.</obo:IAO_0000115>
         <obo:IAO_0000119>Discussion by SDDO project team</obo:IAO_0000119>
         <rdfs:label xml:lang="en">mission</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An investigation that 1) occupies the designated resources for all (or at least a significant fraction) of the available time and 2) is usually conducted by a national or international space agency using a small number (often one) of spacecraft especially designed and built for the purpose.</owl:annotatedTarget>
+        <owl:annotatedTarget>Coordinated tasks and operations undertaken to meet a set of specific  objectives, within clearly delineated time and location constraints.</owl:annotatedTarget>
         <obo:IAO_0000119 rdf:resource="https://pds.nasa.gov/datastandards/documents/dd/current/PDS4_PDS_DD_1F00/webhelp/all/#ch05s850.html"/>
     </owl:Axiom>
     
@@ -7692,11 +7811,12 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://www.ebi.ac.uk/swo/SWO_0000001 -->
 
     <owl:Class rdf:about="http://www.ebi.ac.uk/swo/SWO_0000001">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <obo:IAO_0000115>Computer software, or generally just software, is any set of machine-readable instructions (most often in the form of a computer program) that conform to a given syntax (sometimes referred to as a language) that is interpretable by a given processor and that directs a computer&apos;s processor to perform specific operations.</obo:IAO_0000115>
         <obo:IAO_0000119>James Malone</obo:IAO_0000119>
         <obo:IAO_0000119>Modified in parts from https://en.wikipedia.org/wiki/Software</obo:IAO_0000119>
         <obo:IAO_0000119>Robert Stevens</obo:IAO_0000119>
+        <rdfs:comment>AL 7.9.22: There are some reasoning oddities associated with marking IAO and SWO software as equivalent; once these are sorted out, the equivalence statement will take the place of this current parent-child relationship.</rdfs:comment>
         <rdfs:label>software</rdfs:label>
     </owl:Class>
     
@@ -8667,8 +8787,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001213">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>eBioscience</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.ebioscience.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>eBioscience</rdfs:label>
@@ -8681,8 +8800,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001224">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Cytopeia</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.cytopeia.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Cytopeia</rdfs:label>
@@ -8695,8 +8813,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001287">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Exalpha Biological</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.exalpha.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Exalpha Biological</rdfs:label>
@@ -8709,8 +8826,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001312">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Apogee Flow Systems</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.apogeeflow.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Apogee Flow Systems</rdfs:label>
@@ -8723,8 +8839,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001320">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Exbio Antibodies</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.exbio.cz/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Exbio Antibodies</rdfs:label>
@@ -8737,8 +8852,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001321">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Becton Dickinson (BD Biosciences)</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.bdbiosciences.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Becton Dickinson (BD Biosciences)</rdfs:label>
@@ -8751,8 +8865,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001338">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Dako Cytomation</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.dakousa.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Dako Cytomation</rdfs:label>
@@ -8765,8 +8878,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001340">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Millipore</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.guavatechnologies.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Millipore</rdfs:label>
@@ -8779,8 +8891,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001347">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Antigenix</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.antigenix.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Antigenix</rdfs:label>
@@ -8793,8 +8904,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001355">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Partec</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.partec.de/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Partec</rdfs:label>
@@ -8807,8 +8917,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001372">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Beckman Coulter</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.beckmancoulter.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Beckman Coulter</rdfs:label>
@@ -8821,8 +8930,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001375">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Advanced Instruments Inc. (AI Companies)</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.aicompanies.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Advanced Instruments Inc. (AI Companies)</rdfs:label>
@@ -8835,8 +8943,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001424">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Miltenyi Biotec</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.miltenyibiotec.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Miltenyi Biotec</rdfs:label>
@@ -8849,8 +8956,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001428">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>AES Chemunex</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.aeschemunex.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>AES Chemunex</rdfs:label>
@@ -8863,8 +8969,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001431">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Bentley Instruments</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://bentleyinstruments.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Bentley Instruments</rdfs:label>
@@ -8877,8 +8982,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001434">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Invitrogen</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.invitrogen.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Invitrogen</rdfs:label>
@@ -8891,8 +8995,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001443">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>Luminex</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.luminexcorp.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>Luminex</rdfs:label>
@@ -8905,8 +9008,7 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBI_0001458">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBI_0000835"/>
         <obo:IAO_0000111>CytoBuoy</obo:IAO_0000111>
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
-        <obo:IAO_0000115>A supplier of flow cytometry analyzers</obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
         <obo:IAO_0000117>Karin Breuer</obo:IAO_0000117>
         <obo:IAO_0000119>WEB:http://www.cytobuoy.com/@2011/04/11</obo:IAO_0000119>
         <rdfs:label>CytoBuoy</rdfs:label>
@@ -12022,6 +12124,12 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <rdf:Description rdf:about="urn:swrl#mf2">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#q">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
     <rdf:Description rdf:about="urn:swrl:var#x">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
@@ -12029,6 +12137,9 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description rdf:about="urn:swrl:var#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#u">
         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
     </rdf:Description>
     <rdf:Description>
@@ -13036,6 +13147,50 @@ e.g.  if GP X enables ATPase coupled transporter activity&apos; and &apos;ATPase
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002211"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#q"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0012011"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#q"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0012012"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#q"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
                         <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002212"/>
                         <swrl:argument1 rdf:resource="urn:swrl#x"/>
                         <swrl:argument2 rdf:resource="urn:swrl#y"/>
@@ -13198,6 +13353,50 @@ e.g.  if GP X enables ATPase coupled transporter activity&apos; and &apos;ATPase
                         <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002263"/>
                         <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
                         <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#q"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0002411"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#q"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#u"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.obolibrary.org/obo/RO_0012011"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#p"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#u"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>

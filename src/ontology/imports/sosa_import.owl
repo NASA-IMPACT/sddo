@@ -9,8 +9,8 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/sddo/imports/sosa_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sddo/releases/2022-04-21/imports/sosa_import.owl"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-21</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sddo/releases/2023-01-31/imports/sosa_import.owl"/>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-31</owl:versionInfo>
     </owl:Ontology>
     
 

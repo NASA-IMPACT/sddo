@@ -1,7 +1,6 @@
 {
   "graphs": [
     {
-      "domainRangeAxioms": [],
       "edges": [
         {
           "obj": "http://purl.obolibrary.org/obo/BFO_0000004",
@@ -91,6 +90,11 @@
         {
           "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
           "pred": "is_a",
+          "sub": "http://purl.obolibrary.org/obo/SDDO_3000088"
+        },
+        {
+          "obj": "http://purl.obolibrary.org/obo/OBI_0000011",
+          "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000089"
         },
         {
@@ -137,11 +141,6 @@
           "obj": "http://purl.obolibrary.org/obo/SDDO_1000011",
           "pred": "is_a",
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000077"
-        },
-        {
-          "obj": "http://purl.obolibrary.org/obo/SDDO_1000011",
-          "pred": "is_a",
-          "sub": "http://purl.obolibrary.org/obo/SDDO_3000088"
         },
         {
           "obj": "http://purl.obolibrary.org/obo/SDDO_3000044",
@@ -439,9 +438,7 @@
           "sub": "http://purl.obolibrary.org/obo/SDDO_3000103"
         }
       ],
-      "equivalentNodesSets": [],
       "id": "http://purl.obolibrary.org/obo/sddo/sddo-base.json",
-      "logicalDefinitionAxioms": [],
       "meta": {
         "basicPropertyValues": [
           {
@@ -462,12 +459,10 @@
           },
           {
             "pred": "http://www.w3.org/2002/07/owl#versionInfo",
-            "val": "2022-04-21"
+            "val": "2023-01-31"
           }
         ],
-        "subsets": [],
-        "version": "http://purl.obolibrary.org/obo/sddo/releases/2022-04-21/sddo-base.json",
-        "xrefs": []
+        "version": "http://purl.obolibrary.org/obo/sddo/releases/2023-01-31/sddo-base.json"
       },
       "nodes": [
         {
@@ -478,8 +473,7 @@
               "PDS data is tricky as while PDS3 has the concept of a data set; PDS4 doesn't really.  You have to find Collections that have a collection_type of data."
             ],
             "definition": {
-              "val": "A PDS data product from the PDS 3 data model.",
-              "xrefs": []
+              "val": "A PDS data product from the PDS 3 data model."
             }
           },
           "type": "CLASS"
@@ -495,8 +489,7 @@
               }
             ],
             "definition": {
-              "val": "A graphical representation of data wherein the underlying numeric values are not (readily) accessible for analysis.",
-              "xrefs": []
+              "val": "A graphical representation of data wherein the underlying numeric values are not (readily) accessible for analysis."
             }
           },
           "type": "CLASS"
@@ -512,8 +505,7 @@
               }
             ],
             "definition": {
-              "val": "A tabular listing of events or observational notes, especially those that have utility in aiding a user in locating data.",
-              "xrefs": []
+              "val": "A tabular listing of events or observational notes, especially those that have utility in aiding a user in locating data."
             }
           },
           "type": "CLASS"
@@ -523,8 +515,7 @@
           "lbl": "spase:NumericalData",
           "meta": {
             "definition": {
-              "val": "Data stored as numerical values in one or more specified formats.",
-              "xrefs": []
+              "val": "Data stored as numerical values in one or more specified formats."
             }
           },
           "type": "CLASS"
@@ -548,8 +539,7 @@
               }
             ],
             "definition": {
-              "val": "A product from the PDS data system",
-              "xrefs": []
+              "val": "A product from the PDS data system"
             }
           },
           "type": "CLASS"
@@ -572,8 +562,7 @@
               "In the PDS 4 data model, only the collections that have a type of data point directly to data.  Most other types point to other kinds of information products."
             ],
             "definition": {
-              "val": "A PDS data product from the PDS 4 data model.",
-              "xrefs": []
+              "val": "A PDS data product from the PDS 4 data model."
             }
           },
           "type": "CLASS"
@@ -593,8 +582,7 @@
               }
             ],
             "definition": {
-              "val": "An interface that 1) presents users with discovery criteria and may 2) lead to an access interface.",
-              "xrefs": []
+              "val": "An interface that 1) presents users with discovery criteria and may 2) lead to an access interface."
             }
           },
           "type": "CLASS"
@@ -617,8 +605,7 @@
               "Field campaigns are often characterized by in situ terrestrial field work."
             ],
             "definition": {
-              "val": "A campaign that is coordinated among one or more individuals and/or one or more organizations.",
-              "xrefs": []
+              "val": "A campaign that is coordinated among one or more individuals and/or one or more organizations."
             }
           },
           "type": "CLASS"
@@ -638,8 +625,7 @@
               }
             ],
             "definition": {
-              "val": "A set of experiments and/or observations.",
-              "xrefs": []
+              "val": "A set of experiments and/or observations."
             }
           },
           "type": "CLASS"
@@ -663,8 +649,7 @@
               }
             ],
             "definition": {
-              "val": "A campaign that 1) uses primarily but not exclusively existing facilities and 2) after and possibly during which other investigations are carried out using the same facilities.",
-              "xrefs": []
+              "val": "A campaign that 1) uses primarily but not exclusively existing facilities and 2) after and possibly during which other investigations are carried out using the same facilities."
             }
           },
           "type": "CLASS"
@@ -684,8 +669,7 @@
               }
             ],
             "definition": {
-              "val": "Something observable that happened at a given time and place",
-              "xrefs": []
+              "val": "Something observable that happened at a given time and place"
             }
           },
           "type": "CLASS"
@@ -717,8 +701,7 @@
               }
             ],
             "definition": {
-              "val": "A systematic set of activities undertaken to meet a particular science objective.",
-              "xrefs": []
+              "val": "A systematic set of activities undertaken to meet a particular science objective."
             }
           },
           "type": "CLASS"
@@ -728,8 +711,7 @@
           "lbl": "assay",
           "meta": {
             "definition": {
-              "val": "An assay is an investigative (analytic) procedure for qualitatively assessing or quantitatively measuring the presence, amount, or functional activity of a target entity.",
-              "xrefs": []
+              "val": "An assay is an investigative (analytic) procedure for qualitatively assessing or quantitatively measuring the presence, amount, or functional activity of a target entity."
             }
           },
           "type": "CLASS"
@@ -748,14 +730,12 @@
               "It is generally agreed that data is in the eye of the beholder; but, for the purposes of this project the terms data and data product are limited to traditional mostly numeric science data products that NASA holds and actually calls data or data products. Thus a DataProductService is any product or service that returns science data, normally compiled into a set according to shared characteristics."
             ],
             "definition": {
-              "val": "A product containing science data from some investigation.",
-              "xrefs": []
+              "val": "A product containing science data from some investigation."
             },
             "synonyms": [
               {
                 "pred": "hasRelatedSynonym",
-                "val": "data set",
-                "xrefs": []
+                "val": "data set"
               }
             ]
           },
@@ -775,8 +755,7 @@
               "Hardware is usually distinguished from the theory and design that make the activity possible."
             ],
             "definition": {
-              "val": "The mechanical, magnetic, electronic, and electrical equipment necessary for conducting an activity.",
-              "xrefs": []
+              "val": "The mechanical, magnetic, electronic, and electrical equipment necessary for conducting an activity."
             }
           },
           "type": "CLASS"
@@ -792,8 +771,7 @@
               }
             ],
             "definition": {
-              "val": "An originator or creator of a work",
-              "xrefs": []
+              "val": "An originator or creator of a work"
             }
           },
           "type": "CLASS"
@@ -803,8 +781,7 @@
           "lbl": "space agency",
           "meta": {
             "definition": {
-              "val": "A government agency engaged in activities related to outer space and space exploration.",
-              "xrefs": []
+              "val": "A government agency engaged in activities related to outer space and space exploration."
             }
           },
           "type": "CLASS"
@@ -824,8 +801,7 @@
               }
             ],
             "definition": {
-              "val": "The physical object upon or within which an instrument is mounted.",
-              "xrefs": []
+              "val": "The physical object upon or within which an instrument is mounted."
             }
           },
           "type": "CLASS"
@@ -849,8 +825,7 @@
               }
             ],
             "definition": {
-              "val": "The quality of a living subject that indicates the taxonomical grouping of the subject.  This grouping can be at any level in a hierachy of organism classification, or a collection of levels, and can be using scientific language or colloquial language.",
-              "xrefs": []
+              "val": "The quality of a living subject that indicates the taxonomical grouping of the subject.  This grouping can be at any level in a hierachy of organism classification, or a collection of levels, and can be using scientific language or colloquial language."
             }
           },
           "type": "CLASS"
@@ -870,8 +845,7 @@
               }
             ],
             "definition": {
-              "val": "Any offered product or service.",
-              "xrefs": []
+              "val": "Any offered product or service."
             }
           },
           "type": "CLASS"
@@ -891,8 +865,7 @@
               }
             ],
             "definition": {
-              "val": "A data product from the GeneLab repository",
-              "xrefs": []
+              "val": "A data product from the GeneLab repository"
             }
           },
           "type": "CLASS"
@@ -920,8 +893,7 @@
               }
             ],
             "definition": {
-              "val": "The role played by an entity as part of a scientific investigation such that levels of the measurement or observation of the entity are thought to bear upon the hypotheses being investigated.",
-              "xrefs": []
+              "val": "The role played by an entity as part of a scientific investigation such that levels of the measurement or observation of the entity are thought to bear upon the hypotheses being investigated."
             }
           },
           "type": "CLASS"
@@ -937,8 +909,7 @@
               }
             ],
             "definition": {
-              "val": "A software interface that 1) presents users with selection criteria and 2) presents products or services that meet the criteria the user then selects.",
-              "xrefs": []
+              "val": "A software interface that 1) presents users with selection criteria and 2) presents products or services that meet the criteria the user then selects."
             }
           },
           "type": "CLASS"
@@ -962,8 +933,7 @@
               }
             ],
             "definition": {
-              "val": "An investigation that 1) uses existing facilities and 2) is under the direction of a single individual.",
-              "xrefs": []
+              "val": "An investigation that 1) uses existing facilities and 2) is under the direction of a single individual."
             }
           },
           "type": "CLASS"
@@ -991,8 +961,7 @@
               }
             ],
             "definition": {
-              "val": "A part of a feature, taken to demonstrate or to determine the character of the whole.",
-              "xrefs": []
+              "val": "A part of a feature, taken to demonstrate or to determine the character of the whole."
             }
           },
           "type": "CLASS"
@@ -1002,8 +971,7 @@
           "lbl": "information product",
           "meta": {
             "definition": {
-              "val": "A product that describes some entity.",
-              "xrefs": []
+              "val": "A product that describes some entity."
             }
           },
           "type": "CLASS"
@@ -1019,8 +987,7 @@
               }
             ],
             "definition": {
-              "val": "Hardware used in conducting an experiment.",
-              "xrefs": []
+              "val": "Hardware used in conducting an experiment."
             }
           },
           "type": "CLASS"
@@ -1036,8 +1003,7 @@
               }
             ],
             "definition": {
-              "val": "The realisation of an application, or execution of a plan, idea, model, design, specification, standard, algorithm, or policy.",
-              "xrefs": []
+              "val": "The realisation of an application, or execution of a plan, idea, model, design, specification, standard, algorithm, or policy."
             }
           },
           "type": "CLASS"
@@ -1047,8 +1013,7 @@
           "lbl": "software",
           "meta": {
             "definition": {
-              "val": "An information content entity that 1) contains a set of machine-readable instructions (most often in the form of a computer program) that 2) conform to a given syntax (sometimes referred to as a language) that 3) is interpretable by a given processor and that 4) directs a computer's processor to perform specific operations.",
-              "xrefs": []
+              "val": "An information content entity that 1) contains a set of machine-readable instructions (most often in the form of a computer program) that 2) conform to a given syntax (sometimes referred to as a language) that 3) is interpretable by a given processor and that 4) directs a computer's processor to perform specific operations."
             }
           },
           "type": "CLASS"
@@ -1058,8 +1023,7 @@
           "lbl": "funder",
           "meta": {
             "definition": {
-              "val": "A role in which the bearer delivers financial support to enable some activity.",
-              "xrefs": []
+              "val": "A role in which the bearer delivers financial support to enable some activity."
             }
           },
           "type": "CLASS"
@@ -1078,8 +1042,7 @@
               "Instrument operating modes may include both hardware configurations (e.g., for instruments with multiple filters) as well as software configurations (e.g., to control how long an exposure should last).  Some instruments have many such modes, others may only have one."
             ],
             "definition": {
-              "val": "An identified configuration for an instrument.",
-              "xrefs": []
+              "val": "An identified configuration for an instrument."
             }
           },
           "type": "CLASS"
@@ -1099,8 +1062,7 @@
               }
             ],
             "definition": {
-              "val": "An investigation that 1) occupies the designated resources for all (or at least a significant fraction) of the available time and 2) is usually conducted by a national or international space agency using a small number (often one) of spacecraft especially designed and built for the purpose.",
-              "xrefs": []
+              "val": "Coordinated tasks and operations undertaken to meet a set of specific  objectives, within clearly delineated time and location constraints."
             }
           },
           "type": "CLASS"
@@ -1116,8 +1078,7 @@
               }
             ],
             "definition": {
-              "val": "Any procedure that involves testing or manipulating a sample or subject in a laboratory setting",
-              "xrefs": []
+              "val": "Any procedure that involves testing or manipulating a sample or subject in a laboratory setting"
             }
           },
           "type": "CLASS"
@@ -1127,8 +1088,7 @@
           "lbl": "person",
           "meta": {
             "definition": {
-              "val": "An agent that is a human being.",
-              "xrefs": []
+              "val": "An agent that is a human being."
             }
           },
           "type": "CLASS"
@@ -1148,8 +1108,7 @@
               }
             ],
             "definition": {
-              "val": "A  mission led or funded by NASA",
-              "xrefs": []
+              "val": "A  mission led or funded by NASA"
             }
           },
           "type": "CLASS"
@@ -1169,8 +1128,7 @@
               }
             ],
             "definition": {
-              "val": "An instrument is a physical object that can be used to collect data.",
-              "xrefs": []
+              "val": "An instrument is a physical object that can be used to collect data."
             }
           },
           "type": "CLASS"
@@ -1190,8 +1148,7 @@
               }
             ],
             "definition": {
-              "val": "A plan for a coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing.",
-              "xrefs": []
+              "val": "A plan for a coordinated set of actions and observations designed to generate data, with the ultimate goal of discovery or hypothesis testing."
             }
           },
           "type": "CLASS"
@@ -1214,8 +1171,7 @@
               "While agreed that metadata is just data about data and so is really an unneeded term, we recognize that the term metadata is often applied to information about data no matter its form.  In many cases, a metadata product is available for access, even if the data is not."
             ],
             "definition": {
-              "val": "An information product that contains structured metadata.",
-              "xrefs": []
+              "val": "An information product that contains structured metadata."
             }
           },
           "type": "CLASS"
@@ -1234,8 +1190,7 @@
               "Depending on the context, individual entities such as a human or star, may be either features or specimens - depending on whether you are interested in studying the entire class of humans or stars, or a particular star or human."
             ],
             "definition": {
-              "val": "A material entity that has characteristics that can be qualified or quantified through observation or experiment.",
-              "xrefs": []
+              "val": "A material entity that has characteristics that can be qualified or quantified through observation or experiment."
             }
           },
           "type": "CLASS"
@@ -1251,8 +1206,7 @@
               }
             ],
             "definition": {
-              "val": "A construction, permanent or temporary, on land, in air, space or water, where scientific research or measurements can be undertaken.",
-              "xrefs": []
+              "val": "A construction, permanent or temporary, on land, in air, space or water, where scientific research or measurements can be undertaken."
             }
           },
           "type": "CLASS"
@@ -1262,8 +1216,7 @@
           "lbl": "phenomenon",
           "meta": {
             "definition": {
-              "val": "A fact or situation that is observed to exist.",
-              "xrefs": []
+              "val": "A fact or situation that is observed to exist."
             }
           },
           "type": "CLASS"
@@ -1273,8 +1226,7 @@
           "lbl": "observation",
           "meta": {
             "definition": {
-              "val": "Act of carrying out an procedure to estimate or calculate a value of a property of a feature.",
-              "xrefs": []
+              "val": "Act of carrying out an procedure to estimate or calculate a value of a property of a feature."
             }
           },
           "type": "CLASS"
@@ -1290,8 +1242,7 @@
               }
             ],
             "definition": {
-              "val": "A graphical user interface that provides access to photographs/images.",
-              "xrefs": []
+              "val": "A graphical user interface that provides access to photographs/images."
             }
           },
           "type": "CLASS"
@@ -1301,8 +1252,7 @@
           "lbl": "organization",
           "meta": {
             "definition": {
-              "val": "An entity that can bear roles, has members, and has a set of organization rules.",
-              "xrefs": []
+              "val": "An entity that can bear roles, has members, and has a set of organization rules."
             }
           },
           "type": "CLASS"
@@ -1332,8 +1282,7 @@
           "lbl": "program",
           "meta": {
             "definition": {
-              "val": "A broad framework of goals to be achieved.",
-              "xrefs": []
+              "val": "A broad framework of goals to be achieved."
             }
           },
           "type": "CLASS"
@@ -1352,8 +1301,7 @@
               "May be electronic or physical paper."
             ],
             "definition": {
-              "val": "A written or printed paper that bears the original, official, or legal form of something and can be used to furnish decisive evidence or information.",
-              "xrefs": []
+              "val": "A written or printed paper that bears the original, official, or legal form of something and can be used to furnish decisive evidence or information."
             }
           },
           "type": "CLASS"
@@ -1373,8 +1321,7 @@
               }
             ],
             "definition": {
-              "val": "A data element is any characteristic that can help in understanding data content. That is, a data element is any parameter or variable that is useful, or critical, when identifying  or describing the content of a data object.",
-              "xrefs": []
+              "val": "A data element is any characteristic that can help in understanding data content. That is, a data element is any parameter or variable that is useful, or critical, when identifying  or describing the content of a data object."
             }
           },
           "type": "CLASS"
@@ -1394,8 +1341,7 @@
               }
             ],
             "definition": {
-              "val": "Software that provides the low-level control for a device's specific hardware.",
-              "xrefs": []
+              "val": "Software that provides the low-level control for a device's specific hardware."
             }
           },
           "type": "CLASS"
@@ -1545,8 +1491,7 @@
           "lbl": "NASA program",
           "type": "CLASS"
         }
-      ],
-      "propertyChainAxioms": []
+      ]
     }
   ]
 }

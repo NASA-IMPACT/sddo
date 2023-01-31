@@ -13,12 +13,12 @@
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/sddo/sddo-base.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sddo/releases/2022-04-21/sddo-base.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/sddo/releases/2023-01-31/sddo-base.owl"/>
         <dc:description>The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA&apos;s Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science.</dc:description>
         <dc:title>Science Data Discovery Ontology</dc:title>
         <dc:type rdf:resource="http://purl.obolibrary.org/obo/IAO_8000001"/>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2022-04-21</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2023-01-31</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1047,7 +1047,7 @@
     <!-- http://purl.obolibrary.org/obo/SDDO_3000088 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/SDDO_3000088">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SDDO_1000011"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000015"/>
@@ -1061,14 +1061,14 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112>For example: (1) the NASA Voyager mission launched two spacecraft to Jupiter and Saturn; (2) the Deep Impact (DI) mission launched a spacecraft, part of which impacted the comet Tempel 2; and (3) the EPOXI mission redefined the objectives of the surviving DI hardware for further exploration of the solar system.</obo:IAO_0000112>
-        <obo:IAO_0000115>An investigation that 1) occupies the designated resources for all (or at least a significant fraction) of the available time and 2) is usually conducted by a national or international space agency using a small number (often one) of spacecraft especially designed and built for the purpose.</obo:IAO_0000115>
+        <obo:IAO_0000115>Coordinated tasks and operations undertaken to meet a set of specific  objectives, within clearly delineated time and location constraints.</obo:IAO_0000115>
         <obo:IAO_0000119>Discussion by SDDO project team</obo:IAO_0000119>
         <rdfs:label xml:lang="en">mission</rdfs:label>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SDDO_3000088"/>
         <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
-        <owl:annotatedTarget>An investigation that 1) occupies the designated resources for all (or at least a significant fraction) of the available time and 2) is usually conducted by a national or international space agency using a small number (often one) of spacecraft especially designed and built for the purpose.</owl:annotatedTarget>
+        <owl:annotatedTarget>Coordinated tasks and operations undertaken to meet a set of specific  objectives, within clearly delineated time and location constraints.</owl:annotatedTarget>
         <obo:IAO_0000119 rdf:resource="https://pds.nasa.gov/datastandards/documents/dd/current/PDS4_PDS_DD_1F00/webhelp/all/#ch05s850.html"/>
     </owl:Axiom>
     

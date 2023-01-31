@@ -1,11 +1,11 @@
 format-version: 1.2
-data-version: sddo/releases/2022-04-21/sddo-base.owl
+data-version: sddo/releases/2023-01-31/sddo-base.owl
 ontology: sddo/sddo-base
 property_value: http://purl.org/dc/elements/1.1/description "The Science Data Discovery Ontology (sddo) is being developed to provide a semantic foundation for the discovery of information managed by NASA's Science Mission Directorate.  This information spans many scientific disciplines, fields and subfields, including heliophysics, earth science, planetary science, astrophysics, biology, astrobiology, and physical science." xsd:string
 property_value: http://purl.org/dc/elements/1.1/title "Science Data Discovery Ontology" xsd:string
 property_value: http://purl.org/dc/elements/1.1/type IAO:8000001
 property_value: http://purl.org/dc/terms/license http://creativecommons.org/licenses/by/3.0/
-property_value: owl:versionInfo "2022-04-21" xsd:string
+property_value: owl:versionInfo "2023-01-31" xsd:string
 
 [Term]
 id: SDDO:1000001
@@ -267,8 +267,8 @@ property_value: hasSynonym "instrumentOperatingMode" xsd:string
 [Term]
 id: SDDO:3000088
 name: mission
-def: "An investigation that 1) occupies the designated resources for all (or at least a significant fraction) of the available time and 2) is usually conducted by a national or international space agency using a small number (often one) of spacecraft especially designed and built for the purpose." [] {http://purl.obolibrary.org/obo/IAO_0000119="ch05s850.html"}
-is_a: SDDO:1000011 ! investigation
+def: "Coordinated tasks and operations undertaken to meet a set of specific  objectives, within clearly delineated time and location constraints." [] {http://purl.obolibrary.org/obo/IAO_0000119="ch05s850.html"}
+is_a: OBI:0000011
 relationship: SDDO:3000015 SDDO:3000059 ! organizedBy space agency
 relationship: SDDO:3000018 SDDO:3000054 ! deployedOn hardware
 property_value: IAO:0000112 "For example: (1) the NASA Voyager mission launched two spacecraft to Jupiter and Saturn; (2) the Deep Impact (DI) mission launched a spacecraft, part of which impacted the comet Tempel 2; and (3) the EPOXI mission redefined the objectives of the surviving DI hardware for further exploration of the solar system." xsd:string
