@@ -497,10 +497,10 @@ SubClassOf(obo:SDDO_3000087 ObjectSomeValuesFrom(obo:SDDO_3000026 obo:SDDO_30000
 # Class: obo:SDDO_3000088 (mission)
 
 AnnotationAssertion(obo:IAO_0000112 obo:SDDO_3000088 "For example: (1) the NASA Voyager mission launched two spacecraft to Jupiter and Saturn; (2) the Deep Impact (DI) mission launched a spacecraft, part of which impacted the comet Tempel 2; and (3) the EPOXI mission redefined the objectives of the surviving DI hardware for further exploration of the solar system.")
-AnnotationAssertion(Annotation(obo:IAO_0000119 <https://pds.nasa.gov/datastandards/documents/dd/current/PDS4_PDS_DD_1F00/webhelp/all/#ch05s850.html>) obo:IAO_0000115 obo:SDDO_3000088 "An investigation that 1) occupies the designated resources for all (or at least a significant fraction) of the available time and 2) is usually conducted by a national or international space agency using a small number (often one) of spacecraft especially designed and built for the purpose.")
+AnnotationAssertion(Annotation(obo:IAO_0000119 <https://pds.nasa.gov/datastandards/documents/dd/current/PDS4_PDS_DD_1F00/webhelp/all/#ch05s850.html>) obo:IAO_0000115 obo:SDDO_3000088 "Coordinated tasks and operations undertaken to meet a set of specific  objectives, within clearly delineated time and location constraints.")
 AnnotationAssertion(obo:IAO_0000119 obo:SDDO_3000088 "Discussion by SDDO project team")
 AnnotationAssertion(rdfs:label obo:SDDO_3000088 "mission"@en)
-SubClassOf(obo:SDDO_3000088 obo:SDDO_1000011)
+SubClassOf(obo:SDDO_3000088 obo:OBI_0000011)
 SubClassOf(obo:SDDO_3000088 ObjectSomeValuesFrom(obo:SDDO_3000015 obo:SDDO_3000059))
 SubClassOf(obo:SDDO_3000088 ObjectSomeValuesFrom(obo:SDDO_3000018 obo:SDDO_3000054))
 
